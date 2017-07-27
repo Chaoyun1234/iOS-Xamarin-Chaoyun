@@ -1,0 +1,10 @@
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/bin/iPhoneSimulator/Debug/iOS-Xamarin-Chaoyun.exe
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/bin/iPhoneSimulator/Debug/iOS-Xamarin-Chaoyun.pdb
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/bin/iPhoneSimulator/Debug/Calabash.dll
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone6.1-10.3.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone6.1-10.3.1/actool/_PartialAppManifest.items
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone6.1-10.3.1/actool/_BundleResourceWithLogicalName.items
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone6.1-10.3.1/optimized/
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/iOS-Xamarin-Chaoyun.csproj.CoreCompileInputs.cache
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/iOS-Xamarin-Chaoyun.exe
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/iOS-Xamarin-Chaoyun.pdb
