@@ -1,0 +1,7 @@
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun.UITests/bin/Release/iOS-Xamarin-Chaoyun.UITests.dll
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun.UITests/bin/Release/nunit.framework.dll
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun.UITests/bin/Release/Xamarin.UITest.dll
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun.UITests/bin/Release/nunit.framework.xml
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun.UITests/bin/Release/Xamarin.UITest.xml
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun.UITests/obj/Release/iOS-Xamarin-Chaoyun.UITests.csproj.CoreCompileInputs.cache
+/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun.UITests/obj/Release/iOS-Xamarin-Chaoyun.UITests.dll
