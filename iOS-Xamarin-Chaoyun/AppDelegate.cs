@@ -4,7 +4,7 @@ using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
 using Microsoft.Azure.Mobile.Push;
-
+using System.Text;
 
 namespace iOSXamarinChaoyun
 {
@@ -69,6 +69,41 @@ namespace iOSXamarinChaoyun
 							   typeof(Analytics), typeof(Crashes), typeof(Push));
 			
             return true;
+
+			//Attachment code
+			Crashes.ShouldProcessErrorReport = (ErrorReport report) =>
+			{
+				// Check the report in here and return true or false depending on the ErrorReport.
+				return false;
+			};
+			Crashes.ShouldAwaitUserConfirmation = () =>
+			{
+				// Build your own UI to ask for user consent here. SDK does not provide one by default.
+
+				// Return true if you just built a UI for user consent and are waiting for user input on that custom U.I, otherwise false.
+				return false;
+			};
+			Crashes.GetErrorAttachments = (ErrorReport report) =>
+			{
+				// Your code goes here.
+				return new ErrorAttachmentLog[]
+				{
+		ErrorAttachmentLog.AttachmentWithText("Hello world!", "hello.txt"),
+		ErrorAttachmentLog.AttachmentWithBinary(Encoding.UTF8.GetBytes("Fake image"), "fake_image.jpeg", "image/jpeg")
+				};
+			};
+			Crashes.SendingErrorReport += (sender, e) =>
+			{
+				// Your code, e.g. to present a custom UI.
+			};
+			Crashes.SentErrorReport += (sender, e) =>
+			{
+				// Your code, e.g. to hide the custom UI.
+			};
+			Crashes.FailedToSendErrorReport += (sender, e) =>
+			{
+				// Your code goes here.
+			};
         }
 
         public override void OnResignActivation(UIApplication application)

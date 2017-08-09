@@ -30,7 +30,7 @@
 /Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/iOS-Xamarin-Chaoyun.csproj.CoreCompileInputs.cache
 /Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/iOS-Xamarin-Chaoyun.exe
 /Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/iOS-Xamarin-Chaoyun.pdb
-/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3.1/ibtool/_BundleResourceWithLogicalName.items
-/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3.1/actool/_PartialAppManifest.items
-/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3.1/actool/_BundleResourceWithLogicalName.items
-/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone7.2-10.3.1/optimized/
+/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3.1/ibtool/_BundleResourceWithLogicalName.items
+/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3.1/actool/_PartialAppManifest.items
+/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3.1/actool/_BundleResourceWithLogicalName.items
+/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3.1/optimized/

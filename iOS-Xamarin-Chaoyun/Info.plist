@@ -30,9 +30,9 @@
 	</array>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>CFBundleVersion</key>
-	<string>2</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0</string>
+	<string>4.0</string>
+	<key>CFBundleVersion</key>
+	<string>4</string>
 </dict>
 </plist>
