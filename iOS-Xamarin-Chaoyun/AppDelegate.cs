@@ -64,10 +64,10 @@ namespace iOSXamarinChaoyun
             var installId = MobileCenter.GetInstallIdAsync();
             System.Diagnostics.Debug.WriteLine("installId value:" + installId.Result.ToString());
 
+            //MobileCenter.SetCountryCode("us");
 			MobileCenter.Start("506384ac-c34a-46f6-899f-6a0aded98740",
 							   typeof(Analytics), typeof(Crashes), typeof(Push));
 			
-			Analytics.TrackEvent("Second_click");
             return true;
         }
 
