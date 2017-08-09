@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{B95CE2F1-074A-4A90-A836-FD42A933394B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="iOS-Xamarin-Chaoyun Status">
     <Files>
-      <File FileName="iOS-Xamarin-Chaoyun/AppDelegate.cs" Line="62" Column="6" />
-      <File FileName="iOS-Xamarin-Chaoyun/SecondViewController.cs" Line="28" Column="1" />
-      <File FileName="iOS-Xamarin-Chaoyun/Entitlements.plist" />
-      <File FileName="iOS-Xamarin-Chaoyun/Main.cs" Line="13" Column="10" />
+      <File FileName="iOS-Xamarin-Chaoyun/AppDelegate.cs" Line="4" Column="1" />
+      <File FileName="iOS-Xamarin-Chaoyun/FirstViewController.cs" Line="5" Column="1" />
+      <File FileName="iOS-Xamarin-Chaoyun/SecondViewController.cs" Line="19" Column="43" />
       <File FileName="iOS-Xamarin-Chaoyun Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
@@ -14,5 +13,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.iOS-Xamarin-Chaoyun PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F8CD145-D042-4263-A648-A8F73E601BE7" />
+  <MonoDevelop.Ide.ItemProperties.iOS-Xamarin-Chaoyun PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3CB297BC-4C64-432D-98FD-5890F9B57954" />
 </Properties>

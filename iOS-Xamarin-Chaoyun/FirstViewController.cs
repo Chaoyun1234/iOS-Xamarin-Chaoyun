@@ -1,6 +1,7 @@
 ﻿using System;
 
 using UIKit;
+using Microsoft.Azure.Mobile.Analytics;
 
 namespace iOSXamarinChaoyun
 {
@@ -14,6 +15,7 @@ namespace iOSXamarinChaoyun
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            Analytics.TrackEvent("First_click");
             // Perform any additional setup after loading the view, typically from a nib.
         }
 

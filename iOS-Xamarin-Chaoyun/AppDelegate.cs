@@ -60,11 +60,13 @@ namespace iOSXamarinChaoyun
 				// Send the notification summary to debug output
 				//System.Diagnostics.Debug.WriteLine(summary);
 			};
+            //生成CustomID
             var installId = MobileCenter.GetInstallIdAsync();
             System.Diagnostics.Debug.WriteLine("installId value:" + installId.Result.ToString());
-			MobileCenter.Start("771d00fd-d9cf-4cbe-9309-50f815d280c8",
+
+			MobileCenter.Start("506384ac-c34a-46f6-899f-6a0aded98740",
 							   typeof(Analytics), typeof(Crashes), typeof(Push));
-			Analytics.TrackEvent("First_click");
+			
 			Analytics.TrackEvent("Second_click");
             return true;
         }
