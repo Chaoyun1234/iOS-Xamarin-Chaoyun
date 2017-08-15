@@ -64,8 +64,8 @@ namespace iOSXamarinChaoyun
             var installId = MobileCenter.GetInstallIdAsync();
             System.Diagnostics.Debug.WriteLine("installId value:" + installId.Result.ToString());
 
-            //MobileCenter.SetCountryCode("us");
-			MobileCenter.Start("506384ac-c34a-46f6-899f-6a0aded98740",
+            MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+			MobileCenter.Start("4219c1c7-863b-41b3-9f32-b849aaff1100",
 							   typeof(Analytics), typeof(Crashes), typeof(Push));
 			
             return true;
