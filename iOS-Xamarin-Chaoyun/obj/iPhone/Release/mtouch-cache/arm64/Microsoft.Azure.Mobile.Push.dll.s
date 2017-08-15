@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:38 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:07:31 EDT 2017)"
 	.asciz "Microsoft.Azure.Mobile.Push.dll"
 	.asciz ""
 
@@ -123,79 +123,85 @@ jit_code_start:
 Microsoft_Azure_Mobile_Push_Push__cctor:
 .file 1 "<unknown>"
 .loc 1 1 0
-.word 0xa9bd7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x1, [x16, #208]
+ldr x1, [x16, #200]
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x0, [x16, #208]
+.word 0xf9000001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x0, [x16, #216]
+bl _p_1
+.word 0xf9000fa0
+bl Microsoft_Azure_Mobile_Push_iOS_PushDelegate__ctor
+.word 0xf9400fa1
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x0, [x16, #224]
 .word 0xf9000001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x0, [x16, #224]
-bl _p_1
-.word 0xf90013a0
-bl Microsoft_Azure_Mobile_Push_iOS_PushDelegate__ctor
-.word 0xf94013a1
-
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #232]
-.word 0xf9000001
-
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #232]
 .word 0xf9400000
-.word 0xf9000fa0
+.word 0xf9000ba0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #232]
 .word 0xd2800e01
 bl _p_2
-.word 0xaa0003e2
-.word 0xf9400fa1
+.word 0xf9400ba2
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x1, [x16, #240]
+.word 0xf9001401
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x1, [x16, #248]
+.word 0xf9002001
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x1, [x16, #256]
+.word 0xf9401423
+.word 0xf9000c03
+.word 0xf9401021
+.word 0xf9000801
+.word 0x3901801f
+.word 0xaa0203e1
+.word 0xf940003e
 .word 0xf9001440
+.word 0x9100a021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #256]
-.word 0xf9002040
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #264]
-.word 0xf9401403
-.word 0xf9000c43
-.word 0xf9401000
-.word 0xf9000840
-.word 0x3901805f
-.word 0xaa0103e0
-.word 0xf940001e
-.word 0xaa0203e3
-.word 0xf9000ba3
-.word 0xf9001422
-.word 0x9100a000
-bl _p_3
-.word 0xf9400ba0
-
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9400000
-bl _p_4
+bl _p_3
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
 
 Lme_0:
@@ -219,13 +225,13 @@ Microsoft_Azure_Mobile_Push_Push_PlatformIsEnabledAsync:
 .loc 1 1 0
 .word 0xa9bf7bfd
 .word 0x910003fd
-bl _p_5
+bl _p_4
 .word 0x53001c00
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x15, [x16, #272]
-bl _p_6
+ldr x15, [x16, #264]
+bl _p_5
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
@@ -240,13 +246,13 @@ Microsoft_Azure_Mobile_Push_Push_PlatformSetEnabledAsync_bool:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0x394043a0
-bl _p_7
+bl _p_6
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x15, [x16, #280]
+ldr x15, [x16, #272]
 .word 0xd2800000
-bl _p_8
+bl _p_7
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -262,14 +268,14 @@ Microsoft_Azure_Mobile_Push_Push_get_BindingType:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #208]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -281,7 +287,7 @@ Lme_4:
 	.no_dead_strip Microsoft_Azure_Mobile_Push_Push_add_PlatformPushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 Microsoft_Azure_Mobile_Push_Push_add_PlatformPushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -290,30 +296,30 @@ Microsoft_Azure_Mobile_Push_Push_add_PlatformPushNotificationReceived_System_Eve
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x23, [x16, #296]
+ldr x23, [x16, #288]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_10
+bl _p_9
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -323,14 +329,14 @@ bl _p_10
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #296]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #304]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -338,23 +344,29 @@ ldr x0, [x16, #312]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_3
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_11
+bl _p_10
 
 Lme_5:
 .text
@@ -362,7 +374,7 @@ Lme_5:
 	.no_dead_strip Microsoft_Azure_Mobile_Push_Push_remove_PlatformPushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 Microsoft_Azure_Mobile_Push_Push_remove_PlatformPushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -371,30 +383,30 @@ Microsoft_Azure_Mobile_Push_Push_remove_PlatformPushNotificationReceived_System_
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x23, [x16, #296]
+ldr x23, [x16, #288]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_12
+bl _p_11
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -404,14 +416,14 @@ bl _p_12
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #296]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #304]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -419,23 +431,29 @@ ldr x0, [x16, #312]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_3
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_11
+bl _p_10
 
 Lme_6:
 .text
@@ -447,7 +465,7 @@ Microsoft_Azure_Mobile_Push_Push_RegisteredForRemoteNotifications_Foundation_NSD
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_13
+bl _p_12
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -462,7 +480,7 @@ Microsoft_Azure_Mobile_Push_Push_FailedToRegisterForRemoteNotifications_Foundati
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_14
+bl _p_13
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -477,7 +495,7 @@ Microsoft_Azure_Mobile_Push_Push_DidReceiveRemoteNotification_Foundation_NSDicti
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_15
+bl _p_14
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -498,16 +516,16 @@ Microsoft_Azure_Mobile_Push_Push_NSDictionaryToDotNet_Foundation_NSDictionary_2_
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #312]
 .word 0xd2800901
 bl _p_2
 .word 0xf90023a0
-bl _p_16
+bl _p_15
 .word 0xf94023a0
 .word 0xaa0003f9
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_17
+bl _p_16
 .word 0xaa0003f8
 .word 0xd2800017
 .word 0x1400001a
@@ -528,13 +546,13 @@ bl _p_17
 .word 0xaa1a03e0
 .word 0xaa1603e1
 .word 0xf940035e
+bl _p_17
 bl _p_18
-bl _p_19
 .word 0xaa0003e2
 .word 0xf94023a1
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_20
+bl _p_19
 .word 0x110006f7
 .word 0xb9801b00
 .word 0x6b0002ff
@@ -546,9 +564,9 @@ bl _p_20
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_11
+bl _p_10
 
 Lme_a:
 .text
@@ -558,7 +576,7 @@ Microsoft_Azure_Mobile_Push_Push_IsEnabledAsync:
 .loc 1 1 0
 .word 0xa9bf7bfd
 .word 0x910003fd
-bl _p_21
+bl _p_20
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
@@ -573,7 +591,7 @@ Microsoft_Azure_Mobile_Push_Push_SetEnabledAsync_bool:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0x394043a0
-bl _p_22
+bl _p_21
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -584,7 +602,7 @@ Lme_c:
 	.no_dead_strip Microsoft_Azure_Mobile_Push_Push_add_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 Microsoft_Azure_Mobile_Push_Push_add_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -593,30 +611,30 @@ Microsoft_Azure_Mobile_Push_Push_add_PushNotificationReceived_System_EventHandle
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x23, [x16, #328]
+ldr x23, [x16, #320]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_10
+bl _p_9
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -626,14 +644,14 @@ bl _p_10
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #296]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #304]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -641,23 +659,29 @@ ldr x0, [x16, #312]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_3
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_11
+bl _p_10
 
 Lme_d:
 .text
@@ -665,7 +689,7 @@ Lme_d:
 	.no_dead_strip Microsoft_Azure_Mobile_Push_Push_remove_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 Microsoft_Azure_Mobile_Push_Push_remove_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -674,30 +698,30 @@ Microsoft_Azure_Mobile_Push_Push_remove_PushNotificationReceived_System_EventHan
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x23, [x16, #328]
+ldr x23, [x16, #320]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_12
+bl _p_11
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -707,14 +731,14 @@ bl _p_12
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x1, [x16, #304]
+ldr x1, [x16, #296]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #304]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -722,23 +746,29 @@ ldr x0, [x16, #312]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_3
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_11
+bl _p_10
 
 Lme_e:
 .text
@@ -746,84 +776,104 @@ Lme_e:
 	.no_dead_strip Microsoft_Azure_Mobile_Push_Push__Pushm__0_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification
 Microsoft_Azure_Mobile_Push_Push__Pushm__0_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification:
 .loc 1 1 0
-.word 0xa9b97bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #328]
 .word 0xd2800501
 bl _p_2
 .word 0xaa0003e1
-.word 0xf90027a1
-.word 0xf90037a0
-.word 0xf90033a0
+.word 0xf9001ba1
+.word 0xf90027a0
+.word 0xf90023a0
+.word 0xaa1a03e0
+.word 0xf940035e
+bl _p_22
+.word 0xf94023a1
+.word 0xf94027a2
+.word 0xf9000c40
+.word 0xf9001fa2
+.word 0x91006021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa1a03e0
 .word 0xf940035e
 bl _p_23
-.word 0xaa0003e2
-.word 0xf94033a0
-.word 0xf94037a1
-.word 0xf9002fa2
-.word 0xf9000c22
-.word 0xf9002ba1
-.word 0x91006000
-bl _p_3
-.word 0xf9402fa0
+.word 0xf9401ba1
+.word 0xf9401fa2
+.word 0xf9001040
+.word 0xf90017a2
+.word 0xf90013a1
+.word 0x91008021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa1a03e0
 .word 0xf940035e
 bl _p_24
-.word 0xaa0003e2
-.word 0xf94027a0
-.word 0xf9402ba1
-.word 0xf90023a2
-.word 0xf9001022
-.word 0xf9001fa1
-.word 0xf9001ba0
-.word 0x91008000
-bl _p_3
-.word 0xf94023a0
-.word 0xaa1a03e0
-.word 0xf940035e
 bl _p_25
-bl _p_26
-.word 0xaa0003e2
-.word 0xf9401ba0
-.word 0xf9401fa1
-.word 0xf90017a2
-.word 0xf9000822
-.word 0xf90013a0
-.word 0x91004000
-bl _p_3
+.word 0xaa0003e1
 .word 0xf94013a0
-.word 0xf94017a1
+.word 0xf94017a2
+.word 0xf9000841
+.word 0x91004002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xf9400000
 .word 0xb4000240
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xf9400003
 .word 0xaa0303e0
 .word 0xd2800001
@@ -834,7 +884,7 @@ ldr x0, [x16, #328]
 .word 0xf94013a0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_f:
@@ -847,7 +897,7 @@ Microsoft_Azure_Mobile_Push_iOS_PushDelegate__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_27
+bl _p_26
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -902,12 +952,21 @@ Microsoft_Azure_Mobile_Push_iOS_PushDelegate_set_OnPushNotificationReceivedActio
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9001401
-.word 0x9100a000
-bl _p_3
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9001420
+.word 0x9100a021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -941,7 +1000,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNo
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #336]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -994,14 +1053,14 @@ ldr x0, [x16, #344]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
+bl _p_27
 bl _p_28
-bl _p_29
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_11
+bl _p_10
 
 Lme_16:
 .text
@@ -1018,7 +1077,7 @@ wrapper_delegate_invoke_System_Action_1_Microsoft_Azure_Mobile_Push_iOS_Bindings
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #336]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -1068,14 +1127,14 @@ ldr x0, [x16, #344]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
+bl _p_27
 bl _p_28
-bl _p_29
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_11
+bl _p_10
 
 Lme_17:
 .text
@@ -1093,8 +1152,8 @@ LDIFF_SYM3=ut_end - ut_25
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/corlib/System/Array.cs"
-.loc 2 239 0 prologue_end
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/corlib/System/Array.cs"
+.loc 2 215 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
@@ -1103,14 +1162,22 @@ System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000001
-bl _p_3
-.word 0xf9400fa0
-.loc 2 240 0
-.word 0xf9400ba0
+.word 0xd349fc02
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.loc 2 216 0
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 2 241 0
+.loc 2 217 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -1124,7 +1191,7 @@ b System_Array_InternalEnumerator_1_T_INST_Dispose
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_Dispose
 System_Array_InternalEnumerator_1_T_INST_Dispose:
-.loc 2 245 0 prologue_end
+.loc 2 221 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000faf
@@ -1133,7 +1200,7 @@ System_Array_InternalEnumerator_1_T_INST_Dispose:
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 2 246 0
+.loc 2 222 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1147,7 +1214,7 @@ b System_Array_InternalEnumerator_1_T_INST_MoveNext
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_MoveNext
 System_Array_InternalEnumerator_1_T_INST_MoveNext:
-.loc 2 250 0 prologue_end
+.loc 2 226 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xa9016bb9
@@ -1158,11 +1225,11 @@ System_Array_InternalEnumerator_1_T_INST_MoveNext:
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000081
-.loc 2 251 0
+.loc 2 227 0
 .word 0xf9400340
 .word 0xb9801800
 .word 0xb9000b40
-.loc 2 253 0
+.loc 2 229 0
 .word 0xb9800b40
 .word 0x9280001e
 .word 0xf2bffffe
@@ -1194,7 +1261,7 @@ b System_Array_InternalEnumerator_1_T_INST_get_Current
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_get_Current
 System_Array_InternalEnumerator_1_T_INST_get_Current:
-.loc 2 258 0 prologue_end
+.loc 2 234 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -1205,13 +1272,13 @@ System_Array_InternalEnumerator_1_T_INST_get_Current:
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000500
-.loc 2 260 0
+.loc 2 236 0
 .word 0xb9800b40
 .word 0x9280001e
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000540
-.loc 2 263 0
+.loc 2 239 0
 .word 0xf9400340
 .word 0xf9002fa0
 .word 0xf9400340
@@ -1221,7 +1288,7 @@ System_Array_InternalEnumerator_1_T_INST_get_Current:
 .word 0x4b010000
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_30
+bl _p_29
 .word 0xaa0003e1
 .word 0xf9402fa0
 .word 0xf9002ba1
@@ -1229,7 +1296,7 @@ bl _p_30
 .word 0xf940001e
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_31
+bl _p_30
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
@@ -1246,85 +1313,30 @@ bl _p_31
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.loc 2 259 0
-.word 0xd29767e0
-bl _p_32
+.loc 2 235 0
+.word 0xd2932ba0
+bl _p_31
 .word 0xaa0003e1
-.word 0xd2801880
+.word 0xd2801220
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_28
-.loc 2 261 0
-.word 0xd29772a0
-bl _p_32
+bl _p_27
+.loc 2 237 0
+.word 0xd2933660
+bl _p_31
 .word 0xaa0003e1
-.word 0xd2801880
+.word 0xd2801220
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_28
+bl _p_27
 
 Lme_1c:
-.text
-ut_29:
-add x0, x0, 16
-b System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
-.text
-	.align 4
-	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
-System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current:
-.loc 2 274 0 prologue_end
-.word 0xa9b97bfd
-.word 0x910003fd
-.word 0xf90017af
-.word 0xf9000ba0
-.word 0xf94017a0
-bl _p_33
-.word 0xf90033a0
-.word 0xf9400ba0
-.word 0xf940001e
-.word 0xf94017a0
-bl _p_34
-.word 0xaa0003e1
-.word 0xf94033af
-.word 0x910063a0
-.word 0xf9001ba0
-.word 0xf9400ba0
-.word 0xd63f0020
-.word 0xf9401bbe
-.word 0xf90003c0
-.word 0xf90007c1
-.word 0xf94017a0
-bl _p_35
-.word 0xd2800401
-bl _p_2
-.word 0xf90023a0
-.word 0x91004001
-.word 0xaa0103e0
-.word 0xf9400fa2
-.word 0xf9002fa2
-.word 0xf9000022
-.word 0xf9002ba0
-bl _p_3
-.word 0xf9402ba0
-.word 0xf9402fa1
-.word 0x91002000
-.word 0xf94013a1
-.word 0xf90027a1
-.word 0xf9000001
-bl _p_3
-.word 0xf94023a0
-.word 0xf94027a1
-.word 0x910003bf
-.word 0xa8c77bfd
-.word 0xd65f03c0
-
-Lme_1d:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
-.loc 2 78 0 prologue_end
-.word 0xa9b97bfd
+.loc 2 71 0 prologue_end
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9001faf
 .word 0xf9000ba0
@@ -1332,15 +1344,15 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0x9100a3a0
-.word 0xf9002fa0
+.word 0xf90023a0
 .word 0xf9401fa0
-bl _p_36
-.word 0xf90033a0
+bl _p_32
+.word 0xf90027a0
 .word 0xf9401fa0
-bl _p_37
+bl _p_33
 .word 0xaa0003e2
-.word 0xf9402fa0
-.word 0xf94033af
+.word 0xf94023a0
+.word 0xf94027af
 .word 0xf9400ba1
 .word 0xd63f0040
 .word 0xf94017a0
@@ -1348,50 +1360,54 @@ bl _p_37
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_36
+bl _p_32
 .word 0xd2800401
 bl _p_2
-.word 0xf90023a0
-.word 0x91004001
-.word 0xaa0103e0
+.word 0x91004003
+.word 0xaa0303e1
 .word 0xf9400fa2
-.word 0xf9002ba2
-.word 0xf9000022
-.word 0xf90027a0
-bl _p_3
-.word 0xf94023a0
-.word 0xf94027a1
-.word 0xf9402ba2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
 .word 0x91002021
 .word 0xf94013a2
 .word 0xf9000022
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_1e:
+Lme_1d:
 .text
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
 System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
 .loc 3 5532 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_38
+bl _p_34
 .word 0x3980b410
 .word 0xb5000050
-bl _p_9
+bl _p_8
 .word 0xf9400fa0
-bl _p_38
+bl _p_34
 .word 0xd2800a01
 bl _p_2
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_39
+bl _p_35
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xf90013a0
@@ -1402,13 +1418,13 @@ bl _p_39
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_1f:
+Lme_1e:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__get_Item_T_INST_int
 System_Array_InternalArray__get_Item_T_INST_int:
-.loc 2 197 0 prologue_end
-.word 0xa9b87bfd
+.loc 2 173 0 prologue_end
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf90023af
 .word 0xf90013a0
@@ -1420,38 +1436,52 @@ System_Array_InternalArray__get_Item_T_INST_int:
 .word 0xb9801801
 .word 0xb9802ba0
 .word 0x6b01001f
-.word 0x540004e2
-.loc 2 201 0
+.word 0x54000662
+.loc 2 177 0
 .word 0x910123a0
-.word 0xf9003fa0
+.word 0xf90033a0
 .word 0xf94023a0
-bl _p_40
-.word 0xf9403fa1
+bl _p_36
+.word 0xf94033a2
 .word 0xb9802ba0
 .word 0x93407c00
-.word 0xd37cec02
+.word 0xd37cec01
 .word 0xf94013a0
-.word 0x8b020000
+.word 0x8b010000
 .word 0x91008000
-.word 0xf9400002
-.word 0xf9001ba2
+.word 0xf9400001
+.word 0xf9001ba1
 .word 0xf9400400
 .word 0xf9001fa0
-.word 0xaa0103e0
-.word 0xf9401ba2
-.word 0xf9003ba2
-.word 0xf9000022
-.word 0xf90037a0
-bl _p_3
-.word 0xf94037a0
-.word 0xf9403ba1
-.word 0x91002000
-.word 0xf9401fa1
-.word 0xf90033a1
-.word 0xf9000001
-bl _p_3
-.word 0xf94033a0
-.loc 2 202 0
+.word 0xaa0203e0
+.word 0xf9401ba1
+.word 0xf9000041
+.word 0xd349fc02
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0x91002001
+.word 0xf9401fa0
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 2 178 0
 .word 0xf94027a0
 .word 0xf9000ba0
 .word 0xf9402ba0
@@ -1459,23 +1489,23 @@ bl _p_3
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x910003bf
-.word 0xa8c87bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
-.loc 2 198 0
-.word 0xd2860960
-bl _p_32
+.loc 2 174 0
+.word 0xd2825c60
+bl _p_31
 .word 0xaa0003e1
-.word 0xd2800e40
+.word 0xd2800820
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_28
+bl _p_27
 
-Lme_20:
+Lme_1f:
 .text
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
 System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
-.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 4 104 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -1486,7 +1516,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_41
+bl _p_37
 .loc 4 106 0
 .word 0xf9400ba0
 .word 0x394063a1
@@ -1496,7 +1526,7 @@ bl _p_41
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_21:
+Lme_20:
 .text
 	.align 3
 jit_code_end:
@@ -1535,7 +1565,6 @@ bl System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 bl System_Array_InternalEnumerator_1_T_INST_Dispose
 bl System_Array_InternalEnumerator_1_T_INST_MoveNext
 bl System_Array_InternalEnumerator_1_T_INST_get_Current
-bl System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
 bl System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 bl System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
 bl System_Array_InternalArray__get_Item_T_INST_int
@@ -1546,7 +1575,7 @@ method_addresses_end:
 	.align 3
 unbox_trampolines:
 
-	.long 25,26,27,28,29
+	.long 25,26,27,28
 unbox_trampolines_end:
 
 	.long 0
@@ -1557,20 +1586,19 @@ bl ut_25
 bl ut_26
 bl ut_27
 bl ut_28
-bl ut_29
 
 	.long 0
 .section __TEXT, __const
 	.align 3
 unwind_info:
 
-	.byte 0,13,12,31,0,68,14,48,157,6,158,5,68,13,29,13,12,31,0,68,14,32,157,4,158,3,68,13,29,13,12,31
-	.byte 0,68,14,16,157,2,158,1,68,13,29,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152
-	.byte 6,153,5,68,154,4,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12,16,12,31,0,68,14,48,157,6
-	.byte 158,5,68,13,29,68,153,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5
-	.byte 68,153,4,154,3,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,16,12,31,0,68,14,96,157
-	.byte 12,158,11,68,13,29,68,154,10,13,12,31,0,68,14,112,157,14,158,13,68,13,29,14,12,31,0,68,14,128,1,157
-	.byte 16,158,15,68,13,29
+	.byte 0,13,12,31,0,68,14,32,157,4,158,3,68,13,29,13,12,31,0,68,14,16,157,2,158,1,68,13,29,26,12,31
+	.byte 0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,26,12,31,0,68,14,80,157
+	.byte 10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,16,12,31,0,68,14,80,157,10,158,9,68,13
+	.byte 29,68,154,8,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,28,12,31,0,68,14,80,157,10,158,9
+	.byte 68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,13,12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,16,12,31,0,68,14,96,157,12,158,11,68,13
+	.byte 29,68,154,10,13,12,31,0,68,14,80,157,10,158,9,68,13,29,13,12,31,0,68,14,112,157,14,158,13,68,13,29
 
 .text
 	.align 4
@@ -1581,333 +1609,301 @@ plt__jit_icall_ves_icall_object_new_specific:
 _p_1:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x16, [x16, #360]
+ldr x16, [x16, #352]
 br x16
-.word 874
+.word 877
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_2:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
+ldr x16, [x16, #360]
+br x16
+.word 909
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_SetDelegate_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushDelegate
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_SetDelegate_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushDelegate:
+_p_3:
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 906
-	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
-plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
-_p_3:
+.word 917
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_IsEnabled
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_IsEnabled:
+_p_4:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 914
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_SetDelegate_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushDelegate
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_SetDelegate_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushDelegate:
-_p_4:
+.word 922
+	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_bool_bool
+plt_System_Threading_Tasks_Task_FromResult_bool_bool:
+_p_5:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 921
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_IsEnabled
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_IsEnabled:
-_p_5:
+.word 927
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_SetEnabled_bool
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_SetEnabled_bool:
+_p_6:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 926
-	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_bool_bool
-plt_System_Threading_Tasks_Task_FromResult_bool_bool:
-_p_6:
+.word 939
+	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_object_object
+plt_System_Threading_Tasks_Task_FromResult_object_object:
+_p_7:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 931
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_SetEnabled_bool
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_SetEnabled_bool:
-_p_7:
+.word 944
+	.no_dead_strip plt__jit_icall_mono_generic_class_init
+plt__jit_icall_mono_generic_class_init:
+_p_8:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 943
-	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_object_object
-plt_System_Threading_Tasks_Task_FromResult_object_object:
-_p_8:
+.word 956
+	.no_dead_strip plt_System_Delegate_Combine_System_Delegate_System_Delegate
+plt_System_Delegate_Combine_System_Delegate_System_Delegate:
+_p_9:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 948
-	.no_dead_strip plt__jit_icall_mono_generic_class_init
-plt__jit_icall_mono_generic_class_init:
-_p_9:
+.word 982
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_10:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 960
-	.no_dead_strip plt_System_Delegate_Combine_System_Delegate_System_Delegate
-plt_System_Delegate_Combine_System_Delegate_System_Delegate:
-_p_10:
+.word 987
+	.no_dead_strip plt_System_Delegate_Remove_System_Delegate_System_Delegate
+plt_System_Delegate_Remove_System_Delegate_System_Delegate:
+_p_11:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 986
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
-_p_11:
+.word 1022
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidRegisterForRemoteNotificationsWithDeviceToken_Foundation_NSData
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidRegisterForRemoteNotificationsWithDeviceToken_Foundation_NSData:
+_p_12:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 991
-	.no_dead_strip plt_System_Delegate_Remove_System_Delegate_System_Delegate
-plt_System_Delegate_Remove_System_Delegate_System_Delegate:
-_p_12:
+.word 1027
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidFailToRegisterForRemoteNotificationsWithError_Foundation_NSError
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidFailToRegisterForRemoteNotificationsWithError_Foundation_NSError:
+_p_13:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 1026
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidRegisterForRemoteNotificationsWithDeviceToken_Foundation_NSData
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidRegisterForRemoteNotificationsWithDeviceToken_Foundation_NSData:
-_p_13:
+.word 1032
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidReceiveRemoteNotification_Foundation_NSDictionary
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidReceiveRemoteNotification_Foundation_NSDictionary:
+_p_14:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 1031
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidFailToRegisterForRemoteNotificationsWithError_Foundation_NSError
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidFailToRegisterForRemoteNotificationsWithError_Foundation_NSError:
-_p_14:
+.word 1037
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string__ctor
+plt_System_Collections_Generic_Dictionary_2_string_string__ctor:
+_p_15:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 1036
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidReceiveRemoteNotification_Foundation_NSDictionary
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPush_DidReceiveRemoteNotification_Foundation_NSDictionary:
-_p_15:
+.word 1042
+	.no_dead_strip plt_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_get_Keys
+plt_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_get_Keys:
+_p_16:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 1041
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string__ctor
-plt_System_Collections_Generic_Dictionary_2_string_string__ctor:
-_p_16:
+.word 1053
+	.no_dead_strip plt_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_ObjectForKey_Foundation_NSString
+plt_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_ObjectForKey_Foundation_NSString:
+_p_17:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 1046
-	.no_dead_strip plt_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_get_Keys
-plt_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_get_Keys:
-_p_17:
+.word 1064
+	.no_dead_strip plt_Foundation_NSString_op_Implicit_Foundation_NSString
+plt_Foundation_NSString_op_Implicit_Foundation_NSString:
+_p_18:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 1057
-	.no_dead_strip plt_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_ObjectForKey_Foundation_NSString
-plt_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_ObjectForKey_Foundation_NSString:
-_p_18:
+.word 1075
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string
+plt_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string:
+_p_19:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 1068
-	.no_dead_strip plt_Foundation_NSString_op_Implicit_Foundation_NSString
-plt_Foundation_NSString_op_Implicit_Foundation_NSString:
-_p_19:
+.word 1080
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_Push_PlatformIsEnabledAsync
+plt_Microsoft_Azure_Mobile_Push_Push_PlatformIsEnabledAsync:
+_p_20:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 1079
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string
-plt_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string:
-_p_20:
+.word 1091
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_Push_PlatformSetEnabledAsync_bool
+plt_Microsoft_Azure_Mobile_Push_Push_PlatformSetEnabledAsync_bool:
+_p_21:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 1084
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_Push_PlatformIsEnabledAsync
-plt_Microsoft_Azure_Mobile_Push_Push_PlatformIsEnabledAsync:
-_p_21:
+.word 1093
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_Title
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_Title:
+_p_22:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
 .word 1095
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_Push_PlatformSetEnabledAsync_bool
-plt_Microsoft_Azure_Mobile_Push_Push_PlatformSetEnabledAsync_bool:
-_p_22:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_Message
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_Message:
+_p_23:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 1097
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_Title
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_Title:
-_p_23:
+.word 1100
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_CustomData
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_CustomData:
+_p_24:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 1099
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_Message
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_Message:
-_p_24:
+.word 1105
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_Push_NSDictionaryToDotNet_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString
+plt_Microsoft_Azure_Mobile_Push_Push_NSDictionaryToDotNet_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString:
+_p_25:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 1104
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_CustomData
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification_get_CustomData:
-_p_25:
+.word 1110
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushDelegate__ctor
+plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushDelegate__ctor:
+_p_26:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 1109
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_Push_NSDictionaryToDotNet_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString
-plt_Microsoft_Azure_Mobile_Push_Push_NSDictionaryToDotNet_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString:
-_p_26:
+.word 1112
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_27:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 1114
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushDelegate__ctor
-plt_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushDelegate__ctor:
-_p_27:
+.word 1117
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_28:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 1116
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_28:
+.word 1145
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_29:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 1121
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_29:
+.word 1201
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_30:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 1149
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_30:
+.word 1225
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
+_p_31:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 1205
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_31:
+.word 1249
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_32:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 1229
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
-_p_32:
+.word 1306
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_33:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 1253
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_33:
+.word 1314
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_34:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 1300
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_34:
+.word 1365
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_35:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 1308
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_35:
+.word 1373
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_36:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 1331
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_36:
+.word 1415
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+_p_37:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 1367
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_37:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x16, [x16, #648]
-br x16
-.word 1375
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_38:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x16, [x16, #656]
-br x16
-.word 1426
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_39:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x16, [x16, #664]
-br x16
-.word 1434
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_40:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x16, [x16, #672]
-br x16
-.word 1476
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
-_p_41:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Push_got@PAGEOFF
-ldr x16, [x16, #680]
-br x16
-.word 1500
+.word 1439
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Microsoft_Azure_Mobile_Push_got, 688
+.lcomm mono_aot_Microsoft_Azure_Mobile_Push_got, 648
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -2015,13 +2011,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 44,688,42,34,66,391195135,0,2019
-	.long 128,8,8,10,0,26,3112,1080
-	.long 704,464,0,592,672,512,0,360
+	.long 43,648,38,33,66,391195135,0,1933
+	.long 128,8,8,10,0,25,3008,1064
+	.long 688,456,0,584,656,504,0,360
 	.long 72,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 2,244,124,13,100,69,235,205,77,47,165,143,124,46,116,212
+	.byte 122,211,108,165,186,200,180,22,201,171,217,120,232,131,0,154
 	.globl _mono_aot_module_Microsoft_Azure_Mobile_Push_info
 	.align 3
 _mono_aot_module_Microsoft_Azure_Mobile_Push_info:
@@ -2052,7 +2048,7 @@ Lfde0_start:
 LDIFF_SYM5=Lme_0 - Microsoft_Azure_Mobile_Push_Push__cctor
 	.long LDIFF_SYM5
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde0_end:
 
@@ -2577,7 +2573,7 @@ Lfde5_start:
 LDIFF_SYM84=Lme_5 - Microsoft_Azure_Mobile_Push_Push_add_PlatformPushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 	.long LDIFF_SYM84
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde5_end:
 
@@ -2621,7 +2617,7 @@ Lfde6_start:
 LDIFF_SYM89=Lme_6 - Microsoft_Azure_Mobile_Push_Push_remove_PlatformPushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 	.long LDIFF_SYM89
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde6_end:
 
@@ -3246,7 +3242,7 @@ Lfde13_start:
 LDIFF_SYM177=Lme_d - Microsoft_Azure_Mobile_Push_Push_add_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 	.long LDIFF_SYM177
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde13_end:
 
@@ -3290,7 +3286,7 @@ Lfde14_start:
 LDIFF_SYM182=Lme_e - Microsoft_Azure_Mobile_Push_Push_remove_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 	.long LDIFF_SYM182
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde14_end:
 
@@ -3437,7 +3433,7 @@ Lfde15_start:
 LDIFF_SYM205=Lme_f - Microsoft_Azure_Mobile_Push_Push__Pushm__0_Microsoft_Azure_Mobile_Push_iOS_Bindings_MSPushNotification
 	.long LDIFF_SYM205
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
 Lfde15_end:
 
@@ -3914,7 +3910,7 @@ LDIFF_SYM269=LTDIE_33 - Ldebug_info_start
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_INST__ctor_System_Array"
 
-	.byte 1,239,1
+	.byte 1,215,1
 	.quad System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 	.quad Lme_19
 
@@ -3953,7 +3949,7 @@ Lfde23_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:Dispose"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_Dispose"
 
-	.byte 1,245,1
+	.byte 1,221,1
 	.quad System_Array_InternalEnumerator_1_T_INST_Dispose
 	.quad Lme_1a
 
@@ -3987,7 +3983,7 @@ Lfde24_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:MoveNext"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_MoveNext"
 
-	.byte 1,250,1
+	.byte 1,226,1
 	.quad System_Array_InternalEnumerator_1_T_INST_MoveNext
 	.quad Lme_1b
 
@@ -4026,7 +4022,7 @@ Lfde25_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:get_Current"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_get_Current"
 
-	.byte 1,130,2
+	.byte 1,234,1
 	.quad System_Array_InternalEnumerator_1_T_INST_get_Current
 	.quad Lme_1c
 
@@ -4057,17 +4053,17 @@ Lfde26_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array/InternalEnumerator`1<T_INST>:System.Collections.IEnumerator.get_Current"
-	.asciz "System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current"
+	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_INST>"
+	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST"
 
-	.byte 1,146,2
-	.quad System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+	.byte 1,71
+	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 	.quad Lme_1d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM284=LDIE_I - Ldebug_info_start
+LDIFF_SYM284=LTDIE_32_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM284
 	.byte 2,141,16,0
 
@@ -4079,29 +4075,29 @@ Lfde27_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 
-LDIFF_SYM286=Lme_1d - System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+LDIFF_SYM286=Lme_1d - System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 	.long LDIFF_SYM286
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde27_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_INST>"
-	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST"
+	.asciz "System.Threading.Tasks.Task:FromResult<TResult_BOOL>"
+	.asciz "System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL"
 
-	.byte 1,78
-	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
+	.byte 2,156,43
+	.quad System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
 	.quad Lme_1e
 
 	.byte 2,118,16,3
-	.asciz "this"
+	.asciz "param0"
 
-LDIFF_SYM287=LTDIE_32_REFERENCE - Ldebug_info_start
+LDIFF_SYM287=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM287
 	.byte 2,141,16,0
 
@@ -4113,48 +4109,14 @@ Lfde28_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
+	.quad System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
 
-LDIFF_SYM289=Lme_1e - System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
+LDIFF_SYM289=Lme_1e - System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
 	.long LDIFF_SYM289
-	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
-	.align 3
-Lfde28_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Threading.Tasks.Task:FromResult<TResult_BOOL>"
-	.asciz "System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL"
-
-	.byte 2,156,43
-	.quad System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
-	.quad Lme_1f
-
-	.byte 2,118,16,3
-	.asciz "param0"
-
-LDIFF_SYM290=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM290
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM291=Lfde29_end - Lfde29_start
-	.long LDIFF_SYM291
-Lfde29_start:
-
-	.long 0
-	.align 3
-	.quad System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
-
-LDIFF_SYM292=Lme_1f - System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
-	.long LDIFF_SYM292
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde29_end:
+Lfde28_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4162,43 +4124,43 @@ Lfde29_end:
 	.asciz "System.Array:InternalArray__get_Item<T_INST>"
 	.asciz "System_Array_InternalArray__get_Item_T_INST_int"
 
-	.byte 1,197,1
+	.byte 1,173,1
 	.quad System_Array_InternalArray__get_Item_T_INST_int
-	.quad Lme_20
+	.quad Lme_1f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM293=LTDIE_32_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM293
+LDIFF_SYM290=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM290
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM294=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM294
+LDIFF_SYM291=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM291
 	.byte 2,141,40,11
 	.asciz "value"
 
-LDIFF_SYM295=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM295
+LDIFF_SYM292=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM292
 	.byte 3,141,200,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM296=Lfde30_end - Lfde30_start
-	.long LDIFF_SYM296
-Lfde30_start:
+LDIFF_SYM293=Lfde29_end - Lfde29_start
+	.long LDIFF_SYM293
+Lfde29_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__get_Item_T_INST_int
 
-LDIFF_SYM297=Lme_20 - System_Array_InternalArray__get_Item_T_INST_int
-	.long LDIFF_SYM297
+LDIFF_SYM294=Lme_1f - System_Array_InternalArray__get_Item_T_INST_int
+	.long LDIFF_SYM294
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
 	.align 3
-Lfde30_end:
+Lfde29_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_36:
@@ -4207,74 +4169,74 @@ LTDIE_36:
 	.asciz "System_Threading_Tasks_TaskScheduler"
 
 	.byte 16,16
-LDIFF_SYM298=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM298
+LDIFF_SYM295=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM295
 	.byte 2,35,0,0,7
 	.asciz "System_Threading_Tasks_TaskScheduler"
 
-LDIFF_SYM299=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM299
+LDIFF_SYM296=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM296
 LTDIE_36_POINTER:
 
 	.byte 13
-LDIFF_SYM300=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM300
+LDIFF_SYM297=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM297
 LTDIE_36_REFERENCE:
 
 	.byte 14
-LDIFF_SYM301=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM301
+LDIFF_SYM298=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM298
 LTDIE_39:
 
 	.byte 5
 	.asciz "System_Threading_SynchronizationContext"
 
 	.byte 16,16
-LDIFF_SYM302=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM302
+LDIFF_SYM299=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM299
 	.byte 2,35,0,0,7
 	.asciz "System_Threading_SynchronizationContext"
 
-LDIFF_SYM303=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM303
+LDIFF_SYM300=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM300
 LTDIE_39_POINTER:
 
 	.byte 13
-LDIFF_SYM304=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM304
+LDIFF_SYM301=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM301
 LTDIE_39_REFERENCE:
 
 	.byte 14
-LDIFF_SYM305=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM305
+LDIFF_SYM302=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM302
 LTDIE_42:
 
 	.byte 5
 	.asciz "System_Single"
 
 	.byte 20,16
-LDIFF_SYM306=LTDIE_3 - Ldebug_info_start
-	.long LDIFF_SYM306
+LDIFF_SYM303=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM303
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM307=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM307
+LDIFF_SYM304=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM304
 	.byte 2,35,16,0,7
 	.asciz "System_Single"
 
-LDIFF_SYM308=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM308
+LDIFF_SYM305=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM305
 LTDIE_42_POINTER:
 
 	.byte 13
-LDIFF_SYM309=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM309
+LDIFF_SYM306=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM306
 LTDIE_42_REFERENCE:
 
 	.byte 14
-LDIFF_SYM310=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM310
+LDIFF_SYM307=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM307
 LTDIE_43:
 
 	.byte 17
@@ -4283,211 +4245,211 @@ LTDIE_43:
 	.byte 16,7
 	.asciz "System_Collections_IEqualityComparer"
 
-LDIFF_SYM311=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM311
+LDIFF_SYM308=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM308
 LTDIE_43_POINTER:
 
 	.byte 13
-LDIFF_SYM312=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM312
+LDIFF_SYM309=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM309
 LTDIE_43_REFERENCE:
 
 	.byte 14
-LDIFF_SYM313=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM313
+LDIFF_SYM310=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM310
 LTDIE_41:
 
 	.byte 5
 	.asciz "System_Collections_Hashtable"
 
 	.byte 64,16
-LDIFF_SYM314=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM314
+LDIFF_SYM311=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM311
 	.byte 2,35,0,6
 	.asciz "buckets"
 
-LDIFF_SYM315=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM315
+LDIFF_SYM312=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM312
 	.byte 2,35,16,6
 	.asciz "count"
 
-LDIFF_SYM316=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM316
+LDIFF_SYM313=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM313
 	.byte 2,35,40,6
 	.asciz "occupancy"
 
-LDIFF_SYM317=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM317
+LDIFF_SYM314=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM314
 	.byte 2,35,44,6
 	.asciz "loadsize"
 
-LDIFF_SYM318=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM318
+LDIFF_SYM315=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM315
 	.byte 2,35,48,6
 	.asciz "loadFactor"
 
-LDIFF_SYM319=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM319
+LDIFF_SYM316=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM316
 	.byte 2,35,52,6
 	.asciz "version"
 
-LDIFF_SYM320=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM320
+LDIFF_SYM317=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM317
 	.byte 2,35,56,6
 	.asciz "isWriterInProgress"
 
-LDIFF_SYM321=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM321
+LDIFF_SYM318=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM318
 	.byte 2,35,60,6
 	.asciz "_keycomparer"
 
-LDIFF_SYM322=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM322
+LDIFF_SYM319=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM319
 	.byte 2,35,24,6
 	.asciz "_syncRoot"
 
-LDIFF_SYM323=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM323
+LDIFF_SYM320=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM320
 	.byte 2,35,32,0,7
 	.asciz "System_Collections_Hashtable"
 
-LDIFF_SYM324=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM324
+LDIFF_SYM321=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM321
 LTDIE_41_POINTER:
 
 	.byte 13
-LDIFF_SYM325=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM325
+LDIFF_SYM322=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM322
 LTDIE_41_REFERENCE:
 
 	.byte 14
-LDIFF_SYM326=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM326
+LDIFF_SYM323=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM323
 LTDIE_44:
 
 	.byte 5
 	.asciz "System_Runtime_Remoting_Messaging_CallContextRemotingData"
 
 	.byte 16,16
-LDIFF_SYM327=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM327
+LDIFF_SYM324=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM324
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_Remoting_Messaging_CallContextRemotingData"
 
-LDIFF_SYM328=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM328
+LDIFF_SYM325=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM325
 LTDIE_44_POINTER:
 
 	.byte 13
-LDIFF_SYM329=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM329
+LDIFF_SYM326=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM326
 LTDIE_44_REFERENCE:
 
 	.byte 14
-LDIFF_SYM330=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM330
+LDIFF_SYM327=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM327
 LTDIE_45:
 
 	.byte 5
 	.asciz "System_Runtime_Remoting_Messaging_CallContextSecurityData"
 
 	.byte 16,16
-LDIFF_SYM331=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM331
+LDIFF_SYM328=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM328
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_Remoting_Messaging_CallContextSecurityData"
 
-LDIFF_SYM332=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM332
+LDIFF_SYM329=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM329
 LTDIE_45_POINTER:
 
 	.byte 13
-LDIFF_SYM333=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM333
+LDIFF_SYM330=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM330
 LTDIE_45_REFERENCE:
 
 	.byte 14
-LDIFF_SYM334=LTDIE_45 - Ldebug_info_start
-	.long LDIFF_SYM334
+LDIFF_SYM331=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM331
 LTDIE_40:
 
 	.byte 5
 	.asciz "System_Runtime_Remoting_Messaging_LogicalCallContext"
 
 	.byte 56,16
-LDIFF_SYM335=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM335
+LDIFF_SYM332=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM332
 	.byte 2,35,0,6
 	.asciz "m_Datastore"
 
-LDIFF_SYM336=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM336
+LDIFF_SYM333=LTDIE_41_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM333
 	.byte 2,35,16,6
 	.asciz "m_RemotingData"
 
-LDIFF_SYM337=LTDIE_44_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM337
+LDIFF_SYM334=LTDIE_44_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM334
 	.byte 2,35,24,6
 	.asciz "m_SecurityData"
 
-LDIFF_SYM338=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM338
+LDIFF_SYM335=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM335
 	.byte 2,35,32,6
 	.asciz "m_HostContext"
 
-LDIFF_SYM339=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM339
+LDIFF_SYM336=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM336
 	.byte 2,35,40,6
 	.asciz "m_IsCorrelationMgr"
 
-LDIFF_SYM340=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM340
+LDIFF_SYM337=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM337
 	.byte 2,35,48,0,7
 	.asciz "System_Runtime_Remoting_Messaging_LogicalCallContext"
 
-LDIFF_SYM341=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM341
+LDIFF_SYM338=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM338
 LTDIE_40_POINTER:
 
 	.byte 13
-LDIFF_SYM342=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM342
+LDIFF_SYM339=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM339
 LTDIE_40_REFERENCE:
 
 	.byte 14
-LDIFF_SYM343=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM343
+LDIFF_SYM340=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM340
 LTDIE_46:
 
 	.byte 5
 	.asciz "System_Runtime_Remoting_Messaging_IllogicalCallContext"
 
 	.byte 16,16
-LDIFF_SYM344=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM344
+LDIFF_SYM341=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM341
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_Remoting_Messaging_IllogicalCallContext"
 
-LDIFF_SYM345=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM345
+LDIFF_SYM342=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM342
 LTDIE_46_POINTER:
 
 	.byte 13
-LDIFF_SYM346=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM346
+LDIFF_SYM343=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM343
 LTDIE_46_REFERENCE:
 
 	.byte 14
-LDIFF_SYM347=LTDIE_46 - Ldebug_info_start
-	.long LDIFF_SYM347
+LDIFF_SYM344=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM344
 LTDIE_47:
 
 	.byte 8
 	.asciz "_Flags"
 
 	.byte 4
-LDIFF_SYM348=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM348
+LDIFF_SYM345=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM345
 	.byte 9
 	.asciz "None"
 
@@ -4503,18 +4465,18 @@ LDIFF_SYM348=LDIE_I4 - Ldebug_info_start
 	.byte 4,0,7
 	.asciz "_Flags"
 
-LDIFF_SYM349=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM349
+LDIFF_SYM346=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM346
 LTDIE_47_POINTER:
 
 	.byte 13
-LDIFF_SYM350=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM350
+LDIFF_SYM347=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM347
 LTDIE_47_REFERENCE:
 
 	.byte 14
-LDIFF_SYM351=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM351
+LDIFF_SYM348=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM348
 LTDIE_49:
 
 	.byte 17
@@ -4523,538 +4485,538 @@ LTDIE_49:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IEqualityComparer`1"
 
-LDIFF_SYM352=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM352
+LDIFF_SYM349=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM349
 LTDIE_49_POINTER:
 
 	.byte 13
-LDIFF_SYM353=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM353
+LDIFF_SYM350=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM350
 LTDIE_49_REFERENCE:
 
 	.byte 14
-LDIFF_SYM354=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM354
+LDIFF_SYM351=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM351
 LTDIE_50:
 
 	.byte 5
 	.asciz "_KeyCollection"
 
 	.byte 24,16
-LDIFF_SYM355=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM355
+LDIFF_SYM352=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM352
 	.byte 2,35,0,6
 	.asciz "dictionary"
 
-LDIFF_SYM356=LTDIE_48_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM356
+LDIFF_SYM353=LTDIE_48_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM353
 	.byte 2,35,16,0,7
 	.asciz "_KeyCollection"
 
-LDIFF_SYM357=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM357
+LDIFF_SYM354=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM354
 LTDIE_50_POINTER:
 
 	.byte 13
-LDIFF_SYM358=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM358
+LDIFF_SYM355=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM355
 LTDIE_50_REFERENCE:
 
 	.byte 14
-LDIFF_SYM359=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM359
+LDIFF_SYM356=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM356
 LTDIE_51:
 
 	.byte 5
 	.asciz "_ValueCollection"
 
 	.byte 24,16
-LDIFF_SYM360=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM360
+LDIFF_SYM357=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM357
 	.byte 2,35,0,6
 	.asciz "dictionary"
 
-LDIFF_SYM361=LTDIE_48_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM361
+LDIFF_SYM358=LTDIE_48_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM358
 	.byte 2,35,16,0,7
 	.asciz "_ValueCollection"
 
-LDIFF_SYM362=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM362
+LDIFF_SYM359=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM359
 LTDIE_51_POINTER:
 
 	.byte 13
-LDIFF_SYM363=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM363
+LDIFF_SYM360=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM360
 LTDIE_51_REFERENCE:
 
 	.byte 14
-LDIFF_SYM364=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM364
+LDIFF_SYM361=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM361
 LTDIE_48:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 72,16
-LDIFF_SYM365=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM365
+LDIFF_SYM362=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM362
 	.byte 2,35,0,6
 	.asciz "buckets"
 
-LDIFF_SYM366=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM366
+LDIFF_SYM363=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM363
 	.byte 2,35,16,6
 	.asciz "entries"
 
-LDIFF_SYM367=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM367
+LDIFF_SYM364=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM364
 	.byte 2,35,24,6
 	.asciz "count"
 
-LDIFF_SYM368=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM368
+LDIFF_SYM365=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM365
 	.byte 2,35,56,6
 	.asciz "version"
 
-LDIFF_SYM369=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM369
+LDIFF_SYM366=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM366
 	.byte 2,35,60,6
 	.asciz "freeList"
 
-LDIFF_SYM370=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM370
+LDIFF_SYM367=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM367
 	.byte 2,35,64,6
 	.asciz "freeCount"
 
-LDIFF_SYM371=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM371
+LDIFF_SYM368=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM368
 	.byte 2,35,68,6
 	.asciz "comparer"
 
-LDIFF_SYM372=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM372
+LDIFF_SYM369=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM369
 	.byte 2,35,32,6
 	.asciz "keys"
 
-LDIFF_SYM373=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM373
+LDIFF_SYM370=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM370
 	.byte 2,35,40,6
 	.asciz "values"
 
-LDIFF_SYM374=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM374
+LDIFF_SYM371=LTDIE_51_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM371
 	.byte 2,35,48,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM375=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM375
+LDIFF_SYM372=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM372
 LTDIE_48_POINTER:
 
 	.byte 13
-LDIFF_SYM376=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM376
+LDIFF_SYM373=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM373
 LTDIE_48_REFERENCE:
 
 	.byte 14
-LDIFF_SYM377=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM377
+LDIFF_SYM374=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM374
 LTDIE_52:
 
 	.byte 5
 	.asciz "System_Collections_Generic_List`1"
 
 	.byte 32,16
-LDIFF_SYM378=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM378
+LDIFF_SYM375=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM375
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM379=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM379
+LDIFF_SYM376=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM376
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM380=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM380
+LDIFF_SYM377=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM377
 	.byte 2,35,24,6
 	.asciz "_version"
 
-LDIFF_SYM381=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM381
+LDIFF_SYM378=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM378
 	.byte 2,35,28,0,7
 	.asciz "System_Collections_Generic_List`1"
 
-LDIFF_SYM382=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM382
+LDIFF_SYM379=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM379
 LTDIE_52_POINTER:
 
 	.byte 13
-LDIFF_SYM383=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM383
+LDIFF_SYM380=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM380
 LTDIE_52_REFERENCE:
 
 	.byte 14
-LDIFF_SYM384=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM384
+LDIFF_SYM381=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM381
 LTDIE_38:
 
 	.byte 5
 	.asciz "System_Threading_ExecutionContext"
 
 	.byte 72,16
-LDIFF_SYM385=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM385
+LDIFF_SYM382=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM382
 	.byte 2,35,0,6
 	.asciz "_syncContext"
 
-LDIFF_SYM386=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM386
+LDIFF_SYM383=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM383
 	.byte 2,35,16,6
 	.asciz "_syncContextNoFlow"
 
-LDIFF_SYM387=LTDIE_39_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM387
+LDIFF_SYM384=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM384
 	.byte 2,35,24,6
 	.asciz "_logicalCallContext"
 
-LDIFF_SYM388=LTDIE_40_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM388
+LDIFF_SYM385=LTDIE_40_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM385
 	.byte 2,35,32,6
 	.asciz "_illogicalCallContext"
 
-LDIFF_SYM389=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM389
+LDIFF_SYM386=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM386
 	.byte 2,35,40,6
 	.asciz "_flags"
 
-LDIFF_SYM390=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM390
+LDIFF_SYM387=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM387
 	.byte 2,35,64,6
 	.asciz "_localValues"
 
-LDIFF_SYM391=LTDIE_48_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM391
+LDIFF_SYM388=LTDIE_48_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM388
 	.byte 2,35,48,6
 	.asciz "_localChangeNotifications"
 
-LDIFF_SYM392=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM392
+LDIFF_SYM389=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM389
 	.byte 2,35,56,0,7
 	.asciz "System_Threading_ExecutionContext"
 
-LDIFF_SYM393=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM393
+LDIFF_SYM390=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM390
 LTDIE_38_POINTER:
 
 	.byte 13
-LDIFF_SYM394=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM394
+LDIFF_SYM391=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM391
 LTDIE_38_REFERENCE:
 
 	.byte 14
-LDIFF_SYM395=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM395
+LDIFF_SYM392=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM392
 LTDIE_57:
 
 	.byte 5
 	.asciz "System_MarshalByRefObject"
 
 	.byte 24,16
-LDIFF_SYM396=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM396
+LDIFF_SYM393=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM393
 	.byte 2,35,0,6
 	.asciz "_identity"
 
-LDIFF_SYM397=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM397
+LDIFF_SYM394=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM394
 	.byte 2,35,16,0,7
 	.asciz "System_MarshalByRefObject"
 
-LDIFF_SYM398=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM398
+LDIFF_SYM395=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM395
 LTDIE_57_POINTER:
 
 	.byte 13
-LDIFF_SYM399=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM399
+LDIFF_SYM396=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM396
 LTDIE_57_REFERENCE:
 
 	.byte 14
-LDIFF_SYM400=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM400
+LDIFF_SYM397=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM397
 LTDIE_61:
 
 	.byte 5
 	.asciz "System_Runtime_ConstrainedExecution_CriticalFinalizerObject"
 
 	.byte 16,16
-LDIFF_SYM401=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM401
+LDIFF_SYM398=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM398
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_ConstrainedExecution_CriticalFinalizerObject"
 
-LDIFF_SYM402=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM402
+LDIFF_SYM399=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM399
 LTDIE_61_POINTER:
 
 	.byte 13
-LDIFF_SYM403=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM403
+LDIFF_SYM400=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM400
 LTDIE_61_REFERENCE:
 
 	.byte 14
-LDIFF_SYM404=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM404
+LDIFF_SYM401=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM401
 LTDIE_60:
 
 	.byte 5
 	.asciz "System_Runtime_InteropServices_SafeHandle"
 
 	.byte 32,16
-LDIFF_SYM405=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM405
+LDIFF_SYM402=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM402
 	.byte 2,35,0,6
 	.asciz "handle"
 
-LDIFF_SYM406=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM406
+LDIFF_SYM403=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM403
 	.byte 2,35,16,6
 	.asciz "_state"
 
-LDIFF_SYM407=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM407
+LDIFF_SYM404=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM404
 	.byte 2,35,24,6
 	.asciz "_ownsHandle"
 
-LDIFF_SYM408=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM408
+LDIFF_SYM405=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM405
 	.byte 2,35,28,6
 	.asciz "_fullyInitialized"
 
-LDIFF_SYM409=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM409
+LDIFF_SYM406=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM406
 	.byte 2,35,29,0,7
 	.asciz "System_Runtime_InteropServices_SafeHandle"
 
-LDIFF_SYM410=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM410
+LDIFF_SYM407=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM407
 LTDIE_60_POINTER:
 
 	.byte 13
-LDIFF_SYM411=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM411
+LDIFF_SYM408=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM408
 LTDIE_60_REFERENCE:
 
 	.byte 14
-LDIFF_SYM412=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM412
+LDIFF_SYM409=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM409
 LTDIE_59:
 
 	.byte 5
 	.asciz "Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid"
 
 	.byte 32,16
-LDIFF_SYM413=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM413
+LDIFF_SYM410=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM410
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid"
 
-LDIFF_SYM414=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM414
+LDIFF_SYM411=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM411
 LTDIE_59_POINTER:
 
 	.byte 13
-LDIFF_SYM415=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM415
+LDIFF_SYM412=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM412
 LTDIE_59_REFERENCE:
 
 	.byte 14
-LDIFF_SYM416=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM416
+LDIFF_SYM413=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM413
 LTDIE_58:
 
 	.byte 5
 	.asciz "Microsoft_Win32_SafeHandles_SafeWaitHandle"
 
 	.byte 32,16
-LDIFF_SYM417=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM417
+LDIFF_SYM414=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM414
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Win32_SafeHandles_SafeWaitHandle"
 
-LDIFF_SYM418=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM418
+LDIFF_SYM415=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM415
 LTDIE_58_POINTER:
 
 	.byte 13
-LDIFF_SYM419=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM419
+LDIFF_SYM416=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM416
 LTDIE_58_REFERENCE:
 
 	.byte 14
-LDIFF_SYM420=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM420
+LDIFF_SYM417=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM417
 LTDIE_56:
 
 	.byte 5
 	.asciz "System_Threading_WaitHandle"
 
 	.byte 48,16
-LDIFF_SYM421=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM421
+LDIFF_SYM418=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM418
 	.byte 2,35,0,6
 	.asciz "waitHandle"
 
-LDIFF_SYM422=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM422
+LDIFF_SYM419=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM419
 	.byte 2,35,24,6
 	.asciz "safeWaitHandle"
 
-LDIFF_SYM423=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM423
+LDIFF_SYM420=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM420
 	.byte 2,35,32,6
 	.asciz "hasThreadAffinity"
 
-LDIFF_SYM424=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM424
+LDIFF_SYM421=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM421
 	.byte 2,35,40,0,7
 	.asciz "System_Threading_WaitHandle"
 
-LDIFF_SYM425=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM425
+LDIFF_SYM422=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM422
 LTDIE_56_POINTER:
 
 	.byte 13
-LDIFF_SYM426=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM426
+LDIFF_SYM423=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM423
 LTDIE_56_REFERENCE:
 
 	.byte 14
-LDIFF_SYM427=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM427
+LDIFF_SYM424=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM424
 LTDIE_55:
 
 	.byte 5
 	.asciz "System_Threading_EventWaitHandle"
 
 	.byte 48,16
-LDIFF_SYM428=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM428
+LDIFF_SYM425=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM425
 	.byte 2,35,0,0,7
 	.asciz "System_Threading_EventWaitHandle"
 
-LDIFF_SYM429=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM429
+LDIFF_SYM426=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM426
 LTDIE_55_POINTER:
 
 	.byte 13
-LDIFF_SYM430=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM430
+LDIFF_SYM427=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM427
 LTDIE_55_REFERENCE:
 
 	.byte 14
-LDIFF_SYM431=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM431
+LDIFF_SYM428=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM428
 LTDIE_54:
 
 	.byte 5
 	.asciz "System_Threading_ManualResetEvent"
 
 	.byte 48,16
-LDIFF_SYM432=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM432
+LDIFF_SYM429=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM429
 	.byte 2,35,0,0,7
 	.asciz "System_Threading_ManualResetEvent"
 
-LDIFF_SYM433=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM433
+LDIFF_SYM430=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM430
 LTDIE_54_POINTER:
 
 	.byte 13
-LDIFF_SYM434=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM434
+LDIFF_SYM431=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM431
 LTDIE_54_REFERENCE:
 
 	.byte 14
-LDIFF_SYM435=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM435
+LDIFF_SYM432=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM432
 LTDIE_53:
 
 	.byte 5
 	.asciz "System_Threading_ManualResetEventSlim"
 
 	.byte 40,16
-LDIFF_SYM436=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM436
+LDIFF_SYM433=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM433
 	.byte 2,35,0,6
 	.asciz "m_lock"
 
-LDIFF_SYM437=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM437
+LDIFF_SYM434=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM434
 	.byte 2,35,16,6
 	.asciz "m_eventObj"
 
-LDIFF_SYM438=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM438
+LDIFF_SYM435=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM435
 	.byte 2,35,24,6
 	.asciz "m_combinedState"
 
-LDIFF_SYM439=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM439
+LDIFF_SYM436=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM436
 	.byte 2,35,32,0,7
 	.asciz "System_Threading_ManualResetEventSlim"
 
-LDIFF_SYM440=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM440
+LDIFF_SYM437=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM437
 LTDIE_53_POINTER:
 
 	.byte 13
-LDIFF_SYM441=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM441
+LDIFF_SYM438=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM438
 LTDIE_53_REFERENCE:
 
 	.byte 14
-LDIFF_SYM442=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM442
+LDIFF_SYM439=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM439
 LTDIE_63:
 
 	.byte 5
 	.asciz "System_Collections_Generic_List`1"
 
 	.byte 32,16
-LDIFF_SYM443=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM443
+LDIFF_SYM440=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM440
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM444=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM444
+LDIFF_SYM441=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM441
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM445=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM445
+LDIFF_SYM442=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM442
 	.byte 2,35,24,6
 	.asciz "_version"
 
-LDIFF_SYM446=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM446
+LDIFF_SYM443=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM443
 	.byte 2,35,28,0,7
 	.asciz "System_Collections_Generic_List`1"
 
-LDIFF_SYM447=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM447
+LDIFF_SYM444=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM444
 LTDIE_63_POINTER:
 
 	.byte 13
-LDIFF_SYM448=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM448
+LDIFF_SYM445=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM445
 LTDIE_63_REFERENCE:
 
 	.byte 14
-LDIFF_SYM449=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM449
+LDIFF_SYM446=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM446
 LTDIE_66:
 
 	.byte 17
@@ -5063,18 +5025,18 @@ LTDIE_66:
 	.byte 16,7
 	.asciz "System_Collections_IDictionary"
 
-LDIFF_SYM450=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM450
+LDIFF_SYM447=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM447
 LTDIE_66_POINTER:
 
 	.byte 13
-LDIFF_SYM451=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM451
+LDIFF_SYM448=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM448
 LTDIE_66_REFERENCE:
 
 	.byte 14
-LDIFF_SYM452=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM452
+LDIFF_SYM449=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM449
 LTDIE_68:
 
 	.byte 17
@@ -5083,142 +5045,142 @@ LTDIE_68:
 	.byte 16,7
 	.asciz "System_Collections_Generic_IList`1"
 
-LDIFF_SYM453=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM453
+LDIFF_SYM450=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM450
 LTDIE_68_POINTER:
 
 	.byte 13
-LDIFF_SYM454=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM454
+LDIFF_SYM451=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM451
 LTDIE_68_REFERENCE:
 
 	.byte 14
-LDIFF_SYM455=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM455
+LDIFF_SYM452=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM452
 LTDIE_71:
 
 	.byte 5
 	.asciz "_KeyCollection"
 
 	.byte 24,16
-LDIFF_SYM456=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM456
+LDIFF_SYM453=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM453
 	.byte 2,35,0,6
 	.asciz "dictionary"
 
-LDIFF_SYM457=LTDIE_70_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM457
+LDIFF_SYM454=LTDIE_70_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM454
 	.byte 2,35,16,0,7
 	.asciz "_KeyCollection"
 
-LDIFF_SYM458=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM458
+LDIFF_SYM455=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM455
 LTDIE_71_POINTER:
 
 	.byte 13
-LDIFF_SYM459=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM459
+LDIFF_SYM456=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM456
 LTDIE_71_REFERENCE:
 
 	.byte 14
-LDIFF_SYM460=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM460
+LDIFF_SYM457=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM457
 LTDIE_72:
 
 	.byte 5
 	.asciz "_ValueCollection"
 
 	.byte 24,16
-LDIFF_SYM461=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM461
+LDIFF_SYM458=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM458
 	.byte 2,35,0,6
 	.asciz "dictionary"
 
-LDIFF_SYM462=LTDIE_70_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM462
+LDIFF_SYM459=LTDIE_70_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM459
 	.byte 2,35,16,0,7
 	.asciz "_ValueCollection"
 
-LDIFF_SYM463=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM463
+LDIFF_SYM460=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM460
 LTDIE_72_POINTER:
 
 	.byte 13
-LDIFF_SYM464=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM464
+LDIFF_SYM461=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM461
 LTDIE_72_REFERENCE:
 
 	.byte 14
-LDIFF_SYM465=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM465
+LDIFF_SYM462=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM462
 LTDIE_70:
 
 	.byte 5
 	.asciz "System_Collections_Generic_Dictionary`2"
 
 	.byte 72,16
-LDIFF_SYM466=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM466
+LDIFF_SYM463=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM463
 	.byte 2,35,0,6
 	.asciz "buckets"
 
-LDIFF_SYM467=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM467
+LDIFF_SYM464=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM464
 	.byte 2,35,16,6
 	.asciz "entries"
 
-LDIFF_SYM468=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM468
+LDIFF_SYM465=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM465
 	.byte 2,35,24,6
 	.asciz "count"
 
-LDIFF_SYM469=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM469
+LDIFF_SYM466=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM466
 	.byte 2,35,56,6
 	.asciz "version"
 
-LDIFF_SYM470=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM470
+LDIFF_SYM467=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM467
 	.byte 2,35,60,6
 	.asciz "freeList"
 
-LDIFF_SYM471=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM471
+LDIFF_SYM468=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM468
 	.byte 2,35,64,6
 	.asciz "freeCount"
 
-LDIFF_SYM472=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM472
+LDIFF_SYM469=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM469
 	.byte 2,35,68,6
 	.asciz "comparer"
 
-LDIFF_SYM473=LTDIE_20_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM473
+LDIFF_SYM470=LTDIE_20_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM470
 	.byte 2,35,32,6
 	.asciz "keys"
 
-LDIFF_SYM474=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM474
+LDIFF_SYM471=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM471
 	.byte 2,35,40,6
 	.asciz "values"
 
-LDIFF_SYM475=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM475
+LDIFF_SYM472=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM472
 	.byte 2,35,48,0,7
 	.asciz "System_Collections_Generic_Dictionary`2"
 
-LDIFF_SYM476=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM476
+LDIFF_SYM473=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM473
 LTDIE_70_POINTER:
 
 	.byte 13
-LDIFF_SYM477=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM477
+LDIFF_SYM474=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM474
 LTDIE_70_REFERENCE:
 
 	.byte 14
-LDIFF_SYM478=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM478
+LDIFF_SYM475=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM475
 LTDIE_73:
 
 	.byte 17
@@ -5227,785 +5189,785 @@ LTDIE_73:
 	.byte 16,7
 	.asciz "System_Runtime_Serialization_IFormatterConverter"
 
-LDIFF_SYM479=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM479
+LDIFF_SYM476=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM476
 LTDIE_73_POINTER:
 
 	.byte 13
-LDIFF_SYM480=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM480
+LDIFF_SYM477=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM477
 LTDIE_73_REFERENCE:
 
 	.byte 14
-LDIFF_SYM481=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM481
+LDIFF_SYM478=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM478
 LTDIE_69:
 
 	.byte 5
 	.asciz "System_Runtime_Serialization_SerializationInfo"
 
 	.byte 88,16
-LDIFF_SYM482=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM482
+LDIFF_SYM479=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM479
 	.byte 2,35,0,6
 	.asciz "m_members"
 
-LDIFF_SYM483=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM483
+LDIFF_SYM480=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM480
 	.byte 2,35,16,6
 	.asciz "m_data"
 
-LDIFF_SYM484=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM484
+LDIFF_SYM481=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM481
 	.byte 2,35,24,6
 	.asciz "m_types"
 
-LDIFF_SYM485=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM485
+LDIFF_SYM482=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM482
 	.byte 2,35,32,6
 	.asciz "m_nameToIndex"
 
-LDIFF_SYM486=LTDIE_70_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM486
+LDIFF_SYM483=LTDIE_70_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM483
 	.byte 2,35,40,6
 	.asciz "m_currMember"
 
-LDIFF_SYM487=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM487
+LDIFF_SYM484=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM484
 	.byte 2,35,80,6
 	.asciz "m_converter"
 
-LDIFF_SYM488=LTDIE_73_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM488
+LDIFF_SYM485=LTDIE_73_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM485
 	.byte 2,35,48,6
 	.asciz "m_fullTypeName"
 
-LDIFF_SYM489=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM489
+LDIFF_SYM486=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM486
 	.byte 2,35,56,6
 	.asciz "m_assemName"
 
-LDIFF_SYM490=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM490
+LDIFF_SYM487=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM487
 	.byte 2,35,64,6
 	.asciz "objectType"
 
-LDIFF_SYM491=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM491
+LDIFF_SYM488=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM488
 	.byte 2,35,72,6
 	.asciz "isFullTypeNameSetExplicit"
 
-LDIFF_SYM492=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM492
+LDIFF_SYM489=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM489
 	.byte 2,35,84,6
 	.asciz "isAssemblyNameSetExplicit"
 
-LDIFF_SYM493=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM493
+LDIFF_SYM490=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM490
 	.byte 2,35,85,6
 	.asciz "requireSameTokenInPartialTrust"
 
-LDIFF_SYM494=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM494
+LDIFF_SYM491=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM491
 	.byte 2,35,86,0,7
 	.asciz "System_Runtime_Serialization_SerializationInfo"
 
-LDIFF_SYM495=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM495
+LDIFF_SYM492=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM492
 LTDIE_69_POINTER:
 
 	.byte 13
-LDIFF_SYM496=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM496
+LDIFF_SYM493=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM493
 LTDIE_69_REFERENCE:
 
 	.byte 14
-LDIFF_SYM497=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM497
+LDIFF_SYM494=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM494
 LTDIE_75:
 
 	.byte 5
 	.asciz "System_Reflection_TypeInfo"
 
 	.byte 24,16
-LDIFF_SYM498=LTDIE_11 - Ldebug_info_start
-	.long LDIFF_SYM498
+LDIFF_SYM495=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM495
 	.byte 2,35,0,0,7
 	.asciz "System_Reflection_TypeInfo"
 
-LDIFF_SYM499=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM499
+LDIFF_SYM496=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM496
 LTDIE_75_POINTER:
 
 	.byte 13
-LDIFF_SYM500=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM500
+LDIFF_SYM497=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM497
 LTDIE_75_REFERENCE:
 
 	.byte 14
-LDIFF_SYM501=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM501
+LDIFF_SYM498=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM498
 LTDIE_79:
 
 	.byte 5
 	.asciz "System_Reflection_ConstructorInfo"
 
 	.byte 16,16
-LDIFF_SYM502=LTDIE_8 - Ldebug_info_start
-	.long LDIFF_SYM502
+LDIFF_SYM499=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM499
 	.byte 2,35,0,0,7
 	.asciz "System_Reflection_ConstructorInfo"
 
-LDIFF_SYM503=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM503
+LDIFF_SYM500=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM500
 LTDIE_79_POINTER:
 
 	.byte 13
-LDIFF_SYM504=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM504
+LDIFF_SYM501=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM501
 LTDIE_79_REFERENCE:
 
 	.byte 14
-LDIFF_SYM505=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM505
+LDIFF_SYM502=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM502
 LTDIE_78:
 
 	.byte 5
 	.asciz "System_Reflection_RuntimeConstructorInfo"
 
 	.byte 16,16
-LDIFF_SYM506=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM506
+LDIFF_SYM503=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM503
 	.byte 2,35,0,0,7
 	.asciz "System_Reflection_RuntimeConstructorInfo"
 
-LDIFF_SYM507=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM507
+LDIFF_SYM504=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM504
 LTDIE_78_POINTER:
 
 	.byte 13
-LDIFF_SYM508=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM508
+LDIFF_SYM505=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM505
 LTDIE_78_REFERENCE:
 
 	.byte 14
-LDIFF_SYM509=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM509
+LDIFF_SYM506=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM506
 LTDIE_77:
 
 	.byte 5
 	.asciz "System_Reflection_MonoCMethod"
 
 	.byte 40,16
-LDIFF_SYM510=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM510
+LDIFF_SYM507=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM507
 	.byte 2,35,0,6
 	.asciz "mhandle"
 
-LDIFF_SYM511=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM511
+LDIFF_SYM508=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM508
 	.byte 2,35,16,6
 	.asciz "name"
 
-LDIFF_SYM512=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM512
+LDIFF_SYM509=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM509
 	.byte 2,35,24,6
 	.asciz "reftype"
 
-LDIFF_SYM513=LTDIE_11_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM513
+LDIFF_SYM510=LTDIE_11_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM510
 	.byte 2,35,32,0,7
 	.asciz "System_Reflection_MonoCMethod"
 
-LDIFF_SYM514=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM514
+LDIFF_SYM511=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM511
 LTDIE_77_POINTER:
 
 	.byte 13
-LDIFF_SYM515=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM515
+LDIFF_SYM512=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM512
 LTDIE_77_REFERENCE:
 
 	.byte 14
-LDIFF_SYM516=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM516
+LDIFF_SYM513=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM513
 LTDIE_76:
 
 	.byte 5
 	.asciz "System_MonoTypeInfo"
 
 	.byte 32,16
-LDIFF_SYM517=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM517
+LDIFF_SYM514=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM514
 	.byte 2,35,0,6
 	.asciz "full_name"
 
-LDIFF_SYM518=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM518
+LDIFF_SYM515=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM515
 	.byte 2,35,16,6
 	.asciz "default_ctor"
 
-LDIFF_SYM519=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM519
+LDIFF_SYM516=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM516
 	.byte 2,35,24,0,7
 	.asciz "System_MonoTypeInfo"
 
-LDIFF_SYM520=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM520
+LDIFF_SYM517=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM517
 LTDIE_76_POINTER:
 
 	.byte 13
-LDIFF_SYM521=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM521
+LDIFF_SYM518=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM518
 LTDIE_76_REFERENCE:
 
 	.byte 14
-LDIFF_SYM522=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM522
+LDIFF_SYM519=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM519
 LTDIE_74:
 
 	.byte 5
 	.asciz "System_RuntimeType"
 
 	.byte 48,16
-LDIFF_SYM523=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM523
+LDIFF_SYM520=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM520
 	.byte 2,35,0,6
 	.asciz "type_info"
 
-LDIFF_SYM524=LTDIE_76_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM524
+LDIFF_SYM521=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM521
 	.byte 2,35,24,6
 	.asciz "GenericCache"
 
-LDIFF_SYM525=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM525
+LDIFF_SYM522=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM522
 	.byte 2,35,32,6
 	.asciz "m_serializationCtor"
 
-LDIFF_SYM526=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM526
+LDIFF_SYM523=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM523
 	.byte 2,35,40,0,7
 	.asciz "System_RuntimeType"
 
-LDIFF_SYM527=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM527
+LDIFF_SYM524=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM524
 LTDIE_74_POINTER:
 
 	.byte 13
-LDIFF_SYM528=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM528
+LDIFF_SYM525=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM525
 LTDIE_74_REFERENCE:
 
 	.byte 14
-LDIFF_SYM529=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM529
+LDIFF_SYM526=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM526
 LTDIE_80:
 
 	.byte 5
 	.asciz "System_EventHandler`1"
 
 	.byte 112,16
-LDIFF_SYM530=LTDIE_5 - Ldebug_info_start
-	.long LDIFF_SYM530
+LDIFF_SYM527=LTDIE_5 - Ldebug_info_start
+	.long LDIFF_SYM527
 	.byte 2,35,0,0,7
 	.asciz "System_EventHandler`1"
 
-LDIFF_SYM531=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM531
+LDIFF_SYM528=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM528
 LTDIE_80_POINTER:
 
 	.byte 13
-LDIFF_SYM532=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM532
+LDIFF_SYM529=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM529
 LTDIE_80_REFERENCE:
 
 	.byte 14
-LDIFF_SYM533=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM533
+LDIFF_SYM530=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM530
 LTDIE_67:
 
 	.byte 5
 	.asciz "System_Runtime_Serialization_SafeSerializationManager"
 
 	.byte 56,16
-LDIFF_SYM534=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM534
+LDIFF_SYM531=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM531
 	.byte 2,35,0,6
 	.asciz "m_serializedStates"
 
-LDIFF_SYM535=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM535
+LDIFF_SYM532=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM532
 	.byte 2,35,16,6
 	.asciz "m_savedSerializationInfo"
 
-LDIFF_SYM536=LTDIE_69_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM536
+LDIFF_SYM533=LTDIE_69_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM533
 	.byte 2,35,24,6
 	.asciz "m_realObject"
 
-LDIFF_SYM537=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM537
+LDIFF_SYM534=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM534
 	.byte 2,35,32,6
 	.asciz "m_realType"
 
-LDIFF_SYM538=LTDIE_74_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM538
+LDIFF_SYM535=LTDIE_74_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM535
 	.byte 2,35,40,6
 	.asciz "SerializeObjectState"
 
-LDIFF_SYM539=LTDIE_80_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM539
+LDIFF_SYM536=LTDIE_80_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM536
 	.byte 2,35,48,0,7
 	.asciz "System_Runtime_Serialization_SafeSerializationManager"
 
-LDIFF_SYM540=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM540
+LDIFF_SYM537=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM537
 LTDIE_67_POINTER:
 
 	.byte 13
-LDIFF_SYM541=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM541
+LDIFF_SYM538=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM538
 LTDIE_67_REFERENCE:
 
 	.byte 14
-LDIFF_SYM542=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM542
+LDIFF_SYM539=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM539
 LTDIE_65:
 
 	.byte 5
 	.asciz "System_Exception"
 
 	.byte 136,1,16
-LDIFF_SYM543=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM543
+LDIFF_SYM540=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM540
 	.byte 2,35,0,6
 	.asciz "_className"
 
-LDIFF_SYM544=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM544
+LDIFF_SYM541=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM541
 	.byte 2,35,16,6
 	.asciz "_message"
 
-LDIFF_SYM545=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM545
+LDIFF_SYM542=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM542
 	.byte 2,35,24,6
 	.asciz "_data"
 
-LDIFF_SYM546=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM546
+LDIFF_SYM543=LTDIE_66_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM543
 	.byte 2,35,32,6
 	.asciz "_innerException"
 
-LDIFF_SYM547=LTDIE_65_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM547
+LDIFF_SYM544=LTDIE_65_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM544
 	.byte 2,35,40,6
 	.asciz "_helpURL"
 
-LDIFF_SYM548=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM548
+LDIFF_SYM545=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM545
 	.byte 2,35,48,6
 	.asciz "_stackTrace"
 
-LDIFF_SYM549=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM549
+LDIFF_SYM546=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM546
 	.byte 2,35,56,6
 	.asciz "_stackTraceString"
 
-LDIFF_SYM550=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM550
+LDIFF_SYM547=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM547
 	.byte 2,35,64,6
 	.asciz "_remoteStackTraceString"
 
-LDIFF_SYM551=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM551
+LDIFF_SYM548=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM548
 	.byte 2,35,72,6
 	.asciz "_remoteStackIndex"
 
-LDIFF_SYM552=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM552
+LDIFF_SYM549=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM549
 	.byte 2,35,80,6
 	.asciz "_dynamicMethods"
 
-LDIFF_SYM553=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM553
+LDIFF_SYM550=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM550
 	.byte 2,35,88,6
 	.asciz "_HResult"
 
-LDIFF_SYM554=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM554
+LDIFF_SYM551=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM551
 	.byte 2,35,96,6
 	.asciz "_source"
 
-LDIFF_SYM555=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM555
+LDIFF_SYM552=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM552
 	.byte 2,35,104,6
 	.asciz "_safeSerializationManager"
 
-LDIFF_SYM556=LTDIE_67_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM556
+LDIFF_SYM553=LTDIE_67_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM553
 	.byte 2,35,112,6
 	.asciz "captured_traces"
 
-LDIFF_SYM557=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM557
+LDIFF_SYM554=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM554
 	.byte 2,35,120,6
 	.asciz "native_trace_ips"
 
-LDIFF_SYM558=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM558
+LDIFF_SYM555=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM555
 	.byte 3,35,128,1,0,7
 	.asciz "System_Exception"
 
-LDIFF_SYM559=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM559
+LDIFF_SYM556=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM556
 LTDIE_65_POINTER:
 
 	.byte 13
-LDIFF_SYM560=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM560
+LDIFF_SYM557=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM557
 LTDIE_65_REFERENCE:
 
 	.byte 14
-LDIFF_SYM561=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM561
+LDIFF_SYM558=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM558
 LTDIE_64:
 
 	.byte 5
 	.asciz "System_Runtime_ExceptionServices_ExceptionDispatchInfo"
 
 	.byte 32,16
-LDIFF_SYM562=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM562
+LDIFF_SYM559=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM559
 	.byte 2,35,0,6
 	.asciz "m_Exception"
 
-LDIFF_SYM563=LTDIE_65_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM563
+LDIFF_SYM560=LTDIE_65_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM560
 	.byte 2,35,16,6
 	.asciz "m_stackTrace"
 
-LDIFF_SYM564=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM564
+LDIFF_SYM561=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM561
 	.byte 2,35,24,0,7
 	.asciz "System_Runtime_ExceptionServices_ExceptionDispatchInfo"
 
-LDIFF_SYM565=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM565
+LDIFF_SYM562=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM562
 LTDIE_64_POINTER:
 
 	.byte 13
-LDIFF_SYM566=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM566
+LDIFF_SYM563=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM563
 LTDIE_64_REFERENCE:
 
 	.byte 14
-LDIFF_SYM567=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM567
+LDIFF_SYM564=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM564
 LTDIE_62:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_TaskExceptionHolder"
 
 	.byte 48,16
-LDIFF_SYM568=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM568
+LDIFF_SYM565=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM565
 	.byte 2,35,0,6
 	.asciz "m_task"
 
-LDIFF_SYM569=LTDIE_35_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM569
+LDIFF_SYM566=LTDIE_35_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM566
 	.byte 2,35,16,6
 	.asciz "m_faultExceptions"
 
-LDIFF_SYM570=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM570
+LDIFF_SYM567=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM567
 	.byte 2,35,24,6
 	.asciz "m_cancellationException"
 
-LDIFF_SYM571=LTDIE_64_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM571
+LDIFF_SYM568=LTDIE_64_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM568
 	.byte 2,35,32,6
 	.asciz "m_isHandled"
 
-LDIFF_SYM572=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM572
+LDIFF_SYM569=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM569
 	.byte 2,35,40,0,7
 	.asciz "System_Threading_Tasks_TaskExceptionHolder"
 
-LDIFF_SYM573=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM573
+LDIFF_SYM570=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM570
 LTDIE_62_POINTER:
 
 	.byte 13
-LDIFF_SYM574=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM574
+LDIFF_SYM571=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM571
 LTDIE_62_REFERENCE:
 
 	.byte 14
-LDIFF_SYM575=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM575
+LDIFF_SYM572=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM572
 LTDIE_81:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Shared`1"
 
 	.byte 40,16
-LDIFF_SYM576=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM576
+LDIFF_SYM573=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM573
 	.byte 2,35,0,6
 	.asciz "Value"
 
-LDIFF_SYM577=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM577
+LDIFF_SYM574=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM574
 	.byte 2,35,16,0,7
 	.asciz "System_Threading_Tasks_Shared`1"
 
-LDIFF_SYM578=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM578
+LDIFF_SYM575=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM575
 LTDIE_81_POINTER:
 
 	.byte 13
-LDIFF_SYM579=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM579
+LDIFF_SYM576=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM576
 LTDIE_81_REFERENCE:
 
 	.byte 14
-LDIFF_SYM580=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM580
+LDIFF_SYM577=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM577
 LTDIE_82:
 
 	.byte 5
 	.asciz "System_Collections_Generic_List`1"
 
 	.byte 32,16
-LDIFF_SYM581=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM581
+LDIFF_SYM578=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM578
 	.byte 2,35,0,6
 	.asciz "_items"
 
-LDIFF_SYM582=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM582
+LDIFF_SYM579=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM579
 	.byte 2,35,16,6
 	.asciz "_size"
 
-LDIFF_SYM583=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM583
+LDIFF_SYM580=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM580
 	.byte 2,35,24,6
 	.asciz "_version"
 
-LDIFF_SYM584=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM584
+LDIFF_SYM581=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM581
 	.byte 2,35,28,0,7
 	.asciz "System_Collections_Generic_List`1"
 
-LDIFF_SYM585=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM585
+LDIFF_SYM582=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM582
 LTDIE_82_POINTER:
 
 	.byte 13
-LDIFF_SYM586=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM586
+LDIFF_SYM583=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM583
 LTDIE_82_REFERENCE:
 
 	.byte 14
-LDIFF_SYM587=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM587
+LDIFF_SYM584=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM584
 LTDIE_37:
 
 	.byte 5
 	.asciz "_ContingentProperties"
 
 	.byte 72,16
-LDIFF_SYM588=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM588
+LDIFF_SYM585=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM585
 	.byte 2,35,0,6
 	.asciz "m_capturedContext"
 
-LDIFF_SYM589=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM589
+LDIFF_SYM586=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM586
 	.byte 2,35,16,6
 	.asciz "m_completionEvent"
 
-LDIFF_SYM590=LTDIE_53_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM590
+LDIFF_SYM587=LTDIE_53_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM587
 	.byte 2,35,24,6
 	.asciz "m_exceptionsHolder"
 
-LDIFF_SYM591=LTDIE_62_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM591
+LDIFF_SYM588=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM588
 	.byte 2,35,32,6
 	.asciz "m_cancellationToken"
 
-LDIFF_SYM592=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM592
+LDIFF_SYM589=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM589
 	.byte 2,35,40,6
 	.asciz "m_cancellationRegistration"
 
-LDIFF_SYM593=LTDIE_81_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM593
+LDIFF_SYM590=LTDIE_81_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM590
 	.byte 2,35,48,6
 	.asciz "m_internalCancellationRequested"
 
-LDIFF_SYM594=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM594
+LDIFF_SYM591=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM591
 	.byte 2,35,64,6
 	.asciz "m_completionCountdown"
 
-LDIFF_SYM595=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM595
+LDIFF_SYM592=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM592
 	.byte 2,35,68,6
 	.asciz "m_exceptionalChildren"
 
-LDIFF_SYM596=LTDIE_82_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM596
+LDIFF_SYM593=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM593
 	.byte 2,35,56,0,7
 	.asciz "_ContingentProperties"
 
-LDIFF_SYM597=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM597
+LDIFF_SYM594=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM594
 LTDIE_37_POINTER:
 
 	.byte 13
-LDIFF_SYM598=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM598
+LDIFF_SYM595=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM595
 LTDIE_37_REFERENCE:
 
 	.byte 14
-LDIFF_SYM599=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM599
+LDIFF_SYM596=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM596
 LTDIE_35:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Task"
 
 	.byte 72,16
-LDIFF_SYM600=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM600
+LDIFF_SYM597=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM597
 	.byte 2,35,0,6
 	.asciz "m_taskId"
 
-LDIFF_SYM601=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM601
+LDIFF_SYM598=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM598
 	.byte 2,35,64,6
 	.asciz "m_action"
 
-LDIFF_SYM602=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM602
+LDIFF_SYM599=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM599
 	.byte 2,35,16,6
 	.asciz "m_stateObject"
 
-LDIFF_SYM603=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM603
+LDIFF_SYM600=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM600
 	.byte 2,35,24,6
 	.asciz "m_taskScheduler"
 
-LDIFF_SYM604=LTDIE_36_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM604
+LDIFF_SYM601=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM601
 	.byte 2,35,32,6
 	.asciz "m_parent"
 
-LDIFF_SYM605=LTDIE_35_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM605
+LDIFF_SYM602=LTDIE_35_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM602
 	.byte 2,35,40,6
 	.asciz "m_stateFlags"
 
-LDIFF_SYM606=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM606
+LDIFF_SYM603=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM603
 	.byte 2,35,68,6
 	.asciz "m_continuationObject"
 
-LDIFF_SYM607=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM607
+LDIFF_SYM604=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM604
 	.byte 2,35,48,6
 	.asciz "m_contingentProperties"
 
-LDIFF_SYM608=LTDIE_37_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM608
+LDIFF_SYM605=LTDIE_37_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM605
 	.byte 2,35,56,0,7
 	.asciz "System_Threading_Tasks_Task"
 
-LDIFF_SYM609=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM609
+LDIFF_SYM606=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM606
 LTDIE_35_POINTER:
 
 	.byte 13
-LDIFF_SYM610=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM610
+LDIFF_SYM607=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM607
 LTDIE_35_REFERENCE:
 
 	.byte 14
-LDIFF_SYM611=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM611
+LDIFF_SYM608=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM608
 LTDIE_34:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Task`1"
 
 	.byte 80,16
-LDIFF_SYM612=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM612
+LDIFF_SYM609=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM609
 	.byte 2,35,0,6
 	.asciz "m_result"
 
-LDIFF_SYM613=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM613
+LDIFF_SYM610=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM610
 	.byte 2,35,72,0,7
 	.asciz "System_Threading_Tasks_Task`1"
 
-LDIFF_SYM614=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM614
+LDIFF_SYM611=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM611
 LTDIE_34_POINTER:
 
 	.byte 13
-LDIFF_SYM615=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM615
+LDIFF_SYM612=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM612
 LTDIE_34_REFERENCE:
 
 	.byte 14
-LDIFF_SYM616=LTDIE_34 - Ldebug_info_start
-	.long LDIFF_SYM616
+LDIFF_SYM613=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM613
 	.byte 2
 	.asciz "System.Threading.Tasks.Task`1<TResult_BOOL>:.ctor"
 	.asciz "System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL"
 
 	.byte 3,104
 	.quad System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
-	.quad Lme_21
+	.quad Lme_20
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM617=LTDIE_34_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM617
+LDIFF_SYM614=LTDIE_34_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM614
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM618=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM618
+LDIFF_SYM615=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM615
 	.byte 2,141,24,11
 	.asciz "V_0"
 
-LDIFF_SYM619=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM619
+LDIFF_SYM616=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM616
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM620=Lfde31_end - Lfde31_start
-	.long LDIFF_SYM620
-Lfde31_start:
+LDIFF_SYM617=Lfde30_end - Lfde30_start
+	.long LDIFF_SYM617
+Lfde30_start:
 
 	.long 0
 	.align 3
 	.quad System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
 
-LDIFF_SYM621=Lme_21 - System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
-	.long LDIFF_SYM621
+LDIFF_SYM618=Lme_20 - System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
+	.long LDIFF_SYM618
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde31_end:
+Lfde30_end:
 
 .section __DWARF, __debug_info,regular,debug
 

@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 4,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:43 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:08:39 EDT 2017)"
 	.asciz "Microsoft.Azure.Mobile.Analytics.iOS.Bindings.dll"
 	.asciz ""
 
@@ -125,12 +125,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 88
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_1
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -144,7 +144,7 @@ L_OBJC_SELECTOR_0:
 bl _p_4
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
 	.byte 2,32,159,231,10,0,160,225
 bl _p_5
 
@@ -160,8 +160,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics__ctor_Foundation_NSObj
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_1
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -180,8 +180,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_6
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -198,7 +198,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_get_ClassHandle:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_3:
@@ -209,7 +209,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_IsEnabled:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_1:
 .long L_OBJC_SELECTOR_REFERENCES_1-(L_OBJC_SELECTOR_1+12)
@@ -226,12 +226,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_SetDelegate_Microsoft_
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,2,223,77,226,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 L_OBJC_SELECTOR_2:
 .long L_OBJC_SELECTOR_REFERENCES_2-(L_OBJC_SELECTOR_2+12)
 	.byte 0,0,159,231,0,16,141,229,4,0,141,229,0,15,90,227,5,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,160,144,229,1,0,0,234,0,224,218,229,8,160,154,229,0,0,157,229,4,16,157,229,10,32,160,225
 bl _p_8
 
@@ -245,7 +245,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_SetEnabled_bool:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,205,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_3:
 .long L_OBJC_SELECTOR_REFERENCES_3-(L_OBJC_SELECTOR_3+12)
@@ -265,7 +265,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string:
 bl _p_10
 
 	.byte 0,32,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_4:
 .long L_OBJC_SELECTOR_REFERENCES_4-(L_OBJC_SELECTOR_4+12)
@@ -288,12 +288,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string_Foun
 bl _p_10
 
 	.byte 0,96,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 L_OBJC_SELECTOR_5:
 .long L_OBJC_SELECTOR_REFERENCES_5-(L_OBJC_SELECTOR_5+12)
 	.byte 0,0,159,231,0,16,141,229,4,0,141,229,8,96,141,229,0,15,90,227,5,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,160,144,229,1,0,0,234,0,224,218,229,8,160,154,229,0,0,157,229,4,16,157,229,8,32,157,229
 	.byte 10,48,160,225
 bl _p_12
@@ -311,12 +311,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 112
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 108
 	.byte 0,0,159,231
 bl _p_13
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_9:
@@ -340,12 +340,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 88
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_1
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -359,7 +359,7 @@ L_OBJC_SELECTOR_6:
 bl _p_4
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
 	.byte 2,32,159,231,10,0,160,225
 bl _p_5
 
@@ -375,8 +375,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor_Foundati
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_1
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -395,8 +395,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_6
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -414,7 +414,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate_DidFailSending
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,12,48,141,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 112
 	.byte 0,0,159,231,17,31,160,227
 bl _p_15
 
@@ -435,7 +435,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate_DidSucceedSend
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 112
 	.byte 0,0,159,231,17,31,160,227
 bl _p_15
 
@@ -456,7 +456,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate_WillSendEventL
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 112
 	.byte 0,0,159,231,17,31,160,227
 bl _p_15
 
@@ -476,12 +476,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSEventLog__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 88
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_18
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -495,7 +495,7 @@ L_OBJC_SELECTOR_7:
 bl _p_4
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
 	.byte 2,32,159,231,10,0,160,225
 bl _p_5
 
@@ -511,8 +511,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSEventLog__ctor_Foundation_NSObje
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -531,8 +531,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSEventLog__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_19
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -549,7 +549,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSEventLog_get_ClassHandle:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_14:
@@ -594,7 +594,7 @@ bl _p_11
 	.byte 0,0,159,231,199,16,0,227
 bl _p_21
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
 
@@ -640,7 +640,7 @@ bl _p_11
 	.byte 0,0,159,231,199,16,0,227
 bl _p_21
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
 
@@ -659,7 +659,7 @@ L_OBJC_SELECTOR_12:
 bl _p_4
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 124
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 120
 	.byte 8,128,159,231
 bl _p_22
 
@@ -684,7 +684,7 @@ bl _p_8
 	.byte 0,0,159,231,199,16,0,227
 bl _p_21
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
 
@@ -696,12 +696,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSEventLog__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 128
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 124
 	.byte 0,0,159,231
 bl _p_13
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_1b:
@@ -712,12 +712,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 88
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_1
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -731,7 +731,7 @@ L_OBJC_SELECTOR_14:
 bl _p_4
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
 	.byte 2,32,159,231,10,0,160,225
 bl _p_5
 
@@ -747,8 +747,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundati
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_1
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -767,8 +767,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_6
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -785,7 +785,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties_get_ClassHandl
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 132
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 128
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_1f:
@@ -803,7 +803,7 @@ L_OBJC_SELECTOR_15:
 bl _p_4
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 124
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 120
 	.byte 8,128,159,231
 bl _p_22
 
@@ -828,7 +828,7 @@ bl _p_8
 	.byte 0,0,159,231,199,16,0,227
 bl _p_21
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
 
@@ -840,12 +840,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 136
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 132
 	.byte 0,0,159,231
 bl _p_13
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 132
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 128
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_22:
@@ -856,12 +856,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSPageLog__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 88
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_18
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -875,7 +875,7 @@ L_OBJC_SELECTOR_17:
 bl _p_4
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 100
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
 	.byte 2,32,159,231,10,0,160,225
 bl _p_5
 
@@ -891,8 +891,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSPageLog__ctor_Foundation_NSObjec
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -911,8 +911,8 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSPageLog__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_19
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,0,16,145,229
 bl _p_2
 
@@ -929,7 +929,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSPageLog_get_ClassHandle:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 140
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 136
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_26:
@@ -974,7 +974,7 @@ bl _p_11
 	.byte 0,0,159,231,199,16,0,227
 bl _p_21
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
 
@@ -993,7 +993,7 @@ L_OBJC_SELECTOR_20:
 bl _p_4
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 124
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 120
 	.byte 8,128,159,231
 bl _p_22
 
@@ -1018,7 +1018,7 @@ bl _p_8
 	.byte 0,0,159,231,199,16,0,227
 bl _p_21
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
 
@@ -1030,12 +1030,12 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSPageLog__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 144
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 140
 	.byte 0,0,159,231
 bl _p_13
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 140
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 136
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_2b:
@@ -1046,9 +1046,9 @@ ApiDefinition_Messaging__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 148
-	.byte 1,16,159,231,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 96
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 144
+	.byte 1,16,159,231,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,160,225,0,0,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 92
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_31:
@@ -1069,18 +1069,17 @@ LDIFF_SYM3=ut_end - ut_52
 	.align 2
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/corlib/System/Array.cs"
-.loc 2 239 0 prologue_end
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/corlib/System/Array.cs"
+.loc 2 215 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,128,141,229,0,96,160,225,4,16,141,229,4,0,157,229
-	.byte 0,0,134,229,6,0,160,225
-bl _p_23
-
-	.byte 4,0,157,229
-.loc 2 240 0
+	.byte 0,0,134,229,166,20,160,225,0,32,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . -4
+	.byte 2,32,159,231,2,16,129,224,64,35,160,227,0,32,193,229
+.loc 2 216 0
 
 	.byte 64,3,224,227,4,0,134,229
-.loc 2 241 0
+.loc 2 217 0
 
 	.byte 2,223,141,226,64,1,189,232,128,128,189,232
 
@@ -1095,11 +1094,11 @@ ut_53:
 	.align 2
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_Dispose
 System_Array_InternalEnumerator_1_T_INST_Dispose:
-.loc 2 245 0 prologue_end
+.loc 2 221 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,128,141,229,4,0,141,229,4,0,157,229,64,19,224,227
 	.byte 4,16,128,229
-.loc 2 246 0
+.loc 2 222 0
 
 	.byte 3,223,141,226,0,1,189,232,128,128,189,232
 
@@ -1114,14 +1113,14 @@ ut_54:
 	.align 2
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_MoveNext
 System_Array_InternalEnumerator_1_T_INST_MoveNext:
-.loc 2 250 0 prologue_end
+.loc 2 226 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,64,5,45,233,3,223,77,226,0,128,141,229,0,160,160,225,4,0,154,229,64,19,224,227
 	.byte 1,0,80,225,2,0,0,26
-.loc 2 251 0
+.loc 2 227 0
 
 	.byte 0,0,154,229,12,0,144,229,4,0,138,229
-.loc 2 253 0
+.loc 2 229 0
 
 	.byte 4,0,154,229,0,31,224,227,1,0,80,225,11,0,0,10,4,0,154,229,64,99,64,226,6,0,160,225,4,0,138,229
 	.byte 0,15,224,227,0,0,86,225,0,0,160,19,1,0,160,3,0,15,80,227,0,0,160,19,1,0,160,3,0,0,0,234
@@ -1138,108 +1137,73 @@ ut_55:
 	.align 2
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_get_Current
 System_Array_InternalEnumerator_1_T_INST_get_Current:
-.loc 2 258 0 prologue_end
+.loc 2 234 0 prologue_end
 
-	.byte 128,64,45,233,13,112,160,225,64,1,45,233,12,223,77,226,4,128,141,229,0,16,141,229,0,96,160,225,4,0,150,229
-	.byte 64,19,224,227,1,0,80,225,46,0,0,10
-.loc 2 260 0
+	.byte 128,64,45,233,13,112,160,225,64,1,45,233,8,223,77,226,4,128,141,229,0,16,141,229,0,96,160,225,4,0,150,229
+	.byte 64,19,224,227,1,0,80,225,54,0,0,10
+.loc 2 236 0
 
-	.byte 4,0,150,229,0,31,224,227,1,0,80,225,49,0,0,10
-.loc 2 263 0
+	.byte 4,0,150,229,0,31,224,227,1,0,80,225,57,0,0,10
+.loc 2 239 0
 
-	.byte 0,0,150,229,40,0,141,229,0,0,150,229,12,0,144,229,64,3,64,226,4,16,150,229,1,0,64,224,36,0,141,229
+	.byte 0,0,150,229,28,0,141,229,0,0,150,229,12,0,144,229,64,3,64,226,4,16,150,229,1,0,64,224,24,0,141,229
 	.byte 4,0,157,229
+bl _p_23
+
+	.byte 0,16,160,225,28,0,157,229,20,16,141,229,0,224,208,229,0,224,208,229,16,0,141,229,4,0,157,229
 bl _p_24
 
-	.byte 0,16,160,225,40,0,157,229,32,16,141,229,0,224,208,229,0,224,208,229,28,0,141,229,4,0,157,229
+	.byte 0,48,160,225,16,0,157,229,20,16,157,229,24,32,157,229,1,128,160,225,2,31,141,226,51,255,47,225,0,32,157,229
+	.byte 2,0,160,225,8,16,157,229,0,16,130,229,160,36,160,225,0,48,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . -4
+	.byte 3,48,159,231,3,32,130,224,64,51,160,227,0,48,194,229,1,31,128,226,12,0,157,229,0,0,129,229,161,20,160,225
+	.byte 0,32,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . -4
+	.byte 2,32,159,231,2,16,129,224,64,35,160,227,0,32,193,229,8,223,141,226,64,1,189,232,128,128,189,232
+.loc 2 235 0
+
+	.byte 93,9,9,227
 bl _p_25
 
-	.byte 0,48,160,225,28,0,157,229,32,16,157,229,36,32,157,229,1,128,160,225,2,31,141,226,51,255,47,225,0,16,157,229
-	.byte 1,0,160,225,8,32,157,229,24,32,141,229,0,32,129,229,20,0,141,229
-bl _p_23
-
-	.byte 20,0,157,229,24,16,157,229,1,15,128,226,12,16,157,229,16,16,141,229,0,16,128,229
-bl _p_23
-
-	.byte 16,0,157,229,12,223,141,226,64,1,189,232,128,128,189,232
-.loc 2 259 0
-
-	.byte 63,11,11,227
-bl _p_26
-
-	.byte 0,16,160,225,196,0,0,227,0,2,64,227
+	.byte 0,16,160,225,145,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
-.loc 2 261 0
+.loc 2 237 0
 
-	.byte 149,11,11,227
-bl _p_26
+	.byte 179,9,9,227
+bl _p_25
 
-	.byte 0,16,160,225,196,0,0,227,0,2,64,227
+	.byte 0,16,160,225,145,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
 
 Lme_37:
 .text
-ut_56:
-
-	.byte 8,0,128,226
-	b System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
-
-.text
-	.align 2
-	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
-System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current:
-.loc 2 274 0 prologue_end
-
-	.byte 128,64,45,233,13,112,160,225,0,5,45,233,10,223,77,226,0,128,141,229,0,160,160,225,0,0,157,229
-bl _p_27
-
-	.byte 32,0,141,229,0,224,218,229,0,0,157,229
-bl _p_28
-
-	.byte 0,32,160,225,32,0,157,229,0,128,160,225,1,31,141,226,10,0,160,225,50,255,47,225,0,0,157,229
-bl _p_29
-
-	.byte 4,31,160,227
-bl _p_15
-
-	.byte 16,0,141,229,2,31,128,226,1,0,160,225,4,32,157,229,28,32,141,229,0,32,129,229,24,0,141,229
-bl _p_23
-
-	.byte 24,0,157,229,28,16,157,229,1,15,128,226,8,16,157,229,20,16,141,229,0,16,128,229
-bl _p_23
-
-	.byte 16,0,157,229,20,16,157,229,10,223,141,226,0,5,189,232,128,128,189,232
-
-Lme_38:
-.text
 	.align 2
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
-.loc 2 78 0 prologue_end
+.loc 2 71 0 prologue_end
 
-	.byte 128,64,45,233,13,112,160,225,0,1,45,233,13,223,77,226,0,128,141,229,20,0,141,229,0,15,160,227,4,0,141,229
-	.byte 0,15,160,227,8,0,141,229,1,15,141,226,36,0,141,229,0,0,157,229
-bl _p_30
+	.byte 128,64,45,233,13,112,160,225,0,1,45,233,9,223,77,226,0,128,141,229,20,0,141,229,0,15,160,227,4,0,141,229
+	.byte 0,15,160,227,8,0,141,229,1,15,141,226,24,0,141,229,0,0,157,229
+bl _p_26
 
-	.byte 40,0,141,229,0,0,157,229
-bl _p_31
+	.byte 28,0,141,229,0,0,157,229
+bl _p_27
 
-	.byte 0,32,160,225,36,0,157,229,40,16,157,229,1,128,160,225,20,16,157,229,50,255,47,225,4,0,157,229,12,0,141,229
+	.byte 0,32,160,225,24,0,157,229,28,16,157,229,1,128,160,225,20,16,157,229,50,255,47,225,4,0,157,229,12,0,141,229
 	.byte 8,0,157,229,16,0,141,229,0,0,157,229
-bl _p_30
+bl _p_26
 
 	.byte 4,31,160,227
 bl _p_15
 
-	.byte 24,0,141,229,2,31,128,226,1,0,160,225,12,32,157,229,32,32,141,229,0,32,129,229,28,0,141,229
-bl _p_23
+	.byte 2,63,128,226,3,16,160,225,12,32,157,229,0,32,131,229,161,52,160,225,0,192,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . -4
+	.byte 12,192,159,231,12,48,131,224,64,195,160,227,0,192,195,229,1,31,129,226,16,32,157,229,0,32,129,229,9,223,141,226
+	.byte 0,1,189,232,128,128,189,232
 
-	.byte 24,0,157,229,28,16,157,229,32,32,157,229,1,31,129,226,16,32,157,229,0,32,129,229,13,223,141,226,0,1,189,232
-	.byte 128,128,189,232
-
-Lme_39:
+Lme_38:
 .text
 	.align 2
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
@@ -1251,18 +1215,18 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 0,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,6,0,160,225,10,16,160,225
-bl _p_32
+bl _p_28
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 152
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 148
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,0,192,157,229,4,224,157,229
 	.byte 0,192,142,229,44,223,141,226,192,31,189,232,4,208,141,226,128,128,189,232,6,0,160,225
 bl _p_17
-bl _p_33
+bl _p_29
 
 	.byte 0,96,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
-Lme_3a:
+Lme_39:
 .text
 	.align 2
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
@@ -1275,18 +1239,18 @@ bl _mono_tls_get_lmf_addr
 	.byte 4,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,95,160,227,12,0,221,229,0,15,80,227,0,0,0,10,64,83,160,227,4,0,157,229,8,16,157,229
 	.byte 5,32,160,225
-bl _p_34
+bl _p_30
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 152
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 148
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,16,192,157,229,20,224,157,229,0,192,142,229
 	.byte 47,223,141,226,224,31,189,232,4,208,141,226,128,128,189,232,0,0,157,229
 bl _p_17
-bl _p_33
+bl _p_29
 
 	.byte 0,16,160,225,0,16,141,229,0,15,80,227,248,255,255,26,240,255,255,234
 
-Lme_3b:
+Lme_3a:
 .text
 	.align 2
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
@@ -1298,18 +1262,18 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,4,0,157,229,10,16,160,225
-bl _p_35
+bl _p_31
 
 	.byte 0,0,205,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 152
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 148
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,0,0,221,229,8,192,157,229,12,224,157,229
 	.byte 0,192,142,229,48,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_17
-bl _p_33
+bl _p_29
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
-Lme_3c:
+Lme_3b:
 .text
 	.align 2
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
@@ -1321,18 +1285,18 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,4,16,157,229,10,32,160,225
-bl _p_36
+bl _p_32
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 152
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 148
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,8,192,157,229,12,224,157,229,0,192,142,229
 	.byte 48,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_17
-bl _p_33
+bl _p_29
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,241,255,255,234
 
-Lme_3d:
+Lme_3c:
 .text
 	.align 2
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
@@ -1345,60 +1309,58 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 4,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,4,16,157,229,8,32,157,229,10,48,160,225
-bl _p_37
+bl _p_33
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 152
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 148
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,16,192,157,229,20,224,157,229,0,192,142,229
 	.byte 50,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_17
-bl _p_33
+bl _p_29
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,241,255,255,234
 
-Lme_3e:
+Lme_3d:
 .text
 	.align 2
 	.no_dead_strip System_Array_InternalArray__get_Item_T_INST_int
 System_Array_InternalArray__get_Item_T_INST_int:
-.loc 2 197 0 prologue_end
+.loc 2 173 0 prologue_end
 
-	.byte 128,64,45,233,13,112,160,225,0,1,45,233,19,223,77,226,12,128,141,229,0,16,141,229,32,0,141,229,36,32,141,229
+	.byte 128,64,45,233,13,112,160,225,0,1,45,233,13,223,77,226,12,128,141,229,0,16,141,229,32,0,141,229,36,32,141,229
 	.byte 0,15,160,227,4,0,141,229,0,15,160,227,8,0,141,229,32,0,157,229,12,16,144,229,36,0,157,229,1,0,80,225
-	.byte 49,0,0,42
-.loc 2 201 0
+	.byte 65,0,0,42
+.loc 2 177 0
 
-	.byte 1,15,141,226,64,0,141,229,12,0,157,229
-bl _p_38
+	.byte 1,15,141,226,40,0,141,229,12,0,157,229
+bl _p_34
 
-	.byte 64,16,157,229,36,0,157,229,128,33,160,225,32,0,157,229,2,0,128,224,4,15,128,226,0,32,144,229,16,32,141,229
-	.byte 4,0,144,229,20,0,141,229,1,0,160,225,16,32,157,229,60,32,141,229,0,32,129,229,56,0,141,229
-bl _p_23
+	.byte 40,32,157,229,36,0,157,229,128,17,160,225,32,0,157,229,1,0,128,224,4,15,128,226,0,16,144,229,16,16,141,229
+	.byte 4,0,144,229,20,0,141,229,2,0,160,225,16,16,157,229,0,16,130,229,160,36,160,225,0,48,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . -4
+	.byte 3,48,159,231,3,32,130,224,64,51,160,227,0,48,194,229,1,31,128,226,20,0,157,229,0,0,129,229,161,20,160,225
+	.byte 0,32,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . -4
+	.byte 2,32,159,231,2,16,129,224,64,35,160,227,0,32,193,229
+.loc 2 178 0
 
-	.byte 56,0,157,229,60,16,157,229,1,15,128,226,20,16,157,229,52,16,141,229,0,16,128,229
-bl _p_23
+	.byte 4,0,157,229,24,0,141,229,8,0,157,229,28,0,141,229,0,32,157,229,2,0,160,225,24,16,157,229,0,16,130,229
+	.byte 160,36,160,225,0,48,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . -4
+	.byte 3,48,159,231,3,32,130,224,64,51,160,227,0,48,194,229,1,31,128,226,28,0,157,229,0,0,129,229,161,20,160,225
+	.byte 0,32,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . -4
+	.byte 2,32,159,231,2,16,129,224,64,35,160,227,0,32,193,229,13,223,141,226,0,1,189,232,128,128,189,232
+.loc 2 174 0
 
-	.byte 52,0,157,229
-.loc 2 202 0
+	.byte 227,2,1,227
+bl _p_25
 
-	.byte 4,0,157,229,24,0,141,229,8,0,157,229,28,0,141,229,0,16,157,229,1,0,160,225,24,32,157,229,48,32,141,229
-	.byte 0,32,129,229,44,0,141,229
-bl _p_23
-
-	.byte 44,0,157,229,48,16,157,229,1,15,128,226,28,16,157,229,40,16,141,229,0,16,128,229
-bl _p_23
-
-	.byte 40,0,157,229,19,223,141,226,0,1,189,232,128,128,189,232
-.loc 2 198 0
-
-	.byte 75,0,3,227
-bl _p_26
-
-	.byte 0,16,160,225,114,0,0,227,0,2,64,227
+	.byte 0,16,160,225,65,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_17
 
-Lme_3f:
+Lme_3e:
 .text
 	.align 3
 jit_code_end:
@@ -1464,7 +1426,6 @@ bl System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 bl System_Array_InternalEnumerator_1_T_INST_Dispose
 bl System_Array_InternalEnumerator_1_T_INST_MoveNext
 bl System_Array_InternalEnumerator_1_T_INST_get_Current
-bl System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
 bl System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
@@ -1478,7 +1439,7 @@ method_addresses_end:
 	.align 3
 unbox_trampolines:
 
-	.long 52,53,54,55,56
+	.long 52,53,54,55
 unbox_trampolines_end:
 
 	.long 0
@@ -1489,7 +1450,6 @@ bl ut_52
 bl ut_53
 bl ut_54
 bl ut_55
-bl ut_56
 
 	.long 0
 .section __TEXT, __const
@@ -1513,22 +1473,21 @@ unwind_info:
 	.byte 72,14,12,136,3,142,1,68,14,24,2,52,10,68,14,12,68,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2
 	.byte 72,14,16,136,4,138,3,142,1,68,14,24,2,52,10,68,14,16,68,8,8,8,10,14,8,68,11,31,12,13,0,68
 	.byte 14,8,135,2,72,14,12,136,3,142,1,68,14,16,2,56,10,68,14,12,68,8,8,14,8,68,11,35,12,13,0,68
-	.byte 14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,24,2,40,10,68,14,16,68,8,6,8,8,14,8,68,11,30
+	.byte 14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,24,2,60,10,68,14,16,68,8,6,8,8,14,8,68,11,30
 	.byte 12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14,24,84,10,68,14,12,68,8,8,14,8,68,11,39,12
 	.byte 13,0,68,14,8,135,2,72,14,20,134,5,136,4,138,3,142,1,68,14,32,2,104,10,68,14,20,68,8,6,8,8
-	.byte 8,10,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,64,2,204,10,68,14
-	.byte 16,68,8,6,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,56,2
-	.byte 140,10,68,14,16,68,8,8,8,10,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14
-	.byte 64,2,164,10,68,14,12,68,8,8,14,8,68,11,62,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10
-	.byte 136,8,137,7,138,6,139,5,140,4,142,3,68,14,216,1,2,100,10,80,12,13,40,68,8,6,8,7,8,8,8,9
-	.byte 8,10,8,11,8,12,14,12,68,14,8,68,11,64,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136
-	.byte 8,137,7,138,6,139,5,140,4,142,3,68,14,232,1,2,120,10,80,12,13,44,68,8,5,8,6,8,7,8,8,8
-	.byte 9,8,10,8,11,8,12,14,12,68,14,8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10
-	.byte 136,8,137,7,138,6,139,5,140,4,142,3,68,14,224,1,2,100,10,80,12,13,32,68,8,8,8,9,8,10,8,11
-	.byte 8,12,14,12,68,14,8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138
-	.byte 6,139,5,140,4,142,3,68,14,232,1,2,108,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68
-	.byte 14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14,88,2,240,10,68,14,12,68,8,8
-	.byte 14,8,68,11
+	.byte 8,10,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,48,2,236,10,68,14
+	.byte 16,68,8,6,8,8,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14,48,2,168,10
+	.byte 68,14,12,68,8,8,14,8,68,11,62,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7
+	.byte 138,6,139,5,140,4,142,3,68,14,216,1,2,100,10,80,12,13,40,68,8,6,8,7,8,8,8,9,8,10,8,11
+	.byte 8,12,14,12,68,14,8,68,11,64,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138
+	.byte 6,139,5,140,4,142,3,68,14,232,1,2,120,10,80,12,13,44,68,8,5,8,6,8,7,8,8,8,9,8,10,8
+	.byte 11,8,12,14,12,68,14,8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7
+	.byte 138,6,139,5,140,4,142,3,68,14,224,1,2,100,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12
+	.byte 68,14,8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140
+	.byte 4,142,3,68,14,232,1,2,108,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11
+	.byte 32,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14,64,3,48,1,10,68,14,12,68,8,8,14,8,68
+	.byte 11
 
 .text
 	.align 4
@@ -1539,233 +1498,209 @@ plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
 _p_1:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 168,894
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 164,896
 	.no_dead_strip plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
 plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
 _p_2:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 172,899
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 168,901
 	.no_dead_strip plt_Foundation_NSObject_set_IsDirectBinding_bool
 plt_Foundation_NSObject_set_IsDirectBinding_bool:
 _p_3:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 176,904
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 172,906
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
 _p_4:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 180,909
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 176,911
 	.no_dead_strip plt_Foundation_NSObject_InitializeHandle_intptr_string
 plt_Foundation_NSObject_InitializeHandle_intptr_string:
 _p_5:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 184,911
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 180,913
 	.no_dead_strip plt_Foundation_NSObject__ctor_intptr
 plt_Foundation_NSObject__ctor_intptr:
 _p_6:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 188,916
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 184,918
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
 _p_7:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 192,921
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 188,923
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
 _p_8:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 196,923
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 192,925
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
 _p_9:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 200,925
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 196,927
 	.no_dead_strip plt_Foundation_NSString_CreateNative_string
 plt_Foundation_NSString_CreateNative_string:
 _p_10:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 204,927
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 200,929
 	.no_dead_strip plt_Foundation_NSString_ReleaseNative_intptr
 plt_Foundation_NSString_ReleaseNative_intptr:
 _p_11:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 208,932
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 204,934
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
 _p_12:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 212,937
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 208,939
 	.no_dead_strip plt_ObjCRuntime_Class_GetHandle_string
 plt_ObjCRuntime_Class_GetHandle_string:
 _p_13:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 216,939
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 212,941
 	.no_dead_strip plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool
 plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool:
 _p_14:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 220,944
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 216,946
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_15:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 224,949
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 220,951
 	.no_dead_strip plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor
 plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
 _p_16:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 228,957
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 224,959
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_17:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 232,962
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 228,964
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag:
 _p_18:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 236,990
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 232,992
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr:
 _p_19:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 240,992
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 236,994
 	.no_dead_strip plt_Foundation_NSString_FromHandle_intptr
 plt_Foundation_NSString_FromHandle_intptr:
 _p_20:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 244,994
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 240,996
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_21:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 248,999
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 244,1001
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr:
 _p_22:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 252,1019
-	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
-plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 248,1021
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
 _p_23:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 256,1031
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 252,1051
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
 _p_24:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 260,1056
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 256,1075
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_25:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 264,1080
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 260,1099
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
 _p_26:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 268,1104
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 264,1156
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
 _p_27:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 272,1151
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 268,1164
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
 _p_28:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 276,1159
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 272,1187
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_29:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 280,1182
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 276,1189
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
 _p_30:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 284,1218
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 280,1227
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
 _p_31:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 288,1226
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 284,1229
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
 _p_32:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 292,1249
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 288,1231
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
 _p_33:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 296,1251
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 292,1233
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
 _p_34:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 300,1289
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
-_p_35:
-
-	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 304,1291
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
-_p_36:
-
-	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 308,1293
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
-_p_37:
-
-	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 312,1295
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_38:
-
-	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 316,1316
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got - . + 296,1254
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got, 324
+.lcomm mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got, 304
 got_end:
 .section	__DATA,__objc_selrefs,literal_pointers,no_dead_strip
 .align	3
@@ -1941,13 +1876,13 @@ _mono_aot_file_info:
 	.align 2
 	.long unbox_trampoline_addresses
 
-	.long 42,324,39,64,66,391195135,0,2488
-	.long 128,4,4,10,0,26,3616,1120
-	.long 824,504,0,672,784,592,0,392
+	.long 41,304,35,63,66,391195135,0,2398
+	.long 128,4,4,10,0,25,3520,1112
+	.long 816,496,0,664,776,584,0,392
 	.long 104,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 50,25,171,41,189,186,192,229,213,176,63,221,39,116,31,137
+	.byte 159,29,52,68,137,125,163,140,75,131,123,35,116,43,78,149
 	.globl _mono_aot_module_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_info
 	.align 2
 _mono_aot_module_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_info:
@@ -4067,7 +4002,7 @@ LDIFF_SYM249=LTDIE_16 - Ldebug_info_start
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_INST__ctor_System_Array"
 
-	.byte 1,239,1
+	.byte 1,215,1
 	.long System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 	.long Lme_34
 
@@ -4095,7 +4030,7 @@ Lfde45_start:
 
 LDIFF_SYM253=Lme_34 - System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 	.long LDIFF_SYM253
-	.byte 68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,24,2,40,10,68,14,16,68,8,6,8,8,14,8,68,11
+	.byte 68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,24,2,60,10,68,14,16,68,8,6,8,8,14,8,68,11
 	.align 2
 Lfde45_end:
 
@@ -4105,7 +4040,7 @@ Lfde45_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:Dispose"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_Dispose"
 
-	.byte 1,245,1
+	.byte 1,221,1
 	.long System_Array_InternalEnumerator_1_T_INST_Dispose
 	.long Lme_35
 
@@ -4138,7 +4073,7 @@ Lfde46_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:MoveNext"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_MoveNext"
 
-	.byte 1,250,1
+	.byte 1,226,1
 	.long System_Array_InternalEnumerator_1_T_INST_MoveNext
 	.long Lme_36
 
@@ -4177,7 +4112,7 @@ Lfde47_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:get_Current"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_get_Current"
 
-	.byte 1,130,2
+	.byte 1,234,1
 	.long System_Array_InternalEnumerator_1_T_INST_get_Current
 	.long Lme_37
 
@@ -4200,26 +4135,26 @@ Lfde48_start:
 
 LDIFF_SYM263=Lme_37 - System_Array_InternalEnumerator_1_T_INST_get_Current
 	.long LDIFF_SYM263
-	.byte 68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,64,2,204,10,68,14,16,68,8,6,8,8,14,8,68,11
+	.byte 68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,48,2,236,10,68,14,16,68,8,6,8,8,14,8,68,11
 	.align 2
 Lfde48_end:
 
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array/InternalEnumerator`1<T_INST>:System.Collections.IEnumerator.get_Current"
-	.asciz "System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current"
+	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_INST>"
+	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST"
 
-	.byte 1,146,2
-	.long System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+	.byte 1,71
+	.long System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 	.long Lme_38
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM264=LDIE_I - Ldebug_info_start
+LDIFF_SYM264=LTDIE_17_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM264
-	.byte 1,90,0
+	.byte 2,125,20,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -4229,46 +4164,13 @@ Lfde49_start:
 
 	.long 0
 	.align 2
-	.long System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+	.long System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 
-LDIFF_SYM266=Lme_38 - System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+LDIFF_SYM266=Lme_38 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 	.long LDIFF_SYM266
-	.byte 68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,56,2,140,10,68,14,16,68,8,8,8,10,14,8,68,11
+	.byte 68,14,8,135,2,72,14,12,136,3,142,1,68,14,48,2,168,10,68,14,12,68,8,8,14,8,68,11
 	.align 2
 Lfde49_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_INST>"
-	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST"
-
-	.byte 1,78
-	.long System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
-	.long Lme_39
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM267=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM267
-	.byte 2,125,20,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM268=Lfde50_end - Lfde50_start
-	.long LDIFF_SYM268
-Lfde50_start:
-
-	.long 0
-	.align 2
-	.long System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
-
-LDIFF_SYM269=Lme_39 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
-	.long LDIFF_SYM269
-	.byte 68,14,8,135,2,72,14,12,136,3,142,1,68,14,64,2,164,10,68,14,12,68,8,8,14,8,68,11
-	.align 2
-Lfde50_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4278,56 +4180,56 @@ Lfde50_end:
 
 	.byte 0,0
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-	.long Lme_3a
+	.long Lme_39
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM270=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM270
+LDIFF_SYM267=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM267
 	.byte 1,86,3
 	.asciz "param1"
 
-LDIFF_SYM271=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM271
+LDIFF_SYM268=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM268
 	.byte 1,90,11
 	.asciz "V_0"
 
-LDIFF_SYM272=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM272
+LDIFF_SYM269=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM269
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM273=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM273
+LDIFF_SYM270=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM270
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM274=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM274
+LDIFF_SYM271=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM271
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM275=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM275
+LDIFF_SYM272=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM272
 	.byte 1,90,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM276=Lfde51_end - Lfde51_start
-	.long LDIFF_SYM276
-Lfde51_start:
+LDIFF_SYM273=Lfde50_end - Lfde50_start
+	.long LDIFF_SYM273
+Lfde50_start:
 
 	.long 0
 	.align 2
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 
-LDIFF_SYM277=Lme_3a - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-	.long LDIFF_SYM277
+LDIFF_SYM274=Lme_39 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+	.long LDIFF_SYM274
 	.byte 68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,216,1,2,100
 	.byte 10,80,12,13,40,68,8,6,8,7,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11
 	.align 2
-Lfde51_end:
+Lfde50_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4337,61 +4239,61 @@ Lfde51_end:
 
 	.byte 0,0
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-	.long Lme_3b
+	.long Lme_3a
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM278=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM278
+LDIFF_SYM275=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM275
 	.byte 2,125,4,3
 	.asciz "param1"
 
-LDIFF_SYM279=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM279
+LDIFF_SYM276=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM276
 	.byte 2,125,8,3
 	.asciz "param2"
 
-LDIFF_SYM280=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM280
+LDIFF_SYM277=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM277
 	.byte 2,125,12,11
 	.asciz "V_0"
 
-LDIFF_SYM281=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM281
+LDIFF_SYM278=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM278
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM282=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM282
+LDIFF_SYM279=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM279
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM283=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM283
+LDIFF_SYM280=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM280
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM284=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM284
+LDIFF_SYM281=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM281
 	.byte 1,85,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM285=Lfde52_end - Lfde52_start
-	.long LDIFF_SYM285
-Lfde52_start:
+LDIFF_SYM282=Lfde51_end - Lfde51_start
+	.long LDIFF_SYM282
+Lfde51_start:
 
 	.long 0
 	.align 2
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
 
-LDIFF_SYM286=Lme_3b - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-	.long LDIFF_SYM286
+LDIFF_SYM283=Lme_3a - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.long LDIFF_SYM283
 	.byte 68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,232,1,2,120
 	.byte 10,80,12,13,44,68,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11
 	.align 2
-Lfde52_end:
+Lfde51_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4401,56 +4303,56 @@ Lfde52_end:
 
 	.byte 0,0
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-	.long Lme_3c
+	.long Lme_3b
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM287=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM287
+LDIFF_SYM284=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM284
 	.byte 2,125,4,3
 	.asciz "param1"
 
-LDIFF_SYM288=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM288
+LDIFF_SYM285=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM285
 	.byte 1,90,11
 	.asciz "V_0"
 
-LDIFF_SYM289=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM289
+LDIFF_SYM286=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM286
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM290=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM290
+LDIFF_SYM287=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM287
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM291=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM291
+LDIFF_SYM288=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM288
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM292=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM292
+LDIFF_SYM289=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM289
 	.byte 2,125,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM293=Lfde53_end - Lfde53_start
-	.long LDIFF_SYM293
-Lfde53_start:
+LDIFF_SYM290=Lfde52_end - Lfde52_start
+	.long LDIFF_SYM290
+Lfde52_start:
 
 	.long 0
 	.align 2
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
 
-LDIFF_SYM294=Lme_3c - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-	.long LDIFF_SYM294
+LDIFF_SYM291=Lme_3b - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+	.long LDIFF_SYM291
 	.byte 68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,224,1,2,100
 	.byte 10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11
 	.align 2
-Lfde53_end:
+Lfde52_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4460,56 +4362,56 @@ Lfde53_end:
 
 	.byte 0,0
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-	.long Lme_3d
+	.long Lme_3c
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM295=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM295
+LDIFF_SYM292=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM292
 	.byte 2,125,0,3
 	.asciz "param1"
 
-LDIFF_SYM296=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM296
+LDIFF_SYM293=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM293
 	.byte 2,125,4,3
 	.asciz "param2"
 
-LDIFF_SYM297=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM297
+LDIFF_SYM294=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM294
 	.byte 1,90,11
 	.asciz "V_0"
 
-LDIFF_SYM298=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM298
+LDIFF_SYM295=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM295
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM299=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM299
+LDIFF_SYM296=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM296
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM300=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM300
+LDIFF_SYM297=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM297
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM301=Lfde54_end - Lfde54_start
-	.long LDIFF_SYM301
-Lfde54_start:
+LDIFF_SYM298=Lfde53_end - Lfde53_start
+	.long LDIFF_SYM298
+Lfde53_start:
 
 	.long 0
 	.align 2
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
 
-LDIFF_SYM302=Lme_3d - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-	.long LDIFF_SYM302
+LDIFF_SYM299=Lme_3c - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+	.long LDIFF_SYM299
 	.byte 68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,224,1,2,100
 	.byte 10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11
 	.align 2
-Lfde54_end:
+Lfde53_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4519,61 +4421,61 @@ Lfde54_end:
 
 	.byte 0,0
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-	.long Lme_3e
+	.long Lme_3d
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM303=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM303
+LDIFF_SYM300=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM300
 	.byte 2,125,0,3
 	.asciz "param1"
 
-LDIFF_SYM304=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM304
+LDIFF_SYM301=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM301
 	.byte 2,125,4,3
 	.asciz "param2"
 
-LDIFF_SYM305=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM305
+LDIFF_SYM302=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM302
 	.byte 2,125,8,3
 	.asciz "param3"
 
-LDIFF_SYM306=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM306
+LDIFF_SYM303=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM303
 	.byte 1,90,11
 	.asciz "V_0"
 
-LDIFF_SYM307=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM307
+LDIFF_SYM304=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM304
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM308=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM308
+LDIFF_SYM305=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM305
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM309=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM309
+LDIFF_SYM306=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM306
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM310=Lfde55_end - Lfde55_start
-	.long LDIFF_SYM310
-Lfde55_start:
+LDIFF_SYM307=Lfde54_end - Lfde54_start
+	.long LDIFF_SYM307
+Lfde54_start:
 
 	.long 0
 	.align 2
 	.long wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
 
-LDIFF_SYM311=Lme_3e - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-	.long LDIFF_SYM311
+LDIFF_SYM308=Lme_3d - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+	.long LDIFF_SYM308
 	.byte 68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,232,1,2,108
 	.byte 10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11
 	.align 2
-Lfde55_end:
+Lfde54_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -4581,42 +4483,42 @@ Lfde55_end:
 	.asciz "System.Array:InternalArray__get_Item<T_INST>"
 	.asciz "System_Array_InternalArray__get_Item_T_INST_int"
 
-	.byte 1,197,1
+	.byte 1,173,1
 	.long System_Array_InternalArray__get_Item_T_INST_int
-	.long Lme_3f
+	.long Lme_3e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM312=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM312
+LDIFF_SYM309=LTDIE_17_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM309
 	.byte 2,125,32,3
 	.asciz "param0"
 
-LDIFF_SYM313=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM313
+LDIFF_SYM310=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM310
 	.byte 2,125,36,11
 	.asciz "value"
 
-LDIFF_SYM314=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM314
+LDIFF_SYM311=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM311
 	.byte 2,125,4,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM315=Lfde56_end - Lfde56_start
-	.long LDIFF_SYM315
-Lfde56_start:
+LDIFF_SYM312=Lfde55_end - Lfde55_start
+	.long LDIFF_SYM312
+Lfde55_start:
 
 	.long 0
 	.align 2
 	.long System_Array_InternalArray__get_Item_T_INST_int
 
-LDIFF_SYM316=Lme_3f - System_Array_InternalArray__get_Item_T_INST_int
-	.long LDIFF_SYM316
-	.byte 68,14,8,135,2,72,14,12,136,3,142,1,68,14,88,2,240,10,68,14,12,68,8,8,14,8,68,11
+LDIFF_SYM313=Lme_3e - System_Array_InternalArray__get_Item_T_INST_int
+	.long LDIFF_SYM313
+	.byte 68,14,8,135,2,72,14,12,136,3,142,1,68,14,64,3,48,1,10,68,14,12,68,8,8,14,8,68,11
 	.align 2
-Lfde56_end:
+Lfde55_end:
 
 .section __DWARF, __debug_info,regular,debug
 

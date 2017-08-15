@@ -1,5 +1,46 @@
-xamarin_timezone_get_data
-xamarin_GetFolderPath
-xamarin_log
-UIApplicationMain
-xamarin_get_block_descriptor
+Function=xamarin_timezone_get_data
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/mscorlib.dll
+Function=UIApplicationMain
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Xamarin.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_MSPush
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Push.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSPushNotification
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Push.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSCrashes
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSErrorAttachmentLog
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSErrorReport
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSException
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSStackFrame
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSWrapperExceptionManager
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSCustomProperties
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSDevice
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSLogger
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSMobileCenter
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSServiceAbstract
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSWrapperLogger
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSWrapperSdk
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSAnalytics
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Analytics.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSEventLog
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Analytics.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSLogWithProperties
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Analytics.iOS.Bindings.dll
+ObjectiveCClass=OBJC_CLASS_$_MSPageLog
+	/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/mtouch-cache/32/Link/Microsoft.Azure.Mobile.Analytics.iOS.Bindings.dll

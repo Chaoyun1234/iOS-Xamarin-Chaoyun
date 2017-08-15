@@ -6,8 +6,8 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/actool/bundle/Assets.car</string>
-			<string>/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/actool/partial-info.plist</string>
+			<string>/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/actool/bundle/Assets.car</string>
+			<string>/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/obj/iPhone/Release/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>

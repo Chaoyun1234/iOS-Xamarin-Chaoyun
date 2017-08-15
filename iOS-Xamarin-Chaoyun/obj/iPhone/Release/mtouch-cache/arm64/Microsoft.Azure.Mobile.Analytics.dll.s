@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:38 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:07:31 EDT 2017)"
 	.asciz "Microsoft.Azure.Mobile.Analytics.dll"
 	.asciz ""
 
@@ -141,7 +141,7 @@ Microsoft_Azure_Mobile_Analytics_Analytics_get_BindingType:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0x910003bf
 .word 0xa8c17bfd
 .word 0xd65f03c0
@@ -159,7 +159,7 @@ bl _p_1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #208]
 bl _p_2
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -179,7 +179,7 @@ bl _p_3
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x15, [x16, #224]
+ldr x15, [x16, #216]
 .word 0xd2800000
 bl _p_4
 .word 0x910003bf
@@ -225,15 +225,15 @@ Microsoft_Azure_Mobile_Analytics_Analytics_StringDictToNSDict_System_Collections
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x15, [x16, #232]
-.word 0x928003f0
+ldr x15, [x16, #224]
+.word 0x92800af0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x15, [x16, #240]
+ldr x15, [x16, #232]
 bl _p_8
 .word 0xf90013a0
 .word 0xaa1a03e0
@@ -241,15 +241,15 @@ bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x15, [x16, #248]
-.word 0x928006f0
+ldr x15, [x16, #240]
+.word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x15, [x16, #240]
+ldr x15, [x16, #232]
 bl _p_8
 .word 0xaa0003e1
 .word 0xf94013a0
@@ -264,7 +264,7 @@ Lme_5:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
 System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
 .loc 2 5532 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -297,7 +297,7 @@ Lme_7:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
 System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 3 104 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -366,117 +366,117 @@ plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_IsEnabled:
 _p_1:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #264]
+ldr x16, [x16, #256]
 br x16
-.word 425
+.word 448
 	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_bool_bool
 plt_System_Threading_Tasks_Task_FromResult_bool_bool:
 _p_2:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #272]
+ldr x16, [x16, #264]
 br x16
-.word 430
+.word 453
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_SetEnabled_bool
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_SetEnabled_bool:
 _p_3:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #280]
+ldr x16, [x16, #272]
 br x16
-.word 442
+.word 465
 	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_object_object
 plt_System_Threading_Tasks_Task_FromResult_object_object:
 _p_4:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #288]
+ldr x16, [x16, #280]
 br x16
-.word 447
+.word 470
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_Analytics_StringDictToNSDict_System_Collections_Generic_IDictionary_2_string_string
 plt_Microsoft_Azure_Mobile_Analytics_Analytics_StringDictToNSDict_System_Collections_Generic_IDictionary_2_string_string:
 _p_5:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #296]
+ldr x16, [x16, #288]
 br x16
-.word 459
+.word 482
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string_Foundation_NSDictionary
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string_Foundation_NSDictionary:
 _p_6:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #304]
+ldr x16, [x16, #296]
 br x16
-.word 464
+.word 487
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string:
 _p_7:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #312]
+ldr x16, [x16, #304]
 br x16
-.word 469
+.word 492
 	.no_dead_strip plt_System_Linq_Enumerable_ToArray_string_System_Collections_Generic_IEnumerable_1_string
 plt_System_Linq_Enumerable_ToArray_string_System_Collections_Generic_IEnumerable_1_string:
 _p_8:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #320]
+ldr x16, [x16, #312]
 br x16
-.word 474
+.word 497
 	.no_dead_strip plt_Foundation_NSDictionary_FromObjectsAndKeys_object___object__
 plt_Foundation_NSDictionary_FromObjectsAndKeys_object___object__:
 _p_9:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #328]
+ldr x16, [x16, #320]
 br x16
-.word 486
+.word 509
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_10:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #336]
+ldr x16, [x16, #328]
 br x16
-.word 515
+.word 538
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_11:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #344]
+ldr x16, [x16, #336]
 br x16
-.word 523
+.word 546
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_12:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #352]
+ldr x16, [x16, #344]
 br x16
-.word 549
+.word 572
 	.no_dead_strip plt__rgctx_fetch_1
 plt__rgctx_fetch_1:
 _p_13:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #360]
+ldr x16, [x16, #352]
 br x16
-.word 557
+.word 580
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_14:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_got@PAGEOFF
-ldr x16, [x16, #368]
+ldr x16, [x16, #360]
 br x16
-.word 579
+.word 602
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Microsoft_Azure_Mobile_Analytics_got, 376
+.lcomm mono_aot_Microsoft_Azure_Mobile_Analytics_got, 368
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -576,13 +576,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 32,376,15,9,66,391195135,0,673
-	.long 128,8,8,10,0,26,1536,856
+	.long 31,368,15,9,66,391195135,0,696
+	.long 128,8,8,10,0,25,1560,856
 	.long 376,200,0,312,352,248,0,176
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 1,177,66,205,37,109,194,190,202,202,199,108,33,44,199,76
+	.byte 59,180,126,99,147,24,44,85,94,36,180,198,35,16,228,167
 	.globl _mono_aot_module_Microsoft_Azure_Mobile_Analytics_info
 	.align 3
 _mono_aot_module_Microsoft_Azure_Mobile_Analytics_info:

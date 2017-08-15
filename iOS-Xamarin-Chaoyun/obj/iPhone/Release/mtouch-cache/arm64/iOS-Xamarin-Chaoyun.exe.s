@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:38 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:07:31 EDT 2017)"
 	.asciz "iOS-Xamarin-Chaoyun.exe"
 	.asciz ""
 
@@ -121,7 +121,7 @@ jit_code_start:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_Application_Main_string__
 iOSXamarinChaoyun_Application_Main_string__:
-.file 1 "/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/Main.cs"
+.file 1 "/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/Main.cs"
 .loc 1 12 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -129,7 +129,7 @@ iOSXamarinChaoyun_Application_Main_string__:
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x2, [x16, #208]
+ldr x2, [x16, #200]
 .word 0xf9400ba0
 .word 0xd2800001
 bl _p_1
@@ -155,7 +155,7 @@ Lme_1:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_AppDelegate_get_Window
 iOSXamarinChaoyun_AppDelegate_get_Window:
-.file 2 "/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/AppDelegate.cs"
+.file 2 "/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/AppDelegate.cs"
 .loc 2 20 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -176,12 +176,21 @@ iOSXamarinChaoyun_AppDelegate_set_Window_UIKit_UIWindow:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9001401
-.word 0x9100a000
-bl _p_2
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9001420
+.word 0x9100a021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -201,62 +210,75 @@ iOSXamarinChaoyun_AppDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_N
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #208]
 .word 0xf9400000
 .word 0xaa0003fa
-.word 0xb5000580
+.word 0xb5000600
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x0, [x16, #216]
+.word 0xf9400000
+.word 0xf9001ba0
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x54000c20
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x0, [x16, #224]
-.word 0xf9400000
-.word 0xf90023a0
-.word 0xeb1f001f
-.word 0x10000011
-.word 0x54000c40
-
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #232]
 .word 0xd2800e01
-bl _p_3
-.word 0xf94023a1
-.word 0xf9001ba1
-.word 0xf9001001
-.word 0xf9001fa0
-.word 0x91008000
 bl _p_2
-.word 0xf9401ba0
-.word 0xf9401fa2
+.word 0xf9401ba1
+.word 0xf9001001
+.word 0x91008002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #240]
-.word 0xf9001440
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #248]
-.word 0xf9002040
+ldr x1, [x16, #232]
+.word 0xf9001401
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x1, [x16, #240]
+.word 0xf9002001
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x1, [x16, #248]
+.word 0xf9401422
+.word 0xf9000c02
+.word 0xf9401021
+.word 0xf9000801
+.word 0x3901801f
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x1, [x16, #208]
+.word 0xf9000020
+.word 0xaa0003fa
+.word 0xaa1a03e0
+bl _p_3
+.loc 2 64 0
+bl _p_4
+.loc 2 67 0
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x0, [x16, #256]
-.word 0xf9401401
-.word 0xf9000c41
-.word 0xf9401000
-.word 0xf9000840
-.word 0x3901805f
-.word 0xaa0203e0
-
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x1, [x16, #216]
-.word 0xf9000022
-.word 0xaa0003fa
-.word 0xaa1a03e0
-bl _p_4
-.loc 2 64 0
+bl _p_5
+.loc 2 68 0
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
@@ -267,7 +289,7 @@ adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x0, [x16, #272]
 .word 0xd2800061
-bl _p_5
+bl _p_6
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90027a0
@@ -278,7 +300,7 @@ ldr x2, [x16, #280]
 .word 0xaa0303e0
 .word 0xd2800001
 .word 0xf9400063
-.word 0xf9404c70
+.word 0xf9404870
 .word 0xd63f0200
 .word 0xf94027a3
 .word 0xaa0303e0
@@ -290,7 +312,7 @@ ldr x2, [x16, #288]
 .word 0xaa0303e0
 .word 0xd2800021
 .word 0xf9400063
-.word 0xf9404c70
+.word 0xf9404870
 .word 0xd63f0200
 .word 0xf94023a3
 .word 0xaa0303e0
@@ -302,32 +324,18 @@ ldr x2, [x16, #296]
 .word 0xaa0303e0
 .word 0xd2800041
 .word 0xf9400063
-.word 0xf9404c70
+.word 0xf9404870
 .word 0xd63f0200
 .word 0xf9401ba0
 .word 0xf9401fa1
-bl _p_6
-.loc 2 66 0
-
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #304]
-.word 0xd2800001
 bl _p_7
-.loc 2 67 0
-
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #312]
-.word 0xd2800001
-bl _p_7
-.loc 2 68 0
+.loc 2 71 0
 .word 0xd2800020
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2800e00
+.word 0xd28007e0
 .word 0xaa1103e1
 bl _p_8
 
@@ -336,7 +344,7 @@ Lme_4:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_AppDelegate_OnResignActivation_UIKit_UIApplication
 iOSXamarinChaoyun_AppDelegate_OnResignActivation_UIKit_UIApplication:
-.loc 2 77 0 prologue_end
+.loc 2 115 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -350,7 +358,7 @@ Lme_5:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_AppDelegate_DidEnterBackground_UIKit_UIApplication
 iOSXamarinChaoyun_AppDelegate_DidEnterBackground_UIKit_UIApplication:
-.loc 2 83 0 prologue_end
+.loc 2 121 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -364,7 +372,7 @@ Lme_6:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_AppDelegate_WillEnterForeground_UIKit_UIApplication
 iOSXamarinChaoyun_AppDelegate_WillEnterForeground_UIKit_UIApplication:
-.loc 2 89 0 prologue_end
+.loc 2 127 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -378,7 +386,7 @@ Lme_7:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_AppDelegate_OnActivated_UIKit_UIApplication
 iOSXamarinChaoyun_AppDelegate_OnActivated_UIKit_UIApplication:
-.loc 2 95 0 prologue_end
+.loc 2 133 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -392,7 +400,7 @@ Lme_8:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_AppDelegate_WillTerminate_UIKit_UIApplication
 iOSXamarinChaoyun_AppDelegate_WillTerminate_UIKit_UIApplication:
-.loc 2 100 0 prologue_end
+.loc 2 138 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -420,8 +428,8 @@ Lme_a:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_FirstViewController__ctor_intptr
 iOSXamarinChaoyun_FirstViewController__ctor_intptr:
-.file 3 "/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/FirstViewController.cs"
-.loc 3 9 0 prologue_end
+.file 3 "/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/FirstViewController.cs"
+.loc 3 10 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -429,7 +437,7 @@ iOSXamarinChaoyun_FirstViewController__ctor_intptr:
 .word 0xf9400ba0
 .word 0xf9400fa1
 bl _p_10
-.loc 3 12 0
+.loc 3 13 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -439,13 +447,20 @@ Lme_b:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_FirstViewController_ViewDidLoad
 iOSXamarinChaoyun_FirstViewController_ViewDidLoad:
-.loc 3 16 0 prologue_end
+.loc 3 17 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
 bl _p_11
 .loc 3 18 0
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x0, [x16, #304]
+.word 0xd2800001
+bl _p_12
+.loc 3 20 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -455,13 +470,13 @@ Lme_c:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_FirstViewController_DidReceiveMemoryWarning
 iOSXamarinChaoyun_FirstViewController_DidReceiveMemoryWarning:
-.loc 3 22 0 prologue_end
+.loc 3 24 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_12
-.loc 3 24 0
+bl _p_13
+.loc 3 26 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -471,7 +486,7 @@ Lme_d:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_FirstViewController_ReleaseDesignerOutlets
 iOSXamarinChaoyun_FirstViewController_ReleaseDesignerOutlets:
-.file 4 "/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/FirstViewController.designer.cs"
+.file 4 "/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/FirstViewController.designer.cs"
 .loc 4 15 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -485,8 +500,8 @@ Lme_e:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_SecondViewController__ctor_intptr
 iOSXamarinChaoyun_SecondViewController__ctor_intptr:
-.file 5 "/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/SecondViewController.cs"
-.loc 5 9 0 prologue_end
+.file 5 "/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/SecondViewController.cs"
+.loc 5 10 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -494,7 +509,7 @@ iOSXamarinChaoyun_SecondViewController__ctor_intptr:
 .word 0xf9400ba0
 .word 0xf9400fa1
 bl _p_10
-.loc 5 12 0
+.loc 5 13 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -504,24 +519,33 @@ Lme_f:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_SecondViewController_ViewDidLoad
 iOSXamarinChaoyun_SecondViewController_ViewDidLoad:
-.loc 5 16 0 prologue_end
+.loc 5 17 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xf9400ba0
-bl _p_11
-.loc 5 17 0
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd28012a1
-bl _p_13
+.word 0xd2801d21
+bl _p_14
+.word 0xd2800001
+bl _p_12
+.loc 5 18 0
+.word 0xf9400ba0
+bl _p_11
+.loc 5 19 0
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x0, [x16, #0]
+.word 0xd2802061
+bl _p_14
 .word 0xaa0003e1
-.word 0xd2801d60
+.word 0xd2801700
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_14
+bl _p_15
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -531,13 +555,13 @@ Lme_10:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_SecondViewController_DidReceiveMemoryWarning
 iOSXamarinChaoyun_SecondViewController_DidReceiveMemoryWarning:
-.loc 5 23 0 prologue_end
+.loc 5 25 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_12
-.loc 5 25 0
+bl _p_13
+.loc 5 27 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -547,7 +571,7 @@ Lme_11:
 	.align 4
 	.no_dead_strip iOSXamarinChaoyun_SecondViewController_ReleaseDesignerOutlets
 iOSXamarinChaoyun_SecondViewController_ReleaseDesignerOutlets:
-.file 6 "/Users/bys/Projects/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/SecondViewController.designer.cs"
+.file 6 "/Users/bys/Documents/Chaoyun/iOS-Xamarin-Chaoyun/iOS-Xamarin-Chaoyun/SecondViewController.designer.cs"
 .loc 6 15 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -566,14 +590,14 @@ iOSXamarinChaoyun_AppDelegate__c__cctor:
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #312]
 .word 0xd2800201
-bl _p_3
+bl _p_2
 .word 0xaa0003e1
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #216]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -608,25 +632,25 @@ iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_0_object_Microsoft_Azure
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xf90063a0
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #328]
 .word 0xf9400f41
-bl _p_15
+bl _p_16
 .word 0xf90067a0
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #336]
 .word 0xf9401341
-bl _p_15
+bl _p_16
 .word 0xaa0003e2
 .word 0xf94063a0
 .word 0xf94067a1
-bl _p_16
+bl _p_17
 .word 0xaa0003f9
 .loc 2 45 0
 .word 0xf9400b40
@@ -635,9 +659,9 @@ bl _p_16
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x1, [x16, #352]
+ldr x1, [x16, #344]
 .word 0xaa1903e0
-bl _p_17
+bl _p_18
 .word 0xaa0003f9
 .loc 2 48 0
 .word 0xf9400b41
@@ -646,8 +670,8 @@ bl _p_17
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x15, [x16, #360]
-.word 0x928006f0
+ldr x15, [x16, #352]
+.word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -657,8 +681,8 @@ ldr x15, [x16, #360]
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x15, [x16, #368]
-.word 0x92800bf0
+ldr x15, [x16, #360]
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -670,7 +694,7 @@ ldr x15, [x16, #368]
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x15, [x16, #376]
+ldr x15, [x16, #368]
 .word 0x928012f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -680,7 +704,7 @@ ldr x15, [x16, #376]
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #376]
 .word 0xf90063a0
 .word 0xf9400b42
 .word 0xaa0203e0
@@ -689,18 +713,18 @@ ldr x0, [x16, #384]
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x15, [x16, #392]
-.word 0x928002f0
+ldr x15, [x16, #384]
+.word 0x92800df0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xf94063a0
 .word 0xaa1803e1
-bl _p_18
+bl _p_19
 .word 0xaa0003e1
 .word 0xaa1903e0
-bl _p_17
+bl _p_18
 .word 0xaa0003f9
 .loc 2 48 0
 .word 0xf9401fa1
@@ -709,7 +733,7 @@ bl _p_17
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x15, [x16, #400]
+ldr x15, [x16, #392]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -727,7 +751,7 @@ ldr x15, [x16, #400]
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x15, [x16, #408]
+ldr x15, [x16, #400]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -738,27 +762,27 @@ ldr x15, [x16, #408]
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #416]
-bl _p_19
-.word 0xf9006fa0
+ldr x0, [x16, #408]
 bl _p_20
+.word 0xf9006fa0
+bl _p_21
 .word 0xf9406fa2
 .word 0xaa0203e0
 .word 0xf9006ba0
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x1, [x16, #424]
+ldr x1, [x16, #416]
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_21
+bl _p_22
 .word 0xf9406ba2
 .word 0xaa0203e0
 .word 0xf90067a0
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0xf940005e
-bl _p_22
+bl _p_23
 .word 0xf94067a2
 .loc 2 58 0
 .word 0xaa0203e0
@@ -766,15 +790,15 @@ bl _p_22
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #424]
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_23
+bl _p_24
 .word 0xf94063a1
 .loc 2 59 0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_24
+bl _p_25
 .loc 2 62 0
 .word 0xa94167b8
 .word 0xf94013ba
@@ -783,6 +807,148 @@ bl _p_24
 .word 0xd65f03c0
 
 Lme_15:
+.text
+	.align 4
+	.no_dead_strip iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_1_Microsoft_Azure_Mobile_Crashes_ErrorReport
+iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_1_Microsoft_Azure_Mobile_Crashes_ErrorReport:
+.loc 2 77 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xd2800000
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_16:
+.text
+	.align 4
+	.no_dead_strip iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_2
+iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_2:
+.loc 2 84 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xd2800000
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_17:
+.text
+	.align 4
+	.no_dead_strip iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_3_Microsoft_Azure_Mobile_Crashes_ErrorReport
+iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_3_Microsoft_Azure_Mobile_Crashes_ErrorReport:
+.loc 2 89 0 prologue_end
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x0, [x16, #432]
+.word 0xd2800041
+bl _p_6
+.word 0xf9001fa0
+.word 0xf9001ba0
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x0, [x16, #440]
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x1, [x16, #448]
+bl _p_26
+.word 0xaa0003e2
+.word 0xf9401fa3
+.word 0xaa0303e0
+.word 0xd2800001
+.word 0xf9400063
+.word 0xf9404870
+.word 0xd63f0200
+.word 0xf9401ba0
+.word 0xf90017a0
+.word 0xf90013a0
+bl _p_27
+.word 0xaa0003e2
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x1, [x16, #456]
+.word 0xaa0203e0
+.word 0xf9400042
+.word 0xf9408050
+.word 0xd63f0200
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x1, [x16, #464]
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x2, [x16, #472]
+bl _p_28
+.word 0xaa0003e2
+.word 0xf94017a3
+.word 0xaa0303e0
+.word 0xd2800021
+.word 0xf9400063
+.word 0xf9404870
+.word 0xd63f0200
+.word 0xf94013a0
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+
+Lme_18:
+.text
+	.align 4
+	.no_dead_strip iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_4_object_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs
+iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_4_object_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs:
+.loc 2 98 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_19:
+.text
+	.align 4
+	.no_dead_strip iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_5_object_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs
+iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_5_object_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs:
+.loc 2 102 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1a:
+.text
+	.align 4
+	.no_dead_strip iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_6_object_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs
+iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_6_object_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs:
+.loc 2 106 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf90013a2
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_1b:
 .text
 	.align 4
 	.no_dead_strip wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs_invoke_void_object_TEventArgs_object_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
@@ -798,7 +964,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNo
 
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #480]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -851,23 +1017,23 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
-bl _p_14
-bl _p_25
+bl _p_15
+bl _p_29
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_8
 
-Lme_17:
+Lme_1d:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
-.file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/corlib/System/Array.cs"
-.loc 7 78 0 prologue_end
-.word 0xa9ba7bfd
+.file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/corlib/System/Array.cs"
+.loc 7 71 0 prologue_end
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9001faf
 .word 0xf9000ba0
@@ -875,42 +1041,46 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0x9100a3a0
-.word 0xf9002fa0
+.word 0xf90023a0
 .word 0xf9401fa0
-bl _p_26
+bl _p_30
 .word 0xaa0003ef
-.word 0xf9402fa0
+.word 0xf94023a0
 .word 0xf9400ba1
-bl _p_27
+bl _p_31
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_26
+bl _p_30
 .word 0xd2800401
-bl _p_3
-.word 0xf90023a0
-.word 0x91004001
-.word 0xaa0103e0
-.word 0xf9400fa2
-.word 0xf9002ba2
-.word 0xf9000022
-.word 0xf90027a0
 bl _p_2
-.word 0xf94023a0
-.word 0xf94027a1
-.word 0xf9402ba2
+.word 0x91004003
+.word 0xaa0303e1
+.word 0xf9400fa2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
 .word 0x91002021
 .word 0xf94013a2
 .word 0xf9000022
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_18:
+Lme_1e:
 .text
-ut_25:
+ut_31:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 ut_end:
@@ -918,13 +1088,13 @@ ut_end:
 _unbox_trampoline_p:
 
 	.long 0
-LDIFF_SYM3=ut_end - ut_25
+LDIFF_SYM3=ut_end - ut_31
 	.long LDIFF_SYM3
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-.loc 7 239 0 prologue_end
+.loc 7 215 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
@@ -933,19 +1103,27 @@ System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000001
-bl _p_2
-.word 0xf9400fa0
-.loc 7 240 0
-.word 0xf9400ba0
+.word 0xd349fc02
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.loc 7 216 0
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 7 241 0
+.loc 7 217 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_19:
+Lme_1f:
 .text
 	.align 3
 jit_code_end:
@@ -977,6 +1155,12 @@ bl iOSXamarinChaoyun_SecondViewController_ReleaseDesignerOutlets
 bl iOSXamarinChaoyun_AppDelegate__c__cctor
 bl iOSXamarinChaoyun_AppDelegate__c__ctor
 bl iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_0_object_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
+bl iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_1_Microsoft_Azure_Mobile_Crashes_ErrorReport
+bl iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_2
+bl iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_3_Microsoft_Azure_Mobile_Crashes_ErrorReport
+bl iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_4_object_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs
+bl iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_5_object_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs
+bl iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_6_object_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs
 bl method_addresses
 bl wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs_invoke_void_object_TEventArgs_object_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 bl System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
@@ -987,14 +1171,14 @@ method_addresses_end:
 	.align 3
 unbox_trampolines:
 
-	.long 25
+	.long 31
 unbox_trampolines_end:
 
 	.long 0
 .text
 	.align 3
 unbox_trampoline_addresses:
-bl ut_25
+bl ut_31
 
 	.long 0
 .section __TEXT, __const
@@ -1003,8 +1187,9 @@ unwind_info:
 
 	.byte 0,13,12,31,0,68,14,32,157,4,158,3,68,13,29,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.byte 13,12,31,0,68,14,16,157,2,158,1,68,13,29,22,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,152,26
-	.byte 153,25,68,154,24,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4
-	.byte 154,3,13,12,31,0,68,14,96,157,12,158,11,68,13,29,13,12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 153,25,68,154,24,13,12,31,0,68,14,64,157,8,158,7,68,13,29,13,12,31,0,68,14,48,157,6,158,5,68,13
+	.byte 29,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,13,12
+	.byte 31,0,68,14,80,157,10,158,9,68,13,29
 
 .text
 	.align 4
@@ -1015,221 +1200,253 @@ plt_UIKit_UIApplication_Main_string___string_string:
 _p_1:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #456]
-br x16
-.word 599
-	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
-plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
-_p_2:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #464]
-br x16
-.word 604
-	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
-plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
-_p_3:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #472]
-br x16
-.word 611
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_Push_add_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
-plt_Microsoft_Azure_Mobile_Push_Push_add_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs:
-_p_4:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #480]
-br x16
-.word 619
-	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
-plt_wrapper_alloc_object_AllocVector_intptr_intptr:
-_p_5:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #488]
-br x16
-.word 624
-	.no_dead_strip plt_Microsoft_Azure_Mobile_MobileCenter_Start_string_System_Type__
-plt_Microsoft_Azure_Mobile_MobileCenter_Start_string_System_Type__:
-_p_6:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 632
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_Analytics_TrackEvent_string_System_Collections_Generic_IDictionary_2_string_string
-plt_Microsoft_Azure_Mobile_Analytics_Analytics_TrackEvent_string_System_Collections_Generic_IDictionary_2_string_string:
-_p_7:
+.word 682
+	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
+plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
+_p_2:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 637
+.word 687
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Push_Push_add_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
+plt_Microsoft_Azure_Mobile_Push_Push_add_PushNotificationReceived_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs:
+_p_3:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #512]
+br x16
+.word 695
+	.no_dead_strip plt_Microsoft_Azure_Mobile_MobileCenter_GetInstallIdAsync
+plt_Microsoft_Azure_Mobile_MobileCenter_GetInstallIdAsync:
+_p_4:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #520]
+br x16
+.word 700
+	.no_dead_strip plt_Microsoft_Azure_Mobile_MobileCenter_SetLogUrl_string
+plt_Microsoft_Azure_Mobile_MobileCenter_SetLogUrl_string:
+_p_5:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #528]
+br x16
+.word 705
+	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
+plt_wrapper_alloc_object_AllocVector_intptr_intptr:
+_p_6:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #536]
+br x16
+.word 710
+	.no_dead_strip plt_Microsoft_Azure_Mobile_MobileCenter_Start_string_System_Type__
+plt_Microsoft_Azure_Mobile_MobileCenter_Start_string_System_Type__:
+_p_7:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #544]
+br x16
+.word 718
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_8:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #512]
+ldr x16, [x16, #552]
 br x16
-.word 642
+.word 723
 	.no_dead_strip plt_UIKit_UIApplicationDelegate__ctor
 plt_UIKit_UIApplicationDelegate__ctor:
 _p_9:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #520]
+ldr x16, [x16, #560]
 br x16
-.word 677
+.word 758
 	.no_dead_strip plt_UIKit_UIViewController__ctor_intptr
 plt_UIKit_UIViewController__ctor_intptr:
 _p_10:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #528]
+ldr x16, [x16, #568]
 br x16
-.word 682
+.word 763
 	.no_dead_strip plt_UIKit_UIViewController_ViewDidLoad
 plt_UIKit_UIViewController_ViewDidLoad:
 _p_11:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #536]
-br x16
-.word 687
-	.no_dead_strip plt_UIKit_UIViewController_DidReceiveMemoryWarning
-plt_UIKit_UIViewController_DidReceiveMemoryWarning:
-_p_12:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #544]
-br x16
-.word 692
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr
-plt__jit_icall_mono_helper_ldstr:
-_p_13:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #552]
-br x16
-.word 697
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_14:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #560]
-br x16
-.word 717
-	.no_dead_strip plt_string_Format_string_object
-plt_string_Format_string_object:
-_p_15:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
-ldr x16, [x16, #568]
-br x16
-.word 745
-	.no_dead_strip plt_string_Concat_string_string_string
-plt_string_Concat_string_string_string:
-_p_16:
-adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
-add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 750
-	.no_dead_strip plt_string_Concat_string_string
-plt_string_Concat_string_string:
-_p_17:
+.word 768
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_Analytics_TrackEvent_string_System_Collections_Generic_IDictionary_2_string_string
+plt_Microsoft_Azure_Mobile_Analytics_Analytics_TrackEvent_string_System_Collections_Generic_IDictionary_2_string_string:
+_p_12:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 755
-	.no_dead_strip plt_string_Format_string_object_object
-plt_string_Format_string_object_object:
-_p_18:
+.word 773
+	.no_dead_strip plt_UIKit_UIViewController_DidReceiveMemoryWarning
+plt_UIKit_UIViewController_DidReceiveMemoryWarning:
+_p_13:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 760
-	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
-plt__jit_icall_ves_icall_object_new_specific:
-_p_19:
+.word 778
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr
+plt__jit_icall_mono_helper_ldstr:
+_p_14:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 765
-	.no_dead_strip plt_UIKit_UIAlertView__ctor
-plt_UIKit_UIAlertView__ctor:
-_p_20:
+.word 783
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_15:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 797
-	.no_dead_strip plt_UIKit_UIAlertView_set_Title_string
-plt_UIKit_UIAlertView_set_Title_string:
-_p_21:
+.word 803
+	.no_dead_strip plt_string_Format_string_object
+plt_string_Format_string_object:
+_p_16:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 802
-	.no_dead_strip plt_UIKit_UIAlertView_set_Message_string
-plt_UIKit_UIAlertView_set_Message_string:
-_p_22:
+.word 831
+	.no_dead_strip plt_string_Concat_string_string_string
+plt_string_Concat_string_string_string:
+_p_17:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 807
-	.no_dead_strip plt_UIKit_UIAlertView_AddButton_string
-plt_UIKit_UIAlertView_AddButton_string:
-_p_23:
+.word 836
+	.no_dead_strip plt_string_Concat_string_string
+plt_string_Concat_string_string:
+_p_18:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 812
-	.no_dead_strip plt_UIKit_UIAlertView_Show
-plt_UIKit_UIAlertView_Show:
-_p_24:
+.word 841
+	.no_dead_strip plt_string_Format_string_object_object
+plt_string_Format_string_object_object:
+_p_19:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 817
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_25:
+.word 846
+	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
+plt__jit_icall_ves_icall_object_new_specific:
+_p_20:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 822
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_26:
+.word 851
+	.no_dead_strip plt_UIKit_UIAlertView__ctor
+plt_UIKit_UIAlertView__ctor:
+_p_21:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 886
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-_p_27:
+.word 883
+	.no_dead_strip plt_UIKit_UIAlertView_set_Title_string
+plt_UIKit_UIAlertView_set_Title_string:
+_p_22:
 adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
 add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 894
+.word 888
+	.no_dead_strip plt_UIKit_UIAlertView_set_Message_string
+plt_UIKit_UIAlertView_set_Message_string:
+_p_23:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #672]
+br x16
+.word 893
+	.no_dead_strip plt_UIKit_UIAlertView_AddButton_string
+plt_UIKit_UIAlertView_AddButton_string:
+_p_24:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #680]
+br x16
+.word 898
+	.no_dead_strip plt_UIKit_UIAlertView_Show
+plt_UIKit_UIAlertView_Show:
+_p_25:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #688]
+br x16
+.word 903
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_AttachmentWithText_string_string
+plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_AttachmentWithText_string_string:
+_p_26:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #696]
+br x16
+.word 908
+	.no_dead_strip plt_System_Text_Encoding_get_UTF8
+plt_System_Text_Encoding_get_UTF8:
+_p_27:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #704]
+br x16
+.word 913
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_AttachmentWithBinary_byte___string_string
+plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_AttachmentWithBinary_byte___string_string:
+_p_28:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #712]
+br x16
+.word 918
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_29:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #720]
+br x16
+.word 923
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_30:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #728]
+br x16
+.word 989
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
+_p_31:
+adrp x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGE+0
+add x16, x16, mono_aot_iOS_Xamarin_Chaoyun_got@PAGEOFF
+ldr x16, [x16, #736]
+br x16
+.word 997
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_iOS_Xamarin_Chaoyun_got, 672
+.lcomm mono_aot_iOS_Xamarin_Chaoyun_got, 744
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -1260,7 +1477,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "774575F0-5626-471F-943E-268ED24EC91E"
+	.asciz "2EEB9E10-50EE-42AD-B80F-5B05CAA33ABE"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -1337,13 +1554,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 56,672,28,26,66,391195135,0,1666
-	.long 128,8,8,10,0,26,2688,1016
-	.long 480,232,0,384,448,288,0,200
-	.long 56,0,0,0,0,0,0,0
+	.long 61,744,32,32,66,391195135,0,1773
+	.long 128,8,8,10,0,25,2920,1136
+	.long 504,240,0,400,472,296,0,208
+	.long 64,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 143,49,85,158,142,236,77,45,148,89,128,101,240,50,187,98
+	.byte 249,204,202,88,74,52,155,88,29,193,221,67,83,191,46,1
 	.globl _mono_aot_module_iOS_Xamarin_Chaoyun_info
 	.align 3
 _mono_aot_module_iOS_Xamarin_Chaoyun_info:
@@ -1830,7 +2047,7 @@ Lfde4_end:
 	.asciz "iOSXamarinChaoyun.AppDelegate:OnResignActivation"
 	.asciz "iOSXamarinChaoyun_AppDelegate_OnResignActivation_UIKit_UIApplication"
 
-	.byte 2,77
+	.byte 2,115
 	.quad iOSXamarinChaoyun_AppDelegate_OnResignActivation_UIKit_UIApplication
 	.quad Lme_5
 
@@ -1869,7 +2086,7 @@ Lfde5_end:
 	.asciz "iOSXamarinChaoyun.AppDelegate:DidEnterBackground"
 	.asciz "iOSXamarinChaoyun_AppDelegate_DidEnterBackground_UIKit_UIApplication"
 
-	.byte 2,83
+	.byte 2,121
 	.quad iOSXamarinChaoyun_AppDelegate_DidEnterBackground_UIKit_UIApplication
 	.quad Lme_6
 
@@ -1908,7 +2125,7 @@ Lfde6_end:
 	.asciz "iOSXamarinChaoyun.AppDelegate:WillEnterForeground"
 	.asciz "iOSXamarinChaoyun_AppDelegate_WillEnterForeground_UIKit_UIApplication"
 
-	.byte 2,89
+	.byte 2,127
 	.quad iOSXamarinChaoyun_AppDelegate_WillEnterForeground_UIKit_UIApplication
 	.quad Lme_7
 
@@ -1947,7 +2164,7 @@ Lfde7_end:
 	.asciz "iOSXamarinChaoyun.AppDelegate:OnActivated"
 	.asciz "iOSXamarinChaoyun_AppDelegate_OnActivated_UIKit_UIApplication"
 
-	.byte 2,95
+	.byte 2,133,1
 	.quad iOSXamarinChaoyun_AppDelegate_OnActivated_UIKit_UIApplication
 	.quad Lme_8
 
@@ -1986,7 +2203,7 @@ Lfde8_end:
 	.asciz "iOSXamarinChaoyun.AppDelegate:WillTerminate"
 	.asciz "iOSXamarinChaoyun_AppDelegate_WillTerminate_UIKit_UIApplication"
 
-	.byte 2,100
+	.byte 2,138,1
 	.quad iOSXamarinChaoyun_AppDelegate_WillTerminate_UIKit_UIApplication
 	.quad Lme_9
 
@@ -2109,7 +2326,7 @@ LDIFF_SYM101=LTDIE_11 - Ldebug_info_start
 	.asciz "iOSXamarinChaoyun.FirstViewController:.ctor"
 	.asciz "iOSXamarinChaoyun_FirstViewController__ctor_intptr"
 
-	.byte 3,9
+	.byte 3,10
 	.quad iOSXamarinChaoyun_FirstViewController__ctor_intptr
 	.quad Lme_b
 
@@ -2148,7 +2365,7 @@ Lfde11_end:
 	.asciz "iOSXamarinChaoyun.FirstViewController:ViewDidLoad"
 	.asciz "iOSXamarinChaoyun_FirstViewController_ViewDidLoad"
 
-	.byte 3,16
+	.byte 3,17
 	.quad iOSXamarinChaoyun_FirstViewController_ViewDidLoad
 	.quad Lme_c
 
@@ -2182,7 +2399,7 @@ Lfde12_end:
 	.asciz "iOSXamarinChaoyun.FirstViewController:DidReceiveMemoryWarning"
 	.asciz "iOSXamarinChaoyun_FirstViewController_DidReceiveMemoryWarning"
 
-	.byte 3,22
+	.byte 3,24
 	.quad iOSXamarinChaoyun_FirstViewController_DidReceiveMemoryWarning
 	.quad Lme_d
 
@@ -2272,7 +2489,7 @@ LDIFF_SYM118=LTDIE_13 - Ldebug_info_start
 	.asciz "iOSXamarinChaoyun.SecondViewController:.ctor"
 	.asciz "iOSXamarinChaoyun_SecondViewController__ctor_intptr"
 
-	.byte 5,9
+	.byte 5,10
 	.quad iOSXamarinChaoyun_SecondViewController__ctor_intptr
 	.quad Lme_f
 
@@ -2311,7 +2528,7 @@ Lfde15_end:
 	.asciz "iOSXamarinChaoyun.SecondViewController:ViewDidLoad"
 	.asciz "iOSXamarinChaoyun_SecondViewController_ViewDidLoad"
 
-	.byte 5,16
+	.byte 5,17
 	.quad iOSXamarinChaoyun_SecondViewController_ViewDidLoad
 	.quad Lme_10
 
@@ -2345,7 +2562,7 @@ Lfde16_end:
 	.asciz "iOSXamarinChaoyun.SecondViewController:DidReceiveMemoryWarning"
 	.asciz "iOSXamarinChaoyun_SecondViewController_DidReceiveMemoryWarning"
 
-	.byte 5,23
+	.byte 5,25
 	.quad iOSXamarinChaoyun_SecondViewController_DidReceiveMemoryWarning
 	.quad Lme_11
 
@@ -2652,438 +2869,1684 @@ LDIFF_SYM165=Lme_15 - iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_0_
 Lfde21_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_24:
+LTDIE_22:
 
 	.byte 5
-	.asciz "System_Reflection_MemberInfo"
+	.asciz "System_ValueType"
 
 	.byte 16,16
 LDIFF_SYM166=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM166
 	.byte 2,35,0,0,7
-	.asciz "System_Reflection_MemberInfo"
+	.asciz "System_ValueType"
 
-LDIFF_SYM167=LTDIE_24 - Ldebug_info_start
+LDIFF_SYM167=LTDIE_22 - Ldebug_info_start
 	.long LDIFF_SYM167
-LTDIE_24_POINTER:
-
-	.byte 13
-LDIFF_SYM168=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM168
-LTDIE_24_REFERENCE:
-
-	.byte 14
-LDIFF_SYM169=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM169
-LTDIE_23:
-
-	.byte 5
-	.asciz "System_Reflection_MethodBase"
-
-	.byte 16,16
-LDIFF_SYM170=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM170
-	.byte 2,35,0,0,7
-	.asciz "System_Reflection_MethodBase"
-
-LDIFF_SYM171=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM171
-LTDIE_23_POINTER:
-
-	.byte 13
-LDIFF_SYM172=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM172
-LTDIE_23_REFERENCE:
-
-	.byte 14
-LDIFF_SYM173=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM173
-LTDIE_22:
-
-	.byte 5
-	.asciz "System_Reflection_MethodInfo"
-
-	.byte 16,16
-LDIFF_SYM174=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM174
-	.byte 2,35,0,0,7
-	.asciz "System_Reflection_MethodInfo"
-
-LDIFF_SYM175=LTDIE_22 - Ldebug_info_start
-	.long LDIFF_SYM175
 LTDIE_22_POINTER:
 
 	.byte 13
-LDIFF_SYM176=LTDIE_22 - Ldebug_info_start
-	.long LDIFF_SYM176
+LDIFF_SYM168=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM168
 LTDIE_22_REFERENCE:
 
 	.byte 14
-LDIFF_SYM177=LTDIE_22 - Ldebug_info_start
-	.long LDIFF_SYM177
-LTDIE_26:
-
-	.byte 5
-	.asciz "System_Type"
-
-	.byte 24,16
-LDIFF_SYM178=LTDIE_24 - Ldebug_info_start
-	.long LDIFF_SYM178
-	.byte 2,35,0,6
-	.asciz "_impl"
-
-LDIFF_SYM179=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM179
-	.byte 2,35,16,0,7
-	.asciz "System_Type"
-
-LDIFF_SYM180=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM180
-LTDIE_26_POINTER:
-
-	.byte 13
-LDIFF_SYM181=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM181
-LTDIE_26_REFERENCE:
-
-	.byte 14
-LDIFF_SYM182=LTDIE_26 - Ldebug_info_start
-	.long LDIFF_SYM182
-LTDIE_28:
-
-	.byte 5
-	.asciz "System_ValueType"
-
-	.byte 16,16
-LDIFF_SYM183=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM183
-	.byte 2,35,0,0,7
-	.asciz "System_ValueType"
-
-LDIFF_SYM184=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM184
-LTDIE_28_POINTER:
-
-	.byte 13
-LDIFF_SYM185=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM185
-LTDIE_28_REFERENCE:
-
-	.byte 14
-LDIFF_SYM186=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM186
-LTDIE_27:
-
-	.byte 5
-	.asciz "System_Boolean"
-
-	.byte 17,16
-LDIFF_SYM187=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM187
-	.byte 2,35,0,6
-	.asciz "m_value"
-
-LDIFF_SYM188=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM188
-	.byte 2,35,16,0,7
-	.asciz "System_Boolean"
-
-LDIFF_SYM189=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM189
-LTDIE_27_POINTER:
-
-	.byte 13
-LDIFF_SYM190=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM190
-LTDIE_27_REFERENCE:
-
-	.byte 14
-LDIFF_SYM191=LTDIE_27 - Ldebug_info_start
-	.long LDIFF_SYM191
-LTDIE_25:
-
-	.byte 5
-	.asciz "System_DelegateData"
-
-	.byte 40,16
-LDIFF_SYM192=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM192
-	.byte 2,35,0,6
-	.asciz "target_type"
-
-LDIFF_SYM193=LTDIE_26_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM193
-	.byte 2,35,16,6
-	.asciz "method_name"
-
-LDIFF_SYM194=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM194
-	.byte 2,35,24,6
-	.asciz "curried_first_arg"
-
-LDIFF_SYM195=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM195
-	.byte 2,35,32,0,7
-	.asciz "System_DelegateData"
-
-LDIFF_SYM196=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM196
-LTDIE_25_POINTER:
-
-	.byte 13
-LDIFF_SYM197=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM197
-LTDIE_25_REFERENCE:
-
-	.byte 14
-LDIFF_SYM198=LTDIE_25 - Ldebug_info_start
-	.long LDIFF_SYM198
+LDIFF_SYM169=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM169
 LTDIE_21:
-
-	.byte 5
-	.asciz "System_Delegate"
-
-	.byte 104,16
-LDIFF_SYM199=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM199
-	.byte 2,35,0,6
-	.asciz "method_ptr"
-
-LDIFF_SYM200=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM200
-	.byte 2,35,16,6
-	.asciz "invoke_impl"
-
-LDIFF_SYM201=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM201
-	.byte 2,35,24,6
-	.asciz "m_target"
-
-LDIFF_SYM202=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM202
-	.byte 2,35,32,6
-	.asciz "method"
-
-LDIFF_SYM203=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM203
-	.byte 2,35,40,6
-	.asciz "delegate_trampoline"
-
-LDIFF_SYM204=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM204
-	.byte 2,35,48,6
-	.asciz "extra_arg"
-
-LDIFF_SYM205=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM205
-	.byte 2,35,56,6
-	.asciz "method_code"
-
-LDIFF_SYM206=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM206
-	.byte 2,35,64,6
-	.asciz "method_info"
-
-LDIFF_SYM207=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM207
-	.byte 2,35,72,6
-	.asciz "original_method_info"
-
-LDIFF_SYM208=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM208
-	.byte 2,35,80,6
-	.asciz "data"
-
-LDIFF_SYM209=LTDIE_25_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM209
-	.byte 2,35,88,6
-	.asciz "method_is_virtual"
-
-LDIFF_SYM210=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM210
-	.byte 2,35,96,0,7
-	.asciz "System_Delegate"
-
-LDIFF_SYM211=LTDIE_21 - Ldebug_info_start
-	.long LDIFF_SYM211
-LTDIE_21_POINTER:
-
-	.byte 13
-LDIFF_SYM212=LTDIE_21 - Ldebug_info_start
-	.long LDIFF_SYM212
-LTDIE_21_REFERENCE:
-
-	.byte 14
-LDIFF_SYM213=LTDIE_21 - Ldebug_info_start
-	.long LDIFF_SYM213
-LTDIE_20:
-
-	.byte 5
-	.asciz "System_MulticastDelegate"
-
-	.byte 112,16
-LDIFF_SYM214=LTDIE_21 - Ldebug_info_start
-	.long LDIFF_SYM214
-	.byte 2,35,0,6
-	.asciz "delegates"
-
-LDIFF_SYM215=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM215
-	.byte 2,35,104,0,7
-	.asciz "System_MulticastDelegate"
-
-LDIFF_SYM216=LTDIE_20 - Ldebug_info_start
-	.long LDIFF_SYM216
-LTDIE_20_POINTER:
-
-	.byte 13
-LDIFF_SYM217=LTDIE_20 - Ldebug_info_start
-	.long LDIFF_SYM217
-LTDIE_20_REFERENCE:
-
-	.byte 14
-LDIFF_SYM218=LTDIE_20 - Ldebug_info_start
-	.long LDIFF_SYM218
-LTDIE_19:
-
-	.byte 5
-	.asciz "System_EventHandler`1"
-
-	.byte 112,16
-LDIFF_SYM219=LTDIE_20 - Ldebug_info_start
-	.long LDIFF_SYM219
-	.byte 2,35,0,0,7
-	.asciz "System_EventHandler`1"
-
-LDIFF_SYM220=LTDIE_19 - Ldebug_info_start
-	.long LDIFF_SYM220
-LTDIE_19_POINTER:
-
-	.byte 13
-LDIFF_SYM221=LTDIE_19 - Ldebug_info_start
-	.long LDIFF_SYM221
-LTDIE_19_REFERENCE:
-
-	.byte 14
-LDIFF_SYM222=LTDIE_19 - Ldebug_info_start
-	.long LDIFF_SYM222
-LTDIE_29:
 
 	.byte 5
 	.asciz "System_Int32"
 
 	.byte 20,16
-LDIFF_SYM223=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM223
+LDIFF_SYM170=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM170
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM224=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM224
+LDIFF_SYM171=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM171
 	.byte 2,35,16,0,7
 	.asciz "System_Int32"
 
-LDIFF_SYM225=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM225
+LDIFF_SYM172=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM172
+LTDIE_21_POINTER:
+
+	.byte 13
+LDIFF_SYM173=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM173
+LTDIE_21_REFERENCE:
+
+	.byte 14
+LDIFF_SYM174=LTDIE_21 - Ldebug_info_start
+	.long LDIFF_SYM174
+LTDIE_20:
+
+	.byte 5
+	.asciz "Microsoft_Azure_Mobile_Device"
+
+	.byte 136,1,16
+LDIFF_SYM175=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM175
+	.byte 2,35,0,6
+	.asciz "<SdkName>k__BackingField"
+
+LDIFF_SYM176=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM176
+	.byte 2,35,16,6
+	.asciz "<SdkVersion>k__BackingField"
+
+LDIFF_SYM177=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM177
+	.byte 2,35,24,6
+	.asciz "<Model>k__BackingField"
+
+LDIFF_SYM178=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM178
+	.byte 2,35,32,6
+	.asciz "<OemName>k__BackingField"
+
+LDIFF_SYM179=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM179
+	.byte 2,35,40,6
+	.asciz "<OsName>k__BackingField"
+
+LDIFF_SYM180=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM180
+	.byte 2,35,48,6
+	.asciz "<OsVersion>k__BackingField"
+
+LDIFF_SYM181=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM181
+	.byte 2,35,56,6
+	.asciz "<OsBuild>k__BackingField"
+
+LDIFF_SYM182=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM182
+	.byte 2,35,64,6
+	.asciz "<OsApiLevel>k__BackingField"
+
+LDIFF_SYM183=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM183
+	.byte 3,35,128,1,6
+	.asciz "<Locale>k__BackingField"
+
+LDIFF_SYM184=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM184
+	.byte 2,35,72,6
+	.asciz "<TimeZoneOffset>k__BackingField"
+
+LDIFF_SYM185=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM185
+	.byte 3,35,132,1,6
+	.asciz "<ScreenSize>k__BackingField"
+
+LDIFF_SYM186=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM186
+	.byte 2,35,80,6
+	.asciz "<AppVersion>k__BackingField"
+
+LDIFF_SYM187=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM187
+	.byte 2,35,88,6
+	.asciz "<CarrierName>k__BackingField"
+
+LDIFF_SYM188=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM188
+	.byte 2,35,96,6
+	.asciz "<CarrierCountry>k__BackingField"
+
+LDIFF_SYM189=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM189
+	.byte 2,35,104,6
+	.asciz "<AppBuild>k__BackingField"
+
+LDIFF_SYM190=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM190
+	.byte 2,35,112,6
+	.asciz "<AppNamespace>k__BackingField"
+
+LDIFF_SYM191=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM191
+	.byte 2,35,120,0,7
+	.asciz "Microsoft_Azure_Mobile_Device"
+
+LDIFF_SYM192=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM192
+LTDIE_20_POINTER:
+
+	.byte 13
+LDIFF_SYM193=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM193
+LTDIE_20_REFERENCE:
+
+	.byte 14
+LDIFF_SYM194=LTDIE_20 - Ldebug_info_start
+	.long LDIFF_SYM194
+LTDIE_24:
+
+	.byte 17
+	.asciz "System_Collections_IDictionary"
+
+	.byte 16,7
+	.asciz "System_Collections_IDictionary"
+
+LDIFF_SYM195=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM195
+LTDIE_24_POINTER:
+
+	.byte 13
+LDIFF_SYM196=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM196
+LTDIE_24_REFERENCE:
+
+	.byte 14
+LDIFF_SYM197=LTDIE_24 - Ldebug_info_start
+	.long LDIFF_SYM197
+LTDIE_26:
+
+	.byte 17
+	.asciz "System_Collections_Generic_IList`1"
+
+	.byte 16,7
+	.asciz "System_Collections_Generic_IList`1"
+
+LDIFF_SYM198=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM198
+LTDIE_26_POINTER:
+
+	.byte 13
+LDIFF_SYM199=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM199
+LTDIE_26_REFERENCE:
+
+	.byte 14
+LDIFF_SYM200=LTDIE_26 - Ldebug_info_start
+	.long LDIFF_SYM200
+LTDIE_29:
+
+	.byte 17
+	.asciz "System_Collections_Generic_IEqualityComparer`1"
+
+	.byte 16,7
+	.asciz "System_Collections_Generic_IEqualityComparer`1"
+
+LDIFF_SYM201=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM201
 LTDIE_29_POINTER:
 
 	.byte 13
-LDIFF_SYM226=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM226
+LDIFF_SYM202=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM202
 LTDIE_29_REFERENCE:
 
 	.byte 14
-LDIFF_SYM227=LTDIE_29 - Ldebug_info_start
-	.long LDIFF_SYM227
+LDIFF_SYM203=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM203
 LTDIE_30:
+
+	.byte 5
+	.asciz "_KeyCollection"
+
+	.byte 24,16
+LDIFF_SYM204=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM204
+	.byte 2,35,0,6
+	.asciz "dictionary"
+
+LDIFF_SYM205=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM205
+	.byte 2,35,16,0,7
+	.asciz "_KeyCollection"
+
+LDIFF_SYM206=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM206
+LTDIE_30_POINTER:
+
+	.byte 13
+LDIFF_SYM207=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM207
+LTDIE_30_REFERENCE:
+
+	.byte 14
+LDIFF_SYM208=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM208
+LTDIE_31:
+
+	.byte 5
+	.asciz "_ValueCollection"
+
+	.byte 24,16
+LDIFF_SYM209=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM209
+	.byte 2,35,0,6
+	.asciz "dictionary"
+
+LDIFF_SYM210=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM210
+	.byte 2,35,16,0,7
+	.asciz "_ValueCollection"
+
+LDIFF_SYM211=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM211
+LTDIE_31_POINTER:
+
+	.byte 13
+LDIFF_SYM212=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM212
+LTDIE_31_REFERENCE:
+
+	.byte 14
+LDIFF_SYM213=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM213
+LTDIE_28:
+
+	.byte 5
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+	.byte 72,16
+LDIFF_SYM214=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM214
+	.byte 2,35,0,6
+	.asciz "buckets"
+
+LDIFF_SYM215=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM215
+	.byte 2,35,16,6
+	.asciz "entries"
+
+LDIFF_SYM216=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM216
+	.byte 2,35,24,6
+	.asciz "count"
+
+LDIFF_SYM217=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM217
+	.byte 2,35,56,6
+	.asciz "version"
+
+LDIFF_SYM218=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM218
+	.byte 2,35,60,6
+	.asciz "freeList"
+
+LDIFF_SYM219=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM219
+	.byte 2,35,64,6
+	.asciz "freeCount"
+
+LDIFF_SYM220=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM220
+	.byte 2,35,68,6
+	.asciz "comparer"
+
+LDIFF_SYM221=LTDIE_29_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM221
+	.byte 2,35,32,6
+	.asciz "keys"
+
+LDIFF_SYM222=LTDIE_30_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM222
+	.byte 2,35,40,6
+	.asciz "values"
+
+LDIFF_SYM223=LTDIE_31_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM223
+	.byte 2,35,48,0,7
+	.asciz "System_Collections_Generic_Dictionary`2"
+
+LDIFF_SYM224=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM224
+LTDIE_28_POINTER:
+
+	.byte 13
+LDIFF_SYM225=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM225
+LTDIE_28_REFERENCE:
+
+	.byte 14
+LDIFF_SYM226=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM226
+LTDIE_32:
+
+	.byte 17
+	.asciz "System_Runtime_Serialization_IFormatterConverter"
+
+	.byte 16,7
+	.asciz "System_Runtime_Serialization_IFormatterConverter"
+
+LDIFF_SYM227=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM227
+LTDIE_32_POINTER:
+
+	.byte 13
+LDIFF_SYM228=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM228
+LTDIE_32_REFERENCE:
+
+	.byte 14
+LDIFF_SYM229=LTDIE_32 - Ldebug_info_start
+	.long LDIFF_SYM229
+LTDIE_34:
+
+	.byte 5
+	.asciz "System_Reflection_MemberInfo"
+
+	.byte 16,16
+LDIFF_SYM230=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM230
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_MemberInfo"
+
+LDIFF_SYM231=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM231
+LTDIE_34_POINTER:
+
+	.byte 13
+LDIFF_SYM232=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM232
+LTDIE_34_REFERENCE:
+
+	.byte 14
+LDIFF_SYM233=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM233
+LTDIE_33:
+
+	.byte 5
+	.asciz "System_Type"
+
+	.byte 24,16
+LDIFF_SYM234=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM234
+	.byte 2,35,0,6
+	.asciz "_impl"
+
+LDIFF_SYM235=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM235
+	.byte 2,35,16,0,7
+	.asciz "System_Type"
+
+LDIFF_SYM236=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM236
+LTDIE_33_POINTER:
+
+	.byte 13
+LDIFF_SYM237=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM237
+LTDIE_33_REFERENCE:
+
+	.byte 14
+LDIFF_SYM238=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM238
+LTDIE_35:
+
+	.byte 5
+	.asciz "System_Boolean"
+
+	.byte 17,16
+LDIFF_SYM239=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM239
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM240=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM240
+	.byte 2,35,16,0,7
+	.asciz "System_Boolean"
+
+LDIFF_SYM241=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM241
+LTDIE_35_POINTER:
+
+	.byte 13
+LDIFF_SYM242=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM242
+LTDIE_35_REFERENCE:
+
+	.byte 14
+LDIFF_SYM243=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM243
+LTDIE_27:
+
+	.byte 5
+	.asciz "System_Runtime_Serialization_SerializationInfo"
+
+	.byte 88,16
+LDIFF_SYM244=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM244
+	.byte 2,35,0,6
+	.asciz "m_members"
+
+LDIFF_SYM245=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM245
+	.byte 2,35,16,6
+	.asciz "m_data"
+
+LDIFF_SYM246=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM246
+	.byte 2,35,24,6
+	.asciz "m_types"
+
+LDIFF_SYM247=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM247
+	.byte 2,35,32,6
+	.asciz "m_nameToIndex"
+
+LDIFF_SYM248=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM248
+	.byte 2,35,40,6
+	.asciz "m_currMember"
+
+LDIFF_SYM249=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM249
+	.byte 2,35,80,6
+	.asciz "m_converter"
+
+LDIFF_SYM250=LTDIE_32_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM250
+	.byte 2,35,48,6
+	.asciz "m_fullTypeName"
+
+LDIFF_SYM251=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM251
+	.byte 2,35,56,6
+	.asciz "m_assemName"
+
+LDIFF_SYM252=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM252
+	.byte 2,35,64,6
+	.asciz "objectType"
+
+LDIFF_SYM253=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM253
+	.byte 2,35,72,6
+	.asciz "isFullTypeNameSetExplicit"
+
+LDIFF_SYM254=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM254
+	.byte 2,35,84,6
+	.asciz "isAssemblyNameSetExplicit"
+
+LDIFF_SYM255=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM255
+	.byte 2,35,85,6
+	.asciz "requireSameTokenInPartialTrust"
+
+LDIFF_SYM256=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM256
+	.byte 2,35,86,0,7
+	.asciz "System_Runtime_Serialization_SerializationInfo"
+
+LDIFF_SYM257=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM257
+LTDIE_27_POINTER:
+
+	.byte 13
+LDIFF_SYM258=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM258
+LTDIE_27_REFERENCE:
+
+	.byte 14
+LDIFF_SYM259=LTDIE_27 - Ldebug_info_start
+	.long LDIFF_SYM259
+LTDIE_37:
+
+	.byte 5
+	.asciz "System_Reflection_TypeInfo"
+
+	.byte 24,16
+LDIFF_SYM260=LTDIE_33 - Ldebug_info_start
+	.long LDIFF_SYM260
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_TypeInfo"
+
+LDIFF_SYM261=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM261
+LTDIE_37_POINTER:
+
+	.byte 13
+LDIFF_SYM262=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM262
+LTDIE_37_REFERENCE:
+
+	.byte 14
+LDIFF_SYM263=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM263
+LTDIE_42:
+
+	.byte 5
+	.asciz "System_Reflection_MethodBase"
+
+	.byte 16,16
+LDIFF_SYM264=LTDIE_34 - Ldebug_info_start
+	.long LDIFF_SYM264
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_MethodBase"
+
+LDIFF_SYM265=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM265
+LTDIE_42_POINTER:
+
+	.byte 13
+LDIFF_SYM266=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM266
+LTDIE_42_REFERENCE:
+
+	.byte 14
+LDIFF_SYM267=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM267
+LTDIE_41:
+
+	.byte 5
+	.asciz "System_Reflection_ConstructorInfo"
+
+	.byte 16,16
+LDIFF_SYM268=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM268
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_ConstructorInfo"
+
+LDIFF_SYM269=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM269
+LTDIE_41_POINTER:
+
+	.byte 13
+LDIFF_SYM270=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM270
+LTDIE_41_REFERENCE:
+
+	.byte 14
+LDIFF_SYM271=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM271
+LTDIE_40:
+
+	.byte 5
+	.asciz "System_Reflection_RuntimeConstructorInfo"
+
+	.byte 16,16
+LDIFF_SYM272=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM272
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_RuntimeConstructorInfo"
+
+LDIFF_SYM273=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM273
+LTDIE_40_POINTER:
+
+	.byte 13
+LDIFF_SYM274=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM274
+LTDIE_40_REFERENCE:
+
+	.byte 14
+LDIFF_SYM275=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM275
+LTDIE_39:
+
+	.byte 5
+	.asciz "System_Reflection_MonoCMethod"
+
+	.byte 40,16
+LDIFF_SYM276=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM276
+	.byte 2,35,0,6
+	.asciz "mhandle"
+
+LDIFF_SYM277=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM277
+	.byte 2,35,16,6
+	.asciz "name"
+
+LDIFF_SYM278=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM278
+	.byte 2,35,24,6
+	.asciz "reftype"
+
+LDIFF_SYM279=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM279
+	.byte 2,35,32,0,7
+	.asciz "System_Reflection_MonoCMethod"
+
+LDIFF_SYM280=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM280
+LTDIE_39_POINTER:
+
+	.byte 13
+LDIFF_SYM281=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM281
+LTDIE_39_REFERENCE:
+
+	.byte 14
+LDIFF_SYM282=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM282
+LTDIE_38:
+
+	.byte 5
+	.asciz "System_MonoTypeInfo"
+
+	.byte 32,16
+LDIFF_SYM283=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM283
+	.byte 2,35,0,6
+	.asciz "full_name"
+
+LDIFF_SYM284=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM284
+	.byte 2,35,16,6
+	.asciz "default_ctor"
+
+LDIFF_SYM285=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM285
+	.byte 2,35,24,0,7
+	.asciz "System_MonoTypeInfo"
+
+LDIFF_SYM286=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM286
+LTDIE_38_POINTER:
+
+	.byte 13
+LDIFF_SYM287=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM287
+LTDIE_38_REFERENCE:
+
+	.byte 14
+LDIFF_SYM288=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM288
+LTDIE_36:
+
+	.byte 5
+	.asciz "System_RuntimeType"
+
+	.byte 48,16
+LDIFF_SYM289=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM289
+	.byte 2,35,0,6
+	.asciz "type_info"
+
+LDIFF_SYM290=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM290
+	.byte 2,35,24,6
+	.asciz "GenericCache"
+
+LDIFF_SYM291=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM291
+	.byte 2,35,32,6
+	.asciz "m_serializationCtor"
+
+LDIFF_SYM292=LTDIE_40_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM292
+	.byte 2,35,40,0,7
+	.asciz "System_RuntimeType"
+
+LDIFF_SYM293=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM293
+LTDIE_36_POINTER:
+
+	.byte 13
+LDIFF_SYM294=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM294
+LTDIE_36_REFERENCE:
+
+	.byte 14
+LDIFF_SYM295=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM295
+LTDIE_46:
+
+	.byte 5
+	.asciz "System_Reflection_MethodInfo"
+
+	.byte 16,16
+LDIFF_SYM296=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM296
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_MethodInfo"
+
+LDIFF_SYM297=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM297
+LTDIE_46_POINTER:
+
+	.byte 13
+LDIFF_SYM298=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM298
+LTDIE_46_REFERENCE:
+
+	.byte 14
+LDIFF_SYM299=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM299
+LTDIE_47:
+
+	.byte 5
+	.asciz "System_DelegateData"
+
+	.byte 40,16
+LDIFF_SYM300=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM300
+	.byte 2,35,0,6
+	.asciz "target_type"
+
+LDIFF_SYM301=LTDIE_33_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM301
+	.byte 2,35,16,6
+	.asciz "method_name"
+
+LDIFF_SYM302=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM302
+	.byte 2,35,24,6
+	.asciz "curried_first_arg"
+
+LDIFF_SYM303=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM303
+	.byte 2,35,32,0,7
+	.asciz "System_DelegateData"
+
+LDIFF_SYM304=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM304
+LTDIE_47_POINTER:
+
+	.byte 13
+LDIFF_SYM305=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM305
+LTDIE_47_REFERENCE:
+
+	.byte 14
+LDIFF_SYM306=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM306
+LTDIE_45:
+
+	.byte 5
+	.asciz "System_Delegate"
+
+	.byte 104,16
+LDIFF_SYM307=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM307
+	.byte 2,35,0,6
+	.asciz "method_ptr"
+
+LDIFF_SYM308=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM308
+	.byte 2,35,16,6
+	.asciz "invoke_impl"
+
+LDIFF_SYM309=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM309
+	.byte 2,35,24,6
+	.asciz "m_target"
+
+LDIFF_SYM310=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM310
+	.byte 2,35,32,6
+	.asciz "method"
+
+LDIFF_SYM311=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM311
+	.byte 2,35,40,6
+	.asciz "delegate_trampoline"
+
+LDIFF_SYM312=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM312
+	.byte 2,35,48,6
+	.asciz "extra_arg"
+
+LDIFF_SYM313=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM313
+	.byte 2,35,56,6
+	.asciz "method_code"
+
+LDIFF_SYM314=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM314
+	.byte 2,35,64,6
+	.asciz "method_info"
+
+LDIFF_SYM315=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM315
+	.byte 2,35,72,6
+	.asciz "original_method_info"
+
+LDIFF_SYM316=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM316
+	.byte 2,35,80,6
+	.asciz "data"
+
+LDIFF_SYM317=LTDIE_47_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM317
+	.byte 2,35,88,6
+	.asciz "method_is_virtual"
+
+LDIFF_SYM318=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM318
+	.byte 2,35,96,0,7
+	.asciz "System_Delegate"
+
+LDIFF_SYM319=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM319
+LTDIE_45_POINTER:
+
+	.byte 13
+LDIFF_SYM320=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM320
+LTDIE_45_REFERENCE:
+
+	.byte 14
+LDIFF_SYM321=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM321
+LTDIE_44:
+
+	.byte 5
+	.asciz "System_MulticastDelegate"
+
+	.byte 112,16
+LDIFF_SYM322=LTDIE_45 - Ldebug_info_start
+	.long LDIFF_SYM322
+	.byte 2,35,0,6
+	.asciz "delegates"
+
+LDIFF_SYM323=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM323
+	.byte 2,35,104,0,7
+	.asciz "System_MulticastDelegate"
+
+LDIFF_SYM324=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM324
+LTDIE_44_POINTER:
+
+	.byte 13
+LDIFF_SYM325=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM325
+LTDIE_44_REFERENCE:
+
+	.byte 14
+LDIFF_SYM326=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM326
+LTDIE_43:
+
+	.byte 5
+	.asciz "System_EventHandler`1"
+
+	.byte 112,16
+LDIFF_SYM327=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM327
+	.byte 2,35,0,0,7
+	.asciz "System_EventHandler`1"
+
+LDIFF_SYM328=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM328
+LTDIE_43_POINTER:
+
+	.byte 13
+LDIFF_SYM329=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM329
+LTDIE_43_REFERENCE:
+
+	.byte 14
+LDIFF_SYM330=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM330
+LTDIE_25:
+
+	.byte 5
+	.asciz "System_Runtime_Serialization_SafeSerializationManager"
+
+	.byte 56,16
+LDIFF_SYM331=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM331
+	.byte 2,35,0,6
+	.asciz "m_serializedStates"
+
+LDIFF_SYM332=LTDIE_26_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM332
+	.byte 2,35,16,6
+	.asciz "m_savedSerializationInfo"
+
+LDIFF_SYM333=LTDIE_27_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM333
+	.byte 2,35,24,6
+	.asciz "m_realObject"
+
+LDIFF_SYM334=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM334
+	.byte 2,35,32,6
+	.asciz "m_realType"
+
+LDIFF_SYM335=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM335
+	.byte 2,35,40,6
+	.asciz "SerializeObjectState"
+
+LDIFF_SYM336=LTDIE_43_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM336
+	.byte 2,35,48,0,7
+	.asciz "System_Runtime_Serialization_SafeSerializationManager"
+
+LDIFF_SYM337=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM337
+LTDIE_25_POINTER:
+
+	.byte 13
+LDIFF_SYM338=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM338
+LTDIE_25_REFERENCE:
+
+	.byte 14
+LDIFF_SYM339=LTDIE_25 - Ldebug_info_start
+	.long LDIFF_SYM339
+LTDIE_23:
+
+	.byte 5
+	.asciz "System_Exception"
+
+	.byte 136,1,16
+LDIFF_SYM340=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM340
+	.byte 2,35,0,6
+	.asciz "_className"
+
+LDIFF_SYM341=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM341
+	.byte 2,35,16,6
+	.asciz "_message"
+
+LDIFF_SYM342=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM342
+	.byte 2,35,24,6
+	.asciz "_data"
+
+LDIFF_SYM343=LTDIE_24_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM343
+	.byte 2,35,32,6
+	.asciz "_innerException"
+
+LDIFF_SYM344=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM344
+	.byte 2,35,40,6
+	.asciz "_helpURL"
+
+LDIFF_SYM345=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM345
+	.byte 2,35,48,6
+	.asciz "_stackTrace"
+
+LDIFF_SYM346=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM346
+	.byte 2,35,56,6
+	.asciz "_stackTraceString"
+
+LDIFF_SYM347=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM347
+	.byte 2,35,64,6
+	.asciz "_remoteStackTraceString"
+
+LDIFF_SYM348=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM348
+	.byte 2,35,72,6
+	.asciz "_remoteStackIndex"
+
+LDIFF_SYM349=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM349
+	.byte 2,35,80,6
+	.asciz "_dynamicMethods"
+
+LDIFF_SYM350=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM350
+	.byte 2,35,88,6
+	.asciz "_HResult"
+
+LDIFF_SYM351=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM351
+	.byte 2,35,96,6
+	.asciz "_source"
+
+LDIFF_SYM352=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM352
+	.byte 2,35,104,6
+	.asciz "_safeSerializationManager"
+
+LDIFF_SYM353=LTDIE_25_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM353
+	.byte 2,35,112,6
+	.asciz "captured_traces"
+
+LDIFF_SYM354=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM354
+	.byte 2,35,120,6
+	.asciz "native_trace_ips"
+
+LDIFF_SYM355=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM355
+	.byte 3,35,128,1,0,7
+	.asciz "System_Exception"
+
+LDIFF_SYM356=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM356
+LTDIE_23_POINTER:
+
+	.byte 13
+LDIFF_SYM357=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM357
+LTDIE_23_REFERENCE:
+
+	.byte 14
+LDIFF_SYM358=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM358
+LTDIE_48:
+
+	.byte 5
+	.asciz "Microsoft_Azure_Mobile_Crashes_AndroidErrorDetails"
+
+	.byte 32,16
+LDIFF_SYM359=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM359
+	.byte 2,35,0,6
+	.asciz "<Throwable>k__BackingField"
+
+LDIFF_SYM360=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM360
+	.byte 2,35,16,6
+	.asciz "<ThreadName>k__BackingField"
+
+LDIFF_SYM361=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM361
+	.byte 2,35,24,0,7
+	.asciz "Microsoft_Azure_Mobile_Crashes_AndroidErrorDetails"
+
+LDIFF_SYM362=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM362
+LTDIE_48_POINTER:
+
+	.byte 13
+LDIFF_SYM363=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM363
+LTDIE_48_REFERENCE:
+
+	.byte 14
+LDIFF_SYM364=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM364
+LTDIE_50:
+
+	.byte 5
+	.asciz "System_UInt32"
+
+	.byte 20,16
+LDIFF_SYM365=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM365
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM366=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM366
+	.byte 2,35,16,0,7
+	.asciz "System_UInt32"
+
+LDIFF_SYM367=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM367
+LTDIE_50_POINTER:
+
+	.byte 13
+LDIFF_SYM368=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM368
+LTDIE_50_REFERENCE:
+
+	.byte 14
+LDIFF_SYM369=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM369
+LTDIE_49:
+
+	.byte 5
+	.asciz "Microsoft_Azure_Mobile_Crashes_iOSErrorDetails"
+
+	.byte 56,16
+LDIFF_SYM370=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM370
+	.byte 2,35,0,6
+	.asciz "<ReporterKey>k__BackingField"
+
+LDIFF_SYM371=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM371
+	.byte 2,35,16,6
+	.asciz "<Signal>k__BackingField"
+
+LDIFF_SYM372=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM372
+	.byte 2,35,24,6
+	.asciz "<ExceptionName>k__BackingField"
+
+LDIFF_SYM373=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM373
+	.byte 2,35,32,6
+	.asciz "<ExceptionReason>k__BackingField"
+
+LDIFF_SYM374=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM374
+	.byte 2,35,40,6
+	.asciz "<AppProcessIdentifier>k__BackingField"
+
+LDIFF_SYM375=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM375
+	.byte 2,35,48,0,7
+	.asciz "Microsoft_Azure_Mobile_Crashes_iOSErrorDetails"
+
+LDIFF_SYM376=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM376
+LTDIE_49_POINTER:
+
+	.byte 13
+LDIFF_SYM377=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM377
+LTDIE_49_REFERENCE:
+
+	.byte 14
+LDIFF_SYM378=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM378
+LTDIE_19:
+
+	.byte 5
+	.asciz "Microsoft_Azure_Mobile_Crashes_ErrorReport"
+
+	.byte 88,16
+LDIFF_SYM379=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM379
+	.byte 2,35,0,6
+	.asciz "<Id>k__BackingField"
+
+LDIFF_SYM380=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM380
+	.byte 2,35,16,6
+	.asciz "<AppStartTime>k__BackingField"
+
+LDIFF_SYM381=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM381
+	.byte 2,35,56,6
+	.asciz "<AppErrorTime>k__BackingField"
+
+LDIFF_SYM382=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM382
+	.byte 2,35,72,6
+	.asciz "<Device>k__BackingField"
+
+LDIFF_SYM383=LTDIE_20_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM383
+	.byte 2,35,24,6
+	.asciz "<Exception>k__BackingField"
+
+LDIFF_SYM384=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM384
+	.byte 2,35,32,6
+	.asciz "<AndroidDetails>k__BackingField"
+
+LDIFF_SYM385=LTDIE_48_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM385
+	.byte 2,35,40,6
+	.asciz "<iOSDetails>k__BackingField"
+
+LDIFF_SYM386=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM386
+	.byte 2,35,48,0,7
+	.asciz "Microsoft_Azure_Mobile_Crashes_ErrorReport"
+
+LDIFF_SYM387=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM387
+LTDIE_19_POINTER:
+
+	.byte 13
+LDIFF_SYM388=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM388
+LTDIE_19_REFERENCE:
+
+	.byte 14
+LDIFF_SYM389=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM389
+	.byte 2
+	.asciz "iOSXamarinChaoyun.AppDelegate/<>c:<FinishedLaunching>b__4_1"
+	.asciz "iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_1_Microsoft_Azure_Mobile_Crashes_ErrorReport"
+
+	.byte 2,77
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_1_Microsoft_Azure_Mobile_Crashes_ErrorReport
+	.quad Lme_16
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM390=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM390
+	.byte 0,3
+	.asciz "report"
+
+LDIFF_SYM391=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM391
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM392=Lfde22_end - Lfde22_start
+	.long LDIFF_SYM392
+Lfde22_start:
+
+	.long 0
+	.align 3
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_1_Microsoft_Azure_Mobile_Crashes_ErrorReport
+
+LDIFF_SYM393=Lme_16 - iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_1_Microsoft_Azure_Mobile_Crashes_ErrorReport
+	.long LDIFF_SYM393
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde22_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "iOSXamarinChaoyun.AppDelegate/<>c:<FinishedLaunching>b__4_2"
+	.asciz "iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_2"
+
+	.byte 2,84
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_2
+	.quad Lme_17
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM394=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM394
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM395=Lfde23_end - Lfde23_start
+	.long LDIFF_SYM395
+Lfde23_start:
+
+	.long 0
+	.align 3
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_2
+
+LDIFF_SYM396=Lme_17 - iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_2
+	.long LDIFF_SYM396
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde23_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "iOSXamarinChaoyun.AppDelegate/<>c:<FinishedLaunching>b__4_3"
+	.asciz "iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_3_Microsoft_Azure_Mobile_Crashes_ErrorReport"
+
+	.byte 2,89
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_3_Microsoft_Azure_Mobile_Crashes_ErrorReport
+	.quad Lme_18
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM397=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM397
+	.byte 0,3
+	.asciz "report"
+
+LDIFF_SYM398=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM398
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM399=Lfde24_end - Lfde24_start
+	.long LDIFF_SYM399
+Lfde24_start:
+
+	.long 0
+	.align 3
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_3_Microsoft_Azure_Mobile_Crashes_ErrorReport
+
+LDIFF_SYM400=Lme_18 - iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_3_Microsoft_Azure_Mobile_Crashes_ErrorReport
+	.long LDIFF_SYM400
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.align 3
+Lfde24_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_52:
+
+	.byte 5
+	.asciz "Microsoft_Azure_Mobile_Crashes_ErrorReportEventArgs"
+
+	.byte 24,16
+LDIFF_SYM401=LTDIE_16 - Ldebug_info_start
+	.long LDIFF_SYM401
+	.byte 2,35,0,6
+	.asciz "Report"
+
+LDIFF_SYM402=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM402
+	.byte 2,35,16,0,7
+	.asciz "Microsoft_Azure_Mobile_Crashes_ErrorReportEventArgs"
+
+LDIFF_SYM403=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM403
+LTDIE_52_POINTER:
+
+	.byte 13
+LDIFF_SYM404=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM404
+LTDIE_52_REFERENCE:
+
+	.byte 14
+LDIFF_SYM405=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM405
+LTDIE_51:
+
+	.byte 5
+	.asciz "Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs"
+
+	.byte 24,16
+LDIFF_SYM406=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM406
+	.byte 2,35,0,0,7
+	.asciz "Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs"
+
+LDIFF_SYM407=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM407
+LTDIE_51_POINTER:
+
+	.byte 13
+LDIFF_SYM408=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM408
+LTDIE_51_REFERENCE:
+
+	.byte 14
+LDIFF_SYM409=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM409
+	.byte 2
+	.asciz "iOSXamarinChaoyun.AppDelegate/<>c:<FinishedLaunching>b__4_4"
+	.asciz "iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_4_object_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs"
+
+	.byte 2,98
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_4_object_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs
+	.quad Lme_19
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM410=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM410
+	.byte 0,3
+	.asciz "sender"
+
+LDIFF_SYM411=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM411
+	.byte 0,3
+	.asciz "e"
+
+LDIFF_SYM412=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM412
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM413=Lfde25_end - Lfde25_start
+	.long LDIFF_SYM413
+Lfde25_start:
+
+	.long 0
+	.align 3
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_4_object_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs
+
+LDIFF_SYM414=Lme_19 - iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_4_object_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventArgs
+	.long LDIFF_SYM414
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde25_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_53:
+
+	.byte 5
+	.asciz "Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs"
+
+	.byte 24,16
+LDIFF_SYM415=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM415
+	.byte 2,35,0,0,7
+	.asciz "Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs"
+
+LDIFF_SYM416=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM416
+LTDIE_53_POINTER:
+
+	.byte 13
+LDIFF_SYM417=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM417
+LTDIE_53_REFERENCE:
+
+	.byte 14
+LDIFF_SYM418=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM418
+	.byte 2
+	.asciz "iOSXamarinChaoyun.AppDelegate/<>c:<FinishedLaunching>b__4_5"
+	.asciz "iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_5_object_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs"
+
+	.byte 2,102
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_5_object_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs
+	.quad Lme_1a
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM419=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM419
+	.byte 0,3
+	.asciz "sender"
+
+LDIFF_SYM420=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM420
+	.byte 0,3
+	.asciz "e"
+
+LDIFF_SYM421=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM421
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM422=Lfde26_end - Lfde26_start
+	.long LDIFF_SYM422
+Lfde26_start:
+
+	.long 0
+	.align 3
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_5_object_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs
+
+LDIFF_SYM423=Lme_1a - iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_5_object_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventArgs
+	.long LDIFF_SYM423
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde26_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_54:
+
+	.byte 5
+	.asciz "Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs"
+
+	.byte 32,16
+LDIFF_SYM424=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM424
+	.byte 2,35,0,6
+	.asciz "Exception"
+
+LDIFF_SYM425=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM425
+	.byte 2,35,24,0,7
+	.asciz "Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs"
+
+LDIFF_SYM426=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM426
+LTDIE_54_POINTER:
+
+	.byte 13
+LDIFF_SYM427=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM427
+LTDIE_54_REFERENCE:
+
+	.byte 14
+LDIFF_SYM428=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM428
+	.byte 2
+	.asciz "iOSXamarinChaoyun.AppDelegate/<>c:<FinishedLaunching>b__4_6"
+	.asciz "iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_6_object_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs"
+
+	.byte 2,106
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_6_object_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs
+	.quad Lme_1b
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM429=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM429
+	.byte 0,3
+	.asciz "sender"
+
+LDIFF_SYM430=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM430
+	.byte 0,3
+	.asciz "e"
+
+LDIFF_SYM431=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM431
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM432=Lfde27_end - Lfde27_start
+	.long LDIFF_SYM432
+Lfde27_start:
+
+	.long 0
+	.align 3
+	.quad iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_6_object_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs
+
+LDIFF_SYM433=Lme_1b - iOSXamarinChaoyun_AppDelegate__c__FinishedLaunchingb__4_6_object_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventArgs
+	.long LDIFF_SYM433
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde27_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_55:
+
+	.byte 5
+	.asciz "System_EventHandler`1"
+
+	.byte 112,16
+LDIFF_SYM434=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM434
+	.byte 2,35,0,0,7
+	.asciz "System_EventHandler`1"
+
+LDIFF_SYM435=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM435
+LTDIE_55_POINTER:
+
+	.byte 13
+LDIFF_SYM436=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM436
+LTDIE_55_REFERENCE:
+
+	.byte 14
+LDIFF_SYM437=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM437
+LTDIE_56:
 
 	.byte 5
 	.asciz "System_Array"
 
 	.byte 16,16
-LDIFF_SYM228=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM228
+LDIFF_SYM438=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM438
 	.byte 2,35,0,0,7
 	.asciz "System_Array"
 
-LDIFF_SYM229=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM229
-LTDIE_30_POINTER:
+LDIFF_SYM439=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM439
+LTDIE_56_POINTER:
 
 	.byte 13
-LDIFF_SYM230=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM230
-LTDIE_30_REFERENCE:
+LDIFF_SYM440=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM440
+LTDIE_56_REFERENCE:
 
 	.byte 14
-LDIFF_SYM231=LTDIE_30 - Ldebug_info_start
-	.long LDIFF_SYM231
+LDIFF_SYM441=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM441
 	.byte 2
 	.asciz "(wrapper_delegate-invoke)_System.EventHandler`1<Microsoft.Azure.Mobile.Push.PushNotificationReceivedEventArgs>:invoke_void_object_TEventArgs"
 	.asciz "wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs_invoke_void_object_TEventArgs_object_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs"
 
 	.byte 0,0
 	.quad wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs_invoke_void_object_TEventArgs_object_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
-	.quad Lme_17
+	.quad Lme_1d
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM232=LTDIE_19_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM232
+LDIFF_SYM442=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM442
 	.byte 1,104,3
 	.asciz "param0"
 
-LDIFF_SYM233=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM233
+LDIFF_SYM443=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM443
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM234=LTDIE_15_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM234
+LDIFF_SYM444=LTDIE_15_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM444
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM235=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM235
+LDIFF_SYM445=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM445
 	.byte 1,102,11
 	.asciz "V_1"
 
-LDIFF_SYM236=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM236
+LDIFF_SYM446=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM446
 	.byte 1,104,11
 	.asciz "V_2"
 
-LDIFF_SYM237=LTDIE_30_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM237
+LDIFF_SYM447=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM447
 	.byte 1,103,11
 	.asciz "V_3"
 
-LDIFF_SYM238=LTDIE_20_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM238
+LDIFF_SYM448=LTDIE_44_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM448
 	.byte 1,101,11
 	.asciz "V_4"
 
-LDIFF_SYM239=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM239
+LDIFF_SYM449=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM449
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM240=Lfde22_end - Lfde22_start
-	.long LDIFF_SYM240
-Lfde22_start:
+LDIFF_SYM450=Lfde28_end - Lfde28_start
+	.long LDIFF_SYM450
+Lfde28_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs_invoke_void_object_TEventArgs_object_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
 
-LDIFF_SYM241=Lme_17 - wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs_invoke_void_object_TEventArgs_object_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
-	.long LDIFF_SYM241
+LDIFF_SYM451=Lme_1d - wrapper_delegate_invoke_System_EventHandler_1_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs_invoke_void_object_TEventArgs_object_Microsoft_Azure_Mobile_Push_PushNotificationReceivedEventArgs
+	.long LDIFF_SYM451
 	.long 0
 	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
 	.align 3
-Lfde22_end:
+Lfde28_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -3091,104 +4554,104 @@ Lfde22_end:
 	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_REF>"
 	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF"
 
-	.byte 7,78
+	.byte 7,71
 	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
-	.quad Lme_18
+	.quad Lme_1e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM242=LTDIE_30_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM242
+LDIFF_SYM452=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM452
 	.byte 2,141,16,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM243=Lfde23_end - Lfde23_start
-	.long LDIFF_SYM243
-Lfde23_start:
+LDIFF_SYM453=Lfde29_end - Lfde29_start
+	.long LDIFF_SYM453
+Lfde29_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 
-LDIFF_SYM244=Lme_18 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
-	.long LDIFF_SYM244
+LDIFF_SYM454=Lme_1e - System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
+	.long LDIFF_SYM454
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
-Lfde23_end:
+Lfde29_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_31:
+LTDIE_57:
 
 	.byte 5
 	.asciz "_InternalEnumerator`1"
 
 	.byte 32,16
-LDIFF_SYM245=LTDIE_28 - Ldebug_info_start
-	.long LDIFF_SYM245
+LDIFF_SYM455=LTDIE_22 - Ldebug_info_start
+	.long LDIFF_SYM455
 	.byte 2,35,0,6
 	.asciz "array"
 
-LDIFF_SYM246=LTDIE_30_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM246
+LDIFF_SYM456=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM456
 	.byte 2,35,16,6
 	.asciz "idx"
 
-LDIFF_SYM247=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM247
+LDIFF_SYM457=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM457
 	.byte 2,35,24,0,7
 	.asciz "_InternalEnumerator`1"
 
-LDIFF_SYM248=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM248
-LTDIE_31_POINTER:
+LDIFF_SYM458=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM458
+LTDIE_57_POINTER:
 
 	.byte 13
-LDIFF_SYM249=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM249
-LTDIE_31_REFERENCE:
+LDIFF_SYM459=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM459
+LTDIE_57_REFERENCE:
 
 	.byte 14
-LDIFF_SYM250=LTDIE_31 - Ldebug_info_start
-	.long LDIFF_SYM250
+LDIFF_SYM460=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM460
 	.byte 2
 	.asciz "System.Array/InternalEnumerator`1<T_REF>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_REF__ctor_System_Array"
 
-	.byte 7,239,1
+	.byte 7,215,1
 	.quad System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-	.quad Lme_19
+	.quad Lme_1f
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM251=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM251
+LDIFF_SYM461=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM461
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM252=LTDIE_30_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM252
+LDIFF_SYM462=LTDIE_56_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM462
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM253=Lfde24_end - Lfde24_start
-	.long LDIFF_SYM253
-Lfde24_start:
+LDIFF_SYM463=Lfde30_end - Lfde30_start
+	.long LDIFF_SYM463
+Lfde30_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 
-LDIFF_SYM254=Lme_19 - System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-	.long LDIFF_SYM254
+LDIFF_SYM464=Lme_1f - System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+	.long LDIFF_SYM464
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde24_end:
+Lfde30_end:
 
 .section __DWARF, __debug_info,regular,debug
 

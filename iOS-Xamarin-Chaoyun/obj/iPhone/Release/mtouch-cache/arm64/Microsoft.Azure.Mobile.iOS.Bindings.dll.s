@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:38 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:07:31 EDT 2017)"
 	.asciz "Microsoft.Azure.Mobile.iOS.Bindings.dll"
 	.asciz ""
 
@@ -130,7 +130,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSCustomProperties__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -138,12 +138,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -158,7 +158,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -184,12 +184,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -217,12 +217,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -244,7 +244,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSCustomProperties_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -348,7 +348,7 @@ ldr x0, [x16, #0]
 .word 0xd2800b21
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -419,7 +419,7 @@ ldr x0, [x16, #0]
 .word 0xd2800b21
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -435,13 +435,13 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSCustomProperties__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #232]
 bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -460,7 +460,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSDevice__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_15
@@ -468,12 +468,12 @@ bl _p_15
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -488,7 +488,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -514,12 +514,12 @@ bl _p_15
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -547,12 +547,12 @@ bl _p_16
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -574,7 +574,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSDevice_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #240]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -612,7 +612,7 @@ ldr x0, [x16, #0]
 .word 0xd2801de1
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -795,7 +795,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #256]
+ldr x15, [x16, #248]
 bl _p_19
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -939,7 +939,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #256]
+ldr x15, [x16, #248]
 bl _p_19
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -956,13 +956,13 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSDevice__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #264]
+ldr x0, [x16, #256]
 bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #240]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -981,7 +981,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSLogger__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -989,12 +989,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1009,7 +1009,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -1035,12 +1035,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1068,12 +1068,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1095,7 +1095,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSLogger_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #264]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1139,7 +1139,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSLogger_LogMessage_Microsoft_Azure_Mobile_i
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #280]
+ldr x1, [x16, #272]
 .word 0xf9400021
 .word 0xf94013a2
 bl _p_20
@@ -1152,7 +1152,7 @@ bl _p_7
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #264]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_23@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_23@PAGEOFF
@@ -1180,7 +1180,7 @@ ldr x0, [x16, #0]
 .word 0xd28050a1
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -1191,7 +1191,7 @@ ldr x0, [x16, #0]
 .word 0xd2804ca1
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -1207,13 +1207,13 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSLogger__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #264]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -1232,7 +1232,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -1240,12 +1240,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1260,7 +1260,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -1286,12 +1286,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1319,12 +1319,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1346,7 +1346,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1367,7 +1367,7 @@ bl _p_7
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_24@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_24@PAGEOFF
@@ -1391,7 +1391,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_InstallId:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_25@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_25@PAGEOFF
@@ -1400,7 +1400,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #304]
+ldr x15, [x16, #296]
 bl _p_23
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -1417,7 +1417,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_IsConfigured:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_26@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_26@PAGEOFF
@@ -1439,7 +1439,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_IsDebuggerAttached:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_27@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_27@PAGEOFF
@@ -1461,7 +1461,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_IsEnabled:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_28@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_28@PAGEOFF
@@ -1486,7 +1486,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_LogLevel:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_29@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_29@PAGEOFF
@@ -1510,7 +1510,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_SetCustomProperties_Microsoft
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400001
 adrp x0, L_OBJC_SELECTOR_REFERENCES_30@PAGE
 add x0, x0, L_OBJC_SELECTOR_REFERENCES_30@PAGEOFF
@@ -1521,7 +1521,7 @@ ldr x0, [x0]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #304]
 .word 0xf9400017
 .word 0x14000003
 .word 0xf940035e
@@ -1548,7 +1548,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_SetEnabled_bool:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_31@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_31@PAGEOFF
@@ -1590,14 +1590,14 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_SetLogHandler_Microsoft_Azure
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #320]
+ldr x1, [x16, #312]
 .word 0xf9400021
 .word 0xf9400fa2
 bl _p_20
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_32@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_32@PAGEOFF
@@ -1617,7 +1617,7 @@ ldr x0, [x16, #0]
 .word 0xd2807ba1
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -1637,7 +1637,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_SetLogLevel_Microsoft_Azure_M
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_33@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_33@PAGEOFF
@@ -1663,7 +1663,7 @@ bl _p_7
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_34@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_34@PAGEOFF
@@ -1690,7 +1690,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_SetWrapperSdk_Microsoft_Azure
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_35@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_35@PAGEOFF
@@ -1709,7 +1709,7 @@ ldr x0, [x16, #0]
 .word 0xd2808821
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -1725,7 +1725,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_SharedInstance:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_36@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_36@PAGEOFF
@@ -1734,7 +1734,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #328]
+ldr x15, [x16, #320]
 bl _p_28
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -1761,7 +1761,7 @@ bl _p_29
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_37@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_37@PAGEOFF
@@ -1786,7 +1786,7 @@ ldr x0, [x16, #0]
 .word 0xd2809261
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -1805,7 +1805,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_StartService_ObjCRuntime_Clas
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_38@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_38@PAGEOFF
@@ -1824,7 +1824,7 @@ ldr x0, [x16, #0]
 .word 0xd28099a1
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -1840,13 +1840,13 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #328]
 bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -1884,7 +1884,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSService__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -1892,12 +1892,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1912,7 +1912,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -1938,12 +1938,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1971,12 +1971,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1997,7 +1997,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSService_GetEnabled:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #336]
 .word 0xd2801101
 bl _p_32
 .word 0xf9000ba0
@@ -2020,7 +2020,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSService_SetEnabled_bool:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #336]
 .word 0xd2801101
 bl _p_32
 .word 0xf90013a0
@@ -2044,7 +2044,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSServiceAbstract__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_34
@@ -2052,12 +2052,12 @@ bl _p_34
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2072,7 +2072,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -2098,12 +2098,12 @@ bl _p_34
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2131,12 +2131,12 @@ bl _p_35
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2158,7 +2158,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSServiceAbstract_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #352]
+ldr x0, [x16, #344]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -2175,13 +2175,13 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSServiceAbstract__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #360]
+ldr x0, [x16, #352]
 bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #352]
+ldr x0, [x16, #344]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -2200,7 +2200,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperLogger__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -2208,12 +2208,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2228,7 +2228,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -2254,12 +2254,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2287,12 +2287,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2314,7 +2314,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperLogger_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #360]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -2355,7 +2355,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperLogger_MSWrapperLog_Microsoft_Azure
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #280]
+ldr x1, [x16, #272]
 .word 0xf9400021
 .word 0xf94013a2
 bl _p_20
@@ -2368,7 +2368,7 @@ bl _p_7
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #360]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_39@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_39@PAGEOFF
@@ -2393,7 +2393,7 @@ ldr x0, [x16, #0]
 .word 0xd28050a1
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -2404,7 +2404,7 @@ ldr x0, [x16, #0]
 .word 0xd280a761
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -2420,13 +2420,13 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperLogger__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #368]
 bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #360]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -2445,7 +2445,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperSdk__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -2453,12 +2453,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2473,7 +2473,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -2499,12 +2499,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2532,12 +2532,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2566,7 +2566,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperSdk__ctor_string_string_string_stri
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1403e0
 bl _p_1
@@ -2592,12 +2592,12 @@ bl _p_7
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -2624,7 +2624,7 @@ bl _p_37
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #384]
+ldr x2, [x16, #376]
 .word 0xaa1403e0
 bl _p_5
 .word 0xf9403fa0
@@ -2656,7 +2656,7 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperSdk_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #384]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -2694,7 +2694,7 @@ ldr x0, [x16, #0]
 .word 0xd2808821
 bl _p_11
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_12
@@ -2830,13 +2830,13 @@ Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperSdk__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #400]
+ldr x0, [x16, #392]
 bl _p_14
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #384]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -2853,16 +2853,16 @@ ApiDefinition_Messaging__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #408]
+ldr x1, [x16, #400]
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #208]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -2895,7 +2895,7 @@ bl _p_38
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #416]
+ldr x1, [x16, #408]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000421
@@ -2904,7 +2904,7 @@ ldr x1, [x16, #416]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #424]
+ldr x1, [x16, #416]
 .word 0xaa1603e0
 bl _p_39
 .word 0xaa0003f6
@@ -2916,7 +2916,7 @@ bl _p_39
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #424]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540001c1
@@ -2933,7 +2933,7 @@ ldr x1, [x16, #432]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
 bl _p_40
 
@@ -2948,30 +2948,30 @@ ObjCRuntime_Trampolines_SDMSLogHandler__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #432]
 .word 0xf9400000
 .word 0xb5000360
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #440]
 .word 0xd2800e01
 bl _p_32
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #456]
+ldr x0, [x16, #448]
 .word 0xf9001420
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #464]
+ldr x0, [x16, #456]
 .word 0xf9002020
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #472]
+ldr x0, [x16, #464]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -2980,17 +2980,17 @@ ldr x0, [x16, #472]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #432]
 .word 0xf9000001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #432]
 .word 0xf9400001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #312]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -3002,7 +3002,7 @@ Lme_70:
 	.no_dead_strip ObjCRuntime_Trampolines_NIDMSLogHandler__ctor_ObjCRuntime_BlockLiteral_
 ObjCRuntime_Trampolines_NIDMSLogHandler__ctor_ObjCRuntime_BlockLiteral_:
 .loc 1 1 0
-.word 0xa9bd7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -3014,18 +3014,25 @@ bl _p_41
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #480]
+ldr x15, [x16, #472]
 .word 0xf9400fa0
 bl _p_42
-.word 0xaa0003e1
-.word 0xf9400ba0
-.word 0xf90013a1
-.word 0xf9000801
-.word 0x91004000
-bl _p_43
-.word 0xf94013a0
+.word 0xf9400ba1
+.word 0xf9000820
+.word 0x91004021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
 
 Lme_71:
@@ -3039,7 +3046,7 @@ ObjCRuntime_Trampolines_NIDMSLogHandler_Finalize:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xf9400c00
-bl _p_44
+bl _p_43
 .word 0x94000002
 .word 0x14000006
 .word 0xf9001bbe
@@ -3057,7 +3064,7 @@ Lme_72:
 	.no_dead_strip ObjCRuntime_Trampolines_NIDMSLogHandler_Create_intptr
 ObjCRuntime_Trampolines_NIDMSLogHandler_Create_intptr:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -3065,15 +3072,15 @@ ObjCRuntime_Trampolines_NIDMSLogHandler_Create_intptr:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x34000060
 .word 0xd2800000
-.word 0x14000042
+.word 0x14000047
 .word 0xaa1a03e0
-bl _p_45
+bl _p_44
 .word 0x53001c00
 .word 0x340002a0
 .word 0xaa1a03e0
@@ -3089,55 +3096,61 @@ bl _p_38
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #416]
+ldr x1, [x16, #408]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
 .word 0xaa1803f9
 .word 0xb4000078
 .word 0xaa1903e0
-.word 0x1400002a
+.word 0x1400002f
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #480]
+bl _p_45
+.word 0xf9001fa0
+.word 0xaa1a03e1
+bl _p_46
+.word 0xf9401fa0
+.word 0xf9001ba0
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x54000500
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x0, [x16, #488]
-bl _p_46
-.word 0xf90027a0
-.word 0xaa1a03e1
-bl _p_47
-.word 0xf94027a0
-.word 0xf90023a0
-.word 0xeb1f001f
-.word 0x10000011
-.word 0x54000460
-
-adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #496]
 .word 0xd2800e01
 bl _p_32
-.word 0xf94023a1
-.word 0xf9001fa1
+.word 0xf9401ba1
 .word 0xf9001001
-.word 0xf9001ba0
-.word 0x91008000
-bl _p_43
-.word 0xf9401ba0
-.word 0xf9401fa1
+.word 0x91008002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #504]
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
+ldr x1, [x16, #496]
 .word 0xf9001401
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #512]
+ldr x1, [x16, #504]
 .word 0xf9002001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #520]
+ldr x1, [x16, #512]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -3146,9 +3159,9 @@ ldr x1, [x16, #520]
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2800e00
+.word 0xd28007e0
 .word 0xaa1103e1
 bl _p_40
 
@@ -3186,7 +3199,7 @@ ObjCRuntime_Trampolines_NIDMSLogHandler_Invoke_Microsoft_Azure_Mobile_iOS_Bindin
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #280]
+ldr x1, [x16, #272]
 .word 0xf9400021
 .word 0xf9400fa2
 bl _p_20
@@ -3232,7 +3245,7 @@ bl _p_38
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #424]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540001e1
@@ -3245,12 +3258,12 @@ ldr x1, [x16, #432]
 .word 0xf94013a1
 .word 0xaa0003fa
 .word 0xd2800021
-bl _p_48
+bl _p_47
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
 bl _p_40
 
@@ -3265,30 +3278,30 @@ ObjCRuntime_Trampolines_SDMSLogMessageProvider__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #528]
+ldr x0, [x16, #520]
 .word 0xf9400000
 .word 0xb5000360
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #536]
+ldr x0, [x16, #528]
 .word 0xd2800e01
 bl _p_32
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #536]
 .word 0xf9001420
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #544]
 .word 0xf9002020
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #560]
+ldr x0, [x16, #552]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -3297,17 +3310,17 @@ ldr x0, [x16, #560]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #528]
+ldr x0, [x16, #520]
 .word 0xf9000001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #528]
+ldr x0, [x16, #520]
 .word 0xf9400001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #280]
+ldr x0, [x16, #272]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -3319,7 +3332,7 @@ Lme_7a:
 	.no_dead_strip ObjCRuntime_Trampolines_NIDMSLogMessageProvider__ctor_ObjCRuntime_BlockLiteral_
 ObjCRuntime_Trampolines_NIDMSLogMessageProvider__ctor_ObjCRuntime_BlockLiteral_:
 .loc 1 1 0
-.word 0xa9bd7bfd
+.word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -3331,18 +3344,25 @@ bl _p_41
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #568]
+ldr x15, [x16, #560]
 .word 0xf9400fa0
-bl _p_49
-.word 0xaa0003e1
-.word 0xf9400ba0
-.word 0xf90013a1
-.word 0xf9000801
-.word 0x91004000
-bl _p_43
-.word 0xf94013a0
+bl _p_48
+.word 0xf9400ba1
+.word 0xf9000820
+.word 0x91004021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
-.word 0xa8c37bfd
+.word 0xa8c27bfd
 .word 0xd65f03c0
 
 Lme_7b:
@@ -3356,7 +3376,7 @@ ObjCRuntime_Trampolines_NIDMSLogMessageProvider_Finalize:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xf9400c00
-bl _p_44
+bl _p_43
 .word 0x94000002
 .word 0x14000006
 .word 0xf9001bbe
@@ -3374,7 +3394,7 @@ Lme_7c:
 	.no_dead_strip ObjCRuntime_Trampolines_NIDMSLogMessageProvider_Create_intptr
 ObjCRuntime_Trampolines_NIDMSLogMessageProvider_Create_intptr:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90013ba
@@ -3382,15 +3402,15 @@ ObjCRuntime_Trampolines_NIDMSLogMessageProvider_Create_intptr:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #304]
 .word 0xf9400000
 .word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x34000060
 .word 0xd2800000
-.word 0x14000042
+.word 0x14000047
 .word 0xaa1a03e0
-bl _p_45
+bl _p_44
 .word 0x53001c00
 .word 0x340002a0
 .word 0xaa1a03e0
@@ -3406,55 +3426,61 @@ bl _p_38
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #424]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
 .word 0xaa1803f9
 .word 0xb4000078
 .word 0xaa1903e0
-.word 0x1400002a
+.word 0x1400002f
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
+ldr x0, [x16, #568]
+bl _p_45
+.word 0xf9001fa0
+.word 0xaa1a03e1
+bl _p_49
+.word 0xf9401fa0
+.word 0xf9001ba0
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x54000500
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x0, [x16, #576]
-bl _p_46
-.word 0xf90027a0
-.word 0xaa1a03e1
-bl _p_50
-.word 0xf94027a0
-.word 0xf90023a0
-.word 0xeb1f001f
-.word 0x10000011
-.word 0x54000460
-
-adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #584]
 .word 0xd2800e01
 bl _p_32
-.word 0xf94023a1
-.word 0xf9001fa1
+.word 0xf9401ba1
 .word 0xf9001001
-.word 0xf9001ba0
-.word 0x91008000
-bl _p_43
-.word 0xf9401ba0
-.word 0xf9401fa1
+.word 0x91008002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #592]
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
+ldr x1, [x16, #584]
 .word 0xf9001401
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #600]
+ldr x1, [x16, #592]
 .word 0xf9002001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #608]
+ldr x1, [x16, #600]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -3463,9 +3489,9 @@ ldr x1, [x16, #608]
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2800e00
+.word 0xd28007e0
 .word 0xaa1103e1
 bl _p_40
 
@@ -3513,7 +3539,7 @@ wrapper_delegate_invoke__Module_invoke_void_intptr_intptr_nuint_intptr_intptr_ui
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000860
 .word 0x14000001
@@ -3582,11 +3608,11 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17ffffbc
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_40
 
@@ -3652,7 +3678,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_i
 .word 0xf900033c
 .word 0xf94017a0
 .word 0xaa1803e1
-bl _p_52
+bl _p_51
 .word 0xa94167b8
 .word 0xf94013bc
 .word 0x910003bf
@@ -3694,7 +3720,7 @@ wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_
 .word 0xf9000300
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_53
+bl _p_52
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -3728,7 +3754,7 @@ wrapper_managed_to_native_ObjCRuntime_Trampolines_DMSLogHandler_wrapper_aot_nati
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f3
 .word 0x910103a0
@@ -3746,7 +3772,7 @@ ldr x0, [x16, #128]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #624]
+ldr x2, [x16, #616]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54000381
@@ -3761,7 +3787,7 @@ ldr x2, [x16, #624]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -3774,11 +3800,11 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
 bl _p_40
 
@@ -3804,7 +3830,7 @@ wrapper_delegate_invoke__Module_invoke_bound_void_object_intptr_intptr_nuint_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x350006e0
 .word 0x14000001
@@ -3861,11 +3887,11 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17ffffc8
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_40
 
@@ -3885,7 +3911,7 @@ wrapper_delegate_invoke__Module_invoke_intptr_intptr_intptr:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -3938,11 +3964,11 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_40
 
@@ -3988,7 +4014,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_A
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_52
+bl _p_51
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -4029,7 +4055,7 @@ wrapper_delegate_end_invoke__Module_end_invoke_intptr__this___IAsyncResult_Syste
 .word 0xf9000300
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_53
+bl _p_52
 .word 0xf9400001
 .word 0x3940b022
 .word 0xeb1f005f
@@ -4040,7 +4066,7 @@ bl _p_53
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #624]
+ldr x2, [x16, #616]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540000c1
@@ -4049,7 +4075,7 @@ ldr x2, [x16, #624]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
 bl _p_40
 
@@ -4076,7 +4102,7 @@ wrapper_managed_to_native_ObjCRuntime_Trampolines_DMSLogMessageProvider_wrapper_
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f8
 .word 0x910043a0
@@ -4093,7 +4119,7 @@ ldr x0, [x16, #128]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #624]
+ldr x1, [x16, #616]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000321
@@ -4104,7 +4130,7 @@ ldr x1, [x16, #624]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -4118,11 +4144,11 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
 bl _p_40
 
@@ -4142,7 +4168,7 @@ wrapper_delegate_invoke__Module_invoke_bound_intptr_object_intptr_intptr:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000580
 .word 0x14000001
@@ -4188,11 +4214,11 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffd3
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_40
 
@@ -4217,7 +4243,7 @@ wrapper_delegate_invoke__Module_invoke_void_MSLogMessageProvider_MSLogLevel_intp
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x350007e0
 .word 0x14000001
@@ -4282,11 +4308,11 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17ffffc0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_40
 
@@ -4348,7 +4374,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___MSLogMes
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_52
+bl _p_51
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -4368,7 +4394,7 @@ wrapper_delegate_invoke__Module_invoke_string:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -4417,11 +4443,11 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_40
 
@@ -4463,7 +4489,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___AsyncCal
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_52
+bl _p_51
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -4504,7 +4530,7 @@ wrapper_delegate_end_invoke__Module_end_invoke_string__this___IAsyncResult_Syste
 .word 0xf9000300
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_53
+bl _p_52
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -4533,7 +4559,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f8
 .word 0x910043a0
@@ -4542,12 +4568,12 @@ ldr x0, [x16, #128]
 .word 0xf9000300
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_54
+bl _p_53
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -4561,7 +4587,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -4591,7 +4617,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f6
 .word 0x9100a3a0
@@ -4602,11 +4628,11 @@ ldr x0, [x16, #128]
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xaa1a03e3
-bl _p_55
+bl _p_54
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -4619,7 +4645,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
@@ -4650,7 +4676,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_boo
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f5
 .word 0x9100a3a0
@@ -4664,11 +4690,11 @@ ldr x0, [x16, #128]
 .word 0xf9400fa1
 .word 0xaa1603e2
 .word 0xaa1a03e3
-bl _p_56
+bl _p_55
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000120
 .word 0x14000001
@@ -4679,7 +4705,7 @@ ldr x0, [x16, #616]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb4fffee0
 .word 0xaa1a03e0
@@ -4709,7 +4735,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f7
 .word 0x910083a0
@@ -4719,11 +4745,11 @@ ldr x0, [x16, #128]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xaa1a03e2
-bl _p_57
+bl _p_56
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -4736,7 +4762,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
@@ -4765,7 +4791,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f7
 .word 0x910063a0
@@ -4775,12 +4801,12 @@ ldr x0, [x16, #128]
 .word 0xf9400ba0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_58
+bl _p_57
 .word 0x53001c1a
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -4794,7 +4820,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -4828,7 +4854,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xf90067a0
 .word 0x910143a1
@@ -4844,11 +4870,11 @@ ldr x0, [x16, #128]
 .word 0xf9401fa5
 .word 0xf94023a6
 .word 0xb9404ba7
-bl _p_59
+bl _p_58
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -4861,7 +4887,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
@@ -4895,7 +4921,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xf90067a0
 .word 0x910143a1
@@ -4911,11 +4937,11 @@ ldr x0, [x16, #128]
 .word 0xf9401fa5
 .word 0xf94023a6
 .word 0xb9404ba7
-bl _p_60
+bl _p_59
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -4928,7 +4954,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
@@ -4956,7 +4982,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f8
 .word 0x910043a0
@@ -4965,12 +4991,12 @@ ldr x0, [x16, #128]
 .word 0xf9000300
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_61
+bl _p_60
 .word 0x53001c1a
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -4984,7 +5010,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -5014,7 +5040,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_boo
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f6
 .word 0x910083a0
@@ -5026,11 +5052,11 @@ ldr x0, [x16, #128]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xaa1703e2
-bl _p_62
+bl _p_61
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000120
 .word 0x14000001
@@ -5041,7 +5067,7 @@ ldr x0, [x16, #616]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb4fffee0
 .word 0xaa1a03e0
@@ -5070,7 +5096,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f8
 .word 0x910043a0
@@ -5079,12 +5105,12 @@ ldr x0, [x16, #128]
 .word 0xf9000300
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_63
+bl _p_62
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -5098,7 +5124,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -5126,7 +5152,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f8
 .word 0x910043a0
@@ -5135,12 +5161,12 @@ ldr x0, [x16, #128]
 .word 0xf9000300
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_64
+bl _p_63
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -5154,7 +5180,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -5183,7 +5209,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uin
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f7
 .word 0x910083a0
@@ -5193,11 +5219,11 @@ ldr x0, [x16, #128]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xaa1a03e2
-bl _p_65
+bl _p_64
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -5210,7 +5236,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
@@ -5239,7 +5265,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulo
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f7
 .word 0x910083a0
@@ -5249,11 +5275,11 @@ ldr x0, [x16, #128]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xaa1a03e2
-bl _p_66
+bl _p_65
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -5266,7 +5292,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
@@ -5297,7 +5323,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f5
 .word 0x9100c3a0
@@ -5309,11 +5335,11 @@ ldr x0, [x16, #128]
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xaa1a03e4
-bl _p_67
+bl _p_66
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -5326,7 +5352,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
@@ -5357,7 +5383,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f5
 .word 0x9100c3a0
@@ -5369,11 +5395,11 @@ ldr x0, [x16, #128]
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xaa1a03e4
-bl _p_68
+bl _p_67
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -5386,7 +5412,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
@@ -5420,7 +5446,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xf90063a0
 .word 0x910123a1
@@ -5436,12 +5462,12 @@ ldr x0, [x16, #128]
 .word 0xf9401fa5
 .word 0xaa1903e6
 .word 0xf94023a7
-bl _p_69
+bl _p_68
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -5455,7 +5481,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -5482,7 +5508,7 @@ wrapper_managed_to_native_ObjCRuntime_Trampolines__Block_copy_intptr:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f9
 .word 0x910043a0
@@ -5490,12 +5516,12 @@ ldr x0, [x16, #128]
 .word 0xf9000ba1
 .word 0xf9000320
 .word 0xaa1a03e0
-bl _p_70
+bl _p_69
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -5509,7 +5535,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -5536,7 +5562,7 @@ wrapper_managed_to_native_ObjCRuntime_Trampolines__Block_release_intptr:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f9
 .word 0x910043a0
@@ -5544,11 +5570,11 @@ ldr x0, [x16, #128]
 .word 0xf9000ba1
 .word 0xf9000320
 .word 0xaa1a03e0
-bl _p_71
+bl _p_70
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x35000140
 .word 0x14000001
@@ -5560,7 +5586,7 @@ ldr x0, [x16, #616]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_12
-bl _p_51
+bl _p_50
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff5
@@ -5605,17 +5631,17 @@ ldr x0, [x16, #64]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #144]
+ldr x1, [x16, #128]
 .word 0xd2800000
 .word 0xd63f0020
 .word 0xf9002fa0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x340000c0
-bl _p_51
+bl _p_50
 .word 0xaa0003f4
 .word 0xb4000060
 .word 0xaa1403e0
@@ -5626,7 +5652,7 @@ bl _p_12
 .word 0xf9401ba3
 .word 0xf9401fa4
 .word 0xb94043a5
-bl _p_72
+bl _p_71
 .word 0x94000011
 .word 0x1400001c
 .word 0xf90033a0
@@ -5634,9 +5660,9 @@ bl _p_72
 .word 0xf9002ba0
 .word 0xf9402ba0
 .word 0xd2800001
-bl _p_73
+bl _p_72
 .word 0xb9004ba0
-bl _p_74
+bl _p_73
 .word 0xf90047a0
 .word 0xf94047a0
 .word 0xb4000060
@@ -5653,7 +5679,7 @@ bl _mono_jit_set_domain
 .word 0x6b1e001f
 .word 0x54000060
 .word 0xb9404ba0
-bl _p_75
+bl _p_74
 .word 0xf94043be
 .word 0xd61f03c0
 .word 0xf9400bb4
@@ -5697,23 +5723,23 @@ ldr x0, [x16, #64]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #144]
+ldr x1, [x16, #128]
 .word 0xd2800000
 .word 0xd63f0020
 .word 0xf9001fa0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xb9400000
 .word 0x340000c0
-bl _p_51
+bl _p_50
 .word 0xaa0003f9
 .word 0xb4000060
 .word 0xaa1903e0
 bl _p_12
 .word 0xf9400fa0
-bl _p_76
+bl _p_75
 .word 0xf90013a0
 .word 0x94000011
 .word 0x1400001c
@@ -5722,9 +5748,9 @@ bl _p_76
 .word 0xf9001ba0
 .word 0xf9401ba0
 .word 0xd2800001
-bl _p_73
+bl _p_72
 .word 0xb9002ba0
-bl _p_74
+bl _p_73
 .word 0xf90037a0
 .word 0xf94037a0
 .word 0xb4000060
@@ -5741,7 +5767,7 @@ bl _mono_jit_set_domain
 .word 0x6b1e001f
 .word 0x54000060
 .word 0xb9402ba0
-bl _p_75
+bl _p_74
 .word 0xf94033be
 .word 0xd61f03c0
 .word 0xf94013a0
@@ -5955,8 +5981,8 @@ unwind_info:
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,68,154,3,16,12,31,0,68,14,80,157,10,158,9,68,13
 	.byte 29,68,153,8,18,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,154,1,19,12,31,0,68,14,96,157,12
 	.byte 158,11,68,13,29,68,151,10,68,153,9,17,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,148,20,21,12,31
-	.byte 0,68,14,80,157,10,158,9,68,13,29,68,148,8,149,7,68,150,6,21,12,31,0,68,14,80,157,10,158,9,68,13
-	.byte 29,68,152,8,153,7,68,154,6,14,12,31,0,68,14,144,1,157,18,158,17,68,13,29,16,12,31,0,68,14,48,157
+	.byte 0,68,14,80,157,10,158,9,68,13,29,68,148,8,149,7,68,150,6,21,12,31,0,68,14,64,157,8,158,7,68,13
+	.byte 29,68,152,6,153,5,68,154,4,14,12,31,0,68,14,144,1,157,18,158,17,68,13,29,16,12,31,0,68,14,48,157
 	.byte 6,158,5,68,13,29,68,154,4,33,12,31,0,68,14,112,157,14,158,13,68,13,29,68,147,12,148,11,68,149,10,150
 	.byte 9,68,151,8,152,7,68,153,6,154,5,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,156
 	.byte 10,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,39,12,31,0,68,14,192,1,157,24,158,23
@@ -5983,613 +6009,605 @@ plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
 _p_1:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #640]
+ldr x16, [x16, #632]
 br x16
-.word 1591
+.word 1613
 	.no_dead_strip plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
 plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
 _p_2:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #648]
+ldr x16, [x16, #640]
 br x16
-.word 1596
+.word 1618
 	.no_dead_strip plt_Foundation_NSObject_set_IsDirectBinding_bool
 plt_Foundation_NSObject_set_IsDirectBinding_bool:
 _p_3:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #656]
+ldr x16, [x16, #648]
 br x16
-.word 1601
+.word 1623
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
 _p_4:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #664]
+ldr x16, [x16, #656]
 br x16
-.word 1606
+.word 1628
 	.no_dead_strip plt_Foundation_NSObject_InitializeHandle_intptr_string
 plt_Foundation_NSObject_InitializeHandle_intptr_string:
 _p_5:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #672]
+ldr x16, [x16, #664]
 br x16
-.word 1608
+.word 1630
 	.no_dead_strip plt_Foundation_NSObject__ctor_intptr
 plt_Foundation_NSObject__ctor_intptr:
 _p_6:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #680]
+ldr x16, [x16, #672]
 br x16
-.word 1613
+.word 1635
 	.no_dead_strip plt_Foundation_NSString_CreateNative_string
 plt_Foundation_NSString_CreateNative_string:
 _p_7:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #688]
+ldr x16, [x16, #680]
 br x16
-.word 1618
+.word 1640
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
 _p_8:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #696]
+ldr x16, [x16, #688]
 br x16
-.word 1623
+.word 1645
 	.no_dead_strip plt_Foundation_NSString_ReleaseNative_intptr
 plt_Foundation_NSString_ReleaseNative_intptr:
 _p_9:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #704]
+ldr x16, [x16, #696]
 br x16
-.word 1625
+.word 1647
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
 _p_10:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #712]
+ldr x16, [x16, #704]
 br x16
-.word 1630
+.word 1652
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_11:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #720]
+ldr x16, [x16, #712]
 br x16
-.word 1632
+.word 1654
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_12:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #728]
+ldr x16, [x16, #720]
 br x16
-.word 1652
+.word 1674
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_intptr:
 _p_13:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #736]
+ldr x16, [x16, #728]
 br x16
-.word 1680
+.word 1702
 	.no_dead_strip plt_ObjCRuntime_Class_GetHandle_string
 plt_ObjCRuntime_Class_GetHandle_string:
 _p_14:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #744]
+ldr x16, [x16, #736]
 br x16
-.word 1682
+.word 1704
 	.no_dead_strip plt_Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperSdk__ctor_Foundation_NSObjectFlag
 plt_Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperSdk__ctor_Foundation_NSObjectFlag:
 _p_15:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #752]
+ldr x16, [x16, #744]
 br x16
-.word 1687
+.word 1709
 	.no_dead_strip plt_Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperSdk__ctor_intptr
 plt_Microsoft_Azure_Mobile_iOS_Bindings_MSWrapperSdk__ctor_intptr:
 _p_16:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #760]
+ldr x16, [x16, #752]
 br x16
-.word 1689
+.word 1711
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
 _p_17:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #768]
+ldr x16, [x16, #760]
 br x16
-.word 1691
+.word 1713
 	.no_dead_strip plt_Foundation_NSString_FromHandle_intptr
 plt_Foundation_NSString_FromHandle_intptr:
 _p_18:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #776]
+ldr x16, [x16, #768]
 br x16
-.word 1693
+.word 1715
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSNumber_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSNumber_intptr:
 _p_19:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #784]
+ldr x16, [x16, #776]
 br x16
-.word 1698
+.word 1720
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_SetupBlock_System_Delegate_System_Delegate
 plt_ObjCRuntime_BlockLiteral_SetupBlock_System_Delegate_System_Delegate:
 _p_20:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #792]
+ldr x16, [x16, #784]
 br x16
-.word 1710
+.word 1732
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_ulong_intptr_intptr_intptr_uint
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_ulong_intptr_intptr_intptr_uint:
 _p_21:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #800]
+ldr x16, [x16, #792]
 br x16
-.word 1715
+.word 1737
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_CleanupBlock
 plt_ObjCRuntime_BlockLiteral_CleanupBlock:
 _p_22:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #808]
+ldr x16, [x16, #800]
 br x16
-.word 1717
+.word 1739
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSUuid_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSUuid_intptr:
 _p_23:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #816]
+ldr x16, [x16, #808]
 br x16
-.word 1722
+.word 1744
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
 _p_24:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #824]
+ldr x16, [x16, #816]
 br x16
-.word 1734
+.word 1756
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
 _p_25:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #832]
+ldr x16, [x16, #824]
 br x16
-.word 1736
+.word 1758
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
 _p_26:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #840]
+ldr x16, [x16, #832]
 br x16
-.word 1738
+.word 1760
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong:
 _p_27:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #848]
+ldr x16, [x16, #840]
 br x16
-.word 1740
+.word 1762
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Microsoft_Azure_Mobile_iOS_Bindings_MSMobileCenter_intptr:
 _p_28:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #856]
+ldr x16, [x16, #848]
 br x16
-.word 1742
+.word 1764
 	.no_dead_strip plt_Foundation_NSArray_FromNSObjects_ObjCRuntime_INativeObject__
 plt_Foundation_NSArray_FromNSObjects_ObjCRuntime_INativeObject__:
 _p_29:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #864]
+ldr x16, [x16, #856]
 br x16
-.word 1754
+.word 1776
 	.no_dead_strip plt_Foundation_NSObject_Dispose
 plt_Foundation_NSObject_Dispose:
 _p_30:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #872]
+ldr x16, [x16, #864]
 br x16
-.word 1759
+.word 1781
 	.no_dead_strip plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool
 plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool:
 _p_31:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #880]
+ldr x16, [x16, #872]
 br x16
-.word 1764
+.word 1786
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_32:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #888]
+ldr x16, [x16, #880]
 br x16
-.word 1769
+.word 1791
 	.no_dead_strip plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor
 plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
 _p_33:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #896]
+ldr x16, [x16, #888]
 br x16
-.word 1777
+.word 1799
 	.no_dead_strip plt_Microsoft_Azure_Mobile_iOS_Bindings_MSService__ctor_Foundation_NSObjectFlag
 plt_Microsoft_Azure_Mobile_iOS_Bindings_MSService__ctor_Foundation_NSObjectFlag:
 _p_34:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #904]
+ldr x16, [x16, #896]
 br x16
-.word 1782
+.word 1804
 	.no_dead_strip plt_Microsoft_Azure_Mobile_iOS_Bindings_MSService__ctor_intptr
 plt_Microsoft_Azure_Mobile_iOS_Bindings_MSService__ctor_intptr:
 _p_35:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #912]
+ldr x16, [x16, #904]
 br x16
-.word 1784
+.word 1806
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_ulong
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_ulong:
 _p_36:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #920]
+ldr x16, [x16, #912]
 br x16
-.word 1786
+.word 1808
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr_intptr_intptr_intptr:
 _p_37:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #928]
+ldr x16, [x16, #920]
 br x16
-.word 1788
+.word 1810
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_get_Target
 plt_ObjCRuntime_BlockLiteral_get_Target:
 _p_38:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #936]
+ldr x16, [x16, #928]
 br x16
-.word 1790
+.word 1812
 	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_GetDelegateForFunctionPointer_intptr_System_Type
 plt_System_Runtime_InteropServices_Marshal_GetDelegateForFunctionPointer_intptr_System_Type:
 _p_39:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #944]
+ldr x16, [x16, #936]
 br x16
-.word 1795
+.word 1817
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_40:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #952]
+ldr x16, [x16, #944]
 br x16
-.word 1800
+.word 1822
 	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_copy_intptr
 plt_ObjCRuntime_Trampolines__Block_copy_intptr:
 _p_41:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #960]
+ldr x16, [x16, #952]
 br x16
-.word 1835
+.word 1857
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSLogHandler
 plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSLogHandler:
 _p_42:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #960]
+br x16
+.word 1859
+	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_release_intptr
+plt_ObjCRuntime_Trampolines__Block_release_intptr:
+_p_43:
+adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 1837
-	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
-plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
-_p_43:
+.word 1871
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr
+plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr:
+_p_44:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 1849
-	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_release_intptr
-plt_ObjCRuntime_Trampolines__Block_release_intptr:
-_p_44:
+.word 1873
+	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
+plt__jit_icall_ves_icall_object_new_specific:
+_p_45:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 1856
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr
-plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr:
-_p_45:
+.word 1878
+	.no_dead_strip plt_ObjCRuntime_Trampolines_NIDMSLogHandler__ctor_ObjCRuntime_BlockLiteral_
+plt_ObjCRuntime_Trampolines_NIDMSLogHandler__ctor_ObjCRuntime_BlockLiteral_:
+_p_46:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 1858
-	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
-plt__jit_icall_ves_icall_object_new_specific:
-_p_46:
+.word 1910
+	.no_dead_strip plt_Foundation_NSString_CreateNative_string_bool
+plt_Foundation_NSString_CreateNative_string_bool:
+_p_47:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 1863
-	.no_dead_strip plt_ObjCRuntime_Trampolines_NIDMSLogHandler__ctor_ObjCRuntime_BlockLiteral_
-plt_ObjCRuntime_Trampolines_NIDMSLogHandler__ctor_ObjCRuntime_BlockLiteral_:
-_p_47:
+.word 1912
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSLogMessageProvider
+plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSLogMessageProvider:
+_p_48:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 1895
-	.no_dead_strip plt_Foundation_NSString_CreateNative_string_bool
-plt_Foundation_NSString_CreateNative_string_bool:
-_p_48:
+.word 1917
+	.no_dead_strip plt_ObjCRuntime_Trampolines_NIDMSLogMessageProvider__ctor_ObjCRuntime_BlockLiteral_
+plt_ObjCRuntime_Trampolines_NIDMSLogMessageProvider__ctor_ObjCRuntime_BlockLiteral_:
+_p_49:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 1897
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSLogMessageProvider
-plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSLogMessageProvider:
-_p_49:
+.word 1929
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_50:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 1902
-	.no_dead_strip plt_ObjCRuntime_Trampolines_NIDMSLogMessageProvider__ctor_ObjCRuntime_BlockLiteral_
-plt_ObjCRuntime_Trampolines_NIDMSLogMessageProvider__ctor_ObjCRuntime_BlockLiteral_:
-_p_50:
+.word 1931
+	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
+plt__jit_icall_mono_delegate_begin_invoke:
+_p_51:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 1914
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_51:
+.word 1969
+	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
+plt__jit_icall_mono_delegate_end_invoke:
+_p_52:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 1916
-	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
-plt__jit_icall_mono_delegate_begin_invoke:
-_p_52:
+.word 1998
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+_p_53:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 1954
-	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
-plt__jit_icall_mono_delegate_end_invoke:
-_p_53:
+.word 2025
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
+_p_54:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 1983
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
-_p_54:
+.word 2027
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_intptr:
+_p_55:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 2010
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
-_p_55:
+.word 2029
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+_p_56:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 2012
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool_intptr:
-_p_56:
+.word 2031
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+_p_57:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 2014
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
-_p_57:
+.word 2033
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_uint_intptr_intptr_intptr_uint
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_uint_intptr_intptr_intptr_uint:
+_p_58:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 2016
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
-_p_58:
+.word 2035
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_ulong_intptr_intptr_intptr_uint
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_ulong_intptr_intptr_intptr_uint:
+_p_59:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 2018
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_uint_intptr_intptr_intptr_uint
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_uint_intptr_intptr_intptr_uint:
-_p_59:
+.word 2037
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+_p_60:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 2020
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_ulong_intptr_intptr_intptr_uint
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_ulong_intptr_intptr_intptr_uint:
-_p_60:
+.word 2039
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+_p_61:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 2022
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
-_p_61:
+.word 2041
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
+_p_62:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 2024
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
-_p_62:
+.word 2043
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
+_p_63:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 2026
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
-_p_63:
+.word 2045
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint:
+_p_64:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 2028
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
-_p_64:
+.word 2047
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong:
+_p_65:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 2030
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint:
-_p_65:
+.word 2049
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_uint
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_uint:
+_p_66:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 2032
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong:
-_p_66:
+.word 2051
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_ulong
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_ulong:
+_p_67:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 2034
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_uint
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_uint:
-_p_67:
+.word 2053
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr_intptr_intptr_intptr:
+_p_68:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 2036
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_ulong
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_ulong:
-_p_68:
+.word 2055
+	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr
+plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr:
+_p_69:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 2038
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr_intptr_intptr_intptr:
-_p_69:
+.word 2057
+	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr
+plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr:
+_p_70:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 2040
-	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr
-plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr:
-_p_70:
+.word 2059
+	.no_dead_strip plt_ObjCRuntime_Trampolines_SDMSLogHandler_Invoke_intptr_intptr_System_nuint_intptr_intptr_uint
+plt_ObjCRuntime_Trampolines_SDMSLogHandler_Invoke_intptr_intptr_System_nuint_intptr_intptr_uint:
+_p_71:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 2042
-	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr
-plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr:
-_p_71:
+.word 2061
+	.no_dead_strip plt__jit_icall_mono_gchandle_new
+plt__jit_icall_mono_gchandle_new:
+_p_72:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 2044
-	.no_dead_strip plt_ObjCRuntime_Trampolines_SDMSLogHandler_Invoke_intptr_intptr_System_nuint_intptr_intptr_uint
-plt_ObjCRuntime_Trampolines_SDMSLogHandler_Invoke_intptr_intptr_System_nuint_intptr_intptr_uint:
-_p_72:
+.word 2063
+	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
+plt__jit_icall_mono_thread_get_undeniable_exception:
+_p_73:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 2046
-	.no_dead_strip plt__jit_icall_mono_gchandle_new
-plt__jit_icall_mono_gchandle_new:
-_p_73:
+.word 2083
+	.no_dead_strip plt__jit_icall_mono_marshal_ftnptr_eh_callback
+plt__jit_icall_mono_marshal_ftnptr_eh_callback:
+_p_74:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 2048
-	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
-plt__jit_icall_mono_thread_get_undeniable_exception:
-_p_74:
+.word 2122
+	.no_dead_strip plt_ObjCRuntime_Trampolines_SDMSLogMessageProvider_Invoke_intptr
+plt_ObjCRuntime_Trampolines_SDMSLogMessageProvider_Invoke_intptr:
+_p_75:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 2068
-	.no_dead_strip plt__jit_icall_mono_marshal_ftnptr_eh_callback
-plt__jit_icall_mono_marshal_ftnptr_eh_callback:
-_p_75:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #1232]
-br x16
-.word 2107
-	.no_dead_strip plt_ObjCRuntime_Trampolines_SDMSLogMessageProvider_Invoke_intptr
-plt_ObjCRuntime_Trampolines_SDMSLogMessageProvider_Invoke_intptr:
-_p_76:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #1240]
-br x16
-.word 2141
+.word 2156
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got, 1248
+.lcomm mono_aot_Microsoft_Azure_Mobile_iOS_Bindings_got, 1232
 got_end:
 .section	__DATA,__objc_selrefs,literal_pointers,no_dead_strip
 .align	3
@@ -6932,13 +6950,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 79,1248,77,171,66,391195135,0,4285
-	.long 128,8,8,10,0,26,6744,2448
+	.long 78,1232,76,171,66,391195135,0,4298
+	.long 128,8,8,10,0,25,6752,2448
 	.long 2168,1552,0,1848,2112,1728,0,1264
 	.long 256,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 80,142,72,174,232,97,14,204,175,163,75,22,163,110,178,37
+	.byte 64,161,132,81,170,36,92,79,138,16,61,3,173,43,103,165
 	.globl _mono_aot_module_Microsoft_Azure_Mobile_iOS_Bindings_info
 	.align 3
 _mono_aot_module_Microsoft_Azure_Mobile_iOS_Bindings_info:
@@ -11304,7 +11322,7 @@ Lfde91_start:
 LDIFF_SYM500=Lme_71 - ObjCRuntime_Trampolines_NIDMSLogHandler__ctor_ObjCRuntime_BlockLiteral_
 	.long LDIFF_SYM500
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde91_end:
 
@@ -11377,7 +11395,7 @@ Lfde93_start:
 LDIFF_SYM507=Lme_73 - ObjCRuntime_Trampolines_NIDMSLogHandler_Create_intptr
 	.long LDIFF_SYM507
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
 	.align 3
 Lfde93_end:
 
@@ -11618,7 +11636,7 @@ Lfde97_start:
 LDIFF_SYM539=Lme_7b - ObjCRuntime_Trampolines_NIDMSLogMessageProvider__ctor_ObjCRuntime_BlockLiteral_
 	.long LDIFF_SYM539
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde97_end:
 
@@ -11691,7 +11709,7 @@ Lfde99_start:
 LDIFF_SYM546=Lme_7d - ObjCRuntime_Trampolines_NIDMSLogMessageProvider_Create_intptr
 	.long LDIFF_SYM546
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
 	.align 3
 Lfde99_end:
 

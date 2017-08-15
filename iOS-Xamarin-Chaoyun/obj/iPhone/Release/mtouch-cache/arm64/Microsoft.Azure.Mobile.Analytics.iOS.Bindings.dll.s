@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:38 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:07:31 EDT 2017)"
 	.asciz "Microsoft.Azure.Mobile.Analytics.iOS.Bindings.dll"
 	.asciz ""
 
@@ -130,7 +130,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -138,12 +138,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -158,7 +158,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -184,12 +184,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -217,12 +217,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -244,7 +244,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -261,7 +261,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_IsEnabled:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_1@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_1@PAGEOFF
@@ -286,7 +286,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_SetDelegate_Microsoft_
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9400001
 adrp x0, L_OBJC_SELECTOR_REFERENCES_2@PAGE
 add x0, x0, L_OBJC_SELECTOR_REFERENCES_2@PAGEOFF
@@ -297,7 +297,7 @@ ldr x0, [x0]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #232]
 .word 0xf9400017
 .word 0x14000003
 .word 0xf940035e
@@ -324,7 +324,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_SetEnabled_bool:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_3@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_3@PAGEOFF
@@ -350,7 +350,7 @@ bl _p_10
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9400000
 adrp x1, L_OBJC_SELECTOR_REFERENCES_4@PAGE
 add x1, x1, L_OBJC_SELECTOR_REFERENCES_4@PAGEOFF
@@ -381,7 +381,7 @@ bl _p_10
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9400001
 adrp x0, L_OBJC_SELECTOR_REFERENCES_5@PAGE
 add x0, x0, L_OBJC_SELECTOR_REFERENCES_5@PAGEOFF
@@ -393,7 +393,7 @@ ldr x0, [x0]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #232]
 .word 0xf9400015
 .word 0x14000003
 .word 0xf940035e
@@ -422,13 +422,13 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #240]
 bl _p_13
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -466,7 +466,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -474,12 +474,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -494,7 +494,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -520,12 +520,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -553,12 +553,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -583,7 +583,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate_DidFailSending
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #248]
 .word 0xd2801101
 bl _p_15
 .word 0xf9001ba0
@@ -608,7 +608,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate_DidSucceedSend
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #248]
 .word 0xd2801101
 bl _p_15
 .word 0xf9001ba0
@@ -633,7 +633,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalyticsDelegate_WillSendEventL
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #248]
 .word 0xd2801101
 bl _p_15
 .word 0xf9001ba0
@@ -657,7 +657,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSEventLog__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_18
@@ -665,12 +665,12 @@ bl _p_18
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -685,7 +685,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -711,12 +711,12 @@ bl _p_18
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -744,12 +744,12 @@ bl _p_19
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -771,7 +771,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSEventLog_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #264]
+ldr x0, [x16, #256]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -832,7 +832,7 @@ ldr x0, [x16, #0]
 .word 0xd28018e1
 bl _p_21
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
@@ -892,7 +892,7 @@ ldr x0, [x16, #0]
 .word 0xd28018e1
 bl _p_21
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
@@ -915,7 +915,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #272]
+ldr x15, [x16, #264]
 bl _p_22
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -952,7 +952,7 @@ ldr x0, [x16, #0]
 .word 0xd28018e1
 bl _p_21
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
@@ -968,13 +968,13 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSEventLog__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #280]
+ldr x0, [x16, #272]
 bl _p_13
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #264]
+ldr x0, [x16, #256]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -993,7 +993,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_1
@@ -1001,12 +1001,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1021,7 +1021,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -1047,12 +1047,12 @@ bl _p_1
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1080,12 +1080,12 @@ bl _p_6
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1107,7 +1107,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties_get_ClassHandl
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1131,7 +1131,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #272]
+ldr x15, [x16, #264]
 bl _p_22
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1168,7 +1168,7 @@ ldr x0, [x16, #0]
 .word 0xd28018e1
 bl _p_21
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
@@ -1184,13 +1184,13 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 bl _p_13
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -1209,7 +1209,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSPageLog__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_18
@@ -1217,12 +1217,12 @@ bl _p_18
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1237,7 +1237,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x2, [x16, #224]
+ldr x2, [x16, #216]
 .word 0xaa1a03e0
 bl _p_5
 .word 0xf9400bba
@@ -1263,12 +1263,12 @@ bl _p_18
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1296,12 +1296,12 @@ bl _p_19
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xf9400021
 bl _p_2
 .word 0x53001c01
@@ -1323,7 +1323,7 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSPageLog_get_ClassHandle:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #296]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1384,7 +1384,7 @@ ldr x0, [x16, #0]
 .word 0xd28018e1
 bl _p_21
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
@@ -1407,7 +1407,7 @@ bl _p_4
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x15, [x16, #272]
+ldr x15, [x16, #264]
 bl _p_22
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1444,7 +1444,7 @@ ldr x0, [x16, #0]
 .word 0xd28018e1
 bl _p_21
 .word 0xaa0003e1
-.word 0xd2800e20
+.word 0xd2800800
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
@@ -1460,13 +1460,13 @@ Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSPageLog__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #304]
 bl _p_13
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #296]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -1483,16 +1483,16 @@ ApiDefinition_Messaging__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x1, [x16, #320]
+ldr x1, [x16, #312]
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9418c30
 .word 0xd63f0200
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #208]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -1514,8 +1514,8 @@ LDIFF_SYM3=ut_end - ut_52
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/corlib/System/Array.cs"
-.loc 2 239 0 prologue_end
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/corlib/System/Array.cs"
+.loc 2 215 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
@@ -1524,14 +1524,22 @@ System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000001
-bl _p_23
-.word 0xf9400fa0
-.loc 2 240 0
-.word 0xf9400ba0
+.word 0xd349fc02
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.loc 2 216 0
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 2 241 0
+.loc 2 217 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -1545,7 +1553,7 @@ b System_Array_InternalEnumerator_1_T_INST_Dispose
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_Dispose
 System_Array_InternalEnumerator_1_T_INST_Dispose:
-.loc 2 245 0 prologue_end
+.loc 2 221 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000faf
@@ -1554,7 +1562,7 @@ System_Array_InternalEnumerator_1_T_INST_Dispose:
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 2 246 0
+.loc 2 222 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1568,7 +1576,7 @@ b System_Array_InternalEnumerator_1_T_INST_MoveNext
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_MoveNext
 System_Array_InternalEnumerator_1_T_INST_MoveNext:
-.loc 2 250 0 prologue_end
+.loc 2 226 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xa9016bb9
@@ -1579,11 +1587,11 @@ System_Array_InternalEnumerator_1_T_INST_MoveNext:
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000081
-.loc 2 251 0
+.loc 2 227 0
 .word 0xf9400340
 .word 0xb9801800
 .word 0xb9000b40
-.loc 2 253 0
+.loc 2 229 0
 .word 0xb9800b40
 .word 0x9280001e
 .word 0xf2bffffe
@@ -1615,7 +1623,7 @@ b System_Array_InternalEnumerator_1_T_INST_get_Current
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_get_Current
 System_Array_InternalEnumerator_1_T_INST_get_Current:
-.loc 2 258 0 prologue_end
+.loc 2 234 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -1626,13 +1634,13 @@ System_Array_InternalEnumerator_1_T_INST_get_Current:
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000500
-.loc 2 260 0
+.loc 2 236 0
 .word 0xb9800b40
 .word 0x9280001e
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000540
-.loc 2 263 0
+.loc 2 239 0
 .word 0xf9400340
 .word 0xf9002fa0
 .word 0xf9400340
@@ -1642,7 +1650,7 @@ System_Array_InternalEnumerator_1_T_INST_get_Current:
 .word 0x4b010000
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_24
+bl _p_23
 .word 0xaa0003e1
 .word 0xf9402fa0
 .word 0xf9002ba1
@@ -1650,7 +1658,7 @@ bl _p_24
 .word 0xf940001e
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_25
+bl _p_24
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
@@ -1667,85 +1675,30 @@ bl _p_25
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.loc 2 259 0
-.word 0xd29767e0
-bl _p_26
+.loc 2 235 0
+.word 0xd2932ba0
+bl _p_25
 .word 0xaa0003e1
-.word 0xd2801880
+.word 0xd2801220
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
-.loc 2 261 0
-.word 0xd29772a0
-bl _p_26
+.loc 2 237 0
+.word 0xd2933660
+bl _p_25
 .word 0xaa0003e1
-.word 0xd2801880
+.word 0xd2801220
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
 
 Lme_37:
 .text
-ut_56:
-add x0, x0, 16
-b System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
-.text
-	.align 4
-	.no_dead_strip System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
-System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current:
-.loc 2 274 0 prologue_end
-.word 0xa9b97bfd
-.word 0x910003fd
-.word 0xf90017af
-.word 0xf9000ba0
-.word 0xf94017a0
-bl _p_27
-.word 0xf90033a0
-.word 0xf9400ba0
-.word 0xf940001e
-.word 0xf94017a0
-bl _p_28
-.word 0xaa0003e1
-.word 0xf94033af
-.word 0x910063a0
-.word 0xf9001ba0
-.word 0xf9400ba0
-.word 0xd63f0020
-.word 0xf9401bbe
-.word 0xf90003c0
-.word 0xf90007c1
-.word 0xf94017a0
-bl _p_29
-.word 0xd2800401
-bl _p_15
-.word 0xf90023a0
-.word 0x91004001
-.word 0xaa0103e0
-.word 0xf9400fa2
-.word 0xf9002fa2
-.word 0xf9000022
-.word 0xf9002ba0
-bl _p_23
-.word 0xf9402ba0
-.word 0xf9402fa1
-.word 0x91002000
-.word 0xf94013a1
-.word 0xf90027a1
-.word 0xf9000001
-bl _p_23
-.word 0xf94023a0
-.word 0xf94027a1
-.word 0x910003bf
-.word 0xa8c77bfd
-.word 0xd65f03c0
-
-Lme_38:
-.text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
-.loc 2 78 0 prologue_end
-.word 0xa9b97bfd
+.loc 2 71 0 prologue_end
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9001faf
 .word 0xf9000ba0
@@ -1753,15 +1706,15 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST:
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0x9100a3a0
-.word 0xf9002fa0
+.word 0xf90023a0
 .word 0xf9401fa0
-bl _p_30
-.word 0xf90033a0
+bl _p_26
+.word 0xf90027a0
 .word 0xf9401fa0
-bl _p_31
+bl _p_27
 .word 0xaa0003e2
-.word 0xf9402fa0
-.word 0xf94033af
+.word 0xf94023a0
+.word 0xf94027af
 .word 0xf9400ba1
 .word 0xd63f0040
 .word 0xf94017a0
@@ -1769,28 +1722,32 @@ bl _p_31
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_30
+bl _p_26
 .word 0xd2800401
 bl _p_15
-.word 0xf90023a0
-.word 0x91004001
-.word 0xaa0103e0
+.word 0x91004003
+.word 0xaa0303e1
 .word 0xf9400fa2
-.word 0xf9002ba2
-.word 0xf9000022
-.word 0xf90027a0
-bl _p_23
-.word 0xf94023a0
-.word 0xf94027a1
-.word 0xf9402ba2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
 .word 0x91002021
 .word 0xf94013a2
 .word 0xf9000022
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_39:
+Lme_38:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
@@ -1813,7 +1770,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f8
 .word 0x910043a0
@@ -1822,12 +1779,12 @@ ldr x0, [x16, #128]
 .word 0xf9000300
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_32
+bl _p_28
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -1841,12 +1798,12 @@ ldr x0, [x16, #328]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_17
-bl _p_33
+bl _p_29
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
 
-Lme_3a:
+Lme_39:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
@@ -1871,7 +1828,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_boo
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f6
 .word 0x910083a0
@@ -1883,11 +1840,11 @@ ldr x0, [x16, #128]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xaa1703e2
-bl _p_34
+bl _p_30
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xb9400000
 .word 0x35000120
 .word 0x14000001
@@ -1898,13 +1855,13 @@ ldr x0, [x16, #328]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_33
+bl _p_29
 .word 0xaa0003fa
 .word 0xb4fffee0
 .word 0xaa1a03e0
 bl _p_17
 
-Lme_3b:
+Lme_3a:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
@@ -1927,7 +1884,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f8
 .word 0x910043a0
@@ -1936,12 +1893,12 @@ ldr x0, [x16, #128]
 .word 0xf9000300
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_35
+bl _p_31
 .word 0x53001c1a
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -1955,12 +1912,12 @@ ldr x0, [x16, #328]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_17
-bl _p_33
+bl _p_29
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17fffff3
 
-Lme_3c:
+Lme_3b:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
@@ -1984,7 +1941,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f7
 .word 0x910083a0
@@ -1994,11 +1951,11 @@ ldr x0, [x16, #128]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xaa1a03e2
-bl _p_36
+bl _p_32
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -2011,12 +1968,12 @@ ldr x0, [x16, #328]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_17
-bl _p_33
+bl _p_29
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_3d:
+Lme_3c:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
@@ -2041,7 +1998,7 @@ wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_int
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #128]
+ldr x0, [x16, #112]
 .word 0xd63f0000
 .word 0xaa0003f6
 .word 0x9100a3a0
@@ -2052,11 +2009,11 @@ ldr x0, [x16, #128]
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xaa1a03e3
-bl _p_37
+bl _p_33
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xb9400000
 .word 0x35000160
 .word 0x14000001
@@ -2069,18 +2026,18 @@ ldr x0, [x16, #328]
 .word 0xd65f03c0
 .word 0xaa1a03e0
 bl _p_17
-bl _p_33
+bl _p_29
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff4
 
-Lme_3e:
+Lme_3d:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__get_Item_T_INST_int
 System_Array_InternalArray__get_Item_T_INST_int:
-.loc 2 197 0 prologue_end
-.word 0xa9b87bfd
+.loc 2 173 0 prologue_end
+.word 0xa9b97bfd
 .word 0x910003fd
 .word 0xf90023af
 .word 0xf90013a0
@@ -2092,38 +2049,52 @@ System_Array_InternalArray__get_Item_T_INST_int:
 .word 0xb9801801
 .word 0xb9802ba0
 .word 0x6b01001f
-.word 0x540004e2
-.loc 2 201 0
+.word 0x54000662
+.loc 2 177 0
 .word 0x910123a0
-.word 0xf9003fa0
+.word 0xf90033a0
 .word 0xf94023a0
-bl _p_38
-.word 0xf9403fa1
+bl _p_34
+.word 0xf94033a2
 .word 0xb9802ba0
 .word 0x93407c00
-.word 0xd37cec02
+.word 0xd37cec01
 .word 0xf94013a0
-.word 0x8b020000
+.word 0x8b010000
 .word 0x91008000
-.word 0xf9400002
-.word 0xf9001ba2
+.word 0xf9400001
+.word 0xf9001ba1
 .word 0xf9400400
 .word 0xf9001fa0
-.word 0xaa0103e0
-.word 0xf9401ba2
-.word 0xf9003ba2
-.word 0xf9000022
-.word 0xf90037a0
-bl _p_23
-.word 0xf94037a0
-.word 0xf9403ba1
-.word 0x91002000
-.word 0xf9401fa1
-.word 0xf90033a1
-.word 0xf9000001
-bl _p_23
-.word 0xf94033a0
-.loc 2 202 0
+.word 0xaa0203e0
+.word 0xf9401ba1
+.word 0xf9000041
+.word 0xd349fc02
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0x91002001
+.word 0xf9401fa0
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 2 178 0
 .word 0xf94027a0
 .word 0xf9000ba0
 .word 0xf9402ba0
@@ -2131,18 +2102,18 @@ bl _p_23
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0x910003bf
-.word 0xa8c87bfd
+.word 0xa8c77bfd
 .word 0xd65f03c0
-.loc 2 198 0
-.word 0xd2860960
-bl _p_26
+.loc 2 174 0
+.word 0xd2825c60
+bl _p_25
 .word 0xaa0003e1
-.word 0xd2800e40
+.word 0xd2800820
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
 
-Lme_3f:
+Lme_3e:
 .text
 	.align 3
 jit_code_end:
@@ -2208,7 +2179,6 @@ bl System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 bl System_Array_InternalEnumerator_1_T_INST_Dispose
 bl System_Array_InternalEnumerator_1_T_INST_MoveNext
 bl System_Array_InternalEnumerator_1_T_INST_get_Current
-bl System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
 bl System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 bl wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
@@ -2222,7 +2192,7 @@ method_addresses_end:
 	.align 3
 unbox_trampolines:
 
-	.long 52,53,54,55,56
+	.long 52,53,54,55
 unbox_trampolines_end:
 
 	.long 0
@@ -2233,7 +2203,6 @@ bl ut_52
 bl ut_53
 bl ut_54
 bl ut_55
-bl ut_56
 
 	.long 0
 .section __TEXT, __const
@@ -2244,12 +2213,12 @@ unwind_info:
 	.byte 13,12,31,0,68,14,16,157,2,158,1,68,13,29,19,12,31,0,68,14,48,157,6,158,5,68,13,29,68,151,4,68
 	.byte 154,3,13,12,31,0,68,14,48,157,6,158,5,68,13,29,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149
 	.byte 6,68,153,5,154,4,13,12,31,0,68,14,64,157,8,158,7,68,13,29,18,12,31,0,68,14,48,157,6,158,5,68
-	.byte 13,29,68,153,4,154,3,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,13,12,31,0,68,14,112,157
-	.byte 14,158,13,68,13,29,39,12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68
+	.byte 13,29,68,153,4,154,3,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,13,12,31,0,68,14,80,157
+	.byte 10,158,9,68,13,29,39,12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68
 	.byte 151,9,152,8,68,153,7,154,6,68,155,5,156,4,39,12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13
 	.byte 148,12,68,149,11,150,10,68,151,9,152,8,68,153,7,154,6,68,155,5,156,4,39,12,31,0,68,14,160,1,157,20
-	.byte 158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,68,155,4,156,3,14,12
-	.byte 31,0,68,14,128,1,157,16,158,15,68,13,29
+	.byte 158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,68,155,4,156,3,13,12
+	.byte 31,0,68,14,112,157,14,158,13,68,13,29
 
 .text
 	.align 4
@@ -2260,309 +2229,277 @@ plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
 _p_1:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #344]
+ldr x16, [x16, #336]
 br x16
-.word 898
+.word 900
 	.no_dead_strip plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
 plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
 _p_2:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #352]
+ldr x16, [x16, #344]
 br x16
-.word 903
+.word 905
 	.no_dead_strip plt_Foundation_NSObject_set_IsDirectBinding_bool
 plt_Foundation_NSObject_set_IsDirectBinding_bool:
 _p_3:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #360]
+ldr x16, [x16, #352]
 br x16
-.word 908
+.word 910
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
 _p_4:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #368]
+ldr x16, [x16, #360]
 br x16
-.word 913
+.word 915
 	.no_dead_strip plt_Foundation_NSObject_InitializeHandle_intptr_string
 plt_Foundation_NSObject_InitializeHandle_intptr_string:
 _p_5:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #376]
+ldr x16, [x16, #368]
 br x16
-.word 915
+.word 917
 	.no_dead_strip plt_Foundation_NSObject__ctor_intptr
 plt_Foundation_NSObject__ctor_intptr:
 _p_6:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #384]
+ldr x16, [x16, #376]
 br x16
-.word 920
+.word 922
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
 _p_7:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #392]
+ldr x16, [x16, #384]
 br x16
-.word 925
+.word 927
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
 _p_8:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #400]
+ldr x16, [x16, #392]
 br x16
-.word 927
+.word 929
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
 _p_9:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #408]
+ldr x16, [x16, #400]
 br x16
-.word 929
+.word 931
 	.no_dead_strip plt_Foundation_NSString_CreateNative_string
 plt_Foundation_NSString_CreateNative_string:
 _p_10:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #416]
+ldr x16, [x16, #408]
 br x16
-.word 931
+.word 933
 	.no_dead_strip plt_Foundation_NSString_ReleaseNative_intptr
 plt_Foundation_NSString_ReleaseNative_intptr:
 _p_11:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #424]
+ldr x16, [x16, #416]
 br x16
-.word 936
+.word 938
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
 _p_12:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #432]
+ldr x16, [x16, #424]
 br x16
-.word 941
+.word 943
 	.no_dead_strip plt_ObjCRuntime_Class_GetHandle_string
 plt_ObjCRuntime_Class_GetHandle_string:
 _p_13:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #440]
+ldr x16, [x16, #432]
 br x16
-.word 943
+.word 945
 	.no_dead_strip plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool
 plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool:
 _p_14:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #448]
+ldr x16, [x16, #440]
 br x16
-.word 948
+.word 950
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_15:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #456]
+ldr x16, [x16, #448]
 br x16
-.word 953
+.word 955
 	.no_dead_strip plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor
 plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
 _p_16:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #464]
+ldr x16, [x16, #456]
 br x16
-.word 961
+.word 963
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_17:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #472]
+ldr x16, [x16, #464]
 br x16
-.word 966
+.word 968
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_Foundation_NSObjectFlag:
 _p_18:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #480]
+ldr x16, [x16, #472]
 br x16
-.word 994
+.word 996
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSLogWithProperties__ctor_intptr:
 _p_19:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #488]
+ldr x16, [x16, #480]
 br x16
-.word 996
+.word 998
 	.no_dead_strip plt_Foundation_NSString_FromHandle_intptr
 plt_Foundation_NSString_FromHandle_intptr:
 _p_20:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #496]
+ldr x16, [x16, #488]
 br x16
-.word 998
+.word 1000
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_21:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #504]
+ldr x16, [x16, #496]
 br x16
-.word 1003
+.word 1005
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDictionary_2_Foundation_NSString_Foundation_NSString_intptr:
 _p_22:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
+ldr x16, [x16, #504]
+br x16
+.word 1025
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_23:
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 1023
-	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
-plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
-_p_23:
+.word 1055
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_24:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 1035
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_24:
+.word 1079
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
+_p_25:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 1060
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_25:
+.word 1103
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_26:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 1084
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
-_p_26:
+.word 1160
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_27:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 1108
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_27:
+.word 1168
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+_p_28:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 1155
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_28:
+.word 1191
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_29:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 1163
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_29:
+.word 1193
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+_p_30:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 1186
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_30:
+.word 1231
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+_p_31:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 1222
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_31:
+.word 1233
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+_p_32:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 1230
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
-_p_32:
+.word 1235
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
+_p_33:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 1253
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_33:
+.word 1237
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_34:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 1255
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
-_p_34:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #608]
-br x16
-.word 1293
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
-_p_35:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #616]
-br x16
-.word 1295
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
-_p_36:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #624]
-br x16
-.word 1297
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
-_p_37:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #632]
-br x16
-.word 1299
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_38:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got@PAGEOFF
-ldr x16, [x16, #640]
-br x16
-.word 1320
+.word 1258
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got, 648
+.lcomm mono_aot_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_got, 608
 got_end:
 .section	__DATA,__objc_selrefs,literal_pointers,no_dead_strip
 .align	3
@@ -2738,13 +2675,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 42,648,39,64,66,391195135,0,2468
-	.long 128,8,8,10,0,26,3600,1120
-	.long 824,504,0,672,784,592,0,392
+	.long 41,608,35,63,66,391195135,0,2378
+	.long 128,8,8,10,0,25,3496,1112
+	.long 816,496,0,664,776,584,0,392
 	.long 104,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 66,38,22,165,173,58,138,159,245,185,106,49,211,210,206,98
+	.byte 92,140,98,219,50,125,232,3,100,136,100,79,115,10,112,106
 	.globl _mono_aot_module_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_info
 	.align 3
 _mono_aot_module_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_info:
@@ -4908,7 +4845,7 @@ LDIFF_SYM249=LTDIE_16 - Ldebug_info_start
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_INST__ctor_System_Array"
 
-	.byte 1,239,1
+	.byte 1,215,1
 	.quad System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 	.quad Lme_34
 
@@ -4947,7 +4884,7 @@ Lfde45_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:Dispose"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_Dispose"
 
-	.byte 1,245,1
+	.byte 1,221,1
 	.quad System_Array_InternalEnumerator_1_T_INST_Dispose
 	.quad Lme_35
 
@@ -4981,7 +4918,7 @@ Lfde46_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:MoveNext"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_MoveNext"
 
-	.byte 1,250,1
+	.byte 1,226,1
 	.quad System_Array_InternalEnumerator_1_T_INST_MoveNext
 	.quad Lme_36
 
@@ -5020,7 +4957,7 @@ Lfde47_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INST>:get_Current"
 	.asciz "System_Array_InternalEnumerator_1_T_INST_get_Current"
 
-	.byte 1,130,2
+	.byte 1,234,1
 	.quad System_Array_InternalEnumerator_1_T_INST_get_Current
 	.quad Lme_37
 
@@ -5051,17 +4988,17 @@ Lfde48_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array/InternalEnumerator`1<T_INST>:System.Collections.IEnumerator.get_Current"
-	.asciz "System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current"
+	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_INST>"
+	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST"
 
-	.byte 1,146,2
-	.quad System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+	.byte 1,71
+	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 	.quad Lme_38
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM264=LDIE_I - Ldebug_info_start
+LDIFF_SYM264=LTDIE_17_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM264
 	.byte 2,141,16,0
 
@@ -5073,48 +5010,14 @@ Lfde49_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 
-LDIFF_SYM266=Lme_38 - System_Array_InternalEnumerator_1_T_INST_System_Collections_IEnumerator_get_Current
+LDIFF_SYM266=Lme_38 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
 	.long LDIFF_SYM266
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde49_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_INST>"
-	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST"
-
-	.byte 1,78
-	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
-	.quad Lme_39
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM267=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM267
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM268=Lfde50_end - Lfde50_start
-	.long LDIFF_SYM268
-Lfde50_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
-
-LDIFF_SYM269=Lme_39 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_INST
-	.long LDIFF_SYM269
-	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
-	.align 3
-Lfde50_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -5124,57 +5027,57 @@ Lfde50_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-	.quad Lme_3a
+	.quad Lme_39
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM270=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM270
+LDIFF_SYM267=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM267
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM271=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM271
+LDIFF_SYM268=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM268
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM272=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM272
+LDIFF_SYM269=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM269
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM273=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM273
+LDIFF_SYM270=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM270
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM274=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM274
+LDIFF_SYM271=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM271
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM275=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM275
+LDIFF_SYM272=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM272
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM276=Lfde51_end - Lfde51_start
-	.long LDIFF_SYM276
-Lfde51_start:
+LDIFF_SYM273=Lfde50_end - Lfde50_start
+	.long LDIFF_SYM273
+Lfde50_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 
-LDIFF_SYM277=Lme_3a - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-	.long LDIFF_SYM277
+LDIFF_SYM274=Lme_39 - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+	.long LDIFF_SYM274
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
 	.byte 154,6,68,155,5,156,4
 	.align 3
-Lfde51_end:
+Lfde50_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -5184,62 +5087,62 @@ Lfde51_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-	.quad Lme_3b
+	.quad Lme_3a
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM278=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM278
+LDIFF_SYM275=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM275
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM279=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM279
+LDIFF_SYM276=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM276
 	.byte 2,141,24,3
 	.asciz "param2"
 
-LDIFF_SYM280=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM280
+LDIFF_SYM277=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM277
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM281=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM281
+LDIFF_SYM278=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM278
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM282=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM282
+LDIFF_SYM279=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM279
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM283=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM283
+LDIFF_SYM280=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM280
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM284=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM284
+LDIFF_SYM281=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM281
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM285=Lfde52_end - Lfde52_start
-	.long LDIFF_SYM285
-Lfde52_start:
+LDIFF_SYM282=Lfde51_end - Lfde51_start
+	.long LDIFF_SYM282
+Lfde51_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
 
-LDIFF_SYM286=Lme_3b - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-	.long LDIFF_SYM286
+LDIFF_SYM283=Lme_3a - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+	.long LDIFF_SYM283
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
 	.byte 154,6,68,155,5,156,4
 	.align 3
-Lfde52_end:
+Lfde51_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -5249,57 +5152,57 @@ Lfde52_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-	.quad Lme_3c
+	.quad Lme_3b
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM287=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM287
+LDIFF_SYM284=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM284
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM288=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM288
+LDIFF_SYM285=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM285
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM289=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM289
+LDIFF_SYM286=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM286
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM290=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM290
+LDIFF_SYM287=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM287
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM291=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM291
+LDIFF_SYM288=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM288
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM292=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM292
+LDIFF_SYM289=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM289
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM293=Lfde53_end - Lfde53_start
-	.long LDIFF_SYM293
-Lfde53_start:
+LDIFF_SYM290=Lfde52_end - Lfde52_start
+	.long LDIFF_SYM290
+Lfde52_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
 
-LDIFF_SYM294=Lme_3c - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-	.long LDIFF_SYM294
+LDIFF_SYM291=Lme_3b - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+	.long LDIFF_SYM291
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
 	.byte 154,6,68,155,5,156,4
 	.align 3
-Lfde53_end:
+Lfde52_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -5309,57 +5212,57 @@ Lfde53_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-	.quad Lme_3d
+	.quad Lme_3c
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM295=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM295
+LDIFF_SYM292=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM292
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM296=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM296
+LDIFF_SYM293=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM293
 	.byte 2,141,24,3
 	.asciz "param2"
 
-LDIFF_SYM297=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM297
+LDIFF_SYM294=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM294
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM298=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM298
+LDIFF_SYM295=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM295
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM299=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM299
+LDIFF_SYM296=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM296
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM300=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM300
+LDIFF_SYM297=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM297
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM301=Lfde54_end - Lfde54_start
-	.long LDIFF_SYM301
-Lfde54_start:
+LDIFF_SYM298=Lfde53_end - Lfde53_start
+	.long LDIFF_SYM298
+Lfde53_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
 
-LDIFF_SYM302=Lme_3d - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-	.long LDIFF_SYM302
+LDIFF_SYM299=Lme_3c - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+	.long LDIFF_SYM299
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
 	.byte 154,6,68,155,5,156,4
 	.align 3
-Lfde54_end:
+Lfde53_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -5369,62 +5272,62 @@ Lfde54_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-	.quad Lme_3e
+	.quad Lme_3d
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM303=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM303
+LDIFF_SYM300=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM300
 	.byte 2,141,16,3
 	.asciz "param1"
 
-LDIFF_SYM304=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM304
+LDIFF_SYM301=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM301
 	.byte 2,141,24,3
 	.asciz "param2"
 
-LDIFF_SYM305=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM305
+LDIFF_SYM302=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM302
 	.byte 2,141,32,3
 	.asciz "param3"
 
-LDIFF_SYM306=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM306
+LDIFF_SYM303=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM303
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM307=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM307
+LDIFF_SYM304=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM304
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM308=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM308
+LDIFF_SYM305=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM305
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM309=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM309
+LDIFF_SYM306=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM306
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM310=Lfde55_end - Lfde55_start
-	.long LDIFF_SYM310
-Lfde55_start:
+LDIFF_SYM307=Lfde54_end - Lfde54_start
+	.long LDIFF_SYM307
+Lfde54_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
 
-LDIFF_SYM311=Lme_3e - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-	.long LDIFF_SYM311
+LDIFF_SYM308=Lme_3d - wrapper_managed_to_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+	.long LDIFF_SYM308
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147,12,148,11,68,149,10,150,9,68,151,8,152,7,68,153,6
 	.byte 154,5,68,155,4,156,3
 	.align 3
-Lfde55_end:
+Lfde54_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -5432,43 +5335,43 @@ Lfde55_end:
 	.asciz "System.Array:InternalArray__get_Item<T_INST>"
 	.asciz "System_Array_InternalArray__get_Item_T_INST_int"
 
-	.byte 1,197,1
+	.byte 1,173,1
 	.quad System_Array_InternalArray__get_Item_T_INST_int
-	.quad Lme_3f
+	.quad Lme_3e
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM312=LTDIE_17_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM312
+LDIFF_SYM309=LTDIE_17_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM309
 	.byte 2,141,32,3
 	.asciz "param0"
 
-LDIFF_SYM313=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM313
+LDIFF_SYM310=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM310
 	.byte 2,141,40,11
 	.asciz "value"
 
-LDIFF_SYM314=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM314
+LDIFF_SYM311=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM311
 	.byte 3,141,200,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM315=Lfde56_end - Lfde56_start
-	.long LDIFF_SYM315
-Lfde56_start:
+LDIFF_SYM312=Lfde55_end - Lfde55_start
+	.long LDIFF_SYM312
+Lfde55_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__get_Item_T_INST_int
 
-LDIFF_SYM316=Lme_3f - System_Array_InternalArray__get_Item_T_INST_int
-	.long LDIFF_SYM316
+LDIFF_SYM313=Lme_3e - System_Array_InternalArray__get_Item_T_INST_int
+	.long LDIFF_SYM313
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
 	.align 3
-Lfde56_end:
+Lfde55_end:
 
 .section __DWARF, __debug_info,regular,debug
 

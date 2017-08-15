@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:38 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:07:31 EDT 2017)"
 	.asciz "Microsoft.Azure.Mobile.Crashes.dll"
 	.asciz ""
 
@@ -130,7 +130,7 @@ bl _p_1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 bl _p_2
 .word 0xf90013a0
 bl _p_3
@@ -141,31 +141,31 @@ bl _p_5
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #208]
 .word 0xf9400000
 .word 0xaa0103fa
 .word 0xb5000360
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #216]
 .word 0xd2800e01
 bl _p_6
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #224]
 .word 0xf9001420
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #232]
 .word 0xf9002020
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #240]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -174,12 +174,12 @@ ldr x0, [x16, #248]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #208]
 .word 0xf9000001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #208]
 .word 0xf9400001
 .word 0xaa1a03e0
 .word 0xf940035e
@@ -201,59 +201,67 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes__ctor:
 .word 0xaa0003fa
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x540005a0
+.word 0x54000680
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #248]
 .word 0xd2800e01
 bl _p_6
 .word 0xf900101a
-.word 0xf90017a0
-.word 0x91008000
-bl _p_8
-.word 0xf94017a0
+.word 0x91008001
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #264]
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x1, [x16, #256]
 .word 0xf9001401
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #272]
+ldr x1, [x16, #264]
 .word 0xf9002001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #280]
+ldr x1, [x16, #272]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
 .word 0xf9000801
 .word 0x3901801f
-bl _p_9
+bl _p_8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #280]
 bl _p_2
 .word 0xf90013a0
 .word 0xaa1a03e1
 bl Microsoft_Azure_Mobile_Crashes_CrashesDelegate__ctor_Microsoft_Azure_Mobile_Crashes_PlatformCrashes
 .word 0xf94013a1
 .word 0xaa1a03e0
-bl _p_10
+bl _p_9
 .word 0xaa1a03e0
+bl _p_10
 bl _p_11
-bl _p_12
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2800e00
+.word 0xd28007e0
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_1:
 .text
@@ -280,12 +288,21 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_SendingErrorReport_Microsoft_
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9000801
-.word 0x91004000
-bl _p_8
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9000820
+.word 0x91004021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -315,12 +332,21 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_SentErrorReport_Microsoft_Azu
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9000c01
-.word 0x91006000
-bl _p_8
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9000c20
+.word 0x91006021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -350,12 +376,21 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_FailedToSendErrorReport_Micro
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9001001
-.word 0x91008000
-bl _p_8
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9001020
+.word 0x91008021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -385,12 +420,21 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_ShouldProcessErrorReport_Micr
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9001401
-.word 0x9100a000
-bl _p_8
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9001420
+.word 0x9100a021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -420,12 +464,21 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_GetErrorAttachments_Microsoft
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9001801
-.word 0x9100c000
-bl _p_8
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9001820
+.word 0x9100c021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -455,12 +508,21 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_ShouldAwaitUserConfirmation_M
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9001c01
-.word 0x9100e000
-bl _p_8
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9001c20
+.word 0x9100e021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -490,12 +552,21 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_crashesDelegate_Microsoft_Azu
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9002001
-.word 0x91010000
-bl _p_8
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9002020
+.word 0x91010021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -512,7 +583,7 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_get_BindingType:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #288]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -526,13 +597,13 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_IsEnabledAsync:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-bl _p_14
+bl _p_13
 .word 0x53001c00
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #304]
-bl _p_15
+ldr x15, [x16, #296]
+bl _p_14
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -548,13 +619,13 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_SetEnabledAsync_bool:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0x394063a0
-bl _p_16
+bl _p_15
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #312]
+ldr x15, [x16, #304]
 .word 0xd2800000
-bl _p_17
+bl _p_16
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -568,13 +639,13 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_HasCrashedInLastSessionAsync:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-bl _p_18
+bl _p_17
 .word 0x53001c00
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #304]
-bl _p_15
+ldr x15, [x16, #296]
+bl _p_14
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -591,30 +662,30 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GetLastSessionCrashReportAsync:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #312]
 .word 0xf9400000
 .word 0xb5000360
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #320]
 .word 0xd2800e01
 bl _p_6
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #328]
 .word 0xf9001420
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #336]
 .word 0xf9002020
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #352]
+ldr x0, [x16, #344]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -623,18 +694,18 @@ ldr x0, [x16, #352]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #312]
 .word 0xf9000001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #312]
 .word 0xf9400000
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #360]
-bl _p_19
+ldr x15, [x16, #352]
+bl _p_18
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -660,7 +731,7 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_NotifyUserConfirmation_Microsoft_
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #360]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -675,27 +746,27 @@ adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x0, [x16, #0]
 .word 0xd2800021
-bl _p_20
+bl _p_19
 .word 0xf9001fa0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #368]
 .word 0xd2800281
 bl _p_6
 .word 0xb900101a
 .word 0xf90023a0
-.word 0xd2800e40
-bl _p_21
+.word 0xd2800820
+bl _p_20
 .word 0xf9401fa1
 .word 0xf94023a2
 .word 0xf9001ba0
 .word 0xd2800003
-bl _p_22
+bl _p_21
 .word 0xf9401ba0
-bl _p_23
+bl _p_22
 .word 0xaa1a03e0
-bl _p_24
+bl _p_23
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -724,24 +795,24 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_OnUnhandledException_object_Syste
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #384]
+ldr x1, [x16, #376]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd280001a
 .word 0xaa1a03f9
 .word 0xaa1a03e0
-bl _p_25
+bl _p_24
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_26
+bl _p_25
 .word 0xaa1903e0
+bl _p_26
+.word 0xaa0003fa
+.word 0xaa1a03e0
 bl _p_27
 .word 0xaa0003fa
 .word 0xaa1a03e0
 bl _p_28
-.word 0xaa0003fa
-.word 0xaa1a03e0
-bl _p_29
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -763,10 +834,10 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateiOSException_System_Excep
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #384]
 bl _p_2
 .word 0xf90037a0
-bl _p_30
+bl _p_29
 .word 0xf94037a0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -776,13 +847,13 @@ bl _p_30
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9418830
+.word 0xf9418430
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94033a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_31
+bl _p_30
 .word 0xaa1a03e0
 .word 0xf9400341
 .word 0xf9404830
@@ -790,27 +861,27 @@ bl _p_31
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_32
+bl _p_31
 .word 0xaa1a03e0
 .word 0xf940035e
+bl _p_32
+.word 0xaa0003e1
+.word 0xaa1903e0
+.word 0xf940033e
 bl _p_33
-.word 0xaa0003e1
-.word 0xaa1903e0
-.word 0xf940033e
-bl _p_34
 .word 0xaa1a03e0
-bl _p_35
+bl _p_34
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_36
+bl _p_35
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #400]
+ldr x1, [x16, #392]
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_37
+bl _p_36
 .word 0xaa1a03f8
 .word 0xeb1f035f
 .word 0x54000160
@@ -821,7 +892,7 @@ bl _p_37
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #408]
+ldr x1, [x16, #400]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -829,21 +900,27 @@ ldr x1, [x16, #408]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #408]
 .word 0xd2800401
 bl _p_6
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #424]
+ldr x1, [x16, #416]
 .word 0xf9400021
-.word 0xf90037a1
 .word 0xf9000801
-.word 0xf90033a0
-.word 0x91004000
-bl _p_8
-.word 0xf94033a0
-.word 0xf94037a1
+.word 0x91004002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
 .word 0xaa0003f8
 .word 0xb5000077
 .word 0xd2800016
@@ -855,7 +932,7 @@ bl _p_8
 .word 0xf94046e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_38
+bl _p_37
 .word 0xf9001fa0
 .word 0x14000012
 .word 0xf9401fa1
@@ -864,25 +941,25 @@ bl _p_38
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #432]
+ldr x15, [x16, #424]
 .word 0x928012f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_25
+bl _p_24
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_39
+bl _p_38
 .word 0xf9401fa1
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #440]
+ldr x15, [x16, #432]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -900,7 +977,7 @@ ldr x15, [x16, #440]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #448]
+ldr x15, [x16, #440]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -912,11 +989,11 @@ ldr x15, [x16, #448]
 .word 0xb4000100
 .word 0xf940035e
 .word 0xf9401740
-bl _p_25
+bl _p_24
 .word 0xaa0003e1
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_39
+bl _p_38
 .word 0xf940031e
 .word 0xb9801b00
 .word 0xaa1903f6
@@ -924,14 +1001,14 @@ bl _p_39
 .word 0x540000cd
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_40
+bl _p_39
 .word 0xaa0003fa
 .word 0x14000002
 .word 0xd280001a
 .word 0xaa1603e0
 .word 0xaa1a03e1
 .word 0xf94002de
-bl _p_41
+bl _p_40
 .word 0xaa1903e0
 .word 0xa9415fb6
 .word 0xa94267b8
@@ -946,7 +1023,7 @@ Lme_17:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateStackFrames_System_Exception
 Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateStackFrames_System_Exception:
 .loc 1 1 0
-.word 0xa9b97bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa90157b4
 .word 0xa9025fb6
@@ -956,67 +1033,73 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateStackFrames_System_Except
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #456]
+ldr x0, [x16, #448]
 .word 0xd2800501
 bl _p_6
-.word 0xf90033a0
+.word 0xf9002ba0
 .word 0xaa1a03e1
 .word 0xd2800022
-bl _p_42
-.word 0xf94033a0
+bl _p_41
+.word 0xf9402ba0
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #464]
+ldr x0, [x16, #456]
 .word 0xd2800401
 bl _p_6
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #472]
+ldr x1, [x16, #464]
 .word 0xf9400021
-.word 0xf9002fa1
 .word 0xf9000801
-.word 0xf9002ba0
-.word 0x91004000
-bl _p_8
-.word 0xf9402ba0
-.word 0xf9402fa1
+.word 0x91004002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
 .word 0xaa0003f9
 .word 0xd2800018
 .word 0x14000058
 .word 0xaa1a03e0
 .word 0xaa1803e1
 .word 0xf940035e
-bl _p_43
+bl _p_42
 .word 0xaa0003f7
 .word 0xaa1703e0
 .word 0xaa0003e1
 .word 0xf940003e
 .word 0xf9401400
 .word 0xd2800001
-bl _p_44
+bl _p_43
 .word 0x53001c00
 .word 0x35000940
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #472]
 bl _p_2
 .word 0xf9002ba0
-bl _p_45
+bl _p_44
 .word 0xf9402ba0
 .word 0xaa0003f6
 .word 0xaa1603e2
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_46
+bl _p_45
 .word 0xaa1603e0
 .word 0xd2800001
 .word 0xf94002de
-bl _p_47
+bl _p_46
 .word 0xf94002fe
 .word 0xf94016e1
 .word 0xaa0103e0
@@ -1026,7 +1109,7 @@ bl _p_47
 .word 0xaa0003e1
 .word 0xaa1603e0
 .word 0xf94002de
-bl _p_48
+bl _p_47
 .word 0xf94002fe
 .word 0xf94016e1
 .word 0xaa0103e0
@@ -1041,13 +1124,13 @@ bl _p_48
 .word 0x14000006
 .word 0xaa1403e0
 .word 0xf9400281
-.word 0xf9418830
+.word 0xf9418430
 .word 0xd63f0200
 .word 0xaa0003f4
 .word 0xaa1503e0
 .word 0xaa1403e1
 .word 0xf94002be
-bl _p_49
+bl _p_48
 .word 0xf94002fe
 .word 0xb9803ae0
 .word 0xaa1603f5
@@ -1056,23 +1139,23 @@ bl _p_49
 .word 0x14000005
 .word 0xf94002fe
 .word 0xb9803ae0
-bl _p_50
+bl _p_49
 .word 0xaa0003f4
 .word 0xaa1503e0
 .word 0xaa1403e1
 .word 0xf94002be
-bl _p_51
+bl _p_50
 .word 0xf94002fe
 .word 0xf9401ae0
-bl _p_52
+bl _p_51
 .word 0xaa0003e1
 .word 0xaa1603e0
 .word 0xf94002de
-bl _p_53
+bl _p_52
 .word 0xaa1903e0
 .word 0xaa1603e1
 .word 0xf940033e
-bl _p_54
+bl _p_53
 .word 0x11000718
 .word 0xaa1803f7
 .word 0xaa1a03f6
@@ -1092,7 +1175,7 @@ bl _p_54
 .word 0x14000005
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_55
+bl _p_54
 .word 0xaa0003f5
 .word 0xaa1503e0
 .word 0xa94157b4
@@ -1100,7 +1183,7 @@ bl _p_55
 .word 0xa94367b8
 .word 0xf94023ba
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 
 Lme_18:
@@ -1117,18 +1200,18 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes_AnonymizePath_string:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #488]
+ldr x15, [x16, #480]
 .word 0xaa1a03e0
-bl _p_56
+bl _p_55
 .word 0x93407c00
 .word 0x34000120
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #496]
+ldr x1, [x16, #488]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_57
+bl _p_56
 .word 0x53001c00
 .word 0x35000060
 .word 0xaa1a03e0
@@ -1136,14 +1219,14 @@ bl _p_57
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #504]
+ldr x1, [x16, #496]
 .word 0xf9000fa1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #512]
+ldr x2, [x16, #504]
 .word 0xaa1a03e0
-bl _p_58
+bl _p_57
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1158,14 +1241,14 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashes__GetLastSessionCrashReportAsyncm_
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000bba
-bl _p_59
+bl _p_58
 .word 0xaa0003fa
 .word 0xaa1a03e0
 .word 0xb5000060
 .word 0xd2800000
 .word 0x14000003
 .word 0xaa1a03e0
-bl _p_60
+bl _p_59
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1215,12 +1298,21 @@ Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog__ctor_Microsoft_Azure_Mobile_C
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9000801
-.word 0x91004000
-bl _p_8
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9000820
+.word 0x91004021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1246,30 +1338,36 @@ Lme_1d:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithText_string_string
 Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithText_string_string:
 .loc 1 1 0
-.word 0xa9bc7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_61
-.word 0xf9001ba0
+bl _p_60
+.word 0xf90013a0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #520]
+ldr x0, [x16, #512]
 .word 0xd2800301
 bl _p_6
-.word 0xf9401ba1
-.word 0xf90017a1
+.word 0xf94013a1
 .word 0xf9000801
-.word 0xf90013a0
-.word 0x91004000
-bl _p_8
-.word 0xf94013a0
-.word 0xf94017a1
+.word 0x91004002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_1e:
@@ -1278,33 +1376,39 @@ Lme_1e:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithBinary_byte___string_string
 Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithBinary_byte___string_string:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400ba0
-bl _p_28
+bl _p_27
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_62
-.word 0xf90023a0
+bl _p_61
+.word 0xf9001ba0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #520]
+ldr x0, [x16, #512]
 .word 0xd2800301
 bl _p_6
-.word 0xf94023a1
-.word 0xf9001fa1
+.word 0xf9401ba1
 .word 0xf9000801
-.word 0xf9001ba0
-.word 0x91004000
-bl _p_8
-.word 0xf9401ba0
-.word 0xf9401fa1
+.word 0x91004002
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_1f:
@@ -1319,7 +1423,7 @@ Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_AttachmentWithText_string_stri
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_63
+bl _p_62
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1338,7 +1442,7 @@ Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_AttachmentWithBinary_byte___st
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_64
+bl _p_63
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -1349,25 +1453,33 @@ Lme_21:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport
 Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport:
 .loc 1 1 0
-.word 0xa9b67bfd
+.word 0xa9b77bfd
 .word 0x910003fd
 .word 0xa90163b7
 .word 0xa9026bb9
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xf9400b20
-.word 0xb5000f20
+.word 0xb50012e0
+.word 0xaa1a03e0
+.word 0xf940035e
+bl _p_64
+.word 0xf9000b20
+.word 0x91004321
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa1a03e0
 .word 0xf940035e
 bl _p_65
-.word 0xf90033a0
-.word 0xf9000b20
-.word 0x91004320
-bl _p_8
-.word 0xf94033a0
-.word 0xaa1a03e0
-.word 0xf940035e
-bl _p_66
 .word 0xaa0003e1
 .word 0x910103a0
 .word 0xf9002ba0
@@ -1383,7 +1495,7 @@ bl Microsoft_Azure_Mobile_Crashes_ErrorReport_NSDateToDateTimeOffset_Foundation_
 .word 0xf9000401
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_67
+bl _p_66
 .word 0xaa0003e1
 .word 0x9100c3a0
 .word 0xf9002ba0
@@ -1399,30 +1511,44 @@ bl Microsoft_Azure_Mobile_Crashes_ErrorReport_NSDateToDateTimeOffset_Foundation_
 .word 0xf9000401
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_68
+bl _p_67
 .word 0xaa1903f8
 .word 0xb5000060
 .word 0xd2800017
 .word 0x1400000f
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_68
+bl _p_67
 .word 0xf90037a0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #528]
+ldr x0, [x16, #520]
 .word 0xd2801101
 bl _p_6
 .word 0xf94037a1
 .word 0xf90033a0
-bl _p_69
+bl _p_68
 .word 0xf94033a0
 .word 0xaa0003f7
 .word 0xf9000f17
 .word 0x91006300
-bl _p_8
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
 .word 0xf900173f
+.word 0xaa1a03e0
+.word 0xf940035e
+bl _p_69
+.word 0xf90037a0
 .word 0xaa1a03e0
 .word 0xf940035e
 bl _p_70
@@ -1438,51 +1564,63 @@ bl _p_72
 .word 0xaa1a03e0
 .word 0xf940035e
 bl _p_73
-.word 0xf90047a0
-.word 0xaa1a03e0
-.word 0xf940035e
-bl _p_74
 .word 0xaa0003e0
-.word 0xf9004ba0
+.word 0xf90047a0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #536]
+ldr x0, [x16, #528]
 .word 0xd2800701
 bl _p_6
-.word 0xf9403ba1
-.word 0xf9403fa2
-.word 0xf94043a3
-.word 0xf94047a4
-.word 0xf9404ba5
-.word 0xf90037a0
-bl Microsoft_Azure_Mobile_Crashes_iOSErrorDetails__ctor_string_string_string_string_uint
-.word 0xf94037a0
+.word 0xf94037a1
+.word 0xf9403ba2
+.word 0xf9403fa3
+.word 0xf94043a4
+.word 0xf94047a5
 .word 0xf90033a0
-.word 0xf9001b20
-.word 0x9100c320
-bl _p_8
+bl Microsoft_Azure_Mobile_Crashes_iOSErrorDetails__ctor_string_string_string_string_uint
 .word 0xf94033a0
+.word 0xf9001b20
+.word 0x9100c321
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_65
-bl _p_75
+bl _p_64
+bl _p_74
 .word 0xaa0003fa
 .word 0xaa1a03e0
-.word 0xb4000140
+.word 0xb4000220
 .word 0xaa1a03e0
 .word 0xf940035e
+bl _p_75
 bl _p_76
-bl _p_77
-.word 0xf90033a0
 .word 0xf9001320
-.word 0x91008320
-bl _p_8
-.word 0xf94033a0
+.word 0x91008321
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
-.word 0xa8ca7bfd
+.word 0xa8c97bfd
 .word 0xd65f03c0
 
 Lme_22:
@@ -1498,20 +1636,20 @@ Microsoft_Azure_Mobile_Crashes_ErrorReport_NSDateToDateTimeOffset_Foundation_NSD
 .word 0x9100e3a0
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_78
+bl _p_77
 .word 0xf94023be
 .word 0xf90003c0
 .word 0x9100c3a0
 .word 0xf90023a0
 .word 0xf9401fa0
 .word 0xd2800021
-bl _p_79
+bl _p_78
 .word 0xf94023be
 .word 0xf90003c0
 .word 0x910043a0
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_80
+bl _p_79
 .word 0xf94023be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -1649,13 +1787,22 @@ Microsoft_Azure_Mobile_Crashes_CrashesDelegate__ctor_Microsoft_Azure_Mobile_Cras
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400ba0
-bl _p_81
-.word 0xf9400fa1
-.word 0xf9400ba0
-.word 0xf9001401
-.word 0x9100a000
-bl _p_8
+bl _p_80
 .word 0xf9400fa0
+.word 0xf9400ba1
+.word 0xf9001420
+.word 0x9100a021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1682,7 +1829,7 @@ Microsoft_Azure_Mobile_Crashes_CrashesDelegate_CrashesShouldProcessErrorReport_M
 .word 0xd2800020
 .word 0x14000012
 .word 0xf94017a0
-bl _p_60
+bl _p_59
 .word 0xaa0003fa
 .word 0xf9400fa0
 .word 0xf9401401
@@ -1725,7 +1872,7 @@ Microsoft_Azure_Mobile_Crashes_CrashesDelegate_AttachmentsWithCrashes_Microsoft_
 .word 0xd2800000
 .word 0x14000066
 .word 0xaa1a03e0
-bl _p_60
+bl _p_59
 .word 0xaa0003fa
 .word 0xf9401721
 .word 0xaa0103e0
@@ -1744,10 +1891,10 @@ bl _p_60
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #536]
 bl _p_2
 .word 0xf9002ba0
-bl _p_82
+bl _p_81
 .word 0xf9402ba0
 .word 0xaa0003f9
 .word 0xaa1a03e0
@@ -1755,8 +1902,8 @@ bl _p_82
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #552]
-.word 0x92800bf0
+ldr x15, [x16, #544]
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -1768,7 +1915,7 @@ ldr x15, [x16, #552]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #560]
+ldr x15, [x16, #552]
 .word 0x928012f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1780,32 +1927,32 @@ ldr x15, [x16, #560]
 .word 0xf9400b41
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_83
+bl _p_82
 .word 0x1400000f
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #568]
 .word 0xf9400000
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #584]
-bl _p_85
+ldr x1, [x16, #576]
+bl _p_84
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #440]
+ldr x15, [x16, #432]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1823,7 +1970,7 @@ ldr x15, [x16, #440]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #448]
+ldr x15, [x16, #440]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1856,20 +2003,30 @@ Microsoft_Azure_Mobile_Crashes_CrashesDelegate_CrashesWillSendErrorReport_Micros
 .word 0xf9400021
 .word 0xf940a830
 .word 0xd63f0200
-.word 0xb4000360
+.word 0xb4000480
 .word 0xaa1a03e0
-bl _p_60
+bl _p_59
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #592]
+ldr x0, [x16, #584]
 .word 0xd2800301
 bl _p_6
 .word 0xf90017a0
 .word 0xf900081a
 .word 0x91004000
-bl _p_8
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
 .word 0xf9400fa0
 .word 0xf9401401
 .word 0xaa0103e0
@@ -1907,20 +2064,30 @@ Microsoft_Azure_Mobile_Crashes_CrashesDelegate_CrashesDidSucceedSendingErrorRepo
 .word 0xf9400021
 .word 0xf940a030
 .word 0xd63f0200
-.word 0xb4000360
+.word 0xb4000480
 .word 0xaa1a03e0
-bl _p_60
+bl _p_59
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #600]
+ldr x0, [x16, #592]
 .word 0xd2800301
 bl _p_6
 .word 0xf90017a0
 .word 0xf900081a
 .word 0x91004000
-bl _p_8
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
 .word 0xf9400fa0
 .word 0xf9401401
 .word 0xaa0103e0
@@ -1948,40 +2115,57 @@ Microsoft_Azure_Mobile_Crashes_CrashesDelegate_CrashesDidFailSendingErrorReport_
 .loc 1 1 0
 .word 0xa9bb7bfd
 .word 0x910003fd
-.word 0xf9000bb7
-.word 0xf9000fb9
-.word 0xf90013a0
-.word 0xf90017a1
+.word 0xf9000bb9
+.word 0xf9000fa0
+.word 0xf90013a1
 .word 0xaa0203f9
-.word 0xf9001ba3
-.word 0xf94013a0
+.word 0xf90017a3
+.word 0xf9400fa0
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
 .word 0xf9409830
 .word 0xd63f0200
-.word 0xb4000440
+.word 0xb4000640
 .word 0xaa1903e0
-bl _p_60
+bl _p_59
 .word 0xaa0003f9
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #608]
+ldr x0, [x16, #600]
 .word 0xd2800401
 bl _p_6
-.word 0xaa0003f7
-.word 0xf9000819
-.word 0xf90027a0
-.word 0x91004000
-bl _p_8
-.word 0xf94027a0
-.word 0xf9401ba1
-.word 0xf9000c01
-.word 0x910062e0
-bl _p_8
-.word 0xf9401ba0
-.word 0xf94013a0
+.word 0xaa0003e1
+.word 0xf9001ba1
+.word 0xf9000839
+.word 0x91004020
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020000
+.word 0xd280003e
+.word 0x3900001e
+.word 0xf94017a0
+.word 0xf9000c20
+.word 0x91006021
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.word 0xf9400fa0
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
@@ -1990,13 +2174,12 @@ bl _p_8
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xd2800001
-.word 0xaa1703e2
+.word 0xf9401ba2
 .word 0xf90023a3
 .word 0xf9400c70
 .word 0xd63f0200
 .word 0xf94023a0
-.word 0xf9400bb7
-.word 0xf9400fb9
+.word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -2015,18 +2198,18 @@ Microsoft_Azure_Mobile_Crashes_ErrorReportCache_GetErrorReport_Microsoft_Azure_M
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_65
+bl _p_64
 .word 0xaa0003e1
 .word 0xf9401ba3
 .word 0x910083a2
 .word 0xaa0303e0
 .word 0xf940007e
-bl _p_86
+bl _p_85
 .word 0x53001c00
 .word 0x34000060
 .word 0xf94013a0
@@ -2034,29 +2217,29 @@ bl _p_86
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #624]
+ldr x0, [x16, #616]
 .word 0xd2800b01
 bl _p_6
 .word 0xf9001fa0
 .word 0xaa1a03e1
-bl _p_87
+bl _p_86
 .word 0xf9401fa0
 .word 0xaa0003f9
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_65
+bl _p_64
 .word 0xaa0003e1
 .word 0xf9401ba3
 .word 0xaa0303e0
 .word 0xaa1903e2
 .word 0xf940007e
-bl _p_88
+bl _p_87
 .word 0xaa1903e0
 .word 0xa9416bb9
 .word 0x910003bf
@@ -2074,16 +2257,16 @@ Microsoft_Azure_Mobile_Crashes_ErrorReportCache__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #632]
+ldr x0, [x16, #624]
 .word 0xd2800901
 bl _p_6
 .word 0xf9000ba0
-bl _p_89
+bl _p_88
 .word 0xf9400ba1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #616]
+ldr x0, [x16, #608]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -2101,37 +2284,37 @@ Microsoft_Azure_Mobile_Crashes_Crashes__cctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #640]
+ldr x1, [x16, #632]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #568]
 .word 0xf9000001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #648]
+ldr x0, [x16, #640]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #648]
+ldr x0, [x16, #640]
 .word 0xd2800901
 bl _p_6
 .word 0xf90017a0
-bl _p_90
+bl _p_89
 .word 0xf94017a1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9000001
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400001
 .word 0xaa0103fa
 .word 0xaa0103e0
@@ -2139,7 +2322,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #664]
+ldr x15, [x16, #656]
 .word 0x92800df0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -2148,7 +2331,7 @@ ldr x15, [x16, #664]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #672]
+ldr x0, [x16, #664]
 .word 0xd2800e01
 bl _p_6
 .word 0xaa0003e1
@@ -2156,23 +2339,23 @@ bl _p_6
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #680]
+ldr x2, [x16, #672]
 .word 0xf9001422
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #688]
+ldr x2, [x16, #680]
 .word 0xf9002022
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #696]
+ldr x2, [x16, #688]
 .word 0xf9401443
 .word 0xf9000c23
 .word 0xf9401042
 .word 0xf9000822
 .word 0x3901803f
-bl _p_91
+bl _p_90
 .word 0xaa0003f9
 .word 0xb4000179
 .word 0xf9400320
@@ -2182,7 +2365,7 @@ bl _p_91
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #704]
+ldr x1, [x16, #696]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540016a1
@@ -2192,7 +2375,7 @@ ldr x1, [x16, #704]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #712]
+ldr x15, [x16, #704]
 .word 0x928009f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -2200,7 +2383,7 @@ ldr x15, [x16, #712]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400001
 .word 0xaa0103fa
 .word 0xaa0103e0
@@ -2208,7 +2391,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #720]
+ldr x15, [x16, #712]
 .word 0x928007f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -2217,7 +2400,7 @@ ldr x15, [x16, #720]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #728]
+ldr x0, [x16, #720]
 .word 0xd2800e01
 bl _p_6
 .word 0xaa0003e1
@@ -2225,23 +2408,23 @@ bl _p_6
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #736]
+ldr x2, [x16, #728]
 .word 0xf9001422
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #744]
+ldr x2, [x16, #736]
 .word 0xf9002022
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #752]
+ldr x2, [x16, #744]
 .word 0xf9401443
 .word 0xf9000c23
 .word 0xf9401042
 .word 0xf9000822
 .word 0x3901803f
-bl _p_91
+bl _p_90
 .word 0xaa0003f9
 .word 0xb4000179
 .word 0xf9400320
@@ -2251,7 +2434,7 @@ bl _p_91
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #760]
+ldr x1, [x16, #752]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000f01
@@ -2261,7 +2444,7 @@ ldr x1, [x16, #760]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #768]
+ldr x15, [x16, #760]
 .word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -2269,7 +2452,7 @@ ldr x15, [x16, #768]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400001
 .word 0xaa0103fa
 .word 0xaa0103e0
@@ -2277,7 +2460,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #776]
+ldr x15, [x16, #768]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -2286,7 +2469,7 @@ ldr x15, [x16, #776]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #784]
+ldr x0, [x16, #776]
 .word 0xd2800e01
 bl _p_6
 .word 0xaa0003e1
@@ -2294,23 +2477,23 @@ bl _p_6
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #792]
+ldr x2, [x16, #784]
 .word 0xf9001422
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #800]
+ldr x2, [x16, #792]
 .word 0xf9002022
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #808]
+ldr x2, [x16, #800]
 .word 0xf9401443
 .word 0xf9000c23
 .word 0xf9401042
 .word 0xf9000822
 .word 0x3901803f
-bl _p_91
+bl _p_90
 .word 0xaa0003f9
 .word 0xb4000179
 .word 0xf9400320
@@ -2320,7 +2503,7 @@ bl _p_91
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #816]
+ldr x1, [x16, #808]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000761
@@ -2330,7 +2513,7 @@ ldr x1, [x16, #816]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #824]
+ldr x15, [x16, #816]
 .word 0x92800bf0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -2338,7 +2521,23 @@ ldr x15, [x16, #824]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
+.word 0xf9400002
+.word 0xaa0203e0
+.word 0xd2800001
+.word 0xf9400042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x15, [x16, #824]
+.word 0x928011f0
+.word 0xf2bffff0
+.word 0xf8706850
+.word 0xd63f0200
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x0, [x16, #648]
 .word 0xf9400002
 .word 0xaa0203e0
 .word 0xd2800001
@@ -2347,14 +2546,14 @@ ldr x0, [x16, #656]
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x15, [x16, #832]
-.word 0x928011f0
+.word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400002
 .word 0xaa0203e0
 .word 0xd2800001
@@ -2363,35 +2562,19 @@ ldr x0, [x16, #656]
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x15, [x16, #840]
-.word 0x928002f0
-.word 0xf2bffff0
-.word 0xf8706850
-.word 0xd63f0200
-
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
-.word 0xf9400002
-.word 0xaa0203e0
-.word 0xd2800001
-.word 0xf9400042
-
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #848]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
-bl _p_92
+bl _p_91
 .word 0xaa0003fa
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_33:
 .text
@@ -2412,7 +2595,7 @@ Lme_34:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_Crashes_add_SendingErrorReport_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventHandler
 Microsoft_Azure_Mobile_Crashes_Crashes_add_SendingErrorReport_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventHandler:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -2421,30 +2604,30 @@ Microsoft_Azure_Mobile_Crashes_Crashes_add_SendingErrorReport_Microsoft_Azure_Mo
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #856]
+ldr x0, [x16, #848]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x23, [x16, #856]
+ldr x23, [x16, #848]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_91
+bl _p_90
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -2454,14 +2637,14 @@ bl _p_91
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #704]
+ldr x1, [x16, #696]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #856]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -2469,23 +2652,29 @@ ldr x0, [x16, #864]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_8
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_35:
 .text
@@ -2493,7 +2682,7 @@ Lme_35:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_Crashes_remove_SendingErrorReport_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventHandler
 Microsoft_Azure_Mobile_Crashes_Crashes_remove_SendingErrorReport_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventHandler:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -2502,30 +2691,30 @@ Microsoft_Azure_Mobile_Crashes_Crashes_remove_SendingErrorReport_Microsoft_Azure
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #856]
+ldr x0, [x16, #848]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x23, [x16, #856]
+ldr x23, [x16, #848]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_93
+bl _p_92
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -2535,14 +2724,14 @@ bl _p_93
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #704]
+ldr x1, [x16, #696]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #856]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -2550,23 +2739,29 @@ ldr x0, [x16, #864]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_8
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_36:
 .text
@@ -2574,7 +2769,7 @@ Lme_36:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_Crashes_add_SentErrorReport_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventHandler
 Microsoft_Azure_Mobile_Crashes_Crashes_add_SentErrorReport_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventHandler:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -2583,30 +2778,30 @@ Microsoft_Azure_Mobile_Crashes_Crashes_add_SentErrorReport_Microsoft_Azure_Mobil
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #864]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x23, [x16, #872]
+ldr x23, [x16, #864]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_91
+bl _p_90
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -2616,14 +2811,14 @@ bl _p_91
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #760]
+ldr x1, [x16, #752]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #880]
+ldr x0, [x16, #872]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -2631,23 +2826,29 @@ ldr x0, [x16, #880]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_8
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_37:
 .text
@@ -2655,7 +2856,7 @@ Lme_37:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_Crashes_remove_SentErrorReport_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventHandler
 Microsoft_Azure_Mobile_Crashes_Crashes_remove_SentErrorReport_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventHandler:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -2664,30 +2865,30 @@ Microsoft_Azure_Mobile_Crashes_Crashes_remove_SentErrorReport_Microsoft_Azure_Mo
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #864]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x23, [x16, #872]
+ldr x23, [x16, #864]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_93
+bl _p_92
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -2697,14 +2898,14 @@ bl _p_93
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #760]
+ldr x1, [x16, #752]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #880]
+ldr x0, [x16, #872]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -2712,23 +2913,29 @@ ldr x0, [x16, #880]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_8
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_38:
 .text
@@ -2736,7 +2943,7 @@ Lme_38:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_Crashes_add_FailedToSendErrorReport_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventHandler
 Microsoft_Azure_Mobile_Crashes_Crashes_add_FailedToSendErrorReport_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventHandler:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -2745,30 +2952,30 @@ Microsoft_Azure_Mobile_Crashes_Crashes_add_FailedToSendErrorReport_Microsoft_Azu
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #880]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x23, [x16, #888]
+ldr x23, [x16, #880]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_91
+bl _p_90
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -2778,14 +2985,14 @@ bl _p_91
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #816]
+ldr x1, [x16, #808]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #896]
+ldr x0, [x16, #888]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -2793,23 +3000,29 @@ ldr x0, [x16, #896]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_8
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_39:
 .text
@@ -2817,7 +3030,7 @@ Lme_39:
 	.no_dead_strip Microsoft_Azure_Mobile_Crashes_Crashes_remove_FailedToSendErrorReport_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventHandler
 Microsoft_Azure_Mobile_Crashes_Crashes_remove_FailedToSendErrorReport_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventHandler:
 .loc 1 1 0
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -2826,30 +3039,30 @@ Microsoft_Azure_Mobile_Crashes_Crashes_remove_FailedToSendErrorReport_Microsoft_
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #880]
 .word 0xf9400019
 .word 0xaa1903f8
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x23, [x16, #888]
+ldr x23, [x16, #880]
 .word 0xaa1903e0
 .word 0xaa1a03e1
-bl _p_93
+bl _p_92
 .word 0xaa0003f6
 .word 0xb4000176
 .word 0xf94002c0
@@ -2859,14 +3072,14 @@ bl _p_93
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #816]
+ldr x1, [x16, #808]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54000321
+.word 0x540003c1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #896]
+ldr x0, [x16, #888]
 .word 0xc85f7ef0
 .word 0xeb19021f
 .word 0x54000061
@@ -2874,23 +3087,29 @@ ldr x0, [x16, #896]
 .word 0x35ffff91
 .word 0xd50330bf
 .word 0xaa1003e0
-.word 0xf90023a0
-.word 0xaa1703e0
-bl _p_8
-.word 0xf94023a0
+.word 0xd349fee1
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xaa0003f9
-.word 0xaa1903e0
 .word 0xeb18001f
-.word 0x54fffac1
+.word 0x54fffa21
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_3a:
 .text
@@ -2904,14 +3123,14 @@ Microsoft_Azure_Mobile_Crashes_Crashes_set_ShouldProcessErrorReport_Microsoft_Az
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400002
 .word 0xaa0203e0
 .word 0xf9400ba1
@@ -2919,7 +3138,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #832]
+ldr x15, [x16, #824]
 .word 0x928011f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -2940,14 +3159,14 @@ Microsoft_Azure_Mobile_Crashes_Crashes_set_ShouldAwaitUserConfirmation_Microsoft
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400002
 .word 0xaa0203e0
 .word 0xf9400ba1
@@ -2955,7 +3174,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #848]
+ldr x15, [x16, #840]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -2976,14 +3195,14 @@ Microsoft_Azure_Mobile_Crashes_Crashes_set_GetErrorAttachments_Microsoft_Azure_M
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400002
 .word 0xaa0203e0
 .word 0xf9400ba1
@@ -2991,7 +3210,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #840]
+ldr x15, [x16, #832]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -3012,14 +3231,14 @@ Microsoft_Azure_Mobile_Crashes_Crashes_NotifyUserConfirmation_Microsoft_Azure_Mo
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400002
 .word 0xaa0203e0
 .word 0xb98013a1
@@ -3027,7 +3246,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #904]
+ldr x15, [x16, #896]
 .word 0x928012f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -3047,21 +3266,21 @@ Microsoft_Azure_Mobile_Crashes_Crashes_get_BindingType:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #912]
+ldr x15, [x16, #904]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3081,21 +3300,21 @@ Microsoft_Azure_Mobile_Crashes_Crashes_IsEnabledAsync:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #920]
+ldr x15, [x16, #912]
 .word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3116,14 +3335,14 @@ Microsoft_Azure_Mobile_Crashes_Crashes_SetEnabledAsync_bool:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400002
 .word 0xaa0203e0
 .word 0x394043a1
@@ -3131,7 +3350,7 @@ ldr x0, [x16, #656]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #928]
+ldr x15, [x16, #920]
 .word 0x92800ff0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -3151,21 +3370,21 @@ Microsoft_Azure_Mobile_Crashes_Crashes_HasCrashedInLastSessionAsync:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #936]
+ldr x15, [x16, #928]
 .word 0x928012f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3185,21 +3404,21 @@ Microsoft_Azure_Mobile_Crashes_Crashes_GetLastSessionCrashReportAsync:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #944]
+ldr x15, [x16, #936]
 .word 0x92800bf0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3219,21 +3438,21 @@ Microsoft_Azure_Mobile_Crashes_Crashes_GenerateTestCrash:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #648]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #952]
+ldr x15, [x16, #944]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -3255,27 +3474,27 @@ Microsoft_Azure_Mobile_Crashes_Crashes__Crashesm__0_object_Microsoft_Azure_Mobil
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #856]
+ldr x0, [x16, #848]
 .word 0xf9400000
 .word 0xb4000240
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #856]
+ldr x0, [x16, #848]
 .word 0xf9400003
 .word 0xaa0303e0
 .word 0xf9400ba1
@@ -3301,27 +3520,27 @@ Microsoft_Azure_Mobile_Crashes_Crashes__Crashesm__1_object_Microsoft_Azure_Mobil
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #864]
 .word 0xf9400000
 .word 0xb4000240
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #864]
 .word 0xf9400003
 .word 0xaa0303e0
 .word 0xf9400ba1
@@ -3347,27 +3566,27 @@ Microsoft_Azure_Mobile_Crashes_Crashes__Crashesm__2_object_Microsoft_Azure_Mobil
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #880]
 .word 0xf9400000
 .word 0xb4000240
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #880]
 .word 0xf9400003
 .word 0xaa0303e0
 .word 0xf9400ba1
@@ -3395,21 +3614,21 @@ Microsoft_Azure_Mobile_Crashes_CrashesUtils_SerializeException_System_Exception:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #952]
 .word 0xd2800a01
 bl _p_6
 .word 0xf90037a0
-bl _p_94
+bl _p_93
 .word 0xf94037a0
 .word 0xf9000fa0
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #960]
 .word 0xd2800901
 bl _p_6
 .word 0xf90033a0
-bl _p_95
+bl _p_94
 .word 0xf94033a0
 .word 0xf90013a0
 .word 0xf94013a3
@@ -3417,7 +3636,7 @@ bl _p_95
 .word 0xaa0303e0
 .word 0xf9400ba2
 .word 0xf940007e
-bl _p_96
+bl _p_95
 .word 0x14000029
 .word 0xf9001ba0
 .word 0xf9401ba0
@@ -3425,29 +3644,29 @@ bl _p_96
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #568]
 .word 0xf9400000
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #976]
+ldr x1, [x16, #968]
 .word 0xf94017a2
-bl _p_97
+bl _p_96
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #952]
 .word 0xd2800a01
 bl _p_6
 .word 0xf90033a0
-bl _p_94
+bl _p_93
 .word 0xf94033a0
 .word 0xf9000fa0
 .word 0xf94013a3
@@ -3455,18 +3674,18 @@ bl _p_94
 .word 0xf94017a2
 .word 0xaa0303e0
 .word 0xf940007e
-bl _p_96
-bl _p_98
+bl _p_95
+bl _p_97
 .word 0xf9002ba0
 .word 0xf9402ba0
 .word 0xb4000060
 .word 0xf9402ba0
-bl _p_23
+bl _p_22
 .word 0x14000001
 .word 0xf9400fa1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_99
+bl _p_98
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
@@ -3486,28 +3705,28 @@ Microsoft_Azure_Mobile_Crashes_CrashesUtils_DeserializeException_byte__:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #952]
 .word 0xd2800a01
 bl _p_6
 .word 0xf90037a0
 .word 0xaa1a03e1
-bl _p_100
+bl _p_99
 .word 0xf94037a0
 .word 0xaa0003fa
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #960]
 .word 0xd2800901
 bl _p_6
 .word 0xf90033a0
-bl _p_95
+bl _p_94
 .word 0xf94033a0
 .word 0xaa0003f9
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xf940033e
-bl _p_101
+bl _p_100
 .word 0xaa0003fa
 .word 0xaa1a03f9
 .word 0xeb1f035f
@@ -3519,7 +3738,7 @@ bl _p_101
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #384]
+ldr x1, [x16, #376]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xd2800019
@@ -3532,29 +3751,29 @@ ldr x1, [x16, #384]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #568]
+ldr x0, [x16, #560]
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #568]
 .word 0xf9400000
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #984]
+ldr x1, [x16, #976]
 .word 0xf94017a2
-bl _p_97
+bl _p_96
 .word 0xf94017a0
 .word 0xf90013a0
-bl _p_98
+bl _p_97
 .word 0xf9002ba0
 .word 0xf9402ba0
 .word 0xb4000060
 .word 0xf9402ba0
-bl _p_23
+bl _p_22
 .word 0x14000001
 .word 0xf94013a0
 .word 0xa9416bb9
@@ -3574,9 +3793,9 @@ Microsoft_Azure_Mobile_Crashes_TestCrashException__ctor:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #992]
+ldr x1, [x16, #984]
 .word 0xf9400ba0
-bl _p_102
+bl _p_101
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -3597,7 +3816,7 @@ Microsoft_Azure_Mobile_Crashes_TestCrashException__ctor_System_Runtime_Serializa
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xf94017a3
-bl _p_103
+bl _p_102
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3640,13 +3859,13 @@ Microsoft_Azure_Mobile_Crashes_PlatformCrashesBase_GenerateTestCrash:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1000]
+ldr x0, [x16, #992]
 .word 0xd2801101
 bl _p_6
 .word 0xf90013a0
-bl _p_104
+bl _p_103
 .word 0xf94013a0
-bl _p_23
+bl _p_22
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3717,14 +3936,32 @@ Microsoft_Azure_Mobile_Crashes_AndroidErrorDetails__ctor_object_string:
 .word 0xf90013a2
 .word 0xf9400fa0
 .word 0xf9000b00
-.word 0x91004300
-bl _p_8
-.word 0xf9400fa0
+.word 0x91004301
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xf94013a0
 .word 0xf9000f00
-.word 0x91006300
-bl _p_8
-.word 0xf94013a0
+.word 0x91006301
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -3777,24 +4014,60 @@ Microsoft_Azure_Mobile_Crashes_iOSErrorDetails__ctor_string_string_string_string
 .word 0xf9001fa5
 .word 0xf9400fa0
 .word 0xf9000aa0
-.word 0x910042a0
-bl _p_8
-.word 0xf9400fa0
+.word 0x910042a1
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xf94013a0
 .word 0xf9000ea0
-.word 0x910062a0
-bl _p_8
-.word 0xf94013a0
+.word 0x910062a1
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xf94017a0
 .word 0xf90012a0
-.word 0x910082a0
-bl _p_8
-.word 0xf94017a0
+.word 0x910082a1
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xf9401ba0
 .word 0xf90016a0
-.word 0x9100a2a0
-bl _p_8
-.word 0xf9401ba0
+.word 0x9100a2a1
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .word 0xb9403ba0
 .word 0xb90032a0
 .word 0xf9400bb5
@@ -3890,7 +4163,7 @@ wrapper_delegate_invoke_System_Func_1_Microsoft_Azure_Mobile_Crashes_ErrorReport
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -3938,23 +4211,23 @@ ldr x0, [x16, #1008]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .word 0xaa1903e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_9a:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/corlib/System/Array.cs"
-.loc 2 78 0 prologue_end
-.word 0xa9ba7bfd
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/corlib/System/Array.cs"
+.loc 2 71 0 prologue_end
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9001faf
 .word 0xf9000ba0
@@ -3962,37 +4235,41 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0x9100a3a0
-.word 0xf9002fa0
+.word 0xf90023a0
 .word 0xf9401fa0
-bl _p_106
+bl _p_105
 .word 0xaa0003ef
-.word 0xf9402fa0
+.word 0xf94023a0
 .word 0xf9400ba1
-bl _p_107
+bl _p_106
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_106
+bl _p_105
 .word 0xd2800401
 bl _p_6
-.word 0xf90023a0
-.word 0x91004001
-.word 0xaa0103e0
+.word 0x91004003
+.word 0xaa0303e1
 .word 0xf9400fa2
-.word 0xf9002ba2
-.word 0xf9000022
-.word 0xf90027a0
-bl _p_8
-.word 0xf94023a0
-.word 0xf94027a1
-.word 0xf9402ba2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
 .word 0x91002021
 .word 0xf94013a2
 .word 0xf9000022
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_9b:
@@ -4000,7 +4277,7 @@ Lme_9b:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_get_Count
 System_Array_InternalArray__ICollection_get_Count:
-.loc 2 68 0 prologue_end
+.loc 2 61 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -4015,7 +4292,7 @@ Lme_9c:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_get_IsReadOnly
 System_Array_InternalArray__ICollection_get_IsReadOnly:
-.loc 2 73 0 prologue_end
+.loc 2 66 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -4029,17 +4306,17 @@ Lme_9d:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Clear
 System_Array_InternalArray__ICollection_Clear:
-.loc 2 83 0 prologue_end
+.loc 2 76 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd2963ba0
-bl _p_108
+.word 0xd2923880
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801a00
+.word 0xd28013a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4049,19 +4326,19 @@ Lme_9e:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Add_T_REF_T_REF
 System_Array_InternalArray__ICollection_Add_T_REF_T_REF:
-.loc 2 88 0 prologue_end
+.loc 2 81 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd29641a0
-bl _p_108
+.word 0xd2923e80
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801a00
+.word 0xd28013a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -4071,19 +4348,19 @@ Lme_9f:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
 System_Array_InternalArray__ICollection_Remove_T_REF_T_REF:
-.loc 2 93 0 prologue_end
+.loc 2 86 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd29641a0
-bl _p_108
+.word 0xd2923e80
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801a00
+.word 0xd28013a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -4093,7 +4370,7 @@ Lme_a0:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
 System_Array_InternalArray__ICollection_Contains_T_REF_T_REF:
-.loc 2 98 0 prologue_end
+.loc 2 91 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
@@ -4107,27 +4384,27 @@ System_Array_InternalArray__ICollection_Contains_T_REF_T_REF:
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x5400044c
-.loc 2 101 0
+.loc 2 94 0
 .word 0xb9801b38
-.loc 2 102 0
+.loc 2 95 0
 .word 0xd2800017
 .word 0x14000016
-.loc 2 104 0
+.loc 2 97 0
 .word 0xf9401fa0
-bl _p_109
+bl _p_108
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
 .word 0x91008000
 .word 0xf9400016
-.loc 2 105 0
+.loc 2 98 0
 .word 0xb500009a
-.loc 2 106 0
+.loc 2 99 0
 .word 0xb5000196
-.loc 2 107 0
+.loc 2 100 0
 .word 0xd2800020
 .word 0x1400000e
-.loc 2 113 0
+.loc 2 106 0
 .word 0xaa1a03e0
 .word 0xaa1603e1
 .word 0xf9400342
@@ -4135,14 +4412,14 @@ bl _p_109
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000060
-.loc 2 114 0
+.loc 2 107 0
 .word 0xd2800020
 .word 0x14000005
-.loc 2 102 0
+.loc 2 95 0
 .word 0x110006f7
 .word 0x6b1802ff
 .word 0x54fffd4b
-.loc 2 118 0
+.loc 2 111 0
 .word 0xd2800000
 .word 0xa9415fb6
 .word 0xa94267b8
@@ -4150,148 +4427,49 @@ bl _p_109
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.loc 2 99 0
-.word 0xd2964920
-bl _p_108
+.loc 2 92 0
+.word 0xd2924600
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801b60
+.word 0xd2801500
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 
 Lme_a1:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
 System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int:
-.loc 2 123 0 prologue_end
-.word 0xa9ba7bfd
+.loc 2 116 0 prologue_end
+.word 0xa9bc7bfd
 .word 0x910003fd
-.word 0xa90157b4
-.word 0xa9025fb6
-.word 0xa90367b8
-.word 0xf90023ba
-.word 0xf90027af
-.word 0xaa0003f8
-.word 0xaa0103f9
-.word 0xaa0203fa
-.word 0xb4000879
-.loc 2 128 0
-.word 0xf9400300
-.word 0x3940b000
-.word 0xd280003e
-.word 0x6b1e001f
-.word 0x540008ac
-.loc 2 130 0
-.word 0xaa1a03f7
-.word 0xaa1803f6
-.word 0xf9400b15
-.word 0xeb1f02bf
-.word 0x54000060
-.word 0xb98002b5
-.word 0x14000002
-.word 0xb9801ad5
-.word 0xb1502f6
-.word 0xf9400b37
-.word 0xeb1f02ff
-.word 0x54000060
-.word 0xb98006f7
-.word 0x14000002
-.word 0xd2800017
-.word 0xaa1903f5
-.word 0xf9400b34
-.word 0xeb1f029f
-.word 0x54000060
-.word 0xb9800294
-.word 0x14000002
-.word 0xb9801ab4
-.word 0xb1402e0
-.word 0x6b0002df
-.word 0x5400066c
-.loc 2 134 0
-.word 0xf9400320
-.word 0x3940b000
-.word 0xd280003e
-.word 0x6b1e001f
-.word 0x540006ac
-.loc 2 136 0
-.word 0x6b1f035f
-.word 0x5400074b
-.loc 2 140 0
-.word 0xaa1803f7
-.word 0xf9400b16
+.word 0xf9000bb6
+.word 0xf9001faf
+.word 0xf9000fa0
+.word 0xf90013a1
+.word 0xf90017a2
+.word 0xf9400fa0
+.word 0xf9001ba0
+.word 0xf9400fa0
+.word 0xf9400816
 .word 0xeb1f02df
 .word 0x54000060
 .word 0xb98006d6
 .word 0x14000002
 .word 0xd2800016
-.word 0xaa1903f5
-.word 0xaa1a03f9
-.word 0xaa1803fa
-.word 0xf9400b14
-.word 0xeb1f029f
-.word 0x54000060
-.word 0xb9800298
-.word 0x14000002
-.word 0xb9801b58
-.word 0xaa1703e0
+.word 0xf9400fa0
+.word 0xb9801804
+.word 0xf9401ba0
 .word 0xaa1603e1
-.word 0xaa1503e2
-.word 0xaa1903e3
-.word 0xaa1803e4
-bl _p_110
-.loc 2 141 0
-.word 0xa94157b4
-.word 0xa9425fb6
-.word 0xa94367b8
-.word 0xf94023ba
+.word 0xf94013a2
+.word 0xb9802ba3
+bl _p_109
+.loc 2 117 0
+.word 0xf9400bb6
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.loc 2 124 0
-.word 0xd2858d40
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2800e20
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 129 0
-.word 0xd2964920
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2801b60
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 131 0
-.word 0xd2965420
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2800e00
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 135 0
-.word 0xd2964920
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2801b60
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 137 0
-.word 0xd2860960
-bl _p_108
-.word 0xf9002ba0
-.word 0xd2966c80
-bl _p_108
-.word 0xaa0003e2
-.word 0xf9402ba1
-.word 0xd2800e40
-.word 0xf2a04000
-bl _mono_create_corlib_exception_2
-bl _p_23
 
 Lme_a2:
 .text
@@ -4308,7 +4486,7 @@ wrapper_delegate_invoke_System_Predicate_1_Microsoft_Azure_Mobile_Crashes_iOS_Bi
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -4362,14 +4540,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_a3:
 .text
@@ -4387,7 +4565,7 @@ wrapper_delegate_invoke_System_Comparison_1_Microsoft_Azure_Mobile_Crashes_iOS_B
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -4445,34 +4623,34 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_a4:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__Insert_T_REF_int_T_REF
 System_Array_InternalArray__Insert_T_REF_int_T_REF:
-.loc 2 160 0 prologue_end
+.loc 2 136 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90017af
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd29641a0
-bl _p_108
+.word 0xd2923e80
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801a00
+.word 0xd28013a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -4482,18 +4660,18 @@ Lme_a5:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__RemoveAt_int
 System_Array_InternalArray__RemoveAt_int:
-.loc 2 165 0 prologue_end
+.loc 2 141 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd29641a0
-bl _p_108
+.word 0xd2923e80
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801a00
+.word 0xd28013a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4503,7 +4681,7 @@ Lme_a6:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IndexOf_T_REF_T_REF
 System_Array_InternalArray__IndexOf_T_REF_T_REF:
-.loc 2 170 0 prologue_end
+.loc 2 146 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
@@ -4517,24 +4695,24 @@ System_Array_InternalArray__IndexOf_T_REF_T_REF:
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540006cc
-.loc 2 173 0
+.loc 2 149 0
 .word 0xb9801b38
-.loc 2 174 0
+.loc 2 150 0
 .word 0xd2800017
 .word 0x14000024
-.loc 2 176 0
+.loc 2 152 0
 .word 0xf9401fa0
-bl _p_111
+bl _p_110
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
 .word 0x91008000
 .word 0xf9400016
-.loc 2 177 0
+.loc 2 153 0
 .word 0xb500017a
-.loc 2 178 0
+.loc 2 154 0
 .word 0xb5000356
-.loc 2 179 0
+.loc 2 155 0
 .word 0xaa1703fa
 .word 0xf9400b38
 .word 0xeb1f031f
@@ -4544,7 +4722,7 @@ bl _p_111
 .word 0xd2800019
 .word 0xb190340
 .word 0x1400001b
-.loc 2 183 0
+.loc 2 159 0
 .word 0xaa1603e0
 .word 0xaa1a03e1
 .word 0xf94002c2
@@ -4552,7 +4730,7 @@ bl _p_111
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000140
-.loc 2 186 0
+.loc 2 162 0
 .word 0xaa1703fa
 .word 0xf9400b38
 .word 0xeb1f031f
@@ -4562,11 +4740,11 @@ bl _p_111
 .word 0xd2800019
 .word 0xb190340
 .word 0x1400000b
-.loc 2 174 0
+.loc 2 150 0
 .word 0x110006f7
 .word 0x6b1802ff
 .word 0x54fffb8b
-.loc 2 191 0
+.loc 2 167 0
 .word 0xf9400b3a
 .word 0xeb1f035f
 .word 0x54000060
@@ -4580,21 +4758,21 @@ bl _p_111
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.loc 2 171 0
-.word 0xd2964920
-bl _p_108
+.loc 2 147 0
+.word 0xd2924600
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801b60
+.word 0xd2801500
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 
 Lme_a7:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__get_Item_T_REF_int
 System_Array_InternalArray__get_Item_T_REF_int:
-.loc 2 197 0 prologue_end
+.loc 2 173 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -4605,37 +4783,37 @@ System_Array_InternalArray__get_Item_T_REF_int:
 .word 0xb9801800
 .word 0x6b00035f
 .word 0x540001c2
-.loc 2 201 0
+.loc 2 177 0
 .word 0xf94013a0
-bl _p_112
+bl _p_111
 .word 0x93407f40
 .word 0xd37df001
 .word 0xf9400fa0
 .word 0x8b010000
 .word 0x91008000
 .word 0xf940001a
-.loc 2 202 0
+.loc 2 178 0
 .word 0xaa1a03e0
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.loc 2 198 0
-.word 0xd2860960
-bl _p_108
+.loc 2 174 0
+.word 0xd2825c60
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2800e40
+.word 0xd2800820
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 
 Lme_a8:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__set_Item_T_REF_int_T_REF
 System_Array_InternalArray__set_Item_T_REF_int_T_REF:
-.loc 2 207 0 prologue_end
-.word 0xa9bb7bfd
+.loc 2 183 0 prologue_end
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xf90013b8
@@ -4646,12 +4824,14 @@ System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 .word 0xb9801b01
 .word 0xb9802ba0
 .word 0x6b01001f
-.word 0x54000622
-.loc 2 210 0
+.word 0x54000742
+.loc 2 186 0
 .word 0xaa1803f7
 .word 0xeb1f031f
-.word 0x54000280
+.word 0x540002c0
 .word 0xf9400316
+.word 0xf9400b00
+.word 0xb5000240
 .word 0x3940b2c0
 .word 0xd280003e
 .word 0xeb1e001f
@@ -4662,55 +4842,63 @@ System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #1016]
+ldr x1, [x16, #1008]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1024]
+ldr x0, [x16, #1016]
 .word 0xeb0002df
 .word 0x54000040
 .word 0xd2800017
 .word 0xaa1703f6
-.loc 2 211 0
+.loc 2 187 0
 .word 0xb4000117
-.loc 2 212 0
+.loc 2 188 0
 .word 0xf9401ba2
 .word 0xaa1603e0
 .word 0xb9802ba1
 .word 0xf94002c3
-.word 0xf9404c70
+.word 0xf9404870
 .word 0xd63f0200
-.loc 2 213 0
-.word 0x1400000d
-.loc 2 215 0
+.loc 2 189 0
+.word 0x14000014
+.loc 2 191 0
 .word 0xf9401fa0
-bl _p_113
+bl _p_112
 .word 0xb9802ba0
 .word 0x93407c00
 .word 0xd37df000
 .word 0x8b000300
-.word 0x91008000
-.word 0xf9401ba1
-.word 0xf90023a1
-.word 0xf9000001
-bl _p_8
-.word 0xf94023a0
-.loc 2 216 0
+.word 0x91008001
+.word 0xf9401ba0
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 2 192 0
 .word 0xa9415fb6
 .word 0xf94013b8
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.loc 2 208 0
-.word 0xd2860960
-bl _p_108
+.loc 2 184 0
+.word 0xd2825c60
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2800e40
+.word 0xd2800820
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 
 Lme_a9:
 .text
@@ -4727,7 +4915,7 @@ wrapper_delegate_invoke_System_Predicate_1_Microsoft_Azure_Mobile_Crashes_iOS_Bi
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -4781,14 +4969,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_aa:
 .text
@@ -4806,7 +4994,7 @@ wrapper_delegate_invoke_System_Comparison_1_Microsoft_Azure_Mobile_Crashes_iOS_B
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -4864,14 +5052,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_ab:
 .text
@@ -4889,7 +5077,7 @@ wrapper_delegate_invoke__Module_invoke_bool_ErrorReport_Microsoft_Azure_Mobile_C
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -4943,14 +5131,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_ac:
 .text
@@ -4994,7 +5182,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___ErrorRep
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_114
+bl _p_113
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -5035,7 +5223,7 @@ wrapper_delegate_end_invoke__Module_end_invoke_bool__this___IAsyncResult_System_
 .word 0xf9000300
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_115
+bl _p_114
 .word 0xf9400001
 .word 0x3940b022
 .word 0xeb1f005f
@@ -5046,7 +5234,7 @@ bl _p_115
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x2, [x16, #1032]
+ldr x2, [x16, #1024]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540000c1
@@ -5055,9 +5243,9 @@ ldr x2, [x16, #1032]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801860
+.word 0xd2801200
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_ae:
 .text
@@ -5075,7 +5263,7 @@ wrapper_delegate_invoke__Module_invoke_IEnumerable_1_ErrorAttachmentLog_ErrorRep
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -5127,14 +5315,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_af:
 .text
@@ -5171,7 +5359,7 @@ wrapper_delegate_end_invoke__Module_end_invoke_IEnumerable_1_ErrorAttachmentLog_
 .word 0xf9000300
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_115
+bl _p_114
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -5191,7 +5379,7 @@ wrapper_delegate_invoke__Module_invoke_bool:
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -5241,14 +5429,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .word 0xaa1903e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_b1:
 .text
@@ -5288,7 +5476,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___AsyncCal
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_114
+bl _p_113
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -5311,7 +5499,7 @@ wrapper_delegate_invoke__Module_invoke_void_object_SendingErrorReportEventArgs_o
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -5364,14 +5552,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_b3:
 .text
@@ -5419,7 +5607,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___object_S
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_114
+bl _p_113
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -5460,7 +5648,7 @@ wrapper_delegate_end_invoke__Module_end_invoke_void__this___IAsyncResult_System_
 .word 0xf9000300
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_115
+bl _p_114
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -5483,7 +5671,7 @@ wrapper_delegate_invoke__Module_invoke_void_object_SentErrorReportEventArgs_obje
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -5536,14 +5724,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_b6:
 .text
@@ -5591,7 +5779,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___object_S
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_114
+bl _p_113
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -5614,7 +5802,7 @@ wrapper_delegate_invoke__Module_invoke_void_object_FailedToSendErrorReportEventA
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1000]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -5667,14 +5855,14 @@ ldr x0, [x16, #1008]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
-bl _p_23
-bl _p_105
+bl _p_22
+bl _p_104
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_b8:
 .text
@@ -5722,7 +5910,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___object_F
 .word 0xf9000320
 .word 0xf94013a0
 .word 0xaa1803e1
-bl _p_114
+bl _p_113
 .word 0xa94167b8
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -5733,24 +5921,24 @@ Lme_b9:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
 System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
 .loc 3 5532 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_116
+bl _p_115
 .word 0x3980b410
 .word 0xb5000050
-bl _p_84
+bl _p_83
 .word 0xf9400fa0
-bl _p_116
+bl _p_115
 .word 0xd2800a01
 bl _p_6
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_117
+bl _p_116
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xf90013a0
@@ -5766,7 +5954,7 @@ Lme_ba:
 	.align 4
 	.no_dead_strip System_Linq_Enumerable_Count_TSource_CHAR_System_Collections_Generic_IEnumerable_1_TSource_CHAR
 System_Linq_Enumerable_Count_TSource_CHAR_System_Collections_Generic_IEnumerable_1_TSource_CHAR:
-.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/external/corefx/src/System.Linq/src/System/Linq/Count.cs"
+.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/external/corefx/src/System.Linq/src/System/Linq/Count.cs"
 .loc 4 14 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -5778,18 +5966,18 @@ System_Linq_Enumerable_Count_TSource_CHAR_System_Collections_Generic_IEnumerable
 .word 0xb400107a
 .loc 4 19 0
 .word 0xf94017a0
-bl _p_118
+bl _p_117
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
-bl _p_119
+bl _p_118
 .word 0xaa0003f9
 .loc 4 20 0
 .word 0xaa1903e0
 .word 0xb4000180
 .loc 4 22 0
 .word 0xf94017a0
-bl _p_120
+bl _p_119
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xf9400321
@@ -5801,18 +5989,18 @@ bl _p_120
 .word 0x1400006a
 .loc 4 25 0
 .word 0xf94017a0
-bl _p_121
+bl _p_120
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
-bl _p_119
+bl _p_118
 .word 0xaa0003f9
 .loc 4 26 0
 .word 0xaa1903e0
 .word 0xb40001a0
 .loc 4 28 0
 .word 0xf94017a0
-bl _p_122
+bl _p_121
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xd2800001
@@ -5832,14 +6020,14 @@ bl _p_122
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #1040]
+ldr x1, [x16, #1032]
 .word 0xeb01001f
 .word 0x540001c3
 .word 0xf9401300
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x1, [x16, #1040]
+ldr x1, [x16, #1032]
 .word 0x9343fc22
 .word 0x8b020000
 .word 0x39400000
@@ -5859,7 +6047,7 @@ ldr x1, [x16, #1040]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #1048]
+ldr x15, [x16, #1040]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5870,11 +6058,11 @@ ldr x15, [x16, #1048]
 .word 0xd2800019
 .loc 4 38 0
 .word 0xf94017a0
-bl _p_123
+bl _p_122
 .word 0xaa0003ef
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0x92800bf0
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -5893,7 +6081,7 @@ bl _p_123
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #440]
+ldr x15, [x16, #432]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5912,7 +6100,7 @@ ldr x15, [x16, #440]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x15, [x16, #448]
+ldr x15, [x16, #440]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -5930,14 +6118,14 @@ ldr x15, [x16, #448]
 
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x0, [x16, #1056]
+ldr x0, [x16, #1048]
 .word 0xd2800021
-bl _p_20
-bl _p_124
-bl _p_23
-.word 0xd2801ae0
+bl _p_19
+bl _p_123
+bl _p_22
+.word 0xd2801480
 .word 0xaa1103e1
-bl _p_13
+bl _p_12
 
 Lme_bb:
 .text
@@ -5955,7 +6143,7 @@ LDIFF_SYM3=ut_end - ut_189
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_CHAR__ctor_System_Array
 System_Array_InternalEnumerator_1_T_CHAR__ctor_System_Array:
-.loc 2 239 0 prologue_end
+.loc 2 215 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
@@ -5964,14 +6152,22 @@ System_Array_InternalEnumerator_1_T_CHAR__ctor_System_Array:
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000001
-bl _p_8
-.word 0xf9400fa0
-.loc 2 240 0
-.word 0xf9400ba0
+.word 0xd349fc02
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.loc 2 216 0
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 2 241 0
+.loc 2 217 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -5985,7 +6181,7 @@ b System_Array_InternalEnumerator_1_T_CHAR_Dispose
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_CHAR_Dispose
 System_Array_InternalEnumerator_1_T_CHAR_Dispose:
-.loc 2 245 0 prologue_end
+.loc 2 221 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000faf
@@ -5994,7 +6190,7 @@ System_Array_InternalEnumerator_1_T_CHAR_Dispose:
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 2 246 0
+.loc 2 222 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -6008,7 +6204,7 @@ b System_Array_InternalEnumerator_1_T_CHAR_MoveNext
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_CHAR_MoveNext
 System_Array_InternalEnumerator_1_T_CHAR_MoveNext:
-.loc 2 250 0 prologue_end
+.loc 2 226 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xa9016bb9
@@ -6019,11 +6215,11 @@ System_Array_InternalEnumerator_1_T_CHAR_MoveNext:
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000081
-.loc 2 251 0
+.loc 2 227 0
 .word 0xf9400340
 .word 0xb9801800
 .word 0xb9000b40
-.loc 2 253 0
+.loc 2 229 0
 .word 0xb9800b40
 .word 0x9280001e
 .word 0xf2bffffe
@@ -6055,7 +6251,7 @@ b System_Array_InternalEnumerator_1_T_CHAR_get_Current
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_CHAR_get_Current
 System_Array_InternalEnumerator_1_T_CHAR_get_Current:
-.loc 2 258 0 prologue_end
+.loc 2 234 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6066,13 +6262,13 @@ System_Array_InternalEnumerator_1_T_CHAR_get_Current:
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000440
-.loc 2 260 0
+.loc 2 236 0
 .word 0xb9800b40
 .word 0x9280001e
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000480
-.loc 2 263 0
+.loc 2 239 0
 .word 0xf9400340
 .word 0xf9001fa0
 .word 0xf9400340
@@ -6082,7 +6278,7 @@ System_Array_InternalEnumerator_1_T_CHAR_get_Current:
 .word 0x4b010000
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_125
+bl _p_124
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba1
@@ -6090,7 +6286,7 @@ bl _p_125
 .word 0xf940001e
 .word 0xf90013a0
 .word 0xf9400fa0
-bl _p_126
+bl _p_125
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -6101,66 +6297,30 @@ bl _p_126
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.loc 2 259 0
-.word 0xd29767e0
-bl _p_108
+.loc 2 235 0
+.word 0xd2932ba0
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801880
+.word 0xd2801220
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 261 0
-.word 0xd29772a0
-bl _p_108
+bl _p_22
+.loc 2 237 0
+.word 0xd2933660
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801880
+.word 0xd2801220
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 
 Lme_c0:
-.text
-ut_193:
-add x0, x0, 16
-b System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Current
-.text
-	.align 4
-	.no_dead_strip System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Current
-System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Current:
-.loc 2 274 0 prologue_end
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf9000faf
-.word 0xf9000ba0
-.word 0xf9400fa0
-bl _p_127
-.word 0xf90017a0
-.word 0xf9400ba0
-.word 0xf940001e
-.word 0xf9400fa0
-bl _p_128
-.word 0xaa0003e1
-.word 0xf94017af
-.word 0xf9400ba0
-.word 0xd63f0020
-.word 0xf90013a0
-.word 0xf9400fa0
-bl _p_129
-.word 0xd2800301
-bl _p_6
-.word 0xf94013a1
-.word 0x79002001
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_c1:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR:
-.loc 2 78 0 prologue_end
-.word 0xa9b97bfd
+.loc 2 71 0 prologue_end
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9001faf
 .word 0xf9000ba0
@@ -6168,15 +6328,15 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR:
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0x9100a3a0
-.word 0xf9002fa0
+.word 0xf90023a0
 .word 0xf9401fa0
-bl _p_130
-.word 0xf90033a0
+bl _p_126
+.word 0xf90027a0
 .word 0xf9401fa0
-bl _p_131
+bl _p_127
 .word 0xaa0003e2
-.word 0xf9402fa0
-.word 0xf94033af
+.word 0xf94023a0
+.word 0xf94027af
 .word 0xf9400ba1
 .word 0xd63f0040
 .word 0xf94017a0
@@ -6184,45 +6344,71 @@ bl _p_131
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_130
+bl _p_126
 .word 0xd2800401
 bl _p_6
-.word 0xf90023a0
-.word 0x91004001
-.word 0xaa0103e0
+.word 0x91004003
+.word 0xaa0303e1
 .word 0xf9400fa2
-.word 0xf9002ba2
-.word 0xf9000022
-.word 0xf90027a0
-bl _p_8
-.word 0xf94023a0
-.word 0xf94027a1
-.word 0xf9402ba2
+.word 0xf9000062
+.word 0xd349fc23
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0063
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x4, [x16, #16]
+.word 0x8b040063
+.word 0xd280003e
+.word 0x3900007e
 .word 0x91002021
 .word 0xf94013a2
 .word 0xf9000022
 .word 0x910003bf
-.word 0xa8c77bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
-Lme_c2:
+Lme_c1:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Add_T_CHAR_T_CHAR
 System_Array_InternalArray__ICollection_Add_T_CHAR_T_CHAR:
-.loc 2 88 0 prologue_end
+.loc 2 81 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd29641a0
-bl _p_108
+.word 0xd2923e80
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801a00
+.word 0xd28013a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_c9:
+.text
+	.align 4
+	.no_dead_strip System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR
+System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR:
+.loc 2 86 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf90013af
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xd2923e80
+bl _p_107
+.word 0xaa0003e1
+.word 0xd28013a0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_22
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -6230,31 +6416,9 @@ bl _p_23
 Lme_ca:
 .text
 	.align 4
-	.no_dead_strip System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR
-System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR:
-.loc 2 93 0 prologue_end
-.word 0xa9bd7bfd
-.word 0x910003fd
-.word 0xf90013af
-.word 0xf9000ba0
-.word 0xf9000fa1
-.word 0xd29641a0
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2801a00
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.word 0x910003bf
-.word 0xa8c37bfd
-.word 0xd65f03c0
-
-Lme_cb:
-.text
-	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR
 System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR:
-.loc 2 98 0 prologue_end
+.loc 2 91 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa9015bb5
@@ -6268,42 +6432,42 @@ System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR:
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x540007ec
-.loc 2 101 0
+.loc 2 94 0
 .word 0xb9801b59
-.loc 2 102 0
+.loc 2 95 0
 .word 0xd2800018
 .word 0x14000033
-.loc 2 104 0
+.loc 2 97 0
 .word 0xf94027a0
-bl _p_132
+bl _p_128
 .word 0x93407f00
 .word 0xd37ff800
 .word 0x8b000340
 .word 0x91008000
 .word 0x79400017
-.loc 2 105 0
+.loc 2 98 0
 .word 0x14000004
-.loc 2 106 0
+.loc 2 99 0
 .word 0x14000029
-.loc 2 107 0
+.loc 2 100 0
 .word 0xd2800020
 .word 0x1400002b
-.loc 2 113 0
+.loc 2 106 0
 .word 0x910103b6
 .word 0xaa1703e0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_133
+bl _p_129
 .word 0xd2800301
 bl _p_6
 .word 0xaa0003f7
 .word 0xf9402ba0
 .word 0x790022e0
 .word 0xf94027a0
-bl _p_134
+bl _p_130
 .word 0xaa0003f5
 .word 0xf94027a0
-bl _p_135
+bl _p_131
 .word 0xd280005e
 .word 0xeb1e001f
 .word 0x540000c0
@@ -6315,7 +6479,7 @@ bl _p_135
 .word 0x794002c0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_133
+bl _p_129
 .word 0xd2800301
 bl _p_6
 .word 0xf9402ba1
@@ -6325,14 +6489,14 @@ bl _p_6
 .word 0xaa0003f7
 .word 0x53001ee0
 .word 0x34000060
-.loc 2 114 0
+.loc 2 107 0
 .word 0xd2800020
 .word 0x14000005
-.loc 2 102 0
+.loc 2 95 0
 .word 0x11000718
 .word 0x6b19031f
 .word 0x54fff9ab
-.loc 2 118 0
+.loc 2 111 0
 .word 0xd2800000
 .word 0xa9415bb5
 .word 0xa94263b7
@@ -6340,159 +6504,60 @@ bl _p_6
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.loc 2 99 0
-.word 0xd2964920
-bl _p_108
+.loc 2 92 0
+.word 0xd2924600
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2801b60
+.word 0xd2801500
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 
-Lme_cc:
+Lme_cb:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_CopyTo_T_CHAR_T_CHAR___int
 System_Array_InternalArray__ICollection_CopyTo_T_CHAR_T_CHAR___int:
-.loc 2 123 0 prologue_end
-.word 0xa9ba7bfd
+.loc 2 116 0 prologue_end
+.word 0xa9bc7bfd
 .word 0x910003fd
-.word 0xa90157b4
-.word 0xa9025fb6
-.word 0xa90367b8
-.word 0xf90023ba
-.word 0xf90027af
-.word 0xaa0003f8
-.word 0xaa0103f9
-.word 0xaa0203fa
-.word 0xb4000879
-.loc 2 128 0
-.word 0xf9400300
-.word 0x3940b000
-.word 0xd280003e
-.word 0x6b1e001f
-.word 0x540008ac
-.loc 2 130 0
-.word 0xaa1a03f7
-.word 0xaa1803f6
-.word 0xf9400b15
-.word 0xeb1f02bf
-.word 0x54000060
-.word 0xb98002b5
-.word 0x14000002
-.word 0xb9801ad5
-.word 0xb1502f6
-.word 0xf9400b37
-.word 0xeb1f02ff
-.word 0x54000060
-.word 0xb98006f7
-.word 0x14000002
-.word 0xd2800017
-.word 0xaa1903f5
-.word 0xf9400b34
-.word 0xeb1f029f
-.word 0x54000060
-.word 0xb9800294
-.word 0x14000002
-.word 0xb9801ab4
-.word 0xb1402e0
-.word 0x6b0002df
-.word 0x5400066c
-.loc 2 134 0
-.word 0xf9400320
-.word 0x3940b000
-.word 0xd280003e
-.word 0x6b1e001f
-.word 0x540006ac
-.loc 2 136 0
-.word 0x6b1f035f
-.word 0x5400074b
-.loc 2 140 0
-.word 0xaa1803f7
-.word 0xf9400b16
+.word 0xf9000bb6
+.word 0xf9001faf
+.word 0xf9000fa0
+.word 0xf90013a1
+.word 0xf90017a2
+.word 0xf9400fa0
+.word 0xf9001ba0
+.word 0xf9400fa0
+.word 0xf9400816
 .word 0xeb1f02df
 .word 0x54000060
 .word 0xb98006d6
 .word 0x14000002
 .word 0xd2800016
-.word 0xaa1903f5
-.word 0xaa1a03f9
-.word 0xaa1803fa
-.word 0xf9400b14
-.word 0xeb1f029f
-.word 0x54000060
-.word 0xb9800298
-.word 0x14000002
-.word 0xb9801b58
-.word 0xaa1703e0
+.word 0xf9400fa0
+.word 0xb9801804
+.word 0xf9401ba0
 .word 0xaa1603e1
-.word 0xaa1503e2
-.word 0xaa1903e3
-.word 0xaa1803e4
-bl _p_110
-.loc 2 141 0
-.word 0xa94157b4
-.word 0xa9425fb6
-.word 0xa94367b8
-.word 0xf94023ba
+.word 0xf94013a2
+.word 0xb9802ba3
+bl _p_109
+.loc 2 117 0
+.word 0xf9400bb6
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
-.loc 2 124 0
-.word 0xd2858d40
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2800e20
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 129 0
-.word 0xd2964920
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2801b60
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 131 0
-.word 0xd2965420
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2800e00
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 135 0
-.word 0xd2964920
-bl _p_108
-.word 0xaa0003e1
-.word 0xd2801b60
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_23
-.loc 2 137 0
-.word 0xd2860960
-bl _p_108
-.word 0xf9002ba0
-.word 0xd2966c80
-bl _p_108
-.word 0xaa0003e2
-.word 0xf9402ba1
-.word 0xd2800e40
-.word 0xf2a04000
-bl _mono_create_corlib_exception_2
-bl _p_23
 
-Lme_cd:
+Lme_cc:
 .text
-ut_209:
+ut_208:
 add x0, x0, 16
 b System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-.loc 2 239 0 prologue_end
+.loc 2 215 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
@@ -6501,24 +6566,32 @@ System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000001
-bl _p_8
-.word 0xf9400fa0
-.loc 2 240 0
-.word 0xf9400ba0
+.word 0xd349fc02
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.loc 2 216 0
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 2 241 0
+.loc 2 217 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_d1:
+Lme_d0:
 .text
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
 System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
-.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 5 104 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -6529,7 +6602,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_136
+bl _p_132
 .loc 5 106 0
 .word 0xf9400ba0
 .word 0x394063a1
@@ -6539,12 +6612,12 @@ bl _p_136
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_d2:
+Lme_d1:
 .text
 	.align 4
 	.no_dead_strip System_Array_InternalArray__get_Item_T_CHAR_int
 System_Array_InternalArray__get_Item_T_CHAR_int:
-.loc 2 197 0 prologue_end
+.loc 2 173 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6555,31 +6628,31 @@ System_Array_InternalArray__get_Item_T_CHAR_int:
 .word 0xb9801800
 .word 0x6b00035f
 .word 0x540001c2
-.loc 2 201 0
+.loc 2 177 0
 .word 0xf94013a0
-bl _p_137
+bl _p_133
 .word 0x93407f40
 .word 0xd37ff801
 .word 0xf9400fa0
 .word 0x8b010000
 .word 0x91008000
 .word 0x7940001a
-.loc 2 202 0
+.loc 2 178 0
 .word 0xaa1a03e0
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.loc 2 198 0
-.word 0xd2860960
-bl _p_108
+.loc 2 174 0
+.word 0xd2825c60
+bl _p_107
 .word 0xaa0003e1
-.word 0xd2800e40
+.word 0xd2800820
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_23
+bl _p_22
 
-Lme_d3:
+Lme_d2:
 .text
 	.align 3
 jit_code_end:
@@ -6782,7 +6855,6 @@ bl System_Array_InternalEnumerator_1_T_CHAR__ctor_System_Array
 bl System_Array_InternalEnumerator_1_T_CHAR_Dispose
 bl System_Array_InternalEnumerator_1_T_CHAR_MoveNext
 bl System_Array_InternalEnumerator_1_T_CHAR_get_Current
-bl System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Current
 bl System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR
 bl method_addresses
 bl method_addresses
@@ -6807,7 +6879,7 @@ method_addresses_end:
 	.align 3
 unbox_trampolines:
 
-	.long 189,190,191,192,193,209
+	.long 189,190,191,192,208
 unbox_trampolines_end:
 
 	.long 0
@@ -6818,8 +6890,7 @@ bl ut_189
 bl ut_190
 bl ut_191
 bl ut_192
-bl ut_193
-bl ut_209
+bl ut_208
 
 	.long 0
 .section __TEXT, __const
@@ -6829,20 +6900,19 @@ unwind_info:
 	.byte 0,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,13,12,31,0,68,14,32,157,4,158,3,68,13,29
 	.byte 16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68
 	.byte 153,4,154,3,26,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9,68,154,8,31
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,148,12,149,11,68,150,10,151,9,68,152,8,153,7,68,154,6,16
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2,13,12,31,0,68,14,64,157,8,158,7,68,13,29,13,12
-	.byte 31,0,68,14,80,157,10,158,9,68,13,29,13,12,31,0,68,14,48,157,6,158,5,68,13,29,24,12,31,0,68,14
-	.byte 160,1,157,20,158,19,68,13,29,68,151,18,152,17,68,153,16,154,15,13,12,31,0,68,14,112,157,14,158,13,68,13
-	.byte 29,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,18,12,31,0,68,14,96,157,12,158,11,68,13,29
-	.byte 68,153,10,154,9,19,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,68,153,7,18,12,31,0,68,14,64
-	.byte 157,8,158,7,68,13,29,68,153,6,154,5,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68
-	.byte 152,6,153,5,68,154,4,13,12,31,0,68,14,16,157,2,158,1,68,13,29,18,12,31,0,68,14,112,157,14,158,13
-	.byte 68,13,29,68,153,12,154,11,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,16,12,31,0,68,14,64
-	.byte 157,8,158,7,68,13,29,68,149,6,23,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4
-	.byte 154,3,13,12,31,0,68,14,96,157,12,158,11,68,13,29,26,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150
-	.byte 6,151,5,68,152,4,153,3,68,154,2,31,12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,149,9,68,150
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,149,9,68,150,8,151,7,68,152,6,153,5,68,154,4,16
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2,13,12,31,0,68,14,48,157,6,158,5,68,13,29,13,12
+	.byte 31,0,68,14,64,157,8,158,7,68,13,29,24,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,152,15
+	.byte 68,153,14,154,13,13,12,31,0,68,14,112,157,14,158,13,68,13,29,16,12,31,0,68,14,64,157,8,158,7,68,13
+	.byte 29,68,154,6,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9,16,12,31,0,68,14,80,157,10
+	.byte 158,9,68,13,29,68,153,8,18,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5,26,12,31,0,68
+	.byte 14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,13,12,31,0,68,14,16,157,2,158
+	.byte 1,68,13,29,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11,16,12,31,0,68,14,48,157,6
+	.byte 158,5,68,13,29,68,152,4,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,23,12,31,0,68,14,64
+	.byte 157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,13,12,31,0,68,14,80,157,10,158,9,68,13,29,16
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150
 	.byte 8,151,7,68,152,6,153,5,68,154,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151
-	.byte 6,152,5,68,153,4,154,3,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,18,12
+	.byte 6,152,5,68,153,4,154,3,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,18,12
 	.byte 31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68
 	.byte 152,8,153,7,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,68,154,6,28,12,31,0,68,14
 	.byte 96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5
@@ -6856,7 +6926,7 @@ plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_DisableMachExceptionHa
 _p_1:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #1072]
+ldr x16, [x16, #1064]
 br x16
 .word 2459
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
@@ -6864,7 +6934,7 @@ plt__jit_icall_ves_icall_object_new_specific:
 _p_2:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #1080]
+ldr x16, [x16, #1072]
 br x16
 .word 2464
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate__ctor
@@ -6872,7 +6942,7 @@ plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate__c
 _p_3:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #1088]
+ldr x16, [x16, #1080]
 br x16
 .word 2496
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetDelegate_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperCrashesInitializationDelegate
@@ -6880,7 +6950,7 @@ plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetDel
 _p_4:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #1096]
+ldr x16, [x16, #1088]
 br x16
 .word 2501
 	.no_dead_strip plt_System_AppDomain_get_CurrentDomain
@@ -6888,7 +6958,7 @@ plt_System_AppDomain_get_CurrentDomain:
 _p_5:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #1104]
+ldr x16, [x16, #1096]
 br x16
 .word 2506
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
@@ -6896,7 +6966,7 @@ plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_6:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #1112]
+ldr x16, [x16, #1104]
 br x16
 .word 2511
 	.no_dead_strip plt_System_AppDomain_add_UnhandledException_System_UnhandledExceptionEventHandler
@@ -6904,1053 +6974,1021 @@ plt_System_AppDomain_add_UnhandledException_System_UnhandledExceptionEventHandle
 _p_7:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #1120]
+ldr x16, [x16, #1112]
 br x16
 .word 2519
-	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
-plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetUserConfirmationHandler_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSUserConfirmationHandler
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetUserConfirmationHandler_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSUserConfirmationHandler:
 _p_8:
+adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
+ldr x16, [x16, #1120]
+br x16
+.word 2524
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_crashesDelegate_Microsoft_Azure_Mobile_Crashes_CrashesDelegate
+plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_crashesDelegate_Microsoft_Azure_Mobile_Crashes_CrashesDelegate:
+_p_9:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 2524
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetUserConfirmationHandler_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSUserConfirmationHandler
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetUserConfirmationHandler_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSUserConfirmationHandler:
-_p_9:
+.word 2529
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_get_crashesDelegate
+plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_get_crashesDelegate:
+_p_10:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
 .word 2531
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_crashesDelegate_Microsoft_Azure_Mobile_Crashes_CrashesDelegate
-plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_set_crashesDelegate_Microsoft_Azure_Mobile_Crashes_CrashesDelegate:
-_p_10:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetDelegate_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetDelegate_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate:
+_p_11:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 2536
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_get_crashesDelegate
-plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_get_crashesDelegate:
-_p_11:
+.word 2533
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_12:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
 .word 2538
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetDelegate_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetDelegate_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate:
-_p_12:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_IsEnabled
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_IsEnabled:
+_p_13:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 2540
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
-_p_13:
+.word 2573
+	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_bool_bool
+plt_System_Threading_Tasks_Task_FromResult_bool_bool:
+_p_14:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 2545
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_IsEnabled
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_IsEnabled:
-_p_14:
+.word 2578
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetEnabled_bool
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetEnabled_bool:
+_p_15:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 2580
-	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_bool_bool
-plt_System_Threading_Tasks_Task_FromResult_bool_bool:
-_p_15:
+.word 2590
+	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_object_object
+plt_System_Threading_Tasks_Task_FromResult_object_object:
+_p_16:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 2585
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetEnabled_bool
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetEnabled_bool:
-_p_16:
+.word 2595
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_HasCrashedInLastSession
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_HasCrashedInLastSession:
+_p_17:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 2597
-	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_object_object
-plt_System_Threading_Tasks_Task_FromResult_object_object:
-_p_17:
+.word 2607
+	.no_dead_strip plt_System_Threading_Tasks_Task_Run_Microsoft_Azure_Mobile_Crashes_ErrorReport_System_Func_1_Microsoft_Azure_Mobile_Crashes_ErrorReport
+plt_System_Threading_Tasks_Task_Run_Microsoft_Azure_Mobile_Crashes_ErrorReport_System_Func_1_Microsoft_Azure_Mobile_Crashes_ErrorReport:
+_p_18:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 2602
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_HasCrashedInLastSession
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_HasCrashedInLastSession:
-_p_18:
+.word 2612
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr
+plt__jit_icall_mono_helper_ldstr:
+_p_19:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 2614
-	.no_dead_strip plt_System_Threading_Tasks_Task_Run_Microsoft_Azure_Mobile_Crashes_ErrorReport_System_Func_1_Microsoft_Azure_Mobile_Crashes_ErrorReport
-plt_System_Threading_Tasks_Task_Run_Microsoft_Azure_Mobile_Crashes_ErrorReport_System_Func_1_Microsoft_Azure_Mobile_Crashes_ErrorReport:
-_p_19:
+.word 2624
+	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
+plt__jit_icall_mono_helper_newobj_mscorlib:
+_p_20:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 2619
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr
-plt__jit_icall_mono_helper_ldstr:
-_p_20:
+.word 2644
+	.no_dead_strip plt_System_ArgumentOutOfRangeException__ctor_string_object_string
+plt_System_ArgumentOutOfRangeException__ctor_string_object_string:
+_p_21:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 2631
-	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
-plt__jit_icall_mono_helper_newobj_mscorlib:
-_p_21:
+.word 2674
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_22:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 2651
-	.no_dead_strip plt_System_ArgumentOutOfRangeException__ctor_string_object_string
-plt_System_ArgumentOutOfRangeException__ctor_string_object_string:
-_p_22:
+.word 2679
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_NotifyWithUserConfirmation_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSUserConfirmation
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_NotifyWithUserConfirmation_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSUserConfirmation:
+_p_23:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 2681
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_23:
+.word 2707
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateiOSException_System_Exception
+plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateiOSException_System_Exception:
+_p_24:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 2686
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_NotifyWithUserConfirmation_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSUserConfirmation
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_NotifyWithUserConfirmation_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSUserConfirmation:
-_p_24:
+.word 2712
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapperException_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapperException_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException:
+_p_25:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
 .word 2714
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateiOSException_System_Exception
-plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateiOSException_System_Exception:
-_p_25:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_CrashesUtils_SerializeException_System_Exception
+plt_Microsoft_Azure_Mobile_Crashes_CrashesUtils_SerializeException_System_Exception:
+_p_26:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
 .word 2719
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapperException_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapperException_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException:
-_p_26:
+	.no_dead_strip plt_Foundation_NSData_FromArray_byte__
+plt_Foundation_NSData_FromArray_byte__:
+_p_27:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
 .word 2721
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_CrashesUtils_SerializeException_System_Exception
-plt_Microsoft_Azure_Mobile_Crashes_CrashesUtils_SerializeException_System_Exception:
-_p_27:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapperExceptionData_Foundation_NSData
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapperExceptionData_Foundation_NSData:
+_p_28:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
 .word 2726
-	.no_dead_strip plt_Foundation_NSData_FromArray_byte__
-plt_Foundation_NSData_FromArray_byte__:
-_p_28:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__ctor
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__ctor:
+_p_29:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 2728
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapperExceptionData_Foundation_NSData
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapperExceptionData_Foundation_NSData:
-_p_29:
+.word 2731
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Type_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Type_string:
+_p_30:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 2733
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__ctor
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__ctor:
-_p_30:
+.word 2736
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Message_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Message_string:
+_p_31:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 2738
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Type_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Type_string:
-_p_31:
+.word 2741
+	.no_dead_strip plt_System_Exception_get_StackTrace
+plt_System_Exception_get_StackTrace:
+_p_32:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 2743
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Message_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Message_string:
-_p_32:
+.word 2746
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_StackTrace_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_StackTrace_string:
+_p_33:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 2748
-	.no_dead_strip plt_System_Exception_get_StackTrace
-plt_System_Exception_get_StackTrace:
-_p_33:
+.word 2751
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateStackFrames_System_Exception
+plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateStackFrames_System_Exception:
+_p_34:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 2753
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_StackTrace_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_StackTrace_string:
-_p_34:
+.word 2756
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Frames_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Frames_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__:
+_p_35:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
 .word 2758
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateStackFrames_System_Exception
-plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateStackFrames_System_Exception:
-_p_35:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_WrapperSdkName_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_WrapperSdkName_string:
+_p_36:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
 .word 2763
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Frames_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Frames_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__:
-_p_36:
+	.no_dead_strip plt_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Exception_GetEnumerator
+plt_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Exception_GetEnumerator:
+_p_37:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 2765
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_WrapperSdkName_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_WrapperSdkName_string:
-_p_37:
+.word 2768
+	.no_dead_strip plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_Add_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException
+plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_Add_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException:
+_p_38:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 2770
-	.no_dead_strip plt_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Exception_GetEnumerator
-plt_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Exception_GetEnumerator:
-_p_38:
+.word 2779
+	.no_dead_strip plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_ToArray
+plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_ToArray:
+_p_39:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 2775
-	.no_dead_strip plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_Add_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException
-plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_Add_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException:
-_p_39:
+.word 2790
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_InnerExceptions_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_InnerExceptions_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__:
+_p_40:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 2786
-	.no_dead_strip plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_ToArray
-plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_ToArray:
-_p_40:
+.word 2801
+	.no_dead_strip plt_System_Diagnostics_StackTrace__ctor_System_Exception_bool
+plt_System_Diagnostics_StackTrace__ctor_System_Exception_bool:
+_p_41:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 2797
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_InnerExceptions_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_InnerExceptions_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__:
-_p_41:
+.word 2806
+	.no_dead_strip plt_System_Diagnostics_StackTrace_GetFrame_int
+plt_System_Diagnostics_StackTrace_GetFrame_int:
+_p_42:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 2808
-	.no_dead_strip plt_System_Diagnostics_StackTrace__ctor_System_Exception_bool
-plt_System_Diagnostics_StackTrace__ctor_System_Exception_bool:
-_p_42:
+.word 2811
+	.no_dead_strip plt_System_Reflection_MethodBase_op_Equality_System_Reflection_MethodBase_System_Reflection_MethodBase
+plt_System_Reflection_MethodBase_op_Equality_System_Reflection_MethodBase_System_Reflection_MethodBase:
+_p_43:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 2813
-	.no_dead_strip plt_System_Diagnostics_StackTrace_GetFrame_int
-plt_System_Diagnostics_StackTrace_GetFrame_int:
-_p_43:
+.word 2816
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__ctor
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__ctor:
+_p_44:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 2818
-	.no_dead_strip plt_System_Reflection_MethodBase_op_Equality_System_Reflection_MethodBase_System_Reflection_MethodBase
-plt_System_Reflection_MethodBase_op_Equality_System_Reflection_MethodBase_System_Reflection_MethodBase:
-_p_44:
+.word 2821
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_Address_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_Address_string:
+_p_45:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 2823
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__ctor
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__ctor:
-_p_45:
+.word 2826
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_Code_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_Code_string:
+_p_46:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 2828
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_Address_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_Address_string:
-_p_46:
+.word 2831
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_MethodName_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_MethodName_string:
+_p_47:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 2833
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_Code_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_Code_string:
-_p_47:
+.word 2836
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_ClassName_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_ClassName_string:
+_p_48:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 2838
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_MethodName_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_MethodName_string:
-_p_48:
+.word 2841
+	.no_dead_strip plt_Foundation_NSNumber_op_Implicit_int
+plt_Foundation_NSNumber_op_Implicit_int:
+_p_49:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 2843
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_ClassName_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_ClassName_string:
-_p_49:
+.word 2846
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_LineNumber_Foundation_NSNumber
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_LineNumber_Foundation_NSNumber:
+_p_50:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 2848
-	.no_dead_strip plt_Foundation_NSNumber_op_Implicit_int
-plt_Foundation_NSNumber_op_Implicit_int:
-_p_50:
+.word 2851
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_AnonymizePath_string
+plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_AnonymizePath_string:
+_p_51:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 2853
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_LineNumber_Foundation_NSNumber
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_LineNumber_Foundation_NSNumber:
-_p_51:
+.word 2856
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_FileName_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_FileName_string:
+_p_52:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
 .word 2858
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_AnonymizePath_string
-plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes_AnonymizePath_string:
-_p_52:
+	.no_dead_strip plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_Add_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame
+plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_Add_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame:
+_p_53:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
 .word 2863
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_FileName_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_FileName_string:
-_p_53:
+	.no_dead_strip plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_ToArray
+plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_ToArray:
+_p_54:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 2865
-	.no_dead_strip plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_Add_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame
-plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_Add_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame:
-_p_54:
+.word 2874
+	.no_dead_strip plt_System_Linq_Enumerable_Count_char_System_Collections_Generic_IEnumerable_1_char
+plt_System_Linq_Enumerable_Count_char_System_Collections_Generic_IEnumerable_1_char:
+_p_55:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 2870
-	.no_dead_strip plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_ToArray
-plt_System_Collections_Generic_List_1_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_ToArray:
-_p_55:
+.word 2885
+	.no_dead_strip plt_string_Contains_string
+plt_string_Contains_string:
+_p_56:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 2881
-	.no_dead_strip plt_System_Linq_Enumerable_Count_char_System_Collections_Generic_IEnumerable_1_char
-plt_System_Linq_Enumerable_Count_char_System_Collections_Generic_IEnumerable_1_char:
-_p_56:
+.word 2897
+	.no_dead_strip plt_System_Text_RegularExpressions_Regex_Replace_string_string_string
+plt_System_Text_RegularExpressions_Regex_Replace_string_string_string:
+_p_57:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 2892
-	.no_dead_strip plt_string_Contains_string
-plt_string_Contains_string:
-_p_57:
+.word 2902
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_LastSessionCrashReport
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_LastSessionCrashReport:
+_p_58:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 2904
-	.no_dead_strip plt_System_Text_RegularExpressions_Regex_Replace_string_string_string
-plt_System_Text_RegularExpressions_Regex_Replace_string_string_string:
-_p_58:
+.word 2907
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorReportCache_GetErrorReport_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport
+plt_Microsoft_Azure_Mobile_Crashes_ErrorReportCache_GetErrorReport_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport:
+_p_59:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 2909
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_LastSessionCrashReport
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_LastSessionCrashReport:
-_p_59:
+.word 2912
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_AttachmentWithText_string_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_AttachmentWithText_string_string:
+_p_60:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
 .word 2914
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorReportCache_GetErrorReport_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport
-plt_Microsoft_Azure_Mobile_Crashes_ErrorReportCache_GetErrorReport_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport:
-_p_60:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_AttachmentWithBinaryData_Foundation_NSData_string_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_AttachmentWithBinaryData_Foundation_NSData_string_string:
+_p_61:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
 .word 2919
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_AttachmentWithText_string_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_AttachmentWithText_string_string:
-_p_61:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithText_string_string
+plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithText_string_string:
+_p_62:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 2921
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_AttachmentWithBinaryData_Foundation_NSData_string_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_AttachmentWithBinaryData_Foundation_NSData_string_string:
-_p_62:
+.word 2924
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithBinary_byte___string_string
+plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithBinary_byte___string_string:
+_p_63:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
 .word 2926
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithText_string_string
-plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithText_string_string:
-_p_63:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_IncidentIdentifier
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_IncidentIdentifier:
+_p_64:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 2931
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithBinary_byte___string_string
-plt_Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithBinary_byte___string_string:
-_p_64:
+.word 2928
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppStartTime
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppStartTime:
+_p_65:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
 .word 2933
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_IncidentIdentifier
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_IncidentIdentifier:
-_p_65:
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppErrorTime
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppErrorTime:
+_p_66:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 2935
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppStartTime
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppStartTime:
-_p_66:
+.word 2938
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_Device
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_Device:
+_p_67:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 2940
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppErrorTime
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppErrorTime:
-_p_67:
+.word 2943
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Device__ctor_Microsoft_Azure_Mobile_iOS_Bindings_MSDevice
+plt_Microsoft_Azure_Mobile_Device__ctor_Microsoft_Azure_Mobile_iOS_Bindings_MSDevice:
+_p_68:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 2945
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_Device
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_Device:
-_p_68:
+.word 2948
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ReporterKey
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ReporterKey:
+_p_69:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 2950
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Device__ctor_Microsoft_Azure_Mobile_iOS_Bindings_MSDevice
-plt_Microsoft_Azure_Mobile_Device__ctor_Microsoft_Azure_Mobile_iOS_Bindings_MSDevice:
-_p_69:
+.word 2953
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_Signal
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_Signal:
+_p_70:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 2955
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ReporterKey
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ReporterKey:
-_p_70:
+.word 2958
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ExceptionName
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ExceptionName:
+_p_71:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 2960
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_Signal
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_Signal:
-_p_71:
+.word 2963
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ExceptionReason
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ExceptionReason:
+_p_72:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 2965
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ExceptionName
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ExceptionName:
-_p_72:
+.word 2968
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppProcessIdentifier
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppProcessIdentifier:
+_p_73:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 2970
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ExceptionReason
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ExceptionReason:
-_p_73:
+.word 2973
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_LoadWrapperExceptionData_string
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_LoadWrapperExceptionData_string:
+_p_74:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 2975
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppProcessIdentifier
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_AppProcessIdentifier:
-_p_74:
+.word 2978
+	.no_dead_strip plt_Foundation_NSData_ToArray
+plt_Foundation_NSData_ToArray:
+_p_75:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 2980
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_LoadWrapperExceptionData_string
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_LoadWrapperExceptionData_string:
-_p_75:
+.word 2983
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_CrashesUtils_DeserializeException_byte__
+plt_Microsoft_Azure_Mobile_Crashes_CrashesUtils_DeserializeException_byte__:
+_p_76:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 2985
-	.no_dead_strip plt_Foundation_NSData_ToArray
-plt_Foundation_NSData_ToArray:
-_p_76:
+.word 2988
+	.no_dead_strip plt_Foundation_NSDate_op_Explicit_Foundation_NSDate
+plt_Foundation_NSDate_op_Explicit_Foundation_NSDate:
+_p_77:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
 .word 2990
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_CrashesUtils_DeserializeException_byte__
-plt_Microsoft_Azure_Mobile_Crashes_CrashesUtils_DeserializeException_byte__:
-_p_77:
+	.no_dead_strip plt_System_DateTime_SpecifyKind_System_DateTime_System_DateTimeKind
+plt_System_DateTime_SpecifyKind_System_DateTime_System_DateTimeKind:
+_p_78:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
 .word 2995
-	.no_dead_strip plt_Foundation_NSDate_op_Explicit_Foundation_NSDate
-plt_Foundation_NSDate_op_Explicit_Foundation_NSDate:
-_p_78:
+	.no_dead_strip plt_System_DateTimeOffset_op_Implicit_System_DateTime
+plt_System_DateTimeOffset_op_Implicit_System_DateTime:
+_p_79:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 2997
-	.no_dead_strip plt_System_DateTime_SpecifyKind_System_DateTime_System_DateTimeKind
-plt_System_DateTime_SpecifyKind_System_DateTime_System_DateTimeKind:
-_p_79:
+.word 3000
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate__ctor
+plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate__ctor:
+_p_80:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 3002
-	.no_dead_strip plt_System_DateTimeOffset_op_Implicit_System_DateTime
-plt_System_DateTimeOffset_op_Implicit_System_DateTime:
-_p_80:
+.word 3005
+	.no_dead_strip plt_Foundation_NSMutableArray__ctor
+plt_Foundation_NSMutableArray__ctor:
+_p_81:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 3007
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate__ctor
-plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate__ctor:
-_p_81:
+.word 3010
+	.no_dead_strip plt_Foundation_NSMutableArray_Add_Foundation_NSObject
+plt_Foundation_NSMutableArray_Add_Foundation_NSObject:
+_p_82:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 3012
-	.no_dead_strip plt_Foundation_NSMutableArray__ctor
-plt_Foundation_NSMutableArray__ctor:
-_p_82:
+.word 3015
+	.no_dead_strip plt__jit_icall_mono_generic_class_init
+plt__jit_icall_mono_generic_class_init:
+_p_83:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 3017
-	.no_dead_strip plt_Foundation_NSMutableArray_Add_Foundation_NSObject
-plt_Foundation_NSMutableArray_Add_Foundation_NSObject:
-_p_83:
+.word 3020
+	.no_dead_strip plt_Microsoft_Azure_Mobile_MobileCenterLog_Warn_string_string
+plt_Microsoft_Azure_Mobile_MobileCenterLog_Warn_string_string:
+_p_84:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 3022
-	.no_dead_strip plt__jit_icall_mono_generic_class_init
-plt__jit_icall_mono_generic_class_init:
-_p_84:
+.word 3046
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_TryGetValue_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_
+plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_TryGetValue_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_:
+_p_85:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 3027
-	.no_dead_strip plt_Microsoft_Azure_Mobile_MobileCenterLog_Warn_string_string
-plt_Microsoft_Azure_Mobile_MobileCenterLog_Warn_string_string:
-_p_85:
+.word 3051
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport
+plt_Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport:
+_p_86:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 3053
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_TryGetValue_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_
-plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_TryGetValue_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_:
-_p_86:
+.word 3062
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_set_Item_string_Microsoft_Azure_Mobile_Crashes_ErrorReport
+plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_set_Item_string_Microsoft_Azure_Mobile_Crashes_ErrorReport:
+_p_87:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 3058
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport
-plt_Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport:
-_p_87:
+.word 3064
+	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor
+plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor:
+_p_88:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 3069
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_set_Item_string_Microsoft_Azure_Mobile_Crashes_ErrorReport
-plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport_set_Item_string_Microsoft_Azure_Mobile_Crashes_ErrorReport:
-_p_88:
+.word 3075
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes__ctor
+plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes__ctor:
+_p_89:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 3071
-	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor
-plt_System_Collections_Generic_Dictionary_2_string_Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor:
-_p_89:
+.word 3086
+	.no_dead_strip plt_System_Delegate_Combine_System_Delegate_System_Delegate
+plt_System_Delegate_Combine_System_Delegate_System_Delegate:
+_p_90:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 3082
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes__ctor
-plt_Microsoft_Azure_Mobile_Crashes_PlatformCrashes__ctor:
-_p_90:
+.word 3088
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_Crashes_get_BindingType
+plt_Microsoft_Azure_Mobile_Crashes_Crashes_get_BindingType:
+_p_91:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
 .word 3093
-	.no_dead_strip plt_System_Delegate_Combine_System_Delegate_System_Delegate
-plt_System_Delegate_Combine_System_Delegate_System_Delegate:
-_p_91:
+	.no_dead_strip plt_System_Delegate_Remove_System_Delegate_System_Delegate
+plt_System_Delegate_Remove_System_Delegate_System_Delegate:
+_p_92:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
 .word 3095
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_Crashes_get_BindingType
-plt_Microsoft_Azure_Mobile_Crashes_Crashes_get_BindingType:
-_p_92:
+	.no_dead_strip plt_System_IO_MemoryStream__ctor
+plt_System_IO_MemoryStream__ctor:
+_p_93:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
 .word 3100
-	.no_dead_strip plt_System_Delegate_Remove_System_Delegate_System_Delegate
-plt_System_Delegate_Remove_System_Delegate_System_Delegate:
-_p_93:
+	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter__ctor
+plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter__ctor:
+_p_94:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 3102
-	.no_dead_strip plt_System_IO_MemoryStream__ctor
-plt_System_IO_MemoryStream__ctor:
-_p_94:
+.word 3105
+	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Serialize_System_IO_Stream_object
+plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Serialize_System_IO_Stream_object:
+_p_95:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 3107
-	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter__ctor
-plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter__ctor:
-_p_95:
+.word 3110
+	.no_dead_strip plt_Microsoft_Azure_Mobile_MobileCenterLog_Warn_string_string_System_Exception
+plt_Microsoft_Azure_Mobile_MobileCenterLog_Warn_string_string_System_Exception:
+_p_96:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 3112
-	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Serialize_System_IO_Stream_object
-plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Serialize_System_IO_Stream_object:
-_p_96:
+.word 3115
+	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
+plt__jit_icall_mono_thread_get_undeniable_exception:
+_p_97:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 3117
-	.no_dead_strip plt_Microsoft_Azure_Mobile_MobileCenterLog_Warn_string_string_System_Exception
-plt_Microsoft_Azure_Mobile_MobileCenterLog_Warn_string_string_System_Exception:
-_p_97:
+.word 3120
+	.no_dead_strip plt_System_IO_MemoryStream_ToArray
+plt_System_IO_MemoryStream_ToArray:
+_p_98:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 3122
-	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
-plt__jit_icall_mono_thread_get_undeniable_exception:
-_p_98:
+.word 3159
+	.no_dead_strip plt_System_IO_MemoryStream__ctor_byte__
+plt_System_IO_MemoryStream__ctor_byte__:
+_p_99:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 3127
-	.no_dead_strip plt_System_IO_MemoryStream_ToArray
-plt_System_IO_MemoryStream_ToArray:
-_p_99:
+.word 3164
+	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Deserialize_System_IO_Stream
+plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Deserialize_System_IO_Stream:
+_p_100:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 3166
-	.no_dead_strip plt_System_IO_MemoryStream__ctor_byte__
-plt_System_IO_MemoryStream__ctor_byte__:
-_p_100:
+.word 3169
+	.no_dead_strip plt_System_Exception__ctor_string
+plt_System_Exception__ctor_string:
+_p_101:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 3171
-	.no_dead_strip plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Deserialize_System_IO_Stream
-plt_System_Runtime_Serialization_Formatters_Binary_BinaryFormatter_Deserialize_System_IO_Stream:
-_p_101:
+.word 3174
+	.no_dead_strip plt_System_Exception__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext
+plt_System_Exception__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext:
+_p_102:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 3176
-	.no_dead_strip plt_System_Exception__ctor_string
-plt_System_Exception__ctor_string:
-_p_102:
+.word 3179
+	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_TestCrashException__ctor
+plt_Microsoft_Azure_Mobile_Crashes_TestCrashException__ctor:
+_p_103:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 3181
-	.no_dead_strip plt_System_Exception__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext
-plt_System_Exception__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext:
-_p_103:
+.word 3184
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_104:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
 .word 3186
-	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_TestCrashException__ctor
-plt_Microsoft_Azure_Mobile_Crashes_TestCrashException__ctor:
-_p_104:
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_105:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 3191
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_105:
+.word 3252
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
+_p_106:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 3193
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_106:
+.word 3260
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
+_p_107:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 3259
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-_p_107:
+.word 3279
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_108:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 3267
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
-_p_108:
+.word 3327
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+_p_109:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 3286
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_109:
+.word 3351
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_110:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 3334
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
-_p_110:
+.word 3375
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_111:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 3358
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_111:
+.word 3418
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_112:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 3382
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_112:
+.word 3461
+	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
+plt__jit_icall_mono_delegate_begin_invoke:
+_p_113:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 3425
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_113:
+.word 3485
+	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
+plt__jit_icall_mono_delegate_end_invoke:
+_p_114:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 3468
-	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
-plt__jit_icall_mono_delegate_begin_invoke:
-_p_114:
+.word 3514
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_115:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 3492
-	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
-plt__jit_icall_mono_delegate_end_invoke:
-_p_115:
+.word 3569
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_116:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 3521
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_116:
+.word 3577
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_117:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 3576
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_117:
+.word 3627
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+_p_118:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 3584
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_118:
+.word 3635
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_119:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 3634
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
-_p_119:
+.word 3643
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
+_p_120:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 3642
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_120:
+.word 3674
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
+_p_121:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 3650
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_121:
+.word 3682
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_122:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 3681
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
-_p_122:
+.word 3714
+	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
+plt_System_Linq_Error_ArgumentNull_string:
+_p_123:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 3689
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_123:
+.word 3737
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_124:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 3721
-	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
-plt_System_Linq_Error_ArgumentNull_string:
-_p_124:
+.word 3760
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_125:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 3744
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_125:
+.word 3784
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_126:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 3767
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_126:
+.word 3836
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_127:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 3791
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_127:
+.word 3844
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_128:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 3833
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_128:
+.word 3886
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_129:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 3841
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_129:
+.word 3910
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_130:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 3864
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_130:
+.word 3918
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_131:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 3900
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_131:
+.word 3932
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+_p_132:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 3908
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_132:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #2120]
-br x16
-.word 3950
+.word 3946
 	.no_dead_strip plt__rgctx_fetch_20
 plt__rgctx_fetch_20:
 _p_133:
 adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #2128]
+ldr x16, [x16, #2120]
 br x16
-.word 3974
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_134:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #2136]
-br x16
-.word 3982
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_135:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #2144]
-br x16
-.word 3996
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
-_p_136:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #2152]
-br x16
-.word 4010
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_137:
-adrp x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGE+0
-add x16, x16, mono_aot_Microsoft_Azure_Mobile_Crashes_got@PAGEOFF
-ldr x16, [x16, #2160]
-br x16
-.word 4034
+.word 3970
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Microsoft_Azure_Mobile_Crashes_got, 2168
+.lcomm mono_aot_Microsoft_Azure_Mobile_Crashes_got, 2128
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -8058,13 +8096,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 133,2168,138,212,66,391195135,0,6239
-	.long 128,8,8,10,0,26,9480,3232
-	.long 2584,1832,0,2200,2528,2008,0,1360
+	.long 132,2128,134,211,66,391195135,0,6147
+	.long 128,8,8,10,0,25,9384,3224
+	.long 2576,1824,0,2192,2520,2000,0,1360
 	.long 320,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 117,65,24,107,70,139,74,219,162,99,118,251,176,86,108,80
+	.byte 204,200,185,116,133,96,250,125,203,253,187,221,199,157,202,35
 	.globl _mono_aot_module_Microsoft_Azure_Mobile_Crashes_info
 	.align 3
 _mono_aot_module_Microsoft_Azure_Mobile_Crashes_info:
@@ -10892,7 +10930,7 @@ Lfde24_start:
 LDIFF_SYM430=Lme_18 - Microsoft_Azure_Mobile_Crashes_PlatformCrashes_GenerateStackFrames_System_Exception
 	.long LDIFF_SYM430
 	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,148,12,149,11,68,150,10,151,9,68,152,8,153,7,68,154,6
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,149,9,68,150,8,151,7,68,152,6,153,5,68,154,4
 	.align 3
 Lfde24_end:
 
@@ -11193,7 +11231,7 @@ Lfde30_start:
 LDIFF_SYM466=Lme_1e - Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithText_string_string
 	.long LDIFF_SYM466
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde30_end:
 
@@ -11247,7 +11285,7 @@ Lfde31_start:
 LDIFF_SYM473=Lme_1f - Microsoft_Azure_Mobile_Crashes_ErrorAttachmentLog_PlatformAttachmentWithBinary_byte___string_string
 	.long LDIFF_SYM473
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde31_end:
 
@@ -11615,7 +11653,7 @@ Lfde34_start:
 LDIFF_SYM533=Lme_22 - Microsoft_Azure_Mobile_Crashes_ErrorReport__ctor_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport
 	.long LDIFF_SYM533
 	.long 0
-	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18,152,17,68,153,16,154,15
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,152,15,68,153,14,154,13
 	.align 3
 Lfde34_end:
 
@@ -12432,7 +12470,7 @@ LDIFF_SYM637=LTDIE_74 - Ldebug_info_start
 
 LDIFF_SYM638=LTDIE_18_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM638
-	.byte 2,141,32,3
+	.byte 2,141,24,3
 	.asciz "crashes"
 
 LDIFF_SYM639=LDIE_I4 - Ldebug_info_start
@@ -12447,7 +12485,7 @@ LDIFF_SYM640=LTDIE_57_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM641=LTDIE_73_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM641
-	.byte 2,141,48,11
+	.byte 2,141,40,11
 	.asciz "V_0"
 
 LDIFF_SYM642=LTDIE_60_REFERENCE - Ldebug_info_start
@@ -12457,7 +12495,7 @@ LDIFF_SYM642=LTDIE_60_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM643=LTDIE_74_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM643
-	.byte 1,103,0
+	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -12472,7 +12510,7 @@ Lfde48_start:
 LDIFF_SYM645=Lme_30 - Microsoft_Azure_Mobile_Crashes_CrashesDelegate_CrashesDidFailSendingErrorReport_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_Foundation_NSError
 	.long LDIFF_SYM645
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,68,153,7
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
 	.align 3
 Lfde48_end:
 
@@ -12679,7 +12717,7 @@ Lfde53_start:
 LDIFF_SYM667=Lme_35 - Microsoft_Azure_Mobile_Crashes_Crashes_add_SendingErrorReport_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventHandler
 	.long LDIFF_SYM667
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde53_end:
 
@@ -12723,7 +12761,7 @@ Lfde54_start:
 LDIFF_SYM672=Lme_36 - Microsoft_Azure_Mobile_Crashes_Crashes_remove_SendingErrorReport_Microsoft_Azure_Mobile_Crashes_SendingErrorReportEventHandler
 	.long LDIFF_SYM672
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde54_end:
 
@@ -12767,7 +12805,7 @@ Lfde55_start:
 LDIFF_SYM677=Lme_37 - Microsoft_Azure_Mobile_Crashes_Crashes_add_SentErrorReport_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventHandler
 	.long LDIFF_SYM677
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde55_end:
 
@@ -12811,7 +12849,7 @@ Lfde56_start:
 LDIFF_SYM682=Lme_38 - Microsoft_Azure_Mobile_Crashes_Crashes_remove_SentErrorReport_Microsoft_Azure_Mobile_Crashes_SentErrorReportEventHandler
 	.long LDIFF_SYM682
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde56_end:
 
@@ -12855,7 +12893,7 @@ Lfde57_start:
 LDIFF_SYM687=Lme_39 - Microsoft_Azure_Mobile_Crashes_Crashes_add_FailedToSendErrorReport_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventHandler
 	.long LDIFF_SYM687
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde57_end:
 
@@ -12899,7 +12937,7 @@ Lfde58_start:
 LDIFF_SYM692=Lme_3a - Microsoft_Azure_Mobile_Crashes_Crashes_remove_FailedToSendErrorReport_Microsoft_Azure_Mobile_Crashes_FailedToSendErrorReportEventHandler
 	.long LDIFF_SYM692
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2
 	.align 3
 Lfde58_end:
 
@@ -15946,7 +15984,7 @@ Lfde92_end:
 	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_REF>"
 	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF"
 
-	.byte 1,78
+	.byte 1,71
 	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 	.quad Lme_9b
 
@@ -15970,7 +16008,7 @@ Lfde93_start:
 LDIFF_SYM1135=Lme_9b - System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 	.long LDIFF_SYM1135
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde93_end:
 
@@ -15980,7 +16018,7 @@ Lfde93_end:
 	.asciz "System.Array:InternalArray__ICollection_get_Count"
 	.asciz "System_Array_InternalArray__ICollection_get_Count"
 
-	.byte 1,68
+	.byte 1,61
 	.quad System_Array_InternalArray__ICollection_get_Count
 	.quad Lme_9c
 
@@ -16014,7 +16052,7 @@ Lfde94_end:
 	.asciz "System.Array:InternalArray__ICollection_get_IsReadOnly"
 	.asciz "System_Array_InternalArray__ICollection_get_IsReadOnly"
 
-	.byte 1,73
+	.byte 1,66
 	.quad System_Array_InternalArray__ICollection_get_IsReadOnly
 	.quad Lme_9d
 
@@ -16048,7 +16086,7 @@ Lfde95_end:
 	.asciz "System.Array:InternalArray__ICollection_Clear"
 	.asciz "System_Array_InternalArray__ICollection_Clear"
 
-	.byte 1,83
+	.byte 1,76
 	.quad System_Array_InternalArray__ICollection_Clear
 	.quad Lme_9e
 
@@ -16082,7 +16120,7 @@ Lfde96_end:
 	.asciz "System.Array:InternalArray__ICollection_Add<T_REF>"
 	.asciz "System_Array_InternalArray__ICollection_Add_T_REF_T_REF"
 
-	.byte 1,88
+	.byte 1,81
 	.quad System_Array_InternalArray__ICollection_Add_T_REF_T_REF
 	.quad Lme_9f
 
@@ -16121,7 +16159,7 @@ Lfde97_end:
 	.asciz "System.Array:InternalArray__ICollection_Remove<T_REF>"
 	.asciz "System_Array_InternalArray__ICollection_Remove_T_REF_T_REF"
 
-	.byte 1,93
+	.byte 1,86
 	.quad System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
 	.quad Lme_a0
 
@@ -16160,7 +16198,7 @@ Lfde98_end:
 	.asciz "System.Array:InternalArray__ICollection_Contains<T_REF>"
 	.asciz "System_Array_InternalArray__ICollection_Contains_T_REF_T_REF"
 
-	.byte 1,98
+	.byte 1,91
 	.quad System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
 	.quad Lme_a1
 
@@ -16214,7 +16252,7 @@ Lfde99_end:
 	.asciz "System.Array:InternalArray__ICollection_CopyTo<T_REF>"
 	.asciz "System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int"
 
-	.byte 1,123
+	.byte 1,116
 	.quad System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
 	.quad Lme_a2
 
@@ -16223,17 +16261,17 @@ Lfde99_end:
 
 LDIFF_SYM1160=LTDIE_127_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1160
-	.byte 1,104,3
+	.byte 2,141,24,3
 	.asciz "param0"
 
 LDIFF_SYM1161=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM1161
-	.byte 1,105,3
+	.byte 2,141,32,3
 	.asciz "param1"
 
 LDIFF_SYM1162=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1162
-	.byte 1,106,0
+	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -16248,7 +16286,7 @@ Lfde100_start:
 LDIFF_SYM1164=Lme_a2 - System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
 	.long LDIFF_SYM1164
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,149,9,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6
 	.align 3
 Lfde100_end:
 
@@ -16445,7 +16483,7 @@ Lfde102_end:
 	.asciz "System.Array:InternalArray__Insert<T_REF>"
 	.asciz "System_Array_InternalArray__Insert_T_REF_int_T_REF"
 
-	.byte 1,160,1
+	.byte 1,136,1
 	.quad System_Array_InternalArray__Insert_T_REF_int_T_REF
 	.quad Lme_a5
 
@@ -16489,7 +16527,7 @@ Lfde103_end:
 	.asciz "System.Array:InternalArray__RemoveAt"
 	.asciz "System_Array_InternalArray__RemoveAt_int"
 
-	.byte 1,165,1
+	.byte 1,141,1
 	.quad System_Array_InternalArray__RemoveAt_int
 	.quad Lme_a6
 
@@ -16528,7 +16566,7 @@ Lfde104_end:
 	.asciz "System.Array:InternalArray__IndexOf<T_REF>"
 	.asciz "System_Array_InternalArray__IndexOf_T_REF_T_REF"
 
-	.byte 1,170,1
+	.byte 1,146,1
 	.quad System_Array_InternalArray__IndexOf_T_REF_T_REF
 	.quad Lme_a7
 
@@ -16582,7 +16620,7 @@ Lfde105_end:
 	.asciz "System.Array:InternalArray__get_Item<T_REF>"
 	.asciz "System_Array_InternalArray__get_Item_T_REF_int"
 
-	.byte 1,197,1
+	.byte 1,173,1
 	.quad System_Array_InternalArray__get_Item_T_REF_int
 	.quad Lme_a8
 
@@ -16626,7 +16664,7 @@ Lfde106_end:
 	.asciz "System.Array:InternalArray__set_Item<T_REF>"
 	.asciz "System_Array_InternalArray__set_Item_T_REF_int_T_REF"
 
-	.byte 1,207,1
+	.byte 1,183,1
 	.quad System_Array_InternalArray__set_Item_T_REF_int_T_REF
 	.quad Lme_a9
 
@@ -16665,7 +16703,7 @@ Lfde107_start:
 LDIFF_SYM1220=Lme_a9 - System_Array_InternalArray__set_Item_T_REF_int_T_REF
 	.long LDIFF_SYM1220
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4
 	.align 3
 Lfde107_end:
 
@@ -17985,7 +18023,7 @@ LDIFF_SYM1406=LTDIE_139 - Ldebug_info_start
 	.asciz "System.Array/InternalEnumerator`1<T_CHAR>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_CHAR__ctor_System_Array"
 
-	.byte 1,239,1
+	.byte 1,215,1
 	.quad System_Array_InternalEnumerator_1_T_CHAR__ctor_System_Array
 	.quad Lme_bd
 
@@ -18024,7 +18062,7 @@ Lfde126_end:
 	.asciz "System.Array/InternalEnumerator`1<T_CHAR>:Dispose"
 	.asciz "System_Array_InternalEnumerator_1_T_CHAR_Dispose"
 
-	.byte 1,245,1
+	.byte 1,221,1
 	.quad System_Array_InternalEnumerator_1_T_CHAR_Dispose
 	.quad Lme_be
 
@@ -18058,7 +18096,7 @@ Lfde127_end:
 	.asciz "System.Array/InternalEnumerator`1<T_CHAR>:MoveNext"
 	.asciz "System_Array_InternalEnumerator_1_T_CHAR_MoveNext"
 
-	.byte 1,250,1
+	.byte 1,226,1
 	.quad System_Array_InternalEnumerator_1_T_CHAR_MoveNext
 	.quad Lme_bf
 
@@ -18097,7 +18135,7 @@ Lfde128_end:
 	.asciz "System.Array/InternalEnumerator`1<T_CHAR>:get_Current"
 	.asciz "System_Array_InternalEnumerator_1_T_CHAR_get_Current"
 
-	.byte 1,130,2
+	.byte 1,234,1
 	.quad System_Array_InternalEnumerator_1_T_CHAR_get_Current
 	.quad Lme_c0
 
@@ -18128,17 +18166,17 @@ Lfde129_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array/InternalEnumerator`1<T_CHAR>:System.Collections.IEnumerator.get_Current"
-	.asciz "System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Current"
+	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_CHAR>"
+	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR"
 
-	.byte 1,146,2
-	.quad System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Current
+	.byte 1,71
+	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR
 	.quad Lme_c1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1421=LDIE_I - Ldebug_info_start
+LDIFF_SYM1421=LTDIE_127_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1421
 	.byte 2,141,16,0
 
@@ -18150,48 +18188,14 @@ Lfde130_start:
 
 	.long 0
 	.align 3
-	.quad System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Current
+	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR
 
-LDIFF_SYM1423=Lme_c1 - System_Array_InternalEnumerator_1_T_CHAR_System_Collections_IEnumerator_get_Current
+LDIFF_SYM1423=Lme_c1 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR
 	.long LDIFF_SYM1423
 	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29
 	.align 3
 Lfde130_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__IEnumerable_GetEnumerator<T_CHAR>"
-	.asciz "System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR"
-
-	.byte 1,78
-	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR
-	.quad Lme_c2
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1424=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1424
-	.byte 2,141,16,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1425=Lfde131_end - Lfde131_start
-	.long LDIFF_SYM1425
-Lfde131_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR
-
-LDIFF_SYM1426=Lme_c2 - System_Array_InternalArray__IEnumerable_GetEnumerator_T_CHAR
-	.long LDIFF_SYM1426
-	.long 0
-	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29
-	.align 3
-Lfde131_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18199,34 +18203,73 @@ Lfde131_end:
 	.asciz "System.Array:InternalArray__ICollection_Add<T_CHAR>"
 	.asciz "System_Array_InternalArray__ICollection_Add_T_CHAR_T_CHAR"
 
-	.byte 1,88
+	.byte 1,81
 	.quad System_Array_InternalArray__ICollection_Add_T_CHAR_T_CHAR
-	.quad Lme_ca
+	.quad Lme_c9
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1427=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1427
+LDIFF_SYM1424=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1424
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM1428=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1428
+LDIFF_SYM1425=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1425
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1429=Lfde132_end - Lfde132_start
-	.long LDIFF_SYM1429
-Lfde132_start:
+LDIFF_SYM1426=Lfde131_end - Lfde131_start
+	.long LDIFF_SYM1426
+Lfde131_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__ICollection_Add_T_CHAR_T_CHAR
 
-LDIFF_SYM1430=Lme_ca - System_Array_InternalArray__ICollection_Add_T_CHAR_T_CHAR
+LDIFF_SYM1427=Lme_c9 - System_Array_InternalArray__ICollection_Add_T_CHAR_T_CHAR
+	.long LDIFF_SYM1427
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde131_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Array:InternalArray__ICollection_Remove<T_CHAR>"
+	.asciz "System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR"
+
+	.byte 1,86
+	.quad System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR
+	.quad Lme_ca
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1428=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1428
+	.byte 2,141,16,3
+	.asciz "param0"
+
+LDIFF_SYM1429=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1429
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1430=Lfde132_end - Lfde132_start
 	.long LDIFF_SYM1430
+Lfde132_start:
+
+	.long 0
+	.align 3
+	.quad System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR
+
+LDIFF_SYM1431=Lme_ca - System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR
+	.long LDIFF_SYM1431
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
@@ -18235,95 +18278,56 @@ Lfde132_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Remove<T_CHAR>"
-	.asciz "System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR"
+	.asciz "System.Array:InternalArray__ICollection_Contains<T_CHAR>"
+	.asciz "System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR"
 
-	.byte 1,93
-	.quad System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR
+	.byte 1,91
+	.quad System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR
 	.quad Lme_cb
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1431=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1431
-	.byte 2,141,16,3
-	.asciz "param0"
-
-LDIFF_SYM1432=LDIE_I4 - Ldebug_info_start
+LDIFF_SYM1432=LTDIE_127_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1432
-	.byte 0,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM1433=Lfde133_end - Lfde133_start
-	.long LDIFF_SYM1433
-Lfde133_start:
-
-	.long 0
-	.align 3
-	.quad System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR
-
-LDIFF_SYM1434=Lme_cb - System_Array_InternalArray__ICollection_Remove_T_CHAR_T_CHAR
-	.long LDIFF_SYM1434
-	.long 0
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
-	.align 3
-Lfde133_end:
-
-.section __DWARF, __debug_info,regular,debug
-
-	.byte 2
-	.asciz "System.Array:InternalArray__ICollection_Contains<T_CHAR>"
-	.asciz "System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR"
-
-	.byte 1,98
-	.quad System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR
-	.quad Lme_cc
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM1435=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1435
 	.byte 1,106,3
 	.asciz "param0"
 
-LDIFF_SYM1436=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1436
+LDIFF_SYM1433=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1433
 	.byte 3,141,192,0,11
 	.asciz "length"
 
-LDIFF_SYM1437=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1437
+LDIFF_SYM1434=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1434
 	.byte 1,105,11
 	.asciz "i"
 
-LDIFF_SYM1438=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1438
+LDIFF_SYM1435=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1435
 	.byte 1,104,11
 	.asciz "value"
 
-LDIFF_SYM1439=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1439
+LDIFF_SYM1436=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1436
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1440=Lfde134_end - Lfde134_start
-	.long LDIFF_SYM1440
-Lfde134_start:
+LDIFF_SYM1437=Lfde133_end - Lfde133_start
+	.long LDIFF_SYM1437
+Lfde133_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR
 
-LDIFF_SYM1441=Lme_cc - System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR
-	.long LDIFF_SYM1441
+LDIFF_SYM1438=Lme_cb - System_Array_InternalArray__ICollection_Contains_T_CHAR_T_CHAR
+	.long LDIFF_SYM1438
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5
 	.align 3
-Lfde134_end:
+Lfde133_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18331,43 +18335,43 @@ Lfde134_end:
 	.asciz "System.Array:InternalArray__ICollection_CopyTo<T_CHAR>"
 	.asciz "System_Array_InternalArray__ICollection_CopyTo_T_CHAR_T_CHAR___int"
 
-	.byte 1,123
+	.byte 1,116
 	.quad System_Array_InternalArray__ICollection_CopyTo_T_CHAR_T_CHAR___int
-	.quad Lme_cd
+	.quad Lme_cc
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1442=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1442
-	.byte 1,104,3
+LDIFF_SYM1439=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1439
+	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM1443=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM1443
-	.byte 1,105,3
+LDIFF_SYM1440=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM1440
+	.byte 2,141,32,3
 	.asciz "param1"
 
-LDIFF_SYM1444=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1444
-	.byte 1,106,0
+LDIFF_SYM1441=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1441
+	.byte 2,141,40,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1445=Lfde135_end - Lfde135_start
-	.long LDIFF_SYM1445
-Lfde135_start:
+LDIFF_SYM1442=Lfde134_end - Lfde134_start
+	.long LDIFF_SYM1442
+Lfde134_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__ICollection_CopyTo_T_CHAR_T_CHAR___int
 
-LDIFF_SYM1446=Lme_cd - System_Array_InternalArray__ICollection_CopyTo_T_CHAR_T_CHAR___int
-	.long LDIFF_SYM1446
+LDIFF_SYM1443=Lme_cc - System_Array_InternalArray__ICollection_CopyTo_T_CHAR_T_CHAR___int
+	.long LDIFF_SYM1443
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,148,10,149,9,68,150,8,151,7,68,152,6,153,5,68,154,4
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6
 	.align 3
-Lfde135_end:
+Lfde134_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_140:
@@ -18376,69 +18380,69 @@ LTDIE_140:
 	.asciz "_InternalEnumerator`1"
 
 	.byte 32,16
-LDIFF_SYM1447=LTDIE_12 - Ldebug_info_start
-	.long LDIFF_SYM1447
+LDIFF_SYM1444=LTDIE_12 - Ldebug_info_start
+	.long LDIFF_SYM1444
 	.byte 2,35,0,6
 	.asciz "array"
 
-LDIFF_SYM1448=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1448
+LDIFF_SYM1445=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1445
 	.byte 2,35,16,6
 	.asciz "idx"
 
-LDIFF_SYM1449=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1449
+LDIFF_SYM1446=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1446
 	.byte 2,35,24,0,7
 	.asciz "_InternalEnumerator`1"
 
-LDIFF_SYM1450=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1450
+LDIFF_SYM1447=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1447
 LTDIE_140_POINTER:
 
 	.byte 13
-LDIFF_SYM1451=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1451
+LDIFF_SYM1448=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1448
 LTDIE_140_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1452=LTDIE_140 - Ldebug_info_start
-	.long LDIFF_SYM1452
+LDIFF_SYM1449=LTDIE_140 - Ldebug_info_start
+	.long LDIFF_SYM1449
 	.byte 2
 	.asciz "System.Array/InternalEnumerator`1<T_REF>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_REF__ctor_System_Array"
 
-	.byte 1,239,1
+	.byte 1,215,1
 	.quad System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-	.quad Lme_d1
+	.quad Lme_d0
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1453=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1453
+LDIFF_SYM1450=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1450
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM1454=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1454
+LDIFF_SYM1451=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1451
 	.byte 2,141,24,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1455=Lfde136_end - Lfde136_start
-	.long LDIFF_SYM1455
-Lfde136_start:
+LDIFF_SYM1452=Lfde135_end - Lfde135_start
+	.long LDIFF_SYM1452
+Lfde135_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 
-LDIFF_SYM1456=Lme_d1 - System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-	.long LDIFF_SYM1456
+LDIFF_SYM1453=Lme_d0 - System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+	.long LDIFF_SYM1453
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde136_end:
+Lfde135_end:
 
 .section __DWARF, __debug_info,regular,debug
 LTDIE_141:
@@ -18447,69 +18451,69 @@ LTDIE_141:
 	.asciz "System_Threading_Tasks_Task`1"
 
 	.byte 80,16
-LDIFF_SYM1457=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM1457
+LDIFF_SYM1454=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM1454
 	.byte 2,35,0,6
 	.asciz "m_result"
 
-LDIFF_SYM1458=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1458
+LDIFF_SYM1455=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1455
 	.byte 2,35,72,0,7
 	.asciz "System_Threading_Tasks_Task`1"
 
-LDIFF_SYM1459=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1459
+LDIFF_SYM1456=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1456
 LTDIE_141_POINTER:
 
 	.byte 13
-LDIFF_SYM1460=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1460
+LDIFF_SYM1457=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1457
 LTDIE_141_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1461=LTDIE_141 - Ldebug_info_start
-	.long LDIFF_SYM1461
+LDIFF_SYM1458=LTDIE_141 - Ldebug_info_start
+	.long LDIFF_SYM1458
 	.byte 2
 	.asciz "System.Threading.Tasks.Task`1<TResult_BOOL>:.ctor"
 	.asciz "System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL"
 
 	.byte 4,104
 	.quad System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
-	.quad Lme_d2
+	.quad Lme_d1
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1462=LTDIE_141_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1462
+LDIFF_SYM1459=LTDIE_141_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1459
 	.byte 2,141,16,3
 	.asciz "param0"
 
-LDIFF_SYM1463=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1463
+LDIFF_SYM1460=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1460
 	.byte 2,141,24,11
 	.asciz "V_0"
 
-LDIFF_SYM1464=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1464
+LDIFF_SYM1461=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1461
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1465=Lfde137_end - Lfde137_start
-	.long LDIFF_SYM1465
-Lfde137_start:
+LDIFF_SYM1462=Lfde136_end - Lfde136_start
+	.long LDIFF_SYM1462
+Lfde136_start:
 
 	.long 0
 	.align 3
 	.quad System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
 
-LDIFF_SYM1466=Lme_d2 - System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
-	.long LDIFF_SYM1466
+LDIFF_SYM1463=Lme_d1 - System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
+	.long LDIFF_SYM1463
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde137_end:
+Lfde136_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -18517,43 +18521,43 @@ Lfde137_end:
 	.asciz "System.Array:InternalArray__get_Item<T_CHAR>"
 	.asciz "System_Array_InternalArray__get_Item_T_CHAR_int"
 
-	.byte 1,197,1
+	.byte 1,173,1
 	.quad System_Array_InternalArray__get_Item_T_CHAR_int
-	.quad Lme_d3
+	.quad Lme_d2
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1467=LTDIE_127_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1467
+LDIFF_SYM1464=LTDIE_127_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1464
 	.byte 2,141,24,3
 	.asciz "param0"
 
-LDIFF_SYM1468=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1468
+LDIFF_SYM1465=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1465
 	.byte 1,106,11
 	.asciz "value"
 
-LDIFF_SYM1469=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1469
+LDIFF_SYM1466=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1466
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1470=Lfde138_end - Lfde138_start
-	.long LDIFF_SYM1470
-Lfde138_start:
+LDIFF_SYM1467=Lfde137_end - Lfde137_start
+	.long LDIFF_SYM1467
+Lfde137_start:
 
 	.long 0
 	.align 3
 	.quad System_Array_InternalArray__get_Item_T_CHAR_int
 
-LDIFF_SYM1471=Lme_d3 - System_Array_InternalArray__get_Item_T_CHAR_int
-	.long LDIFF_SYM1471
+LDIFF_SYM1468=Lme_d2 - System_Array_InternalArray__get_Item_T_CHAR_int
+	.long LDIFF_SYM1468
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
 	.align 3
-Lfde138_end:
+Lfde137_end:
 
 .section __DWARF, __debug_info,regular,debug
 

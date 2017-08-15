@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 4,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:43 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:08:39 EDT 2017)"
 	.asciz "Microsoft.Azure.Mobile.Analytics.dll"
 	.asciz ""
 
@@ -134,7 +134,7 @@ Microsoft_Azure_Mobile_Analytics_Analytics_get_BindingType:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 92
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 88
 	.byte 0,0,159,231,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_1:
@@ -148,7 +148,7 @@ Microsoft_Azure_Mobile_Analytics_Analytics_IsEnabledAsync:
 bl _p_1
 
 	.byte 255,0,0,226,0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 96
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 92
 	.byte 8,128,159,231
 bl _p_2
 
@@ -165,7 +165,7 @@ Microsoft_Azure_Mobile_Analytics_Analytics_SetEnabledAsync_bool:
 bl _p_3
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 100
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 96
 	.byte 8,128,159,231,0,15,160,227
 bl _p_4
 
@@ -199,16 +199,16 @@ Microsoft_Azure_Mobile_Analytics_Analytics_StringDictToNSDict_System_Collections
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,2,223,77,226,0,160,160,225,10,0,160,225,0,16,154,229,0,128,159,229
 	.byte 0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 100
+	.byte 8,128,159,231,15,224,160,225,44,240,17,229,0,128,159,229,0,0,0,234
 	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 104
-	.byte 8,128,159,231,15,224,160,225,16,240,17,229,0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 108
 	.byte 8,128,159,231
 bl _p_8
 
 	.byte 0,0,141,229,10,0,160,225,0,16,154,229,0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 112
-	.byte 8,128,159,231,15,224,160,225,28,240,17,229,0,128,159,229,0,0,0,234
 	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 108
+	.byte 8,128,159,231,15,224,160,225,68,240,17,229,0,128,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 104
 	.byte 8,128,159,231
 bl _p_8
 
@@ -222,7 +222,7 @@ Lme_5:
 	.align 2
 	.no_dead_strip System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL
 System_Threading_Tasks_Task_FromResult_TResult_BOOL_TResult_BOOL:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
 .loc 2 5532 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,128,141,229,4,0,205,229,0,0,157,229
@@ -248,7 +248,7 @@ Lme_7:
 	.align 2
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL
 System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 3 104 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,4,0,141,229,8,16,205,229,4,0,157,229,0,31,160,227
@@ -316,89 +316,89 @@ plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_IsEnabled:
 _p_1:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 128,425
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 124,448
 	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_bool_bool
 plt_System_Threading_Tasks_Task_FromResult_bool_bool:
 _p_2:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 132,430
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 128,453
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_SetEnabled_bool
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_SetEnabled_bool:
 _p_3:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 136,442
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 132,465
 	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_object_object
 plt_System_Threading_Tasks_Task_FromResult_object_object:
 _p_4:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 140,447
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 136,470
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_Analytics_StringDictToNSDict_System_Collections_Generic_IDictionary_2_string_string
 plt_Microsoft_Azure_Mobile_Analytics_Analytics_StringDictToNSDict_System_Collections_Generic_IDictionary_2_string_string:
 _p_5:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 144,459
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 140,482
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string_Foundation_NSDictionary
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string_Foundation_NSDictionary:
 _p_6:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 148,464
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 144,487
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string
 plt_Microsoft_Azure_Mobile_Analytics_iOS_Bindings_MSAnalytics_TrackEvent_string:
 _p_7:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 152,469
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 148,492
 	.no_dead_strip plt_System_Linq_Enumerable_ToArray_string_System_Collections_Generic_IEnumerable_1_string
 plt_System_Linq_Enumerable_ToArray_string_System_Collections_Generic_IEnumerable_1_string:
 _p_8:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 156,474
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 152,497
 	.no_dead_strip plt_Foundation_NSDictionary_FromObjectsAndKeys_object___object__
 plt_Foundation_NSDictionary_FromObjectsAndKeys_object___object__:
 _p_9:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 160,486
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 156,509
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_10:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 164,515
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 160,538
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_11:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 168,523
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 164,546
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_12:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 172,549
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 168,572
 	.no_dead_strip plt__rgctx_fetch_1
 plt__rgctx_fetch_1:
 _p_13:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 176,557
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 172,580
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_14:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 180,579
+	.long mono_aot_Microsoft_Azure_Mobile_Analytics_got - . + 176,602
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Microsoft_Azure_Mobile_Analytics_got, 188
+.lcomm mono_aot_Microsoft_Azure_Mobile_Analytics_got, 184
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -498,13 +498,13 @@ _mono_aot_file_info:
 	.align 2
 	.long unbox_trampoline_addresses
 
-	.long 32,188,15,9,66,391195135,0,676
-	.long 128,4,4,10,0,26,1544,856
+	.long 31,184,15,9,66,391195135,0,699
+	.long 128,4,4,10,0,25,1568,856
 	.long 376,200,0,312,352,248,0,176
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 226,26,65,53,24,190,114,95,213,71,158,73,54,32,226,128
+	.byte 190,247,23,213,35,107,177,170,20,87,221,126,86,103,122,0
 	.globl _mono_aot_module_Microsoft_Azure_Mobile_Analytics_info
 	.align 2
 _mono_aot_module_Microsoft_Azure_Mobile_Analytics_info:

@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:38 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:07:31 EDT 2017)"
 	.asciz "System.Core.dll"
 	.asciz ""
 
@@ -121,7 +121,7 @@ jit_code_start:
 	.align 4
 	.no_dead_strip System_Linq_Error_ArgumentNull_string
 System_Linq_Error_ArgumentNull_string:
-.file 1 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/external/corefx/src/System.Linq/src/System/Linq/Errors.cs"
+.file 1 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/external/corefx/src/System.Linq/src/System/Linq/Errors.cs"
 .loc 1 9 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -129,7 +129,7 @@ System_Linq_Error_ArgumentNull_string:
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #200]
 .word 0xd2801201
 bl _p_1
 .word 0xf90013a0
@@ -145,7 +145,7 @@ Lme_0:
 	.align 4
 	.no_dead_strip System_Linq_Enumerable_Count_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF
 System_Linq_Enumerable_Count_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/external/corefx/src/System.Linq/src/System/Linq/Count.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/external/corefx/src/System.Linq/src/System/Linq/Count.cs"
 .loc 2 14 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -211,14 +211,14 @@ bl _p_7
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xeb01001f
 .word 0x540001c3
 .word 0xf9401300
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0x9343fc22
 .word 0x8b020000
 .word 0x39400000
@@ -238,7 +238,7 @@ ldr x1, [x16, #216]
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #224]
+ldr x15, [x16, #216]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -253,7 +253,7 @@ bl _p_8
 .word 0xaa0003ef
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0x92800bf0
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -272,7 +272,7 @@ bl _p_8
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #224]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -291,7 +291,7 @@ ldr x15, [x16, #232]
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #240]
+ldr x15, [x16, #232]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -314,7 +314,7 @@ ldr x0, [x16, #0]
 bl _p_9
 bl _p_10
 bl _p_11
-.word 0xd2801ae0
+.word 0xd2801480
 .word 0xaa1103e1
 bl _p_12
 
@@ -323,7 +323,7 @@ Lme_1:
 	.align 4
 	.no_dead_strip System_Linq_Enumerable_ToArray_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF
 System_Linq_Enumerable_ToArray_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/external/corefx/src/System.Linq/src/System/Linq/ToCollection.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/external/corefx/src/System.Linq/src/System/Linq/ToCollection.cs"
 .loc 3 13 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -388,7 +388,7 @@ LDIFF_SYM3=ut_end - ut_5
 	.align 4
 	.no_dead_strip System_Collections_Generic_ArrayBuilder_1_T_REF_get_Capacity
 System_Collections_Generic_ArrayBuilder_1_T_REF_get_Capacity:
-.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/external/corefx/src/Common/src/System/Collections/Generic/ArrayBuilder.cs"
+.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/external/corefx/src/Common/src/System/Collections/Generic/ArrayBuilder.cs"
 .loc 4 38 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -457,7 +457,7 @@ System_Collections_Generic_ArrayBuilder_1_T_REF_get_Item_int:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_12
 
@@ -541,7 +541,7 @@ System_Collections_Generic_ArrayBuilder_1_T_REF_UncheckedAdd_T_REF:
 .word 0xaa0303e0
 .word 0xf9400fa2
 .word 0xf9400063
-.word 0xf9404c70
+.word 0xf9404870
 .word 0xd63f0200
 .loc 4 123 0
 .word 0x910003bf
@@ -625,8 +625,17 @@ bl _p_20
 bl _p_21
 .loc 4 144 0
 .word 0xf900033a
-.word 0xaa1903e0
-bl _p_22
+.word 0xd349ff20
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
 .loc 4 145 0
 .word 0xa9415fb6
 .word 0xa94267b8
@@ -640,7 +649,7 @@ Lme_a:
 	.align 4
 	.no_dead_strip System_Collections_Generic_EnumerableHelpers_ToArray_T_REF_System_Collections_Generic_IEnumerable_1_T_REF
 System_Collections_Generic_EnumerableHelpers_ToArray_T_REF_System_Collections_Generic_IEnumerable_1_T_REF:
-.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/external/corefx/src/Common/src/System/Collections/Generic/EnumerableHelpers.cs"
+.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/external/corefx/src/Common/src/System/Collections/Generic/EnumerableHelpers.cs"
 .loc 5 71 0 prologue_end
 .word 0xa9b87bfd
 .word 0x910003fd
@@ -655,7 +664,7 @@ System_Collections_Generic_EnumerableHelpers_ToArray_T_REF_System_Collections_Ge
 .word 0xf90027a0
 .word 0xf9002ba0
 .word 0xf94013a0
-bl _p_23
+bl _p_22
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
@@ -666,7 +675,7 @@ bl _p_4
 .word 0xb4000560
 .loc 5 74 0
 .word 0xf94013a0
-bl _p_24
+bl _p_23
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xf9400321
@@ -681,25 +690,25 @@ bl _p_24
 .word 0x35000180
 .loc 5 77 0
 .word 0xf94013a0
-bl _p_25
+bl _p_24
 .word 0xf94013a0
-bl _p_26
+bl _p_25
 .word 0x3980b410
 .word 0xb5000050
-bl _p_27
+bl _p_26
 .word 0xf94013a0
-bl _p_28
+bl _p_27
 .word 0xf9400000
 .word 0x1400002a
 .loc 5 80 0
 .word 0xf94013a0
-bl _p_29
+bl _p_28
 .word 0xaa1a03e1
 bl _p_20
 .word 0xaa0003fa
 .loc 5 81 0
 .word 0xf94013a0
-bl _p_30
+bl _p_29
 .word 0xaa0003ef
 .word 0xaa1903e0
 .word 0xaa1a03e1
@@ -716,28 +725,28 @@ bl _p_30
 .word 0x9100a3a0
 .word 0xf9003ba0
 .word 0xf94013a0
-bl _p_31
+bl _p_30
 .word 0xaa0003ef
 .word 0xf9403ba0
 .word 0xd2800021
-bl _p_32
+bl _p_31
 .loc 5 86 0
 .word 0x9100a3a0
 .word 0xf90037a0
 .word 0xf94013a0
-bl _p_31
+bl _p_30
 .word 0xaa0003ef
 .word 0xf94037a0
 .word 0xaa1a03e1
-bl _p_33
+bl _p_32
 .loc 5 87 0
 .word 0x9100a3a0
 .word 0xf90033a0
 .word 0xf94013a0
-bl _p_31
+bl _p_30
 .word 0xaa0003ef
 .word 0xf94033a0
-bl _p_34
+bl _p_33
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c87bfd
@@ -752,7 +761,7 @@ b System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_bool
 	.align 4
 	.no_dead_strip System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_bool
 System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_bool:
-.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.10.0.36/src/mono/external/corefx/src/Common/src/System/Collections/Generic/LargeArrayBuilder.cs"
+.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.14.0.3/src/mono/external/corefx/src/Common/src/System/Collections/Generic/LargeArrayBuilder.cs"
 .loc 6 72 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -760,7 +769,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_bool:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_35
+bl _p_34
 .word 0xaa0003ef
 .word 0xf9400ba0
 .word 0xd29fffe1
@@ -781,7 +790,7 @@ b System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_int
 	.no_dead_strip System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_int
 System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_int:
 .loc 6 87 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xf90013af
@@ -796,34 +805,49 @@ System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_int:
 .word 0xf9001720
 .loc 6 91 0
 .word 0xf94013a0
-bl _p_36
+bl _p_35
 .word 0xf94013a0
-bl _p_37
+bl _p_36
 .word 0x3980b410
 .word 0xb5000050
-bl _p_27
+bl _p_26
 .word 0xf94013a0
-bl _p_38
+bl _p_37
 .word 0xf9400000
-.word 0xf9001fa0
-.word 0xf90023a0
-.word 0xf9001320
-.word 0x91008320
-bl _p_22
-.word 0xf9401fa0
-.word 0xf94023a1
-.word 0xf9001ba0
+.word 0xaa0003e1
+.word 0xf9001321
+.word 0x91008322
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
 .word 0xf9000720
-.word 0x91002320
-bl _p_22
-.word 0xf9401ba0
+.word 0x91002321
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .loc 6 92 0
 .word 0xb9801ba0
 .word 0xb9000320
 .loc 6 93 0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_d:
@@ -845,11 +869,11 @@ System_Collections_Generic_LargeArrayBuilder_1_T_REF_AddRange_System_Collections
 .word 0xaa0103fa
 .word 0xf9001bbf
 .word 0xf94017a0
-bl _p_39
+bl _p_38
 .word 0xaa0003ef
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0x92800bf0
+.word 0x928000f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -873,7 +897,7 @@ bl _p_39
 .word 0xb9002b38
 .loc 6 149 0
 .word 0xf94017a0
-bl _p_40
+bl _p_39
 .word 0xaa0003ef
 .word 0xaa1903e0
 bl System_Collections_Generic_LargeArrayBuilder_1_T_REF_AllocateBuffer
@@ -888,7 +912,7 @@ bl System_Collections_Generic_LargeArrayBuilder_1_T_REF_AllocateBuffer
 .word 0xf9401ba0
 .word 0xf9002fa0
 .word 0xf94017a0
-bl _p_41
+bl _p_40
 .word 0xaa0003ef
 .word 0xf9402fa1
 .word 0xaa0103e0
@@ -901,7 +925,7 @@ bl _p_41
 .word 0xf9402ba1
 .word 0xaa1a03e0
 .word 0xf9400343
-.word 0xf9404c70
+.word 0xf9404870
 .word 0xd63f0200
 .loc 6 142 0
 .word 0xf9401ba1
@@ -910,7 +934,7 @@ bl _p_41
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #224]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -937,7 +961,7 @@ ldr x15, [x16, #232]
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #240]
+ldr x15, [x16, #232]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -976,7 +1000,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_REF_CopyTo_T_REF___int_int:
 .word 0x14000019
 .loc 6 178 0
 .word 0xf9402ba0
-bl _p_42
+bl _p_41
 .word 0xaa0003ef
 .word 0xaa1703e0
 .word 0xaa1603e1
@@ -1036,7 +1060,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_REF_GetBuffer_int:
 .word 0x91004320
 .word 0xf9001ba0
 .word 0xf94013a0
-bl _p_43
+bl _p_42
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xb9800801
@@ -1051,7 +1075,7 @@ bl _p_43
 .word 0x51000400
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_43
+bl _p_42
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -1071,7 +1095,7 @@ bl _p_43
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_12
 
@@ -1094,7 +1118,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_REF_ToArray:
 .word 0x910083a0
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_44
+bl _p_43
 .word 0xaa0003ef
 .word 0xf9401ba1
 .word 0xaa1a03e0
@@ -1108,7 +1132,7 @@ bl System_Collections_Generic_LargeArrayBuilder_1_T_REF_TryMove_T_REF___
 .word 0xb9802f40
 .word 0xf90023a0
 .word 0xf9400fa0
-bl _p_45
+bl _p_44
 .word 0xf94023a1
 bl _p_20
 .word 0xf90013a0
@@ -1118,7 +1142,7 @@ bl _p_20
 .word 0xb9802f40
 .word 0xf9001fa0
 .word 0xf9400fa0
-bl _p_44
+bl _p_43
 .word 0xaa0003ef
 .word 0xf9401ba1
 .word 0xf9401fa3
@@ -1142,27 +1166,34 @@ b System_Collections_Generic_LargeArrayBuilder_1_T_REF_TryMove_T_REF___
 	.no_dead_strip System_Collections_Generic_LargeArrayBuilder_1_T_REF_TryMove_T_REF___
 System_Collections_Generic_LargeArrayBuilder_1_T_REF_TryMove_T_REF___:
 .loc 6 288 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400ba0
-.word 0xf9400401
-.word 0xf9400fa0
-.word 0xf9001ba1
-.word 0xf9000001
-bl _p_22
-.word 0xf9401ba0
-.loc 6 289 0
 .word 0xf9400ba1
+.word 0xf9400420
+.word 0xf9400fa2
+.word 0xf9000040
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.loc 6 289 0
 .word 0xb9802c20
 .word 0xf9400421
 .word 0xb9801821
 .word 0x6b01001f
 .word 0x9a9f17e0
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_12:
@@ -1184,7 +1215,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_REF_AllocateBuffer:
 .word 0xb9802f40
 .word 0xd280011e
 .word 0x6b1e001f
-.word 0x540004a2
+.word 0x54000662
 .loc 6 310 0
 .word 0xb9802f40
 .word 0x34000080
@@ -1202,14 +1233,22 @@ System_Collections_Generic_LargeArrayBuilder_1_T_REF_AllocateBuffer:
 .word 0xaa1903f8
 .loc 6 312 0
 .word 0xf94017a0
-bl _p_46
+bl _p_45
 .word 0xaa1903e1
 bl _p_20
-.word 0xf9001fa0
 .word 0xf9001340
-.word 0x91008340
-bl _p_22
-.word 0xf9401fa0
+.word 0x91008341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .loc 6 313 0
 .word 0xf9400740
 .word 0xf9401342
@@ -1219,13 +1258,21 @@ bl _p_22
 bl _p_21
 .loc 6 314 0
 .word 0xf9401340
-.word 0xf9001ba0
 .word 0xf9000740
-.word 0x91002340
-bl _p_22
-.word 0xf9401ba0
+.word 0x91002341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .loc 6 315 0
-.word 0x14000026
+.word 0x1400002d
 .loc 6 322 0
 .word 0xb9802f40
 .word 0xd280011e
@@ -1241,11 +1288,11 @@ bl _p_22
 .word 0xf9401340
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_47
+bl _p_46
 .word 0xaa0003ef
 .word 0xf9401ba0
 .word 0xf9401fa1
-bl _p_48
+bl _p_47
 .loc 6 339 0
 .word 0xb9802f40
 .word 0xb9800341
@@ -1260,14 +1307,22 @@ bl _p_48
 .word 0xaa1803f9
 .loc 6 342 0
 .word 0xf94017a0
-bl _p_46
+bl _p_45
 .word 0xaa1903e1
 bl _p_20
-.word 0xf9001ba0
 .word 0xf9001340
-.word 0x91008340
-bl _p_22
-.word 0xf9401ba0
+.word 0x91008341
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .loc 6 343 0
 .word 0xb9002b5f
 .loc 6 345 0
@@ -1290,7 +1345,7 @@ System_Linq_Enumerable_Count_TSource_GSHAREDVT_System_Collections_Generic_IEnume
 .word 0xf90017af
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_49
+bl _p_48
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf9001bbf
@@ -1298,7 +1353,7 @@ bl _p_49
 .word 0xb400107a
 .loc 2 19 0
 .word 0xf94017a0
-bl _p_50
+bl _p_49
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
@@ -1309,10 +1364,10 @@ bl _p_4
 .word 0xb4000180
 .loc 2 22 0
 .word 0xf94017a0
-bl _p_51
+bl _p_50
 .word 0xf90033a0
 .word 0xf94017a0
-bl _p_52
+bl _p_51
 .word 0xaa0003e1
 .word 0xf94033af
 .word 0xaa1903e0
@@ -1321,7 +1376,7 @@ bl _p_52
 .word 0x1400006a
 .loc 2 25 0
 .word 0xf94017a0
-bl _p_53
+bl _p_52
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
@@ -1332,10 +1387,10 @@ bl _p_4
 .word 0xb40001a0
 .loc 2 28 0
 .word 0xf94017a0
-bl _p_54
+bl _p_53
 .word 0xf90033a0
 .word 0xf94017a0
-bl _p_55
+bl _p_54
 .word 0xaa0003e2
 .word 0xf94033af
 .word 0xaa1903e0
@@ -1352,14 +1407,14 @@ bl _p_55
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0xeb01001f
 .word 0x540001c3
 .word 0xf9401300
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #208]
 .word 0x9343fc22
 .word 0x8b020000
 .word 0x39400000
@@ -1379,7 +1434,7 @@ ldr x1, [x16, #216]
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #224]
+ldr x15, [x16, #216]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1390,10 +1445,10 @@ ldr x15, [x16, #224]
 .word 0xd2800019
 .loc 2 38 0
 .word 0xf94017a0
-bl _p_56
+bl _p_55
 .word 0xf90033a0
 .word 0xf94017a0
-bl _p_57
+bl _p_56
 .word 0xaa0003e1
 .word 0xf94033af
 .word 0xaa1a03e0
@@ -1413,7 +1468,7 @@ bl _p_57
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #224]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1432,7 +1487,7 @@ ldr x15, [x16, #232]
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #240]
+ldr x15, [x16, #232]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1455,7 +1510,7 @@ ldr x0, [x16, #0]
 bl _p_9
 bl _p_10
 bl _p_11
-.word 0xd2801ae0
+.word 0xd2801480
 .word 0xaa1103e1
 bl _p_12
 
@@ -1471,7 +1526,7 @@ System_Linq_Enumerable_ToArray_TSource_GSHAREDVT_System_Collections_Generic_IEnu
 .word 0xf90013af
 .word 0xf9000fa0
 .word 0xf94013a0
-bl _p_58
+bl _p_57
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf90017bf
@@ -1479,7 +1534,7 @@ bl _p_58
 .word 0xb4000420
 .loc 3 18 0
 .word 0xf94013a0
-bl _p_59
+bl _p_58
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400fa0
@@ -1489,20 +1544,20 @@ bl _p_4
 .word 0xaa1903e0
 .word 0xb5000160
 .word 0xf94013a0
-bl _p_60
+bl _p_59
 .word 0xf9001ba0
 .word 0xf94013a0
-bl _p_61
+bl _p_60
 .word 0xaa0003e1
 .word 0xf9401baf
 .word 0xf9400fa0
 .word 0xd63f0020
 .word 0x1400000a
 .word 0xf94013a0
-bl _p_62
+bl _p_61
 .word 0xf9001ba0
 .word 0xf94013a0
-bl _p_63
+bl _p_62
 .word 0xaa0003e1
 .word 0xf9401baf
 .word 0xaa1903e0
@@ -1537,7 +1592,7 @@ System_Collections_Generic_ArrayBuilder_1_T_GSHAREDVT_get_Capacity:
 .word 0xf90017af
 .word 0xf90013a0
 .word 0xf94017a0
-bl _p_64
+bl _p_63
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf9001bbf
@@ -1572,7 +1627,7 @@ System_Collections_Generic_ArrayBuilder_1_T_GSHAREDVT_get_Count:
 .word 0xf90013af
 .word 0xf9000fa0
 .word 0xf94013a0
-bl _p_65
+bl _p_64
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf90017bf
@@ -1604,7 +1659,7 @@ System_Collections_Generic_ArrayBuilder_1_T_GSHAREDVT_get_Item_int:
 .word 0xf90017a0
 .word 0xf9001ba1
 .word 0xf9401fa0
-bl _p_66
+bl _p_65
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0x91003c10
@@ -1650,7 +1705,7 @@ bl _p_66
 .word 0xf9400f00
 .word 0xf9401300
 .word 0xf9401fa0
-bl _p_67
+bl _p_66
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
@@ -1659,7 +1714,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_12
 
@@ -1680,7 +1735,7 @@ System_Collections_Generic_ArrayBuilder_1_T_GSHAREDVT_Add_T_GSHAREDVT:
 .word 0xaa0003fa
 .word 0xf90013a1
 .word 0xf94017a0
-bl _p_68
+bl _p_67
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf9001bbf
@@ -1690,10 +1745,10 @@ bl _p_68
 .word 0xb9800000
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_69
+bl _p_68
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_70
+bl _p_69
 .word 0xaa0003e1
 .word 0xf94027af
 .word 0xaa1a03e0
@@ -1711,10 +1766,10 @@ bl _p_70
 .word 0x11000400
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_69
+bl _p_68
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_71
+bl _p_70
 .word 0xaa0003e2
 .word 0xf94023a1
 .word 0xf94027af
@@ -1722,10 +1777,10 @@ bl _p_71
 .word 0xd63f0040
 .loc 4 74 0
 .word 0xf94017a0
-bl _p_69
+bl _p_68
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_72
+bl _p_71
 .word 0xaa0003e2
 .word 0xf94023af
 .word 0xaa1a03e0
@@ -1755,7 +1810,7 @@ System_Collections_Generic_ArrayBuilder_1_T_GSHAREDVT_UncheckedAdd_T_GSHAREDVT:
 .word 0xf9000fa0
 .word 0xf90013a1
 .word 0xf94017a0
-bl _p_73
+bl _p_72
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xd2800001
@@ -1790,7 +1845,7 @@ bl _p_73
 .word 0xf9401320
 .word 0xf9401720
 .word 0xf94017a0
-bl _p_74
+bl _p_73
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
@@ -1800,7 +1855,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_12
 
@@ -1823,15 +1878,15 @@ System_Collections_Generic_ArrayBuilder_1_T_GSHAREDVT_EnsureCapacity_int:
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xf94023a0
-bl _p_75
+bl _p_74
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0xf90027bf
 .word 0xf94023a0
-bl _p_76
+bl _p_75
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_77
+bl _p_76
 .word 0xaa0003e1
 .word 0xf9402baf
 .word 0xaa1903e0
@@ -1854,20 +1909,20 @@ bl _p_77
 .word 0x110006e0
 .word 0xd29fffe1
 .word 0xf2affde1
-bl _p_78
+bl _p_77
 .word 0x93407c00
 .word 0xaa0003f5
 .loc 4 137 0
 .word 0xaa1503e0
 .word 0xaa1a03e1
-bl _p_78
+bl _p_77
 .word 0x93407c00
 .word 0xaa0003f5
 .loc 4 139 0
 .word 0xaa1503e0
 .word 0xf9002ba0
 .word 0xf94023a0
-bl _p_79
+bl _p_78
 .word 0xf9402ba1
 bl _p_20
 .word 0xaa0003fa
@@ -1896,7 +1951,17 @@ bl _p_21
 .word 0xd1000400
 .word 0x8b000320
 .word 0xf900001a
-bl _p_22
+.word 0xd349fc00
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0000
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x1, [x16, #16]
+.word 0x8b010000
+.word 0xd280003e
+.word 0x3900001e
 .loc 4 145 0
 .word 0xa9415bb5
 .word 0xa94263b7
@@ -1918,7 +1983,7 @@ System_Collections_Generic_EnumerableHelpers_ToArray_T_GSHAREDVT_System_Collecti
 .word 0xf9001baf
 .word 0xaa0003fa
 .word 0xf9401ba0
-bl _p_80
+bl _p_79
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0x91003c10
@@ -1941,7 +2006,7 @@ bl _p_80
 .word 0xf9400b22
 .word 0xd63f0040
 .word 0xf9401ba0
-bl _p_81
+bl _p_80
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1a03e0
@@ -1952,10 +2017,10 @@ bl _p_4
 .word 0xb4000500
 .loc 5 74 0
 .word 0xf9401ba0
-bl _p_82
+bl _p_81
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_83
+bl _p_82
 .word 0xaa0003e1
 .word 0xf94023af
 .word 0xaa1703e0
@@ -1967,25 +2032,25 @@ bl _p_83
 .word 0x35000120
 .loc 5 77 0
 .word 0xf9401ba0
-bl _p_84
+bl _p_83
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_85
+bl _p_84
 .word 0xf94023af
 .word 0xd63f0000
 .word 0x14000039
 .loc 5 80 0
 .word 0xf9401ba0
-bl _p_86
+bl _p_85
 .word 0xaa1a03e1
 bl _p_20
 .word 0xaa0003fa
 .loc 5 81 0
 .word 0xf9401ba0
-bl _p_87
+bl _p_86
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_88
+bl _p_87
 .word 0xaa0003e3
 .word 0xf94023af
 .word 0xaa1703e0
@@ -2000,10 +2065,10 @@ bl _p_88
 .word 0x8b000300
 .word 0xf90033a0
 .word 0xf9401ba0
-bl _p_89
+bl _p_88
 .word 0xf90037a0
 .word 0xf9401ba0
-bl _p_90
+bl _p_89
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037af
@@ -2014,10 +2079,10 @@ bl _p_90
 .word 0x8b000300
 .word 0xf9002ba0
 .word 0xf9401ba0
-bl _p_89
+bl _p_88
 .word 0xf9002fa0
 .word 0xf9401ba0
-bl _p_91
+bl _p_90
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -2028,10 +2093,10 @@ bl _p_91
 .word 0x8b000300
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_89
+bl _p_88
 .word 0xf90027a0
 .word 0xf9401ba0
-bl _p_92
+bl _p_91
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf94027af
@@ -2058,16 +2123,16 @@ System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT__ctor_bool:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_93
+bl _p_92
 .word 0xf90017a0
 .word 0xf94017a0
 .word 0xb9800000
 .word 0xf90017bf
 .word 0xf94013a0
-bl _p_94
+bl _p_93
 .word 0xf9001ba0
 .word 0xf94013a0
-bl _p_95
+bl _p_94
 .word 0xaa0003e2
 .word 0xf9401baf
 .word 0xf9400ba0
@@ -2089,14 +2154,14 @@ b System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT__ctor_int
 	.no_dead_strip System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT__ctor_int
 System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT__ctor_int:
 .loc 6 87 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xa90167b8
 .word 0xf90017af
 .word 0xaa0003f9
 .word 0xf90013a1
 .word 0xf94017a0
-bl _p_96
+bl _p_95
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0xf9001bbf
@@ -2106,29 +2171,43 @@ bl _p_96
 .word 0xd63f0040
 .loc 6 91 0
 .word 0xf94017a0
-bl _p_97
-.word 0xf9002fa0
+bl _p_96
+.word 0xf90023a0
 .word 0xf94017a0
-bl _p_98
-.word 0xf9402faf
+bl _p_97
+.word 0xf94023af
 .word 0xd63f0000
-.word 0xf9002ba0
 .word 0xaa0003e1
-.word 0xf9400f00
-.word 0xd1000400
-.word 0x8b000320
-.word 0xf90027a1
-.word 0xf9000001
-bl _p_22
-.word 0xf94027a0
-.word 0xf9402ba1
-.word 0xf9401300
-.word 0xd1000400
-.word 0x8b000320
-.word 0xf90023a1
-.word 0xf9000001
-bl _p_22
-.word 0xf94023a0
+.word 0xf9400f02
+.word 0xd1000442
+.word 0x8b020322
+.word 0xf9000041
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+.word 0xf9401301
+.word 0xd1000421
+.word 0x8b010321
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .loc 6 92 0
 .word 0xf9401700
 .word 0xd1000400
@@ -2138,7 +2217,7 @@ bl _p_22
 .loc 6 93 0
 .word 0xa94167b8
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 
 Lme_21:
@@ -2160,7 +2239,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_AddRange_System_Colle
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xf9401fa0
-bl _p_99
+bl _p_98
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0x91003c10
@@ -2179,10 +2258,10 @@ bl _p_99
 .word 0x910003f7
 .word 0xf90023bf
 .word 0xf9401fa0
-bl _p_100
+bl _p_99
 .word 0xf90033a0
 .word 0xf9401fa0
-bl _p_101
+bl _p_100
 .word 0xaa0003e1
 .word 0xf94033af
 .word 0xaa1a03e0
@@ -2225,10 +2304,10 @@ bl _p_101
 .word 0xb9000016
 .loc 6 149 0
 .word 0xf9401fa0
-bl _p_102
+bl _p_101
 .word 0xf90033a0
 .word 0xf9401fa0
-bl _p_103
+bl _p_102
 .word 0xaa0003e1
 .word 0xf94033af
 .word 0xaa1903e0
@@ -2250,10 +2329,10 @@ bl _p_103
 .word 0xf94023a0
 .word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_104
+bl _p_103
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_105
+bl _p_104
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf94043af
@@ -2277,7 +2356,7 @@ bl _p_105
 .word 0xf9401700
 .word 0xf9401b00
 .word 0xf9401fa0
-bl _p_106
+bl _p_105
 .word 0xaa0003e2
 .word 0xf94033a0
 .word 0xf94037a1
@@ -2289,7 +2368,7 @@ bl _mono_gsharedvt_value_copy
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #224]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -2328,7 +2407,7 @@ ldr x15, [x16, #232]
 
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x15, [x16, #240]
+ldr x15, [x16, #232]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -2342,7 +2421,7 @@ ldr x15, [x16, #240]
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd28017e0
+.word 0xd2801180
 .word 0xaa1103e1
 bl _p_12
 
@@ -2368,7 +2447,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_CopyTo_T_GSHAREDVT___
 .word 0xaa0203f9
 .word 0xaa0303fa
 .word 0xf94027a0
-bl _p_107
+bl _p_106
 .word 0xaa0003f6
 .word 0xb98002c0
 .word 0xf9002bbf
@@ -2376,10 +2455,10 @@ bl _p_107
 .word 0x1400001a
 .loc 6 178 0
 .word 0xf94027a0
-bl _p_108
+bl _p_107
 .word 0xf90033a0
 .word 0xf94027a0
-bl _p_109
+bl _p_108
 .word 0xaa0003e2
 .word 0xf94033af
 .word 0xaa1703e0
@@ -2389,7 +2468,7 @@ bl _p_109
 .loc 6 181 0
 .word 0xb9801aa1
 .word 0xaa1a03e0
-bl _p_110
+bl _p_109
 .word 0x93407c00
 .word 0xaa0003f4
 .loc 6 182 0
@@ -2433,7 +2512,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_GetBuffer_int:
 .word 0xaa0003f9
 .word 0xf90013a1
 .word 0xf94017a0
-bl _p_111
+bl _p_110
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0xf9001bbf
@@ -2444,10 +2523,10 @@ bl _p_111
 .word 0x8b000320
 .word 0xf90023a0
 .word 0xf94017a0
-bl _p_112
+bl _p_111
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_113
+bl _p_112
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf94027af
@@ -2470,10 +2549,10 @@ bl _p_113
 .word 0x51000400
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_112
+bl _p_111
 .word 0xf9002ba0
 .word 0xf94017a0
-bl _p_114
+bl _p_113
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
@@ -2505,7 +2584,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_ToArray:
 .word 0xf90013af
 .word 0xaa0003fa
 .word 0xf94013a0
-bl _p_115
+bl _p_114
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf90017bf
@@ -2513,10 +2592,10 @@ bl _p_115
 .word 0x9100c3a0
 .word 0xf90023a0
 .word 0xf94013a0
-bl _p_116
+bl _p_115
 .word 0xf90027a0
 .word 0xf94013a0
-bl _p_117
+bl _p_116
 .word 0xaa0003e2
 .word 0xf94023a1
 .word 0xf94027af
@@ -2534,7 +2613,7 @@ bl _p_117
 .word 0xb9800000
 .word 0xf9002fa0
 .word 0xf94013a0
-bl _p_118
+bl _p_117
 .word 0xf9402fa1
 bl _p_20
 .word 0xf9001ba0
@@ -2547,10 +2626,10 @@ bl _p_20
 .word 0xb9800000
 .word 0xf90027a0
 .word 0xf94013a0
-bl _p_116
+bl _p_115
 .word 0xf9002ba0
 .word 0xf94013a0
-bl _p_119
+bl _p_118
 .word 0xaa0003e4
 .word 0xf94023a1
 .word 0xf94027a3
@@ -2575,31 +2654,38 @@ b System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_TryMove_T_GSHAREDVT
 	.no_dead_strip System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_TryMove_T_GSHAREDVT___
 System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_TryMove_T_GSHAREDVT___:
 .loc 6 288 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb8
 .word 0xf90017af
 .word 0xf9000fa0
 .word 0xf90013a1
 .word 0xf94017a0
-bl _p_120
+bl _p_119
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0xf9001bbf
 .word 0xf9400700
-.word 0xd1000401
-.word 0xf9400fa0
-.word 0x8b010000
-.word 0xf9400001
-.word 0xf94013a0
-.word 0xf90023a1
-.word 0xf9000001
-bl _p_22
-.word 0xf94023a0
+.word 0xd1000400
+.word 0xf9400fa1
+.word 0x8b000020
+.word 0xf9400000
+.word 0xf94013a2
+.word 0xf9000040
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
 .loc 6 289 0
 .word 0xf9400b00
 .word 0xd1000400
-.word 0xf9400fa1
 .word 0x8b000020
 .word 0xb9800000
 .word 0xf9400702
@@ -2611,7 +2697,7 @@ bl _p_22
 .word 0x9a9f17e0
 .word 0xf9400bb8
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_26:
@@ -2631,7 +2717,7 @@ System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_AllocateBuffer:
 .word 0xf90017af
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_121
+bl _p_120
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0xf9001bbf
@@ -2641,7 +2727,7 @@ bl _p_121
 .word 0xb9800000
 .word 0xd280011e
 .word 0x6b1e001f
-.word 0x54000782
+.word 0x54000922
 .loc 6 310 0
 .word 0xf9400720
 .word 0xd1000400
@@ -2660,22 +2746,29 @@ bl _p_121
 .word 0x8b000340
 .word 0xb9800001
 .word 0xaa1803e0
-bl _p_110
+bl _p_109
 .word 0x93407c00
 .word 0xaa0003f8
 .loc 6 312 0
 .word 0xf94017a0
-bl _p_122
+bl _p_121
 .word 0xaa1803e1
 bl _p_20
-.word 0xaa0003e1
-.word 0xf9400f20
-.word 0xd1000400
-.word 0x8b000340
-.word 0xf90027a1
-.word 0xf9000001
-bl _p_22
-.word 0xf94027a0
+.word 0xf9400f21
+.word 0xd1000421
+.word 0x8b010341
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .loc 6 313 0
 .word 0xf9401320
 .word 0xd1000400
@@ -2696,16 +2789,24 @@ bl _p_21
 .word 0xf9400f20
 .word 0xd1000400
 .word 0x8b000340
-.word 0xf9400001
-.word 0xf9401320
-.word 0xd1000400
-.word 0x8b000340
-.word 0xf90023a1
-.word 0xf9000001
-bl _p_22
-.word 0xf94023a0
+.word 0xf9400000
+.word 0xf9401321
+.word 0xd1000421
+.word 0x8b010341
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .loc 6 315 0
-.word 0x1400003d
+.word 0x14000043
 .loc 6 322 0
 .word 0xf9400720
 .word 0xd1000400
@@ -2729,10 +2830,10 @@ bl _p_22
 .word 0xf9400000
 .word 0xf90027a0
 .word 0xf94017a0
-bl _p_123
+bl _p_122
 .word 0xf9002ba0
 .word 0xf94017a0
-bl _p_124
+bl _p_123
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027a1
@@ -2752,22 +2853,29 @@ bl _p_124
 .word 0x8b020342
 .word 0xb9800042
 .word 0x4b020021
-bl _p_110
+bl _p_109
 .word 0x93407c00
 .word 0xaa0003f8
 .loc 6 342 0
 .word 0xf94017a0
-bl _p_122
+bl _p_121
 .word 0xaa1803e1
 bl _p_20
-.word 0xaa0003e1
-.word 0xf9400f20
-.word 0xd1000400
-.word 0x8b000340
-.word 0xf90023a1
-.word 0xf9000001
-bl _p_22
-.word 0xf94023a0
+.word 0xf9400f21
+.word 0xd1000421
+.word 0x8b010341
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
 .loc 6 343 0
 .word 0xf9401b20
 .word 0xd1000400
@@ -2884,19 +2992,20 @@ unwind_info:
 	.byte 153,7,68,154,6,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,16,12,31,0,68,14,48,157,6,158
 	.byte 5,68,13,29,68,154,4,13,12,31,0,68,14,32,157,4,158,3,68,13,29,19,12,31,0,68,14,80,157,10,158,9
 	.byte 68,13,29,68,150,8,68,153,7,26,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153
-	.byte 3,68,154,2,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,16,12,31,0,68,14,80,157
-	.byte 10,158,9,68,13,29,68,153,8,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,33
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,148,9,68,149,8,150,7,68,151,6,152,5,68,153,4,154
-	.byte 3,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,16,12,31,0,68,14,80,157,10,158,9,68,13,29
-	.byte 68,154,8,13,12,31,0,68,14,64,157,8,158,7,68,13,29,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68
-	.byte 152,6,153,5,68,154,4,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,18,12,31
-	.byte 0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151
-	.byte 8,152,7,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7,28,12,31,0,68,14,96,157,12,158
-	.byte 11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,23,12,31,0,68,14,112,157,14,158,13,68,13
-	.byte 29,68,151,12,152,11,68,153,10,154,9,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,27,12
+	.byte 3,68,154,2,19,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,153,14,154,13,21,12,31,0,68,14,96,157
+	.byte 12,158,11,68,13,29,68,152,10,153,9,68,154,8,33,12,31,0,68,14,96,157,12,158,11,68,13,29,68,147,10,148
+	.byte 9,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153
+	.byte 6,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8,21,12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 68,152,6,153,5,68,154,4,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,18,12
+	.byte 31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68
+	.byte 151,8,152,7,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7,16,12,31,0,68,14,80,157,10
+	.byte 158,9,68,13,29,68,153,8,28,12,31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7
+	.byte 68,153,6,154,5,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151,12,152,11,68,153,10,154,9,13,12,31
+	.byte 0,68,14,64,157,8,158,7,68,13,29,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7,27,12
 	.byte 31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,153,13,68,154,12,31,12,31,0,68,14
 	.byte 112,157,14,158,13,68,13,29,68,148,12,149,11,68,150,10,151,9,68,152,8,153,7,68,154,6,18,12,31,0,68,14
-	.byte 96,157,12,158,11,68,13,29,68,153,10,154,9,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8
+	.byte 96,157,12,158,11,68,13,29,68,152,10,153,9,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,153,10,154,9
+	.byte 16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 
 .text
 	.align 4
@@ -2907,997 +3016,989 @@ plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_1:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #256]
+ldr x16, [x16, #248]
 br x16
-.word 783
+.word 806
 	.no_dead_strip plt_System_ArgumentNullException__ctor_string
 plt_System_ArgumentNullException__ctor_string:
 _p_2:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #264]
+ldr x16, [x16, #256]
 br x16
-.word 791
+.word 814
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_3:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #272]
+ldr x16, [x16, #264]
 br x16
-.word 827
+.word 850
 	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
 plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
 _p_4:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #280]
+ldr x16, [x16, #272]
 br x16
-.word 835
+.word 858
 	.no_dead_strip plt__rgctx_fetch_1
 plt__rgctx_fetch_1:
 _p_5:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #288]
+ldr x16, [x16, #280]
 br x16
-.word 843
+.word 866
 	.no_dead_strip plt__rgctx_fetch_2
 plt__rgctx_fetch_2:
 _p_6:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #296]
+ldr x16, [x16, #288]
 br x16
-.word 873
+.word 896
 	.no_dead_strip plt__rgctx_fetch_3
 plt__rgctx_fetch_3:
 _p_7:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #304]
+ldr x16, [x16, #296]
 br x16
-.word 881
+.word 904
 	.no_dead_strip plt__rgctx_fetch_4
 plt__rgctx_fetch_4:
 _p_8:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #312]
+ldr x16, [x16, #304]
 br x16
-.word 913
+.word 936
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_9:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #320]
+ldr x16, [x16, #312]
 br x16
-.word 936
+.word 959
 	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
 plt_System_Linq_Error_ArgumentNull_string:
 _p_10:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #328]
+ldr x16, [x16, #320]
 br x16
-.word 956
+.word 979
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_11:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #336]
+ldr x16, [x16, #328]
 br x16
-.word 958
+.word 981
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_12:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #344]
+ldr x16, [x16, #336]
 br x16
-.word 986
+.word 1009
 	.no_dead_strip plt__rgctx_fetch_5
 plt__rgctx_fetch_5:
 _p_13:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #352]
+ldr x16, [x16, #344]
 br x16
-.word 1050
+.word 1073
 	.no_dead_strip plt__rgctx_fetch_6
 plt__rgctx_fetch_6:
 _p_14:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #360]
+ldr x16, [x16, #352]
 br x16
-.word 1058
+.word 1081
 	.no_dead_strip plt_System_Collections_Generic_EnumerableHelpers_ToArray_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF
 plt_System_Collections_Generic_EnumerableHelpers_ToArray_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF:
 _p_15:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #368]
+ldr x16, [x16, #360]
 br x16
-.word 1080
+.word 1103
 	.no_dead_strip plt__rgctx_fetch_7
 plt__rgctx_fetch_7:
 _p_16:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #376]
+ldr x16, [x16, #368]
 br x16
-.word 1098
+.word 1121
 	.no_dead_strip plt__rgctx_fetch_8
 plt__rgctx_fetch_8:
 _p_17:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #384]
+ldr x16, [x16, #376]
 br x16
-.word 1152
+.word 1175
 	.no_dead_strip plt__rgctx_fetch_9
 plt__rgctx_fetch_9:
 _p_18:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #392]
+ldr x16, [x16, #384]
 br x16
-.word 1178
+.word 1201
 	.no_dead_strip plt__rgctx_fetch_10
 plt__rgctx_fetch_10:
 _p_19:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #400]
+ldr x16, [x16, #392]
 br x16
-.word 1186
+.word 1209
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_20:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #408]
+ldr x16, [x16, #400]
 br x16
-.word 1196
+.word 1219
 	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
 plt_System_Array_Copy_System_Array_int_System_Array_int_int:
 _p_21:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
+ldr x16, [x16, #408]
+br x16
+.word 1227
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_22:
+adrp x16, mono_aot_System_Core_got@PAGE+0
+add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 1204
-	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
-plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
-_p_22:
+.word 1264
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_23:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 1209
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_23:
+.word 1272
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_24:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 1248
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_24:
+.word 1295
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_25:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 1256
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_25:
+.word 1328
+	.no_dead_strip plt__jit_icall_mono_generic_class_init
+plt__jit_icall_mono_generic_class_init:
+_p_26:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 1279
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_26:
+.word 1336
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_27:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 1312
-	.no_dead_strip plt__jit_icall_mono_generic_class_init
-plt__jit_icall_mono_generic_class_init:
-_p_27:
+.word 1362
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_28:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 1320
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_28:
+.word 1370
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_29:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 1346
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_29:
+.word 1380
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_30:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 1354
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_30:
+.word 1410
+	.no_dead_strip plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_bool
+plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_bool:
+_p_31:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 1364
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_31:
+.word 1418
+	.no_dead_strip plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF_AddRange_System_Collections_Generic_IEnumerable_1_T_REF
+plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF_AddRange_System_Collections_Generic_IEnumerable_1_T_REF:
+_p_32:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 1394
-	.no_dead_strip plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_bool
-plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_bool:
-_p_32:
+.word 1437
+	.no_dead_strip plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF_ToArray
+plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF_ToArray:
+_p_33:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 1402
-	.no_dead_strip plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF_AddRange_System_Collections_Generic_IEnumerable_1_T_REF
-plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF_AddRange_System_Collections_Generic_IEnumerable_1_T_REF:
-_p_33:
+.word 1456
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_34:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 1421
-	.no_dead_strip plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF_ToArray
-plt_System_Collections_Generic_LargeArrayBuilder_1_T_REF_ToArray:
-_p_34:
+.word 1506
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
+_p_35:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 1440
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_35:
+.word 1532
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
+_p_36:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 1490
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
-_p_36:
+.word 1565
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
+_p_37:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 1516
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_37:
+.word 1573
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
+_p_38:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 1549
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_38:
+.word 1608
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
+_p_39:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 1557
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_39:
+.word 1631
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
+_p_40:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 1592
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
-_p_40:
+.word 1648
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
+_p_41:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 1615
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
-_p_41:
+.word 1689
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
+_p_42:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 1632
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
-_p_42:
+.word 1724
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
+_p_43:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 1673
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
-_p_43:
+.word 1750
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
+_p_44:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 1708
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
-_p_44:
+.word 1758
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
+_p_45:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 1734
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
-_p_45:
+.word 1786
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
+_p_46:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 1742
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
-_p_46:
+.word 1796
+	.no_dead_strip plt_System_Collections_Generic_ArrayBuilder_1_T_REF___Add_T_REF__
+plt_System_Collections_Generic_ArrayBuilder_1_T_REF___Add_T_REF__:
+_p_47:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 1770
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
-_p_47:
+.word 1804
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
+_p_48:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 1780
-	.no_dead_strip plt_System_Collections_Generic_ArrayBuilder_1_T_REF___Add_T_REF__
-plt_System_Collections_Generic_ArrayBuilder_1_T_REF___Add_T_REF__:
-_p_48:
+.word 1841
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
+_p_49:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 1788
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
-_p_49:
+.word 1873
+	.no_dead_strip plt__rgctx_fetch_34
+plt__rgctx_fetch_34:
+_p_50:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 1825
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
-_p_50:
+.word 1881
+	.no_dead_strip plt__rgctx_fetch_35
+plt__rgctx_fetch_35:
+_p_51:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 1857
-	.no_dead_strip plt__rgctx_fetch_34
-plt__rgctx_fetch_34:
-_p_51:
+.word 1903
+	.no_dead_strip plt__rgctx_fetch_36
+plt__rgctx_fetch_36:
+_p_52:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 1865
-	.no_dead_strip plt__rgctx_fetch_35
-plt__rgctx_fetch_35:
-_p_52:
+.word 1936
+	.no_dead_strip plt__rgctx_fetch_37
+plt__rgctx_fetch_37:
+_p_53:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 1887
-	.no_dead_strip plt__rgctx_fetch_36
-plt__rgctx_fetch_36:
-_p_53:
+.word 1944
+	.no_dead_strip plt__rgctx_fetch_38
+plt__rgctx_fetch_38:
+_p_54:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 1920
-	.no_dead_strip plt__rgctx_fetch_37
-plt__rgctx_fetch_37:
-_p_54:
+.word 1966
+	.no_dead_strip plt__rgctx_fetch_39
+plt__rgctx_fetch_39:
+_p_55:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 1928
-	.no_dead_strip plt__rgctx_fetch_38
-plt__rgctx_fetch_38:
-_p_55:
+.word 2002
+	.no_dead_strip plt__rgctx_fetch_40
+plt__rgctx_fetch_40:
+_p_56:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 1950
-	.no_dead_strip plt__rgctx_fetch_39
-plt__rgctx_fetch_39:
-_p_56:
+.word 2024
+	.no_dead_strip plt__rgctx_fetch_41
+plt__rgctx_fetch_41:
+_p_57:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 1986
-	.no_dead_strip plt__rgctx_fetch_40
-plt__rgctx_fetch_40:
-_p_57:
+.word 2075
+	.no_dead_strip plt__rgctx_fetch_42
+plt__rgctx_fetch_42:
+_p_58:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 2008
-	.no_dead_strip plt__rgctx_fetch_41
-plt__rgctx_fetch_41:
-_p_58:
+.word 2107
+	.no_dead_strip plt__rgctx_fetch_43
+plt__rgctx_fetch_43:
+_p_59:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 2059
-	.no_dead_strip plt__rgctx_fetch_42
-plt__rgctx_fetch_42:
-_p_59:
+.word 2115
+	.no_dead_strip plt__rgctx_fetch_44
+plt__rgctx_fetch_44:
+_p_60:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 2091
-	.no_dead_strip plt__rgctx_fetch_43
-plt__rgctx_fetch_43:
-_p_60:
+.word 2137
+	.no_dead_strip plt__rgctx_fetch_45
+plt__rgctx_fetch_45:
+_p_61:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 2099
-	.no_dead_strip plt__rgctx_fetch_44
-plt__rgctx_fetch_44:
-_p_61:
+.word 2177
+	.no_dead_strip plt__rgctx_fetch_46
+plt__rgctx_fetch_46:
+_p_62:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 2121
-	.no_dead_strip plt__rgctx_fetch_45
-plt__rgctx_fetch_45:
-_p_62:
+.word 2200
+	.no_dead_strip plt__rgctx_fetch_47
+plt__rgctx_fetch_47:
+_p_63:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 2161
-	.no_dead_strip plt__rgctx_fetch_46
-plt__rgctx_fetch_46:
-_p_63:
+.word 2249
+	.no_dead_strip plt__rgctx_fetch_48
+plt__rgctx_fetch_48:
+_p_64:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 2184
-	.no_dead_strip plt__rgctx_fetch_47
-plt__rgctx_fetch_47:
-_p_64:
+.word 2298
+	.no_dead_strip plt__rgctx_fetch_49
+plt__rgctx_fetch_49:
+_p_65:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 2233
-	.no_dead_strip plt__rgctx_fetch_48
-plt__rgctx_fetch_48:
-_p_65:
+.word 2347
+	.no_dead_strip plt__rgctx_fetch_50
+plt__rgctx_fetch_50:
+_p_66:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 2282
-	.no_dead_strip plt__rgctx_fetch_49
-plt__rgctx_fetch_49:
-_p_66:
+.word 2394
+	.no_dead_strip plt__rgctx_fetch_51
+plt__rgctx_fetch_51:
+_p_67:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 2331
-	.no_dead_strip plt__rgctx_fetch_50
-plt__rgctx_fetch_50:
-_p_67:
+.word 2420
+	.no_dead_strip plt__rgctx_fetch_52
+plt__rgctx_fetch_52:
+_p_68:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 2378
-	.no_dead_strip plt__rgctx_fetch_51
-plt__rgctx_fetch_51:
-_p_68:
+.word 2451
+	.no_dead_strip plt__rgctx_fetch_53
+plt__rgctx_fetch_53:
+_p_69:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 2404
-	.no_dead_strip plt__rgctx_fetch_52
-plt__rgctx_fetch_52:
-_p_69:
+.word 2459
+	.no_dead_strip plt__rgctx_fetch_54
+plt__rgctx_fetch_54:
+_p_70:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 2435
-	.no_dead_strip plt__rgctx_fetch_53
-plt__rgctx_fetch_53:
-_p_70:
+.word 2487
+	.no_dead_strip plt__rgctx_fetch_55
+plt__rgctx_fetch_55:
+_p_71:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 2443
-	.no_dead_strip plt__rgctx_fetch_54
-plt__rgctx_fetch_54:
-_p_71:
+.word 2516
+	.no_dead_strip plt__rgctx_fetch_56
+plt__rgctx_fetch_56:
+_p_72:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 2471
-	.no_dead_strip plt__rgctx_fetch_55
-plt__rgctx_fetch_55:
-_p_72:
+.word 2566
+	.no_dead_strip plt__rgctx_fetch_57
+plt__rgctx_fetch_57:
+_p_73:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 2500
-	.no_dead_strip plt__rgctx_fetch_56
-plt__rgctx_fetch_56:
-_p_73:
+.word 2614
+	.no_dead_strip plt__rgctx_fetch_58
+plt__rgctx_fetch_58:
+_p_74:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 2550
-	.no_dead_strip plt__rgctx_fetch_57
-plt__rgctx_fetch_57:
-_p_74:
+.word 2640
+	.no_dead_strip plt__rgctx_fetch_59
+plt__rgctx_fetch_59:
+_p_75:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 2598
-	.no_dead_strip plt__rgctx_fetch_58
-plt__rgctx_fetch_58:
-_p_75:
+.word 2676
+	.no_dead_strip plt__rgctx_fetch_60
+plt__rgctx_fetch_60:
+_p_76:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 2624
-	.no_dead_strip plt__rgctx_fetch_59
-plt__rgctx_fetch_59:
-_p_76:
+.word 2684
+	.no_dead_strip plt_System_Math_Max_int_int
+plt_System_Math_Max_int_int:
+_p_77:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 2660
-	.no_dead_strip plt__rgctx_fetch_60
-plt__rgctx_fetch_60:
-_p_77:
+.word 2712
+	.no_dead_strip plt__rgctx_fetch_61
+plt__rgctx_fetch_61:
+_p_78:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 2668
-	.no_dead_strip plt_System_Math_Max_int_int
-plt_System_Math_Max_int_int:
-_p_78:
+.word 2717
+	.no_dead_strip plt__rgctx_fetch_62
+plt__rgctx_fetch_62:
+_p_79:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 2696
-	.no_dead_strip plt__rgctx_fetch_61
-plt__rgctx_fetch_61:
-_p_79:
+.word 2751
+	.no_dead_strip plt__rgctx_fetch_63
+plt__rgctx_fetch_63:
+_p_80:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 2701
-	.no_dead_strip plt__rgctx_fetch_62
-plt__rgctx_fetch_62:
-_p_80:
+.word 2797
+	.no_dead_strip plt__rgctx_fetch_64
+plt__rgctx_fetch_64:
+_p_81:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 2735
-	.no_dead_strip plt__rgctx_fetch_63
-plt__rgctx_fetch_63:
-_p_81:
+.word 2805
+	.no_dead_strip plt__rgctx_fetch_65
+plt__rgctx_fetch_65:
+_p_82:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 2781
-	.no_dead_strip plt__rgctx_fetch_64
-plt__rgctx_fetch_64:
-_p_82:
+.word 2828
+	.no_dead_strip plt__rgctx_fetch_66
+plt__rgctx_fetch_66:
+_p_83:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 2789
-	.no_dead_strip plt__rgctx_fetch_65
-plt__rgctx_fetch_65:
-_p_83:
+.word 2856
+	.no_dead_strip plt__rgctx_fetch_67
+plt__rgctx_fetch_67:
+_p_84:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 2812
-	.no_dead_strip plt__rgctx_fetch_66
-plt__rgctx_fetch_66:
-_p_84:
+.word 2880
+	.no_dead_strip plt__rgctx_fetch_68
+plt__rgctx_fetch_68:
+_p_85:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 2840
-	.no_dead_strip plt__rgctx_fetch_67
-plt__rgctx_fetch_67:
-_p_85:
+.word 2913
+	.no_dead_strip plt__rgctx_fetch_69
+plt__rgctx_fetch_69:
+_p_86:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 2864
-	.no_dead_strip plt__rgctx_fetch_68
-plt__rgctx_fetch_68:
-_p_86:
+.word 2923
+	.no_dead_strip plt__rgctx_fetch_70
+plt__rgctx_fetch_70:
+_p_87:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 2897
-	.no_dead_strip plt__rgctx_fetch_69
-plt__rgctx_fetch_69:
-_p_87:
+.word 2946
+	.no_dead_strip plt__rgctx_fetch_71
+plt__rgctx_fetch_71:
+_p_88:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 2907
-	.no_dead_strip plt__rgctx_fetch_70
-plt__rgctx_fetch_70:
-_p_88:
+.word 2979
+	.no_dead_strip plt__rgctx_fetch_72
+plt__rgctx_fetch_72:
+_p_89:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 2930
-	.no_dead_strip plt__rgctx_fetch_71
-plt__rgctx_fetch_71:
-_p_89:
+.word 2987
+	.no_dead_strip plt__rgctx_fetch_73
+plt__rgctx_fetch_73:
+_p_90:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 2963
-	.no_dead_strip plt__rgctx_fetch_72
-plt__rgctx_fetch_72:
-_p_90:
+.word 3016
+	.no_dead_strip plt__rgctx_fetch_74
+plt__rgctx_fetch_74:
+_p_91:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 2971
-	.no_dead_strip plt__rgctx_fetch_73
-plt__rgctx_fetch_73:
-_p_91:
+.word 3053
+	.no_dead_strip plt__rgctx_fetch_75
+plt__rgctx_fetch_75:
+_p_92:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 3000
-	.no_dead_strip plt__rgctx_fetch_74
-plt__rgctx_fetch_74:
-_p_92:
+.word 3102
+	.no_dead_strip plt__rgctx_fetch_76
+plt__rgctx_fetch_76:
+_p_93:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 3037
-	.no_dead_strip plt__rgctx_fetch_75
-plt__rgctx_fetch_75:
-_p_93:
+.word 3128
+	.no_dead_strip plt__rgctx_fetch_77
+plt__rgctx_fetch_77:
+_p_94:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 3086
-	.no_dead_strip plt__rgctx_fetch_76
-plt__rgctx_fetch_76:
-_p_94:
+.word 3136
+	.no_dead_strip plt__rgctx_fetch_78
+plt__rgctx_fetch_78:
+_p_95:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 3112
-	.no_dead_strip plt__rgctx_fetch_77
-plt__rgctx_fetch_77:
-_p_95:
+.word 3183
+	.no_dead_strip plt__rgctx_fetch_79
+plt__rgctx_fetch_79:
+_p_96:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 3120
-	.no_dead_strip plt__rgctx_fetch_78
-plt__rgctx_fetch_78:
-_p_96:
+.word 3232
+	.no_dead_strip plt__rgctx_fetch_80
+plt__rgctx_fetch_80:
+_p_97:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 3167
-	.no_dead_strip plt__rgctx_fetch_79
-plt__rgctx_fetch_79:
-_p_97:
+.word 3256
+	.no_dead_strip plt__rgctx_fetch_81
+plt__rgctx_fetch_81:
+_p_98:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 3216
-	.no_dead_strip plt__rgctx_fetch_80
-plt__rgctx_fetch_80:
-_p_98:
+.word 3307
+	.no_dead_strip plt__rgctx_fetch_82
+plt__rgctx_fetch_82:
+_p_99:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 3240
-	.no_dead_strip plt__rgctx_fetch_81
-plt__rgctx_fetch_81:
-_p_99:
+.word 3373
+	.no_dead_strip plt__rgctx_fetch_83
+plt__rgctx_fetch_83:
+_p_100:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 3291
-	.no_dead_strip plt__rgctx_fetch_82
-plt__rgctx_fetch_82:
-_p_100:
+.word 3396
+	.no_dead_strip plt__rgctx_fetch_84
+plt__rgctx_fetch_84:
+_p_101:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 3357
-	.no_dead_strip plt__rgctx_fetch_83
-plt__rgctx_fetch_83:
-_p_101:
+.word 3432
+	.no_dead_strip plt__rgctx_fetch_85
+plt__rgctx_fetch_85:
+_p_102:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 3380
-	.no_dead_strip plt__rgctx_fetch_84
-plt__rgctx_fetch_84:
-_p_102:
+.word 3440
+	.no_dead_strip plt__rgctx_fetch_86
+plt__rgctx_fetch_86:
+_p_103:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 3416
-	.no_dead_strip plt__rgctx_fetch_85
-plt__rgctx_fetch_85:
-_p_103:
+.word 3477
+	.no_dead_strip plt__rgctx_fetch_87
+plt__rgctx_fetch_87:
+_p_104:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 3424
-	.no_dead_strip plt__rgctx_fetch_86
-plt__rgctx_fetch_86:
-_p_104:
+.word 3500
+	.no_dead_strip plt__rgctx_fetch_88
+plt__rgctx_fetch_88:
+_p_105:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 3461
-	.no_dead_strip plt__rgctx_fetch_87
-plt__rgctx_fetch_87:
-_p_105:
+.word 3531
+	.no_dead_strip plt__rgctx_fetch_89
+plt__rgctx_fetch_89:
+_p_106:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 3484
-	.no_dead_strip plt__rgctx_fetch_88
-plt__rgctx_fetch_88:
-_p_106:
+.word 3557
+	.no_dead_strip plt__rgctx_fetch_90
+plt__rgctx_fetch_90:
+_p_107:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 3515
-	.no_dead_strip plt__rgctx_fetch_89
-plt__rgctx_fetch_89:
-_p_107:
+.word 3583
+	.no_dead_strip plt__rgctx_fetch_91
+plt__rgctx_fetch_91:
+_p_108:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 3541
-	.no_dead_strip plt__rgctx_fetch_90
-plt__rgctx_fetch_90:
-_p_108:
+.word 3591
+	.no_dead_strip plt_System_Math_Min_int_int
+plt_System_Math_Min_int_int:
+_p_109:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 3567
-	.no_dead_strip plt__rgctx_fetch_91
-plt__rgctx_fetch_91:
-_p_109:
+.word 3623
+	.no_dead_strip plt__rgctx_fetch_92
+plt__rgctx_fetch_92:
+_p_110:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 3575
-	.no_dead_strip plt_System_Math_Min_int_int
-plt_System_Math_Min_int_int:
-_p_110:
+.word 3646
+	.no_dead_strip plt__rgctx_fetch_93
+plt__rgctx_fetch_93:
+_p_111:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 3607
-	.no_dead_strip plt__rgctx_fetch_92
-plt__rgctx_fetch_92:
-_p_111:
+.word 3696
+	.no_dead_strip plt__rgctx_fetch_94
+plt__rgctx_fetch_94:
+_p_112:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 3630
-	.no_dead_strip plt__rgctx_fetch_93
-plt__rgctx_fetch_93:
-_p_112:
+.word 3704
+	.no_dead_strip plt__rgctx_fetch_95
+plt__rgctx_fetch_95:
+_p_113:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 3680
-	.no_dead_strip plt__rgctx_fetch_94
-plt__rgctx_fetch_94:
-_p_113:
+.word 3734
+	.no_dead_strip plt__rgctx_fetch_96
+plt__rgctx_fetch_96:
+_p_114:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 3688
-	.no_dead_strip plt__rgctx_fetch_95
-plt__rgctx_fetch_95:
-_p_114:
+.word 3786
+	.no_dead_strip plt__rgctx_fetch_97
+plt__rgctx_fetch_97:
+_p_115:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 3718
-	.no_dead_strip plt__rgctx_fetch_96
-plt__rgctx_fetch_96:
-_p_115:
+.word 3817
+	.no_dead_strip plt__rgctx_fetch_98
+plt__rgctx_fetch_98:
+_p_116:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 3770
-	.no_dead_strip plt__rgctx_fetch_97
-plt__rgctx_fetch_97:
-_p_116:
+.word 3825
+	.no_dead_strip plt__rgctx_fetch_99
+plt__rgctx_fetch_99:
+_p_117:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 3801
-	.no_dead_strip plt__rgctx_fetch_98
-plt__rgctx_fetch_98:
-_p_117:
+.word 3858
+	.no_dead_strip plt__rgctx_fetch_100
+plt__rgctx_fetch_100:
+_p_118:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 3809
-	.no_dead_strip plt__rgctx_fetch_99
-plt__rgctx_fetch_99:
-_p_118:
+.word 3868
+	.no_dead_strip plt__rgctx_fetch_101
+plt__rgctx_fetch_101:
+_p_119:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 3842
-	.no_dead_strip plt__rgctx_fetch_100
-plt__rgctx_fetch_100:
-_p_119:
+.word 3920
+	.no_dead_strip plt__rgctx_fetch_102
+plt__rgctx_fetch_102:
+_p_120:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 3852
-	.no_dead_strip plt__rgctx_fetch_101
-plt__rgctx_fetch_101:
-_p_120:
+.word 3974
+	.no_dead_strip plt__rgctx_fetch_103
+plt__rgctx_fetch_103:
+_p_121:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 3904
-	.no_dead_strip plt__rgctx_fetch_102
-plt__rgctx_fetch_102:
-_p_121:
+.word 4030
+	.no_dead_strip plt__rgctx_fetch_104
+plt__rgctx_fetch_104:
+_p_122:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 3958
-	.no_dead_strip plt__rgctx_fetch_103
-plt__rgctx_fetch_103:
-_p_122:
+.word 4040
+	.no_dead_strip plt__rgctx_fetch_105
+plt__rgctx_fetch_105:
+_p_123:
 adrp x16, mono_aot_System_Core_got@PAGE+0
 add x16, x16, mono_aot_System_Core_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 4014
-	.no_dead_strip plt__rgctx_fetch_104
-plt__rgctx_fetch_104:
-_p_123:
-adrp x16, mono_aot_System_Core_got@PAGE+0
-add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #1232]
-br x16
-.word 4024
-	.no_dead_strip plt__rgctx_fetch_105
-plt__rgctx_fetch_105:
-_p_124:
-adrp x16, mono_aot_System_Core_got@PAGE+0
-add x16, x16, mono_aot_System_Core_got@PAGEOFF
-ldr x16, [x16, #1240]
-br x16
-.word 4032
+.word 4048
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_System_Core_got, 1248
+.lcomm mono_aot_System_Core_got, 1232
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -3928,7 +4029,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "EFAFD07F-54D8-415E-9134-A80C889FCFFB"
+	.asciz "53A5572B-7A21-4709-86C7-DC07D15B4B05"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -4005,13 +4106,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 31,1248,125,40,66,391195135,0,5138
-	.long 128,8,8,10,0,26,6296,1152
-	.long 968,728,0,856,936,792,0,568
+	.long 30,1232,124,40,66,391195135,0,5152
+	.long 128,8,8,10,0,25,6304,1144
+	.long 960,728,0,848,928,792,0,568
 	.long 80,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 241,82,17,176,21,226,158,119,253,248,100,96,208,102,212,202
+	.byte 157,170,227,31,138,116,160,249,29,167,178,7,29,178,115,27
 	.globl _mono_aot_module_System_Core_info
 	.align 3
 _mono_aot_module_System_Core_info:
@@ -4886,7 +4987,7 @@ Lfde11_start:
 LDIFF_SYM120=Lme_d - System_Collections_Generic_LargeArrayBuilder_1_T_REF__ctor_int
 	.long LDIFF_SYM120
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4
 	.align 3
 Lfde11_end:
 
@@ -5161,7 +5262,7 @@ Lfde16_start:
 LDIFF_SYM154=Lme_12 - System_Collections_Generic_LargeArrayBuilder_1_T_REF_TryMove_T_REF___
 	.long LDIFF_SYM154
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde16_end:
 
@@ -5925,7 +6026,7 @@ Lfde28_start:
 LDIFF_SYM253=Lme_21 - System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT__ctor_int
 	.long LDIFF_SYM253
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153,7
 	.align 3
 Lfde28_end:
 
@@ -6199,7 +6300,7 @@ Lfde33_start:
 LDIFF_SYM287=Lme_26 - System_Collections_Generic_LargeArrayBuilder_1_T_GSHAREDVT_TryMove_T_GSHAREDVT___
 	.long LDIFF_SYM287
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6
 	.align 3
 Lfde33_end:
 

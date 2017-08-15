@@ -1,0 +1,8 @@
+
+App Thinning Size Report for All Variants of iOS-Xamarin-Chaoyun
+
+Variant: iOS-Xamarin-Chaoyun-iPhone 5s.ipa
+Supported devices: iPhone 5s
+App + On Demand Resources size: 2.8 MB compressed, 8.3 MB uncompressed
+App size: 2.8 MB compressed, 8.3 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed

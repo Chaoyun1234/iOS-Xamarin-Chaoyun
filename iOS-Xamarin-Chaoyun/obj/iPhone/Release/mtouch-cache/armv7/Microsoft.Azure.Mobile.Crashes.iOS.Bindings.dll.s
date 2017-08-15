@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 4,1
-	.asciz "Mono AOT Compiler 5.0.1 (tarball Mon May 22 16:16:43 EDT 2017)"
+	.asciz "Mono AOT Compiler 5.2.0 (tarball Wed Jul 19 10:08:39 EDT 2017)"
 	.asciz "Microsoft.Azure.Mobile.Crashes.iOS.Bindings.dll"
 	.asciz ""
 
@@ -165,17 +165,17 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_TryCha
 
 	.byte 128,64,45,233,13,112,160,225,64,13,45,233,8,223,77,226,13,176,160,225,24,0,139,229,0,15,160,227,0,0,139,229
 	.byte 0,15,160,227,4,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 92
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 88
 	.byte 0,0,159,231
 bl _p_5
 
 	.byte 0,160,160,225,0,15,80,227,1,0,0,26,0,111,160,227,8,0,0,234,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 96
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 92
 	.byte 1,16,159,231,10,0,160,225,6,47,160,227,0,224,218,229
 bl _p_6
 
 	.byte 0,96,160,225,0,96,139,229,0,15,90,227,1,0,0,26,0,111,160,227,8,0,0,234,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 96
 	.byte 1,16,159,231,10,0,160,225,6,47,160,227,0,224,218,229
 bl _p_6
 
@@ -212,33 +212,33 @@ bl _p_10
 bl _p_10
 
 	.byte 40,0,141,229,48,32,157,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,16,144,229,160,2,160,227,36,32,141,229
 bl _p_11
 
 	.byte 44,32,157,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,16,144,229,176,2,160,227,32,32,141,229
 bl _p_11
 
 	.byte 40,32,157,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,16,144,229,2,15,160,227,28,32,141,229
 bl _p_11
 bl _p_9
 
 	.byte 36,16,157,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,32,144,229,160,2,160,227,24,16,141,229
 bl _p_11
 
 	.byte 32,16,157,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,32,144,229,176,2,160,227,20,16,141,229
 bl _p_11
 
 	.byte 28,16,157,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,32,144,229,2,15,160,227,16,16,141,229
 bl _p_11
 
@@ -261,12 +261,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_13
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -280,7 +280,7 @@ L_OBJC_SELECTOR_0:
 bl _p_16
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -296,8 +296,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes__ctor_Foundation_NSObjectF
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_13
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -316,8 +316,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -334,7 +334,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_ClassHandle:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_9:
@@ -345,7 +345,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_DisableMachExceptionHandle
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_1:
 .long L_OBJC_SELECTOR_REFERENCES_1-(L_OBJC_SELECTOR_1+12)
@@ -362,7 +362,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_GenerateTestCrash:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_2:
 .long L_OBJC_SELECTOR_REFERENCES_2-(L_OBJC_SELECTOR_2+12)
@@ -379,7 +379,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_IsEnabled:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_3:
 .long L_OBJC_SELECTOR_REFERENCES_3-(L_OBJC_SELECTOR_3+12)
@@ -397,7 +397,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_NotifyWithUserConfirmation
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,4,16,141,229,1,15,160,227,2,15,80,227
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_4:
 .long L_OBJC_SELECTOR_REFERENCES_4-(L_OBJC_SELECTOR_4+12)
@@ -414,12 +414,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetDelegate_Microsoft_Azur
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,2,223,77,226,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 L_OBJC_SELECTOR_5:
 .long L_OBJC_SELECTOR_REFERENCES_5-(L_OBJC_SELECTOR_5+12)
 	.byte 0,0,159,231,0,16,141,229,4,0,141,229,0,15,90,227,5,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,160,144,229,1,0,0,234,0,224,218,229,8,160,154,229,0,0,157,229,4,16,157,229,10,32,160,225
 bl _p_22
 
@@ -433,7 +433,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetEnabled_bool:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,205,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_6:
 .long L_OBJC_SELECTOR_REFERENCES_6-(L_OBJC_SELECTOR_6+12)
@@ -455,12 +455,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_SetUserConfirmationHandler
 	.byte 0,15,160,227,0,0,141,229,0,15,160,227,4,0,141,229,0,15,160,227,8,0,141,229,0,15,160,227,12,0,141,229
 	.byte 0,15,160,227,16,0,141,229,0,15,160,227,20,0,141,229,0,15,160,227,24,0,141,229,13,96,160,225,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 124
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
 	.byte 0,0,159,231,0,16,144,229,13,0,160,225,28,32,157,229
 bl _p_24
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_7:
 .long L_OBJC_SELECTOR_REFERENCES_7-(L_OBJC_SELECTOR_7+12)
@@ -480,7 +480,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_HasCrashedInLastSessio
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_8:
 .long L_OBJC_SELECTOR_REFERENCES_8-(L_OBJC_SELECTOR_8+12)
@@ -497,7 +497,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes_get_LastSessionCrashReport
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_9:
 .long L_OBJC_SELECTOR_REFERENCES_9-(L_OBJC_SELECTOR_9+12)
@@ -505,7 +505,7 @@ L_OBJC_SELECTOR_9:
 bl _p_16
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 128
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 124
 	.byte 8,128,159,231
 bl _p_26
 
@@ -519,12 +519,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashes__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 132
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 128
 	.byte 0,0,159,231
 bl _p_27
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_13:
@@ -548,12 +548,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_13
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -568,7 +568,7 @@ L_OBJC_SELECTOR_10:
 bl _p_16
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -582,7 +582,7 @@ L_OBJC_SELECTOR_11:
 bl _p_30
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -598,8 +598,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate__ctor_Foundation_N
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_13
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -618,8 +618,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -637,7 +637,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate_AttachmentsWithCra
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 132
 	.byte 0,0,159,231,17,31,160,227
 bl _p_31
 
@@ -658,7 +658,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate_CrashesDidFailSend
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,12,48,141,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 132
 	.byte 0,0,159,231,17,31,160,227
 bl _p_31
 
@@ -679,7 +679,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate_CrashesDidSucceedS
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 132
 	.byte 0,0,159,231,17,31,160,227
 bl _p_31
 
@@ -700,7 +700,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate_CrashesShouldProce
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 132
 	.byte 0,0,159,231,17,31,160,227
 bl _p_31
 
@@ -721,7 +721,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSCrashesDelegate_CrashesWillSendErr
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,7,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 132
 	.byte 0,0,159,231,17,31,160,227
 bl _p_31
 
@@ -741,12 +741,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_13
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -760,7 +760,7 @@ L_OBJC_SELECTOR_12:
 bl _p_16
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -776,8 +776,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog__ctor_Foundatio
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_13
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -796,8 +796,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -814,7 +814,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_get_ClassHandle
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 140
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_20:
@@ -832,7 +832,7 @@ bl _p_34
 bl _p_34
 
 	.byte 8,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 140
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_13:
 .long L_OBJC_SELECTOR_REFERENCES_10-(L_OBJC_SELECTOR_13+12)
@@ -840,7 +840,7 @@ L_OBJC_SELECTOR_13:
 bl _p_35
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 144
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 140
 	.byte 8,128,159,231
 bl _p_36
 
@@ -855,7 +855,7 @@ bl _p_37
 	.byte 0,0,159,231,9,18,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -864,7 +864,7 @@ bl _p_33
 	.byte 0,0,159,231,255,17,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -883,7 +883,7 @@ bl _p_34
 bl _p_34
 
 	.byte 0,64,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 140
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_14:
 .long L_OBJC_SELECTOR_REFERENCES_11-(L_OBJC_SELECTOR_14+12)
@@ -891,7 +891,7 @@ L_OBJC_SELECTOR_14:
 bl _p_39
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 144
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 140
 	.byte 8,128,159,231
 bl _p_36
 
@@ -906,7 +906,7 @@ bl _p_37
 	.byte 0,0,159,231,119,18,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -918,12 +918,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 148
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 144
 	.byte 0,0,159,231
 bl _p_27
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 140
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_23:
@@ -934,12 +934,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_13
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -953,7 +953,7 @@ L_OBJC_SELECTOR_15:
 bl _p_16
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -969,8 +969,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport__ctor_Foundation_NSObj
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_13
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -989,8 +989,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -1007,7 +1007,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_get_ClassHandle:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 152
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 148
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_27:
@@ -1025,7 +1025,7 @@ L_OBJC_SELECTOR_16:
 bl _p_16
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 156
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 152
 	.byte 8,128,159,231
 bl _p_40
 
@@ -1062,7 +1062,7 @@ L_OBJC_SELECTOR_18:
 bl _p_16
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 156
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 152
 	.byte 8,128,159,231
 bl _p_40
 
@@ -1083,7 +1083,7 @@ L_OBJC_SELECTOR_19:
 bl _p_16
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 160
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 156
 	.byte 8,128,159,231
 bl _p_42
 
@@ -1198,12 +1198,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 164
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 160
 	.byte 0,0,159,231
 bl _p_27
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 152
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 148
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_32:
@@ -1214,12 +1214,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_13
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -1233,7 +1233,7 @@ L_OBJC_SELECTOR_26:
 bl _p_16
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -1249,8 +1249,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__ctor_Foundation_NSObjec
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_13
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -1269,8 +1269,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -1287,7 +1287,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_get_ClassHandle:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 168
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 164
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_36:
@@ -1302,7 +1302,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_IsEqual_Microsoft_Azure_
 L_OBJC_SELECTOR_27:
 .long L_OBJC_SELECTOR_REFERENCES_22-(L_OBJC_SELECTOR_27+12)
 	.byte 0,0,159,231,1,96,160,225,0,0,141,229,0,15,90,227,5,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,160,144,229,1,0,0,234,0,224,218,229,8,160,154,229,6,0,160,225,0,16,157,229,10,32,160,225
 bl _p_44
 
@@ -1322,17 +1322,16 @@ L_OBJC_SELECTOR_28:
 bl _p_16
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 172
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 168
 	.byte 8,128,159,231
 bl _p_45
 
-	.byte 4,0,141,229,10,0,160,225
+	.byte 0,0,141,229,10,0,160,225
 bl _p_46
 
-	.byte 4,0,157,229,0,0,141,229,20,0,138,229,5,15,138,226
-bl _p_47
-
-	.byte 0,0,157,229,2,223,141,226,0,5,189,232,128,128,189,232
+	.byte 0,0,157,229,20,0,138,229,5,31,138,226,161,20,160,225,0,32,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . -4
+	.byte 2,32,159,231,2,16,129,224,64,35,160,227,0,32,193,229,2,223,141,226,0,5,189,232,128,128,189,232
 
 Lme_38:
 .text
@@ -1343,27 +1342,26 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Frames_Microsoft_Azu
 
 	.byte 128,64,45,233,13,112,160,225,112,5,45,233,5,223,77,226,0,96,160,225,1,160,160,225,0,15,90,227,1,0,0,26
 	.byte 0,79,160,227,2,0,0,234,10,0,160,225
-bl _p_48
+bl _p_47
 
 	.byte 0,64,160,225,4,80,160,225,8,16,150,229,0,0,159,229,0,0,0,234
 L_OBJC_SELECTOR_29:
 .long L_OBJC_SELECTOR_REFERENCES_24-(L_OBJC_SELECTOR_29+12)
 	.byte 0,0,159,231,0,16,141,229,4,0,141,229,0,15,84,227,6,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,0,144,229,8,0,141,229,2,0,0,234,0,224,213,229,8,0,149,229,8,0,141,229,0,0,157,229
 	.byte 4,16,157,229,8,32,157,229
 bl _p_22
 
 	.byte 0,15,85,227,2,0,0,10,5,0,160,225,0,224,213,229
-bl _p_49
+bl _p_48
 
 	.byte 6,0,160,225
 bl _p_46
 
-	.byte 20,160,134,229,5,15,134,226
-bl _p_47
-
-	.byte 5,223,141,226,112,5,189,232,128,128,189,232
+	.byte 20,160,134,229,5,15,134,226,160,4,160,225,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . -4
+	.byte 1,16,159,231,1,0,128,224,64,19,160,227,0,16,192,229,5,223,141,226,112,5,189,232,128,128,189,232
 
 Lme_39:
 .text
@@ -1379,17 +1377,16 @@ L_OBJC_SELECTOR_30:
 bl _p_16
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 176
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 172
 	.byte 8,128,159,231
-bl _p_50
+bl _p_49
 
-	.byte 4,0,141,229,10,0,160,225
+	.byte 0,0,141,229,10,0,160,225
 bl _p_46
 
-	.byte 4,0,157,229,0,0,141,229,24,0,138,229,6,15,138,226
-bl _p_47
-
-	.byte 0,0,157,229,2,223,141,226,0,5,189,232,128,128,189,232
+	.byte 0,0,157,229,24,0,138,229,6,31,138,226,161,20,160,225,0,32,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . -4
+	.byte 2,32,159,231,2,16,129,224,64,35,160,227,0,32,193,229,2,223,141,226,0,5,189,232,128,128,189,232
 
 Lme_3a:
 .text
@@ -1400,27 +1397,26 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_InnerExceptions_Micr
 
 	.byte 128,64,45,233,13,112,160,225,112,5,45,233,5,223,77,226,0,96,160,225,1,160,160,225,0,15,90,227,1,0,0,26
 	.byte 0,79,160,227,2,0,0,234,10,0,160,225
-bl _p_48
+bl _p_47
 
 	.byte 0,64,160,225,4,80,160,225,8,16,150,229,0,0,159,229,0,0,0,234
 L_OBJC_SELECTOR_31:
 .long L_OBJC_SELECTOR_REFERENCES_26-(L_OBJC_SELECTOR_31+12)
 	.byte 0,0,159,231,0,16,141,229,4,0,141,229,0,15,84,227,6,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,0,144,229,8,0,141,229,2,0,0,234,0,224,213,229,8,0,149,229,8,0,141,229,0,0,157,229
 	.byte 4,16,157,229,8,32,157,229
 bl _p_22
 
 	.byte 0,15,85,227,2,0,0,10,5,0,160,225,0,224,213,229
-bl _p_49
+bl _p_48
 
 	.byte 6,0,160,225
 bl _p_46
 
-	.byte 24,160,134,229,6,15,134,226
-bl _p_47
-
-	.byte 5,223,141,226,112,5,189,232,128,128,189,232
+	.byte 24,160,134,229,6,15,134,226,160,4,160,225,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . -4
+	.byte 1,16,159,231,1,0,128,224,64,19,160,227,0,16,192,229,5,223,141,226,112,5,189,232,128,128,189,232
 
 Lme_3b:
 .text
@@ -1464,7 +1460,7 @@ bl _p_37
 	.byte 0,0,159,231,151,20,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -1548,7 +1544,7 @@ bl _p_37
 	.byte 0,0,159,231,151,20,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -1598,10 +1594,10 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_Dispose_bool:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,2,223,77,226,0,160,160,225,0,16,205,229,10,0,160,225,0,16,221,229
-bl _p_51
+bl _p_50
 
 	.byte 8,0,154,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 1,16,159,231,0,16,145,229,1,0,80,225,0,0,160,19,1,0,160,3,0,15,80,227,3,0,0,10,0,15,160,227
 	.byte 20,0,138,229,0,15,160,227,24,0,138,229,2,223,141,226,0,5,189,232,128,128,189,232
 
@@ -1613,12 +1609,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 180
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 176
 	.byte 0,0,159,231
 bl _p_27
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 168
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 164
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_45:
@@ -1629,12 +1625,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_13
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -1648,7 +1644,7 @@ L_OBJC_SELECTOR_40:
 bl _p_16
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -1664,8 +1660,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__ctor_Foundation_NSObje
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_13
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -1684,8 +1680,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__ctor_intptr:
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -1702,7 +1698,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_get_ClassHandle:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 184
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 180
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_49:
@@ -1717,7 +1713,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_IsEqual_Microsoft_Azure
 L_OBJC_SELECTOR_41:
 .long L_OBJC_SELECTOR_REFERENCES_22-(L_OBJC_SELECTOR_41+12)
 	.byte 0,0,159,231,1,96,160,225,0,0,141,229,0,15,90,227,5,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,160,144,229,1,0,0,234,0,224,218,229,8,160,154,229,6,0,160,225,0,16,157,229,10,32,160,225
 bl _p_44
 
@@ -1889,17 +1885,16 @@ L_OBJC_SELECTOR_50:
 bl _p_16
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 188
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 184
 	.byte 8,128,159,231
-bl _p_52
+bl _p_51
 
-	.byte 4,0,141,229,10,0,160,225
+	.byte 0,0,141,229,10,0,160,225
 bl _p_46
 
-	.byte 4,0,157,229,0,0,141,229,20,0,138,229,5,15,138,226
-bl _p_47
-
-	.byte 0,0,157,229,2,223,141,226,0,5,189,232,128,128,189,232
+	.byte 0,0,157,229,20,0,138,229,5,31,138,226,161,20,160,225,0,32,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . -4
+	.byte 2,32,159,231,2,16,129,224,64,35,160,227,0,32,193,229,2,223,141,226,0,5,189,232,128,128,189,232
 
 Lme_53:
 .text
@@ -1913,17 +1908,16 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_LineNumber_Foundati
 L_OBJC_SELECTOR_51:
 .long L_OBJC_SELECTOR_REFERENCES_44-(L_OBJC_SELECTOR_51+12)
 	.byte 0,0,159,231,0,16,141,229,4,0,141,229,0,15,90,227,5,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,176,144,229,1,0,0,234,0,224,218,229,8,176,154,229,0,0,157,229,4,16,157,229,11,32,160,225
 bl _p_22
 
 	.byte 6,0,160,225
 bl _p_46
 
-	.byte 20,160,134,229,5,15,134,226
-bl _p_47
-
-	.byte 2,223,141,226,64,13,189,232,128,128,189,232
+	.byte 20,160,134,229,5,15,134,226,160,4,160,225,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . -4
+	.byte 1,16,159,231,1,0,128,224,64,19,160,227,0,16,192,229,2,223,141,226,64,13,189,232,128,128,189,232
 
 Lme_54:
 .text
@@ -1971,10 +1965,10 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_Dispose_bool:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,2,223,77,226,0,160,160,225,0,16,205,229,10,0,160,225,0,16,221,229
-bl _p_51
+bl _p_50
 
 	.byte 8,0,154,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 1,16,159,231,0,16,145,229,1,0,80,225,0,0,160,19,1,0,160,3,0,15,80,227,1,0,0,10,0,15,160,227
 	.byte 20,0,138,229,2,223,141,226,0,5,189,232,128,128,189,232
 
@@ -1986,12 +1980,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 192
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 188
 	.byte 0,0,159,231
 bl _p_27
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 184
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 180
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_58:
@@ -2015,12 +2009,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperCrashesInitializationDelega
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_13
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -2035,7 +2029,7 @@ L_OBJC_SELECTOR_54:
 bl _p_16
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -2049,7 +2043,7 @@ L_OBJC_SELECTOR_55:
 bl _p_30
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -2065,8 +2059,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperCrashesInitializationDelega
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_13
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -2085,8 +2079,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperCrashesInitializationDelega
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -2103,7 +2097,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperCrashesInitializationDelega
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 136
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 132
 	.byte 0,0,159,231,17,31,160,227
 bl _p_31
 
@@ -2123,12 +2117,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager__ctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
 	.byte 0,0,159,231,0,16,144,229,10,0,160,225
 bl _p_13
 
-	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,154,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -2142,7 +2136,7 @@ L_OBJC_SELECTOR_56:
 bl _p_16
 
 	.byte 0,16,160,225,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 116
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
 	.byte 2,32,159,231,10,0,160,225
 bl _p_17
 
@@ -2158,8 +2152,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager__ctor_Foun
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_13
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -2178,8 +2172,8 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager__ctor_intp
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,6,0,160,225,0,16,157,229
 bl _p_18
 
-	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.byte 0,0,150,229,12,16,144,229,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 1,16,159,231,0,16,145,229
 bl _p_14
 
@@ -2196,7 +2190,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_get_ClassH
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 196
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 192
 	.byte 0,0,159,231,0,0,144,229,3,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_61:
@@ -2211,17 +2205,17 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_LoadWrappe
 bl _p_34
 
 	.byte 0,96,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 196
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 192
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_57:
 .long L_OBJC_SELECTOR_REFERENCES_47-(L_OBJC_SELECTOR_57+12)
 	.byte 1,16,159,231,6,32,160,225
-bl _p_53
+bl _p_52
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 200
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 196
 	.byte 8,128,159,231
-bl _p_54
+bl _p_53
 
 	.byte 0,0,141,229,6,0,160,225
 bl _p_37
@@ -2231,7 +2225,7 @@ bl _p_37
 	.byte 0,0,159,231,137,22,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -2243,7 +2237,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetDelegat
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,15,90,227,14,0,0,10,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 196
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 192
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_58:
 .long L_OBJC_SELECTOR_REFERENCES_5-(L_OBJC_SELECTOR_58+12)
@@ -2255,7 +2249,7 @@ bl _p_22
 	.byte 0,0,159,231,239,22,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -2267,7 +2261,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapper
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,15,90,227,14,0,0,10,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 196
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 192
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_59:
 .long L_OBJC_SELECTOR_REFERENCES_48-(L_OBJC_SELECTOR_59+12)
@@ -2279,7 +2273,7 @@ bl _p_22
 	.byte 0,0,159,231,3,23,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -2291,7 +2285,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_SetWrapper
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,15,90,227,14,0,0,10,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 196
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 192
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_60:
 .long L_OBJC_SELECTOR_REFERENCES_49-(L_OBJC_SELECTOR_60+12)
@@ -2303,7 +2297,7 @@ bl _p_22
 	.byte 0,0,159,231,65,23,0,227
 bl _p_38
 
-	.byte 0,16,160,225,113,0,0,227,0,2,64,227
+	.byte 0,16,160,225,64,0,0,227,0,2,64,227
 bl _mono_create_corlib_exception_1
 bl _p_33
 
@@ -2315,7 +2309,7 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_StartCrash
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 196
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 192
 	.byte 0,0,159,231,0,0,144,229,0,16,159,229,0,0,0,234
 L_OBJC_SELECTOR_61:
 .long L_OBJC_SELECTOR_REFERENCES_50-(L_OBJC_SELECTOR_61+12)
@@ -2332,12 +2326,12 @@ Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 204
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 200
 	.byte 0,0,159,231
 bl _p_27
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 196
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 192
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_67:
@@ -2348,9 +2342,9 @@ ApiDefinition_Messaging__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 208
-	.byte 1,16,159,231,1,0,160,225,0,16,145,229,15,224,160,225,148,241,145,229,0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 112
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 204
+	.byte 1,16,159,231,1,0,160,225,0,16,145,229,15,224,160,225,144,241,145,229,0,16,160,225,0,0,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 108
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_75:
@@ -2361,21 +2355,21 @@ ObjCRuntime_Trampolines_SDMSUserConfirmationHandler_Invoke_intptr_intptr:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,64,1,45,233,6,223,77,226,0,96,160,225,8,16,141,229,6,0,160,225
-bl _p_55
+bl _p_54
 
 	.byte 0,96,160,225,0,15,86,227,9,0,0,10,0,0,150,229,0,0,144,229,8,0,144,229,12,0,144,229,0,16,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 212
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 208
 	.byte 1,16,159,231,1,0,80,225,21,0,0,27,0,96,141,229,6,0,160,225,20,0,141,229,0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 216
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 212
 	.byte 8,128,159,231,8,0,157,229
-bl _p_56
+bl _p_55
 
 	.byte 0,16,160,225,20,32,157,229,2,0,160,225,16,32,141,229,15,224,160,225,12,240,146,229,0,16,160,225,16,0,157,229
 	.byte 255,0,1,226,4,16,205,229,6,223,141,226,64,1,189,232,128,128,189,232,14,16,160,225,0,0,159,229
-bl _p_57
+bl _p_56
 
-	.byte 195,0,0,0
+	.byte 144,0,0,0
 
 Lme_7c:
 .text
@@ -2385,25 +2379,25 @@ ObjCRuntime_Trampolines_SDMSUserConfirmationHandler__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,1,223,77,226,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 220
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 216
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,31,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 224
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 220
 	.byte 0,0,159,231,14,31,160,227
 bl _p_31
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 228
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 224
 	.byte 0,0,159,231,20,0,129,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 232
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 228
 	.byte 0,0,159,231,32,0,129,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 236
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 232
 	.byte 0,0,159,231,20,32,144,229,12,32,129,229,16,0,144,229,8,0,129,229,0,15,160,227,48,0,193,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 220
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 216
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 220
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 216
 	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 124
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 120
 	.byte 0,0,159,231,0,16,128,229,1,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_7d:
@@ -2413,18 +2407,17 @@ Lme_7d:
 ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler__ctor_ObjCRuntime_BlockLiteral_:
 .loc 1 1 0
 
-	.byte 128,64,45,233,13,112,160,225,64,1,45,233,4,223,77,226,0,96,160,225,0,16,141,229,0,0,157,229
-bl _p_58
+	.byte 128,64,45,233,13,112,160,225,64,1,45,233,2,223,77,226,0,96,160,225,0,16,141,229,0,0,157,229
+bl _p_57
 
 	.byte 12,0,134,229,0,128,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 240
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 236
 	.byte 8,128,159,231,0,0,157,229
-bl _p_59
+bl _p_58
 
-	.byte 8,0,141,229,8,0,134,229,2,15,134,226
-bl _p_47
-
-	.byte 8,0,157,229,4,223,141,226,64,1,189,232,128,128,189,232
+	.byte 8,0,134,229,2,31,134,226,161,20,160,225,0,32,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . -4
+	.byte 2,32,159,231,2,16,129,224,64,35,160,227,0,32,193,229,2,223,141,226,64,1,189,232,128,128,189,232
 
 Lme_7e:
 .text
@@ -2434,7 +2427,7 @@ ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler_Finalize:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,9,45,233,6,223,77,226,13,176,160,225,16,0,139,229,16,0,155,229,12,0,144,229
-bl _p_60
+bl _p_59
 
 	.byte 0,0,0,235,4,0,0,234,12,224,139,229,16,0,155,229,0,0,139,229,12,192,155,229,12,240,160,225,6,223,139,226
 	.byte 0,9,189,232,128,128,189,232
@@ -2446,46 +2439,45 @@ Lme_7f:
 ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler_Create_intptr:
 .loc 1 1 0
 
-	.byte 128,64,45,233,13,112,160,225,112,5,45,233,5,223,77,226,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.byte 128,64,45,233,13,112,160,225,112,5,45,233,3,223,77,226,0,160,160,225,0,0,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,0,144,229,0,0,90,225,0,0,160,19,1,0,160,3,0,15,80,227,1,0,0,10,0,15,160,227
-	.byte 72,0,0,234,10,0,160,225
-bl _p_61
+	.byte 75,0,0,234,10,0,160,225
+bl _p_60
 
 	.byte 255,0,0,226,0,15,80,227,21,0,0,10,10,0,160,225
-bl _p_55
+bl _p_54
 
 	.byte 0,80,160,225,5,64,160,225,0,15,85,227,10,0,0,10,0,0,149,229,0,0,144,229,8,0,144,229,12,0,144,229
 	.byte 0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 212
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 208
 	.byte 1,16,159,231,1,0,80,225,0,0,0,10,0,79,160,227,4,96,160,225,0,15,84,227,1,0,0,10,6,0,160,225
-	.byte 45,0,0,234,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 244
+	.byte 48,0,0,234,0,0,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 240
 	.byte 0,0,159,231
+bl _p_61
+
+	.byte 4,0,141,229,10,16,160,225
 bl _p_62
 
-	.byte 12,0,141,229,10,16,160,225
-bl _p_63
-
-	.byte 12,0,157,229,8,0,141,229,0,15,80,227,36,0,0,11,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 248
+	.byte 4,0,157,229,0,0,141,229,0,15,80,227,39,0,0,11,0,0,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 244
 	.byte 0,0,159,231,14,31,160,227
 bl _p_31
 
-	.byte 8,16,157,229,4,16,141,229,16,16,128,229,0,0,141,229,4,15,128,226
-bl _p_47
-
-	.byte 0,0,157,229,4,16,157,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 252
+	.byte 0,16,157,229,16,16,128,229,4,47,128,226,162,36,160,225,0,48,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . -4
+	.byte 3,48,159,231,3,32,130,224,64,51,160,227,0,48,194,229,0,16,159,229,0,0,0,234
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 248
 	.byte 1,16,159,231,20,16,128,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 256
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 252
 	.byte 1,16,159,231,32,16,128,229,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
-	.byte 1,16,159,231,20,32,145,229,12,32,128,229,16,16,145,229,8,16,128,229,0,31,160,227,48,16,192,229,5,223,141,226
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 256
+	.byte 1,16,159,231,20,32,145,229,12,32,128,229,16,16,145,229,8,16,128,229,0,31,160,227,48,16,192,229,3,223,141,226
 	.byte 112,5,189,232,128,128,189,232,14,16,160,225,0,0,159,229
-bl _p_57
+bl _p_56
 
-	.byte 112,0,0,0
+	.byte 63,0,0,0
 
 Lme_80:
 .text
@@ -2496,14 +2488,14 @@ ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler_Invoke_Microsoft_Azure_Mobi
 
 	.byte 128,64,45,233,13,112,160,225,32,13,45,233,4,223,77,226,8,0,141,229,1,160,160,225,0,15,90,227,1,0,0,26
 	.byte 0,175,160,227,2,0,0,234,10,0,160,225
-bl _p_48
+bl _p_47
 
 	.byte 0,160,160,225,10,80,160,225,8,0,157,229,8,32,144,229,12,16,144,229,10,0,160,225,2,160,160,225,4,16,141,229
 	.byte 0,15,80,227,5,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 104
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 100
 	.byte 0,0,159,231,0,176,144,229,1,0,0,234,0,224,213,229,8,176,149,229,10,0,160,225,4,16,157,229,11,32,160,225
 	.byte 15,224,160,225,12,240,154,229,0,0,205,229,0,15,85,227,2,0,0,10,5,0,160,225,0,224,213,229
-bl _p_49
+bl _p_48
 
 	.byte 0,0,221,229,4,223,141,226,32,13,189,232,128,128,189,232
 
@@ -2516,7 +2508,7 @@ wrapper_delegate_invoke__Module_invoke_bool_intptr_intptr_intptr_intptr:
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,57,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,23,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,9,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,255,0,0,226
@@ -2526,12 +2518,12 @@ wrapper_delegate_invoke__Module_invoke_bool_intptr_intptr_intptr_intptr:
 	.byte 15,224,160,225,12,240,147,229,16,16,157,229,4,0,205,229,64,67,132,226,4,0,160,225,11,0,80,225,235,255,255,186
 	.byte 4,0,221,229,6,223,141,226,112,13,189,232,128,128,189,232,4,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,64,160,225,0,15,80,227,249,255,255,26,193,255,255,234,14,16,160,225,0,0,159,229
-bl _p_57
+bl _p_56
 
-	.byte 191,0,0,0
+	.byte 140,0,0,0
 
 Lme_87:
 .text
@@ -2545,7 +2537,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___intptr_i
 	.byte 1,208,77,224,0,224,160,227,0,0,0,234,1,224,141,231,4,16,81,226,252,255,255,170,13,16,160,225,1,15,139,226
 	.byte 0,0,129,229,1,15,129,226,2,47,139,226,0,32,128,229,1,15,128,226,3,47,139,226,0,32,128,229,1,15,128,226
 	.byte 4,47,139,226,0,32,128,229,0,0,155,229
-bl _p_65
+bl _p_64
 
 	.byte 6,223,139,226,0,9,189,232,128,128,189,232
 
@@ -2559,15 +2551,15 @@ wrapper_delegate_end_invoke__Module_end_invoke_bool__this___IAsyncResult_System_
 	.byte 128,64,45,233,13,112,160,225,0,9,45,233,2,223,77,226,13,176,160,225,0,0,139,229,4,16,139,229,2,15,160,227
 	.byte 0,15,80,227,2,15,160,227,7,16,128,226,7,16,193,227,1,208,77,224,0,224,160,227,0,0,0,234,1,224,141,231
 	.byte 4,16,81,226,252,255,255,170,13,16,160,225,1,15,139,226,0,0,129,229,0,0,155,229
-bl _p_66
+bl _p_65
 
 	.byte 0,16,144,229,24,32,209,229,0,15,82,227,11,0,0,27,0,16,145,229,0,16,145,229,0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 268
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
 	.byte 2,32,159,231,2,0,81,225,3,0,0,27,8,0,208,229,2,223,139,226,0,9,189,232,128,128,189,232,14,16,160,225
 	.byte 0,0,159,229
-bl _p_57
+bl _p_56
 
-	.byte 195,0,0,0
+	.byte 144,0,0,0
 
 Lme_89:
 .text
@@ -2582,19 +2574,19 @@ bl _mono_tls_get_lmf_addr
 	.byte 4,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,4,0,157,229,0,16,144,229,24,32,209,229,0,15,82,227,35,0,0,27,0,16,145,229,0,16,145,229
 	.byte 0,32,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 272
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 268
 	.byte 2,32,159,231,2,0,81,225,27,0,0,27,8,32,144,229,8,0,157,229,10,16,160,225,50,255,47,225,0,0,205,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,0,0,221,229,16,192,157,229,20,224,157,229
 	.byte 0,192,142,229,50,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,240,255,255,234,14,16,160,225,0,0,159,229
-bl _p_57
+bl _p_56
 
-	.byte 195,0,0,0
+	.byte 144,0,0,0
 
 Lme_8a:
 .text
@@ -2605,7 +2597,7 @@ wrapper_delegate_invoke__Module_invoke_bound_bool_object_intptr_intptr_intptr_in
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,45,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,11,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,7,31,133,226,0,16,145,229,2,31,133,226
 	.byte 0,48,145,229,8,16,157,229,12,32,157,229,51,255,47,225,255,0,0,226,22,0,0,234,12,176,154,229,0,79,160,227
@@ -2614,12 +2606,12 @@ wrapper_delegate_invoke__Module_invoke_bound_bool_object_intptr_intptr_intptr_in
 	.byte 64,67,132,226,4,0,160,225,11,0,80,225,235,255,255,186,4,0,221,229,6,223,141,226,112,13,189,232,128,128,189,232
 	.byte 4,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,64,160,225,0,15,80,227,249,255,255,26,205,255,255,234,14,16,160,225,0,0,159,229
-bl _p_57
+bl _p_56
 
-	.byte 191,0,0,0
+	.byte 140,0,0,0
 
 Lme_8b:
 .text
@@ -2629,7 +2621,7 @@ wrapper_delegate_invoke__Module_invoke_bool_MSErrorReport___Microsoft_Azure_Mobi
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,54,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,255,0,0,226,29,0,0,234
@@ -2639,12 +2631,12 @@ wrapper_delegate_invoke__Module_invoke_bool_MSErrorReport___Microsoft_Azure_Mobi
 	.byte 4,0,205,229,64,83,133,226,5,0,160,225,4,0,80,225,236,255,255,186,4,0,221,229,6,223,141,226,112,13,189,232
 	.byte 128,128,189,232,5,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,80,160,225,0,15,80,227,249,255,255,26,196,255,255,234,14,16,160,225,0,0,159,229
-bl _p_57
+bl _p_56
 
-	.byte 191,0,0,0
+	.byte 140,0,0,0
 
 Lme_8c:
 .text
@@ -2657,7 +2649,7 @@ wrapper_delegate_begin_invoke__Module_begin_invoke_IAsyncResult__this___MSErrorR
 	.byte 12,48,139,229,4,15,160,227,0,15,80,227,4,15,160,227,7,16,128,226,7,16,193,227,1,208,77,224,0,224,160,227
 	.byte 0,0,0,234,1,224,141,231,4,16,81,226,252,255,255,170,13,16,160,225,1,15,139,226,0,0,129,229,1,15,129,226
 	.byte 2,47,139,226,0,32,128,229,1,15,128,226,3,47,139,226,0,32,128,229,0,0,155,229
-bl _p_65
+bl _p_64
 
 	.byte 4,223,139,226,0,9,189,232,128,128,189,232
 
@@ -2673,14 +2665,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,6,16,160,225,10,32,160,225
-bl _p_67
+bl _p_66
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,8,192,157,229,12,224,157,229
 	.byte 0,192,142,229,46,223,141,226,192,31,189,232,4,208,141,226,128,128,189,232,6,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,96,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2696,14 +2688,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 0,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,6,0,160,225,10,16,160,225
-bl _p_68
+bl _p_67
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,0,192,157,229,4,224,157,229
 	.byte 0,192,142,229,44,223,141,226,192,31,189,232,4,208,141,226,128,128,189,232,6,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,96,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2719,14 +2711,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 0,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,6,0,160,225,10,16,160,225
-bl _p_69
+bl _p_68
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,0,192,157,229,4,224,157,229
 	.byte 0,192,142,229,44,223,141,226,192,31,189,232,4,208,141,226,128,128,189,232,6,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,96,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2742,14 +2734,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,6,16,160,225,10,32,160,225
-bl _p_70
+bl _p_69
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,8,192,157,229,12,224,157,229
 	.byte 0,192,142,229,46,223,141,226,192,31,189,232,4,208,141,226,128,128,189,232,6,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,96,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2765,14 +2757,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,4,0,157,229,10,16,160,225
-bl _p_71
+bl _p_70
 
 	.byte 0,0,205,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,0,0,221,229,8,192,157,229,12,224,157,229
 	.byte 0,192,142,229,48,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2789,14 +2781,14 @@ bl _mono_tls_get_lmf_addr
 	.byte 4,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,95,160,227,12,0,221,229,0,15,80,227,0,0,0,10,64,83,160,227,4,0,157,229,8,16,157,229
 	.byte 5,32,160,225
-bl _p_72
+bl _p_71
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,16,192,157,229,20,224,157,229,0,192,142,229
 	.byte 47,223,141,226,224,31,189,232,4,208,141,226,128,128,189,232,0,0,157,229
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,16,160,225,0,16,141,229,0,15,80,227,248,255,255,26,240,255,255,234
 
@@ -2812,14 +2804,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,10,16,160,225
-bl _p_73
+bl _p_72
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,8,192,157,229,12,224,157,229,0,192,142,229
 	.byte 48,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,241,255,255,234
 
@@ -2835,14 +2827,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,4,16,157,229,10,32,160,225
-bl _p_74
+bl _p_73
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,8,192,157,229,12,224,157,229,0,192,142,229
 	.byte 48,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,241,255,255,234
 
@@ -2858,14 +2850,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,4,16,157,229,10,32,160,225
-bl _p_75
+bl _p_74
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,8,192,157,229,12,224,157,229,0,192,142,229
 	.byte 48,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,241,255,255,234
 
@@ -2882,14 +2874,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 4,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,10,16,160,225,4,32,157,229,8,48,157,229
-bl _p_76
+bl _p_75
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,16,192,157,229,20,224,157,229,0,192,142,229
 	.byte 50,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,241,255,255,234
 
@@ -2906,14 +2898,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,0,0,157,229,4,16,157,229,6,32,160,225,10,48,160,225
-bl _p_77
+bl _p_76
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,8,192,157,229,12,224,157,229
 	.byte 0,192,142,229,46,223,141,226,192,31,189,232,4,208,141,226,128,128,189,232,6,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,96,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2930,14 +2922,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 6,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,8,0,155,229,12,16,155,229,16,32,155,229,6,48,160,225,0,160,141,229
-bl _p_78
+bl _p_77
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,24,192,155,229,28,224,155,229
 	.byte 0,192,142,229,50,223,139,226,192,31,189,232,4,208,141,226,128,128,189,232,6,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,96,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2953,14 +2945,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 0,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,6,0,160,225,10,16,160,225
-bl _p_79
+bl _p_78
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,0,192,157,229,4,224,157,229
 	.byte 0,192,142,229,44,223,141,226,192,31,189,232,4,208,141,226,128,128,189,232,6,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,96,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2976,14 +2968,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 4,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,4,0,157,229,8,16,157,229,10,32,160,225
-bl _p_80
+bl _p_79
 
 	.byte 0,0,205,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,0,0,221,229,16,192,157,229,20,224,157,229
 	.byte 0,192,142,229,50,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,240,255,255,234
 
@@ -2999,14 +2991,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 2,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,10,0,160,225
-bl _p_81
+bl _p_80
 
 	.byte 0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,10,0,0,26,255,255,255,234,10,0,160,225,8,192,157,229,12,224,157,229
 	.byte 0,192,142,229,48,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,0,0,157,229
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,16,160,225,0,16,141,229,0,15,80,227,248,255,255,26,239,255,255,234
 
@@ -3022,14 +3014,14 @@ bl _mono_tls_get_lmf_addr
 
 	.byte 0,31,141,226,4,0,129,229,0,192,144,229,0,192,129,229,0,16,128,229,12,208,129,229,20,176,129,229,15,192,160,225
 	.byte 16,192,129,229,10,0,160,225
-bl _p_82
+bl _p_81
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,9,0,0,26,255,255,255,234,0,192,157,229,4,224,157,229,0,192,142,229
 	.byte 46,223,141,226,0,31,189,232,4,208,141,226,128,128,189,232,10,0,160,225
 bl _p_33
-bl _p_64
+bl _p_63
 
 	.byte 0,160,160,225,0,15,80,227,249,255,255,26,241,255,255,234
 
@@ -3048,23 +3040,23 @@ wrapper_native_to_managed_ObjCRuntime_Trampolines_SDMSUserConfirmationHandler_In
 	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 20
 	.byte 0,0,159,231,48,255,47,225,0,16,160,225,56,0,155,229,40,16,139,229,0,15,80,227,3,0,0,26,40,0,155,229
 	.byte 0,15,80,227,0,0,0,10,6,0,0,234,0,16,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 60
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 52
 	.byte 1,16,159,231,0,15,160,227,49,255,47,225,16,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 264
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 260
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,6,0,0,10
-bl _p_64
+bl _p_63
 
 	.byte 0,16,160,225,20,16,139,229,0,15,80,227,1,0,0,10,20,0,155,229
 bl _p_33
 
 	.byte 48,0,155,229,52,16,155,229
-bl _p_83
+bl _p_82
 
 	.byte 0,0,203,229,13,0,0,235,23,0,0,234,12,0,139,229,8,0,139,229,0,31,160,227
-bl _p_84
+bl _p_83
 
 	.byte 4,0,139,229
-bl _p_85
+bl _p_84
 
 	.byte 44,0,139,229,0,15,80,227,1,0,0,10,44,0,155,229
 bl _p_33
@@ -3073,7 +3065,7 @@ bl _p_33
 bl _mono_jit_set_domain
 
 	.byte 4,0,155,229,0,31,224,227,1,0,80,225,1,0,0,10,4,0,155,229
-bl _p_86
+bl _p_85
 
 	.byte 36,192,155,229,12,240,160,225,0,0,219,229,16,223,139,226,0,9,189,232,128,128,189,232
 
@@ -3288,57 +3280,56 @@ unwind_info:
 	.byte 142,1,68,14,40,2,136,10,68,14,20,68,8,4,8,5,8,8,14,8,68,11,31,12,13,0,68,14,8,135,2,72
 	.byte 14,12,136,3,142,1,68,14,24,2,52,10,68,14,12,68,8,8,14,8,68,11,31,12,13,0,68,14,8,135,2,72
 	.byte 14,12,136,3,142,1,68,14,24,2,32,10,68,14,12,68,8,8,14,8,68,11,39,12,13,0,68,14,8,135,2,72
-	.byte 14,20,134,5,136,4,138,3,142,1,68,14,32,2,96,10,68,14,20,68,8,6,8,8,8,10,14,8,68,11,35,12
-	.byte 13,0,68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,84,10,68,14,16,68,8,8,8,10,14,8
-	.byte 68,11,47,12,13,0,68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,48,2,172,10
-	.byte 68,14,28,68,8,4,8,5,8,6,8,8,8,10,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,133,4
-	.byte 136,3,142,1,68,14,24,2,72,10,68,14,16,68,8,5,8,8,14,8,68,11,31,12,13,0,68,14,8,135,2,72
-	.byte 14,12,136,3,142,1,68,14,32,2,60,10,68,14,12,68,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72
-	.byte 14,16,136,4,138,3,142,1,68,14,24,2,80,10,68,14,16,68,8,8,8,10,14,8,68,11,43,12,13,0,68,14
-	.byte 8,135,2,72,14,24,134,6,136,5,138,4,139,3,142,1,68,14,32,2,112,10,68,14,24,68,8,6,8,8,8,10
-	.byte 8,11,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,72,10,68,14
-	.byte 16,68,8,8,8,10,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14,32,2,44,10
-	.byte 68,14,12,68,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,24,2
-	.byte 108,10,68,14,16,68,8,6,8,8,14,8,68,11,32,12,13,0,68,14,8,135,2,72,14,16,136,4,138,3,142,1
-	.byte 2,60,10,68,14,16,68,8,8,8,10,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68
-	.byte 14,16,2,56,10,68,14,12,68,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142
-	.byte 1,68,14,40,2,144,10,68,14,16,68,8,6,8,8,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136
-	.byte 3,142,1,68,14,16,2,196,10,68,14,12,68,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134
-	.byte 4,136,3,142,1,68,14,32,2,64,10,68,14,16,68,8,6,8,8,14,8,68,11,40,12,13,0,68,14,8,135,2
-	.byte 72,14,16,136,4,139,3,142,1,68,14,40,68,13,11,2,44,10,68,13,13,14,16,68,8,8,8,11,14,8,68,11
-	.byte 48,12,13,0,68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,48,3,88,1,10,68
-	.byte 14,28,68,8,4,8,5,8,6,8,8,8,10,14,8,68,11,43,12,13,0,68,14,8,135,2,72,14,24,133,6,136
-	.byte 5,138,4,139,3,142,1,68,14,40,2,152,10,68,14,24,68,8,5,8,8,8,10,8,11,14,8,68,11,51,12,13
-	.byte 0,68,14,8,135,2,72,14,32,132,8,133,7,134,6,136,5,138,4,139,3,142,1,68,14,56,2,252,10,68,14,32
-	.byte 68,8,4,8,5,8,6,8,8,8,10,8,11,14,8,68,11,40,12,13,0,68,14,8,135,2,72,14,16,136,4,139
-	.byte 3,142,1,68,14,40,68,13,11,2,124,10,68,13,13,14,16,68,8,8,8,11,14,8,68,11,40,12,13,0,68,14
-	.byte 8,135,2,72,14,16,136,4,139,3,142,1,68,14,24,68,13,11,2,124,10,68,13,13,14,16,68,8,8,8,11,14
-	.byte 8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142
-	.byte 3,68,14,232,1,2,160,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,51,12
-	.byte 13,0,68,14,8,135,2,72,14,32,132,8,133,7,134,6,136,5,138,4,139,3,142,1,68,14,56,2,204,10,68,14
-	.byte 32,68,8,4,8,5,8,6,8,8,8,10,8,11,14,8,68,11,51,12,13,0,68,14,8,135,2,72,14,32,132,8
-	.byte 133,7,134,6,136,5,138,4,139,3,142,1,68,14,56,2,236,10,68,14,32,68,8,4,8,5,8,6,8,8,8,10
-	.byte 8,11,14,8,68,11,40,12,13,0,68,14,8,135,2,72,14,16,136,4,139,3,142,1,68,14,32,68,13,11,2,104
-	.byte 10,68,13,13,14,16,68,8,8,8,11,14,8,68,11,62,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134
-	.byte 10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,224,1,2,108,10,80,12,13,40,68,8,6,8,7,8,8,8
-	.byte 9,8,10,8,11,8,12,14,12,68,14,8,68,11,62,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10
-	.byte 136,8,137,7,138,6,139,5,140,4,142,3,68,14,216,1,2,100,10,80,12,13,40,68,8,6,8,7,8,8,8,9
-	.byte 8,10,8,11,8,12,14,12,68,14,8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136
-	.byte 8,137,7,138,6,139,5,140,4,142,3,68,14,224,1,2,100,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8
-	.byte 12,14,12,68,14,8,68,11,64,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6
-	.byte 139,5,140,4,142,3,68,14,232,1,2,120,10,80,12,13,44,68,8,5,8,6,8,7,8,8,8,9,8,10,8,11
+	.byte 14,20,134,5,136,4,138,3,142,1,68,14,32,2,96,10,68,14,20,68,8,6,8,8,8,10,14,8,68,11,47,12
+	.byte 13,0,68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,48,2,200,10,68,14,28,68
+	.byte 8,4,8,5,8,6,8,8,8,10,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,133,4,136,3,142,1
+	.byte 68,14,24,2,72,10,68,14,16,68,8,5,8,8,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3
+	.byte 142,1,68,14,32,2,60,10,68,14,12,68,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,136,4
+	.byte 138,3,142,1,68,14,24,2,80,10,68,14,16,68,8,8,8,10,14,8,68,11,43,12,13,0,68,14,8,135,2,72
+	.byte 14,24,134,6,136,5,138,4,139,3,142,1,68,14,32,2,140,10,68,14,24,68,8,6,8,8,8,10,8,11,14,8
+	.byte 68,11,35,12,13,0,68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,72,10,68,14,16,68,8,8
+	.byte 8,10,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14,32,2,44,10,68,14,12,68
+	.byte 8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,24,2,108,10,68,14
+	.byte 16,68,8,6,8,8,14,8,68,11,32,12,13,0,68,14,8,135,2,72,14,16,136,4,138,3,142,1,2,60,10,68
+	.byte 14,16,68,8,8,8,10,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14,16,2,56
+	.byte 10,68,14,12,68,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,40
+	.byte 2,144,10,68,14,16,68,8,6,8,8,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68
+	.byte 14,16,2,196,10,68,14,12,68,8,8,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142
+	.byte 1,68,14,24,2,84,10,68,14,16,68,8,6,8,8,14,8,68,11,40,12,13,0,68,14,8,135,2,72,14,16,136
+	.byte 4,139,3,142,1,68,14,40,68,13,11,2,44,10,68,13,13,14,16,68,8,8,8,11,14,8,68,11,48,12,13,0
+	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,40,3,100,1,10,68,14,28,68,8
+	.byte 4,8,5,8,6,8,8,8,10,14,8,68,11,43,12,13,0,68,14,8,135,2,72,14,24,133,6,136,5,138,4,139
+	.byte 3,142,1,68,14,40,2,152,10,68,14,24,68,8,5,8,8,8,10,8,11,14,8,68,11,51,12,13,0,68,14,8
+	.byte 135,2,72,14,32,132,8,133,7,134,6,136,5,138,4,139,3,142,1,68,14,56,2,252,10,68,14,32,68,8,4,8
+	.byte 5,8,6,8,8,8,10,8,11,14,8,68,11,40,12,13,0,68,14,8,135,2,72,14,16,136,4,139,3,142,1,68
+	.byte 14,40,68,13,11,2,124,10,68,13,13,14,16,68,8,8,8,11,14,8,68,11,40,12,13,0,68,14,8,135,2,72
+	.byte 14,16,136,4,139,3,142,1,68,14,24,68,13,11,2,124,10,68,13,13,14,16,68,8,8,8,11,14,8,68,11,58
+	.byte 12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,232
+	.byte 1,2,160,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,51,12,13,0,68,14
+	.byte 8,135,2,72,14,32,132,8,133,7,134,6,136,5,138,4,139,3,142,1,68,14,56,2,204,10,68,14,32,68,8,4
+	.byte 8,5,8,6,8,8,8,10,8,11,14,8,68,11,51,12,13,0,68,14,8,135,2,72,14,32,132,8,133,7,134,6
+	.byte 136,5,138,4,139,3,142,1,68,14,56,2,236,10,68,14,32,68,8,4,8,5,8,6,8,8,8,10,8,11,14,8
+	.byte 68,11,40,12,13,0,68,14,8,135,2,72,14,16,136,4,139,3,142,1,68,14,32,68,13,11,2,104,10,68,13,13
+	.byte 14,16,68,8,8,8,11,14,8,68,11,62,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137
+	.byte 7,138,6,139,5,140,4,142,3,68,14,224,1,2,108,10,80,12,13,40,68,8,6,8,7,8,8,8,9,8,10,8
+	.byte 11,8,12,14,12,68,14,8,68,11,62,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7
+	.byte 138,6,139,5,140,4,142,3,68,14,216,1,2,100,10,80,12,13,40,68,8,6,8,7,8,8,8,9,8,10,8,11
 	.byte 8,12,14,12,68,14,8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138
-	.byte 6,139,5,140,4,142,3,68,14,224,1,2,92,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68
-	.byte 14,8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4
-	.byte 142,3,68,14,232,1,2,108,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,62
-	.byte 12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,224
-	.byte 1,2,116,10,80,12,13,40,68,8,6,8,7,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,65,12
-	.byte 13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,240,1
-	.byte 68,13,11,2,124,10,80,12,13,40,68,8,6,8,7,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11
+	.byte 6,139,5,140,4,142,3,68,14,224,1,2,100,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68
+	.byte 14,8,68,11,64,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4
+	.byte 142,3,68,14,232,1,2,120,10,80,12,13,44,68,8,5,8,6,8,7,8,8,8,9,8,10,8,11,8,12,14,12
+	.byte 68,14,8,68,11,58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140
+	.byte 4,142,3,68,14,224,1,2,92,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11
 	.byte 58,12,13,0,68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14
-	.byte 216,1,2,84,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,41,12,13,0,68
-	.byte 14,8,135,2,72,14,16,136,4,139,3,142,1,68,14,80,68,13,11,3,80,1,10,68,13,13,14,16,68,8,8,8
-	.byte 11,14,8,68,11
+	.byte 232,1,2,108,10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,62,12,13,0,68
+	.byte 14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,224,1,2,116,10
+	.byte 80,12,13,40,68,8,6,8,7,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,65,12,13,0,68,14
+	.byte 8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,240,1,68,13,11,2
+	.byte 124,10,80,12,13,40,68,8,6,8,7,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,58,12,13,0
+	.byte 68,14,8,135,2,76,14,48,132,12,133,11,134,10,136,8,137,7,138,6,139,5,140,4,142,3,68,14,216,1,2,84
+	.byte 10,80,12,13,32,68,8,8,8,9,8,10,8,11,8,12,14,12,68,14,8,68,11,41,12,13,0,68,14,8,135,2
+	.byte 72,14,16,136,4,139,3,142,1,68,14,80,68,13,11,3,80,1,10,68,13,13,14,16,68,8,8,8,11,14,8,68
+	.byte 11
 
 .text
 	.align 4
@@ -3349,521 +3340,515 @@ plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperCrashesInitializationDe
 _p_1:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 288,1394
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 284,1416
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperCrashesInitializationDelegate__ctor
 plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperCrashesInitializationDelegate__ctor:
 _p_2:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 292,1396
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 288,1418
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_TryChainingSignalHandlers
 plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_TryChainingSignalHandlers:
 _p_3:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 296,1398
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 292,1420
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_OverwriteSignalHandlers
 plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_OverwriteSignalHandlers:
 _p_4:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 300,1400
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 296,1422
 	.no_dead_strip plt_System_Type_GetType_string
 plt_System_Type_GetType_string:
 _p_5:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 304,1402
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 300,1424
 	.no_dead_strip plt_System_Type_GetMethod_string_System_Reflection_BindingFlags
 plt_System_Type_GetMethod_string_System_Reflection_BindingFlags:
 _p_6:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 308,1407
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 304,1429
 	.no_dead_strip plt_System_Reflection_MethodInfo_op_Equality_System_Reflection_MethodInfo_System_Reflection_MethodInfo
 plt_System_Reflection_MethodInfo_op_Equality_System_Reflection_MethodInfo_System_Reflection_MethodInfo:
 _p_7:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 312,1412
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 308,1434
 	.no_dead_strip plt_System_Reflection_MethodBase_Invoke_object_object__
 plt_System_Reflection_MethodBase_Invoke_object_object__:
 _p_8:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 316,1417
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 312,1439
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_StartCrashReportingFromWrapperSdk
 plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSWrapperExceptionManager_StartCrashReportingFromWrapperSdk:
 _p_9:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 320,1422
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 316,1444
 	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_AllocHGlobal_int
 plt_System_Runtime_InteropServices_Marshal_AllocHGlobal_int:
 _p_10:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 324,1424
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 320,1446
 	.no_dead_strip plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_sigaction_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_Signal_intptr_intptr
 plt_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_sigaction_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_Signal_intptr_intptr:
 _p_11:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 328,1429
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 324,1451
 	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_FreeHGlobal_intptr
 plt_System_Runtime_InteropServices_Marshal_FreeHGlobal_intptr:
 _p_12:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 332,1431
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 328,1453
 	.no_dead_strip plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag
 plt_Foundation_NSObject__ctor_Foundation_NSObjectFlag:
 _p_13:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 336,1436
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 332,1458
 	.no_dead_strip plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly
 plt_System_Reflection_Assembly_op_Equality_System_Reflection_Assembly_System_Reflection_Assembly:
 _p_14:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 340,1441
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 336,1463
 	.no_dead_strip plt_Foundation_NSObject_set_IsDirectBinding_bool
 plt_Foundation_NSObject_set_IsDirectBinding_bool:
 _p_15:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 344,1446
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 340,1468
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
 _p_16:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 348,1451
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 344,1473
 	.no_dead_strip plt_Foundation_NSObject_InitializeHandle_intptr_string
 plt_Foundation_NSObject_InitializeHandle_intptr_string:
 _p_17:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 352,1453
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 348,1475
 	.no_dead_strip plt_Foundation_NSObject__ctor_intptr
 plt_Foundation_NSObject__ctor_intptr:
 _p_18:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 356,1458
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 352,1480
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
 _p_19:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 360,1463
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 356,1485
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
 _p_20:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 364,1465
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 360,1487
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint:
 _p_21:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 368,1467
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 364,1489
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
 _p_22:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 372,1469
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 368,1491
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
 _p_23:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 376,1471
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 372,1493
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_SetupBlock_System_Delegate_System_Delegate
 plt_ObjCRuntime_BlockLiteral_SetupBlock_System_Delegate_System_Delegate:
 _p_24:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 380,1473
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 376,1495
 	.no_dead_strip plt_ObjCRuntime_BlockLiteral_CleanupBlock
 plt_ObjCRuntime_BlockLiteral_CleanupBlock:
 _p_25:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 384,1478
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 380,1500
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_intptr:
 _p_26:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 388,1483
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 384,1505
 	.no_dead_strip plt_ObjCRuntime_Class_GetHandle_string
 plt_ObjCRuntime_Class_GetHandle_string:
 _p_27:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 392,1495
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 388,1517
 	.no_dead_strip plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool
 plt_ObjCRuntime_BaseWrapper__ctor_intptr_bool:
 _p_28:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 396,1500
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 392,1522
 	.no_dead_strip plt_Foundation_NSObject_get_SuperHandle
 plt_Foundation_NSObject_get_SuperHandle:
 _p_29:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 400,1505
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 396,1527
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
 _p_30:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 404,1510
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 400,1532
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_31:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 408,1512
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 404,1534
 	.no_dead_strip plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor
 plt_Foundation_You_Should_Not_Call_base_In_This_Method__ctor:
 _p_32:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 412,1520
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 408,1542
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_33:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 416,1525
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 412,1547
 	.no_dead_strip plt_Foundation_NSString_CreateNative_string
 plt_Foundation_NSString_CreateNative_string:
 _p_34:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 420,1553
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 416,1575
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr:
 _p_35:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 424,1558
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 420,1580
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorAttachmentLog_intptr:
 _p_36:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 428,1560
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 424,1582
 	.no_dead_strip plt_Foundation_NSString_ReleaseNative_intptr
 plt_Foundation_NSString_ReleaseNative_intptr:
 _p_37:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 432,1572
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 428,1594
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_38:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 436,1577
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 432,1599
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
 _p_39:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 440,1597
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 436,1619
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDate_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSDate_intptr:
 _p_40:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 444,1599
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 440,1621
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
 _p_41:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 448,1611
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 444,1633
 	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Microsoft_Azure_Mobile_iOS_Bindings_MSDevice_intptr
 plt_ObjCRuntime_Runtime_GetNSObject_Microsoft_Azure_Mobile_iOS_Bindings_MSDevice_intptr:
 _p_42:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 452,1613
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 448,1635
 	.no_dead_strip plt_Foundation_NSString_FromHandle_intptr
 plt_Foundation_NSString_FromHandle_intptr:
 _p_43:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 456,1625
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 452,1647
 	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
 plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
 _p_44:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 460,1630
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 456,1652
 	.no_dead_strip plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_intptr
 plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_intptr:
 _p_45:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 464,1632
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 460,1654
 	.no_dead_strip plt_Foundation_NSObject_MarkDirty
 plt_Foundation_NSObject_MarkDirty:
 _p_46:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 468,1644
-	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_conc_intptr
-plt_wrapper_write_barrier_object_wbarrier_conc_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 464,1666
+	.no_dead_strip plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__
+plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__:
 _p_47:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 472,1649
-	.no_dead_strip plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__
-plt_Foundation_NSArray_FromNSObjects_Foundation_NSObject__:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 468,1671
+	.no_dead_strip plt_Foundation_NSObject_Dispose
+plt_Foundation_NSObject_Dispose:
 _p_48:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 476,1656
-	.no_dead_strip plt_Foundation_NSObject_Dispose
-plt_Foundation_NSObject_Dispose:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 472,1676
+	.no_dead_strip plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_intptr
+plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_intptr:
 _p_49:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 480,1661
-	.no_dead_strip plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_intptr
-plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 476,1681
+	.no_dead_strip plt_Foundation_NSObject_Dispose_bool
+plt_Foundation_NSObject_Dispose_bool:
 _p_50:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 484,1666
-	.no_dead_strip plt_Foundation_NSObject_Dispose_bool
-plt_Foundation_NSObject_Dispose_bool:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 480,1693
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSNumber_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSNumber_intptr:
 _p_51:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 488,1678
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSNumber_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSNumber_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 484,1698
+	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
+plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1:
 _p_52:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 492,1683
-	.no_dead_strip plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
-plt_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 488,1710
+	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSData_intptr
+plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSData_intptr:
 _p_53:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 496,1695
-	.no_dead_strip plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSData_intptr
-plt_ObjCRuntime_Runtime_GetNSObject_Foundation_NSData_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 492,1712
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_get_Target
+plt_ObjCRuntime_BlockLiteral_get_Target:
 _p_54:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 500,1697
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_get_Target
-plt_ObjCRuntime_BlockLiteral_get_Target:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 496,1724
+	.no_dead_strip plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_intptr
+plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_intptr:
 _p_55:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 504,1709
-	.no_dead_strip plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_intptr
-plt_Foundation_NSArray_ArrayFromHandle_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSErrorReport_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 500,1729
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_56:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 508,1714
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 504,1741
+	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_copy_intptr
+plt_ObjCRuntime_Trampolines__Block_copy_intptr:
 _p_57:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 512,1726
-	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_copy_intptr
-plt_ObjCRuntime_Trampolines__Block_copy_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 508,1776
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSUserConfirmationHandler
+plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSUserConfirmationHandler:
 _p_58:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 516,1761
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSUserConfirmationHandler
-plt_ObjCRuntime_BlockLiteral_GetDelegateForBlock_ObjCRuntime_Trampolines_DMSUserConfirmationHandler:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 512,1778
+	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_release_intptr
+plt_ObjCRuntime_Trampolines__Block_release_intptr:
 _p_59:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 520,1763
-	.no_dead_strip plt_ObjCRuntime_Trampolines__Block_release_intptr
-plt_ObjCRuntime_Trampolines__Block_release_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 516,1790
+	.no_dead_strip plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr
+plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr:
 _p_60:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 524,1775
-	.no_dead_strip plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr
-plt_ObjCRuntime_BlockLiteral_IsManagedBlock_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 520,1792
+	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
+plt__jit_icall_ves_icall_object_new_specific:
 _p_61:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 528,1777
-	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
-plt__jit_icall_ves_icall_object_new_specific:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 524,1797
+	.no_dead_strip plt_ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler__ctor_ObjCRuntime_BlockLiteral_
+plt_ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler__ctor_ObjCRuntime_BlockLiteral_:
 _p_62:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 532,1782
-	.no_dead_strip plt_ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler__ctor_ObjCRuntime_BlockLiteral_
-plt_ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler__ctor_ObjCRuntime_BlockLiteral_:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 528,1829
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_63:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 536,1814
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 532,1831
+	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
+plt__jit_icall_mono_delegate_begin_invoke:
 _p_64:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 540,1816
-	.no_dead_strip plt__jit_icall_mono_delegate_begin_invoke
-plt__jit_icall_mono_delegate_begin_invoke:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 536,1869
+	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
+plt__jit_icall_mono_delegate_end_invoke:
 _p_65:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 544,1854
-	.no_dead_strip plt__jit_icall_mono_delegate_end_invoke
-plt__jit_icall_mono_delegate_end_invoke:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 540,1898
+	.no_dead_strip plt__icall_native_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_sigaction_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_Signal_intptr_intptr
+plt__icall_native_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_sigaction_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_Signal_intptr_intptr:
 _p_66:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 548,1883
-	.no_dead_strip plt__icall_native_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_sigaction_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_Signal_intptr_intptr
-plt__icall_native_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_sigaction_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_CrashesInitializationDelegate_Signal_intptr_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 544,1925
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
 _p_67:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 552,1910
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 548,1927
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
 _p_68:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 556,1912
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSendSuper_intptr_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 552,1929
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
 _p_69:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 560,1914
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 556,1931
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
 _p_70:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 564,1916
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_0:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 560,1933
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
 _p_71:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 568,1918
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_bool:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 564,1935
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
 _p_72:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 572,1920
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_1:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 568,1937
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
 _p_73:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 576,1922
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_0:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 572,1939
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint:
 _p_74:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 580,1924
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_uint:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 576,1941
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong:
 _p_75:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 584,1926
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_ulong:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 580,1943
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
 _p_76:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 588,1928
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 584,1945
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr:
 _p_77:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 592,1930
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_intptr_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 588,1947
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
 _p_78:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 596,1932
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_2:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 592,1949
+	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
+plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1:
 _p_79:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 600,1934
-	.no_dead_strip plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1
-plt__icall_native_ApiDefinition_Messaging_objc_msgSend_intptr_intptr_intptr_1:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 596,1951
+	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr
+plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr:
 _p_80:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 604,1936
-	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr
-plt__icall_native_ObjCRuntime_Trampolines__Block_copy_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 600,1953
+	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr
+plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr:
 _p_81:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 608,1938
-	.no_dead_strip plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr
-plt__icall_native_ObjCRuntime_Trampolines__Block_release_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 604,1955
+	.no_dead_strip plt_ObjCRuntime_Trampolines_SDMSUserConfirmationHandler_Invoke_intptr_intptr
+plt_ObjCRuntime_Trampolines_SDMSUserConfirmationHandler_Invoke_intptr_intptr:
 _p_82:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 612,1940
-	.no_dead_strip plt_ObjCRuntime_Trampolines_SDMSUserConfirmationHandler_Invoke_intptr_intptr
-plt_ObjCRuntime_Trampolines_SDMSUserConfirmationHandler_Invoke_intptr_intptr:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 608,1957
+	.no_dead_strip plt__jit_icall_mono_gchandle_new
+plt__jit_icall_mono_gchandle_new:
 _p_83:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 616,1942
-	.no_dead_strip plt__jit_icall_mono_gchandle_new
-plt__jit_icall_mono_gchandle_new:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 612,1959
+	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
+plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_84:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 620,1944
-	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
-plt__jit_icall_mono_thread_get_undeniable_exception:
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 616,1979
+	.no_dead_strip plt__jit_icall_mono_marshal_ftnptr_eh_callback
+plt__jit_icall_mono_marshal_ftnptr_eh_callback:
 _p_85:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 624,1964
-	.no_dead_strip plt__jit_icall_mono_marshal_ftnptr_eh_callback
-plt__jit_icall_mono_marshal_ftnptr_eh_callback:
-_p_86:
-
-	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 628,2003
+	.long mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got - . + 620,2018
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got, 636
+.lcomm mono_aot_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_got, 628
 got_end:
 .section	__DATA,__objc_selrefs,literal_pointers,no_dead_strip
 .align	3
@@ -4226,13 +4211,13 @@ _mono_aot_file_info:
 	.align 2
 	.long unbox_trampoline_addresses
 
-	.long 72,636,87,159,66,391195135,0,4350
-	.long 128,4,4,10,0,26,6208,1848
-	.long 1560,968,0,1264,1504,1144,0,768
+	.long 71,628,86,159,66,391195135,0,4364
+	.long 128,4,4,10,0,25,6216,1840
+	.long 1552,968,0,1256,1496,1144,0,768
 	.long 240,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 139,199,42,205,86,83,206,255,94,23,34,72,71,27,192,189
+	.byte 239,112,105,187,13,136,164,22,80,147,35,45,84,210,30,20
 	.globl _mono_aot_module_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_info
 	.align 2
 _mono_aot_module_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_info:
@@ -7071,7 +7056,7 @@ Lfde55_start:
 
 LDIFF_SYM347=Lme_38 - Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_get_Frames
 	.long LDIFF_SYM347
-	.byte 68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,84,10,68,14,16,68,8,8,8,10,14,8,68,11
+	.byte 68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,104,10,68,14,16,68,8,8,8,10,14,8,68,11
 	.align 2
 Lfde55_end:
 
@@ -7136,7 +7121,7 @@ Lfde56_start:
 
 LDIFF_SYM356=Lme_39 - Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_Frames_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame__
 	.long LDIFF_SYM356
-	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,48,2,172,10,68,14,28,68,8,4
+	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,48,2,200,10,68,14,28,68,8,4
 	.byte 8,5,8,6,8,8,8,10,14,8,68,11
 	.align 2
 Lfde56_end:
@@ -7175,7 +7160,7 @@ Lfde57_start:
 
 LDIFF_SYM360=Lme_3a - Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_get_InnerExceptions
 	.long LDIFF_SYM360
-	.byte 68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,84,10,68,14,16,68,8,8,8,10,14,8,68,11
+	.byte 68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,104,10,68,14,16,68,8,8,8,10,14,8,68,11
 	.align 2
 Lfde57_end:
 
@@ -7218,7 +7203,7 @@ Lfde58_start:
 
 LDIFF_SYM365=Lme_3b - Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException_set_InnerExceptions_Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSException__
 	.long LDIFF_SYM365
-	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,48,2,172,10,68,14,28,68,8,4
+	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,48,2,200,10,68,14,28,68,8,4
 	.byte 8,5,8,6,8,8,8,10,14,8,68,11
 	.align 2
 Lfde58_end:
@@ -8184,7 +8169,7 @@ Lfde82_start:
 
 LDIFF_SYM470=Lme_53 - Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_get_LineNumber
 	.long LDIFF_SYM470
-	.byte 68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,84,10,68,14,16,68,8,8,8,10,14,8,68,11
+	.byte 68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,24,2,104,10,68,14,16,68,8,8,8,10,14,8,68,11
 	.align 2
 Lfde82_end:
 
@@ -8222,7 +8207,7 @@ Lfde83_start:
 
 LDIFF_SYM474=Lme_54 - Microsoft_Azure_Mobile_Crashes_iOS_Bindings_MSStackFrame_set_LineNumber_Foundation_NSNumber
 	.long LDIFF_SYM474
-	.byte 68,14,8,135,2,72,14,24,134,6,136,5,138,4,139,3,142,1,68,14,32,2,112,10,68,14,24,68,8,6,8,8
+	.byte 68,14,8,135,2,72,14,24,134,6,136,5,138,4,139,3,142,1,68,14,32,2,140,10,68,14,24,68,8,6,8,8
 	.byte 8,10,8,11,14,8,68,11
 	.align 2
 Lfde83_end:
@@ -9136,7 +9121,7 @@ Lfde106_start:
 
 LDIFF_SYM572=Lme_7e - ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler__ctor_ObjCRuntime_BlockLiteral_
 	.long LDIFF_SYM572
-	.byte 68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,32,2,64,10,68,14,16,68,8,6,8,8,14,8,68,11
+	.byte 68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,24,2,84,10,68,14,16,68,8,6,8,8,14,8,68,11
 	.align 2
 Lfde106_end:
 
@@ -9208,7 +9193,7 @@ Lfde108_start:
 
 LDIFF_SYM579=Lme_80 - ObjCRuntime_Trampolines_NIDMSUserConfirmationHandler_Create_intptr
 	.long LDIFF_SYM579
-	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,48,3,88,1,10,68,14,28,68,8
+	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,40,3,100,1,10,68,14,28,68,8
 	.byte 4,8,5,8,6,8,8,8,10,14,8,68,11
 	.align 2
 Lfde108_end:
