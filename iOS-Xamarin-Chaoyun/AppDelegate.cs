@@ -4,7 +4,7 @@ using Microsoft.Azure.Mobile;
 using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
 using Microsoft.Azure.Mobile.Push;
-
+using System.Text;
 
 namespace iOSXamarinChaoyun
 {
@@ -62,10 +62,20 @@ namespace iOSXamarinChaoyun
 			};
             var installId = MobileCenter.GetInstallIdAsync();
             System.Diagnostics.Debug.WriteLine("installId value:" + installId.Result.ToString());
-			MobileCenter.Start("771d00fd-d9cf-4cbe-9309-50f815d280c8",
+            MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+			MobileCenter.Start("a46a8213-f1d3-4b5b-adf9-287aab10a6e5",
 							   typeof(Analytics), typeof(Crashes), typeof(Push));
-			Analytics.TrackEvent("First_click");
-			Analytics.TrackEvent("Second_click");
+
+
+			Crashes.GetErrorAttachments = (ErrorReport report) =>
+			{
+				// Your code goes here.
+				return new ErrorAttachmentLog[]
+				{
+		ErrorAttachmentLog.AttachmentWithText("Hello world!", "hello.txt"),
+		ErrorAttachmentLog.AttachmentWithBinary(Encoding.UTF8.GetBytes("Fake image"), "fake_image.jpeg", "image/jpeg")
+				};
+			};
             return true;
         }
 

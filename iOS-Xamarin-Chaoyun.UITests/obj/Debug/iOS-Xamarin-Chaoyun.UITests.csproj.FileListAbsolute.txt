@@ -18,3 +18,13 @@
 /Users/bys/Projects/iOS-Xamarin-Chaoyun/branches/Test0727/iOS-Xamarin-Chaoyun.UITests/obj/Debug/iOS-Xamarin-Chaoyun.UITests.csproj.CoreCompileInputs.cache
 /Users/bys/Projects/iOS-Xamarin-Chaoyun/branches/Test0727/iOS-Xamarin-Chaoyun.UITests/obj/Debug/iOS-Xamarin-Chaoyun.UITests.dll
 /Users/bys/Projects/iOS-Xamarin-Chaoyun/branches/Test0727/iOS-Xamarin-Chaoyun.UITests/obj/Debug/iOS-Xamarin-Chaoyun.UITests.pdb
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/bin/Debug/iOS-Xamarin-Chaoyun.UITests.dll
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/bin/Debug/iOS-Xamarin-Chaoyun.UITests.pdb
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/bin/Debug/nunit.framework.dll
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/bin/Debug/Xamarin.UITest.dll
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/bin/Debug/nunit.framework.xml
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/bin/Debug/Xamarin.UITest.xml
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/obj/Debug/iOS-Xamarin-Chaoyun.UITests.csprojResolveAssemblyReference.cache
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/obj/Debug/iOS-Xamarin-Chaoyun.UITests.csproj.CoreCompileInputs.cache
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/obj/Debug/iOS-Xamarin-Chaoyun.UITests.dll
+/Users/bys/Projects/iOSXamarinChaoyun/branches/TestStaging0801/iOS-Xamarin-Chaoyun.UITests/obj/Debug/iOS-Xamarin-Chaoyun.UITests.pdb

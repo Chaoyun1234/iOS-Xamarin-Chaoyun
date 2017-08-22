@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{B95CE2F1-074A-4A90-A836-FD42A933394B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="TestStaging0801 Status">
     <Files>
-      <File FileName="iOS-Xamarin-Chaoyun/AppDelegate.cs" Line="56" Column="2" />
+      <File FileName="iOS-Xamarin-Chaoyun/AppDelegate.cs" Line="8" Column="1" />
       <File FileName="iOS-Xamarin-Chaoyun/Entitlements.plist" />
-      <File FileName="iOS-Xamarin-Chaoyun/Main.cs" Line="13" Column="10" />
+      <File FileName="iOS-Xamarin-Chaoyun/SecondViewController.cs" Line="19" Column="1" />
+      <File FileName="iOS-Xamarin-Chaoyun/Info.plist" />
       <File FileName="TestStaging0801 Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>

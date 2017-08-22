@@ -1,7 +1,8 @@
 ﻿using System;
 
 using UIKit;
-
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
 namespace iOSXamarinChaoyun
 {
     public partial class FirstViewController : UIViewController
@@ -14,6 +15,7 @@ namespace iOSXamarinChaoyun
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            Analytics.TrackEvent("First_click");
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
